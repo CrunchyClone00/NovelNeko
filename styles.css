@@ -1,0 +1,31 @@
+.grid-novels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.novel-card {
+  display: block;
+  text-align: center;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.novel-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.novel-card h3 {
+  margin-top: 0.5rem;
+  color: #222;
+}
+
+.novel-card:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos & Contact</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fc;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2rem;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header .credits {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      padding: 12px 24px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+
+    .confirmation-message {
+      display: none;
+      margin-top: 1rem;
+      background: #28a745;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="header">
+    <h1>📚 Light Novels Traduit par Ziom</h1>
+    <p class="credits">
+      Lecture gratuite en ligne • Traductions FR • Mise à jour régulière
+    </p>
+  </section>
+
+  <div class="section">
+    <h2>À propos</h2>
+    <p>Ce site est une plateforme non officielle dédiée à la lecture de Light Novels traduits en français. L’objectif est de permettre à tous les fans de profiter gratuitement de leurs histoires préférées, avec un accès facile depuis n’importe quel appareil.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact & Support</h2>
+    <p>Une suggestion, une erreur à signaler, ou juste un mot gentil ? N'hésitez pas à nous écrire ci-dessous. Une réponse vous sera envoyée par mail dès que possible.</p>
+    
+    <div class="contact-form">
+      <input type="email" id="email" placeholder="Votre email" required>
+      <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+      <button onclick="submitForm()">Envoyer</button>
+    </div>
+
+    <div id="confirmationMessage" class="confirmation-message">
+      ✅ Merci ! Votre message a bien été envoyé.
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">← Retour à l'accueil</a>
+  </div>
+
+  <script>
+        // Fonction pour envoyer le formulaire au Webhook Discord
+        function submitForm() {
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            if (email === "" || message === "") {
+                alert("Veuillez remplir tous les champs.");
+                return;
+            }
+
+            // URL du Webhook Discord
+            const webhookUrl = "https://discord.com/api/webhooks/1360642642416898049/LYGHsT4hGx8TQLrSICXJ9YkSO537HRc1oekoOJLE45kGgAeGY2pUf4I2Uc8Jsj2kdsLV";
+
+            // Données à envoyer au Webhook Discord
+            const data = {
+                content: `Nouveau message de contact\n**Email :** ${email}\n**Message :** ${message}`
+            };
+
+            // Envoi des données via Fetch
+            fetch(webhookUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Afficher le message de confirmation
+                    document.getElementById("confirmationMessage").style.display = "block";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                } else {
+                    alert("Une erreur est survenue. Veuillez réessayer.");
+                }
+            })
+            .catch(error => {
+                console.error("Erreur:", error);
+                alert("Une erreur est survenue. Veuillez réessayer.");
+            });
+        }
+    </script>
+
+</body>
+</html>
