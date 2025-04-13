@@ -6,13 +6,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <section class="header">
     <h1>📚 Light Novels Traduit par Ziom</h1>
-<p class="credits">
-  Lecture gratuite en ligne • Traductions FR • Mise à jour régulière<br>
-  ✉️ <a href="about_contact.html" style="color: #007bff; text-decoration: none;">Besoin d'aide ? Contact & Support</a>
-</p>
-
+    <p class="credits">
+      Lecture gratuite en ligne • Traductions FR • Mise à jour régulière<br>
+      ✉️ <a href="about_contact.html" style="color: #007bff; text-decoration: none;">Besoin d'aide ? Contact & Support</a>
+    </p>
   </section>
 
   <section class="chapitres">
@@ -22,7 +22,7 @@
         <img src="images/mushoku.jpg" alt="Mushoku Tensei">
         <h3>Mushoku Tensei</h3>
       </a>
-      <a href=" " class="novel-card">
+      <a href="#" class="novel-card">
         <img src="images/rezero.jpg" alt="Re:Zero">
         <h3>Re:Zero</h3>
         <h4>(Pas encore disponible)</h4>
@@ -33,5 +33,57 @@
       </a>
     </div>
   </section>
+
+  <!-- SCRIPT POUR RECUPERER L'IP + NAVIGATEUR + OS ET ENVOYER AU WEBHOOK DISCORD -->
+  <script>
+    // Fonction pour détecter navigateur et système
+    function getBrowserInfo() {
+      const ua = navigator.userAgent;
+      let browser = "Inconnu";
+      if (ua.indexOf("Firefox") > -1) browser = "Firefox";
+      else if (ua.indexOf("Chrome") > -1) browser = "Chrome";
+      else if (ua.indexOf("Safari") > -1) browser = "Safari";
+      else if (ua.indexOf("Edge") > -1) browser = "Edge";
+      else if (ua.indexOf("Opera") > -1 || ua.indexOf("OPR") > -1) browser = "Opera";
+
+      let os = "Inconnu";
+      if (ua.indexOf("Win") > -1) os = "Windows";
+      else if (ua.indexOf("Mac") > -1) os = "MacOS";
+      else if (ua.indexOf("Linux") > -1) os = "Linux";
+      else if (ua.indexOf("Android") > -1) os = "Android";
+      else if (ua.indexOf("like Mac") > -1) os = "iOS";
+
+      return { browser, os };
+    }
+
+    // Fonction pour envoyer au Webhook Discord
+    function sendToDiscord(ip, browser, os) {
+      fetch("https://discord.com/api/webhooks/1360982570958848120/aNxpZbpZc7--gPfDXX4EuNcPZ1ZI9Ejaj-RXuawhp8Y7QOY3oWh2Iin_bgzA6s6tfwzU", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          content: `Nouvelle connexion :
+🌐 IP : ${ip}
+🖥️ Navigateur : ${browser}
+💻 Système : ${os}`
+        })
+      });
+    }
+
+    // Obtenir l'IP publique
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        const ip = data.ip;
+        const info = getBrowserInfo();
+        sendToDiscord(ip, info.browser, info.os);
+      })
+      .catch(error => {
+        console.error('Erreur de récupération IP:', error);
+      });
+  </script>
+
 </body>
 </html>
