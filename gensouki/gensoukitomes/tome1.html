@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tome 1 - Seirei Gensouki: Spirit Chronicles</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fc;
+      color: #222;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .back-btn, .open-pdf-btn {
+      padding: 10px 20px;
+      background: #f00;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .back-btn:hover, .open-pdf-btn:hover {
+      background: #c00;
+    }
+
+    #pdf-viewer {
+      width: 100%;
+      height: 600px;
+      display: none; /* masqué par défaut */
+    }
+
+    @media (min-width: 768px) {
+      #pdf-viewer {
+        display: block;
+      }
+
+      .open-pdf-btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tome 1 - Seirei Gensouki: Spirit Chronicles</h1>
+
+    <!-- Bouton pour ouvrir le PDF sur mobile -->
+    <a class="open-pdf-btn" href="tome1.pdf" target="_blank">📖 Ouvrir le PDF</a>
+
+    <!-- PDF intégré pour PC uniquement -->
+    <embed id="pdf-viewer" src="tome1.pdf" type="application/pdf" />
+
+    <br><br>
+    <a href="../indexgensouki.html" class="back-btn">Retour aux tomes</a>
+  </div>
+</body>
+</html>
