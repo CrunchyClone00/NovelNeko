@@ -5,6 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Novel Neko</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Fonction pour envoyer une requête POST au webhook Discord
+    function logConnection() {
+      const webhookUrl = 'https://discord.com/api/webhooks/1364249910911832206/GmLKiEUw72mw5fTYEHALwx6HcYbGU1gYFUdwh2YAreAZQJMrcXW1-_C6m2gmoGvs0mHr';
+      
+      const data = {
+        content: 'Un utilisateur s\'est connecté sur le site Novel Neko.'
+      };
+
+      fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('Connexion enregistrée sur Discord');
+        } else {
+          console.error('Erreur lors de l\'envoi des logs');
+        }
+      })
+      .catch(error => {
+        console.error('Erreur réseau:', error);
+      });
+    }
+
+    // Appel de la fonction de log de connexion
+    window.onload = logConnection;
+  </script>
 </head>
 <body>
   <section class="header">
