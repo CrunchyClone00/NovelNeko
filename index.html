@@ -6,36 +6,74 @@
   <title>Novel Neko</title>
   <link rel="stylesheet" href="styles.css">
   <script>
-    // Fonction pour envoyer une requête POST au webhook Discord
-    function logConnection() {
-      const webhookUrl = 'https://discord.com/api/webhooks/1364249910911832206/GmLKiEUw72mw5fTYEHALwx6HcYbGU1gYFUdwh2YAreAZQJMrcXW1-_C6m2gmoGvs0mHr';
-      
-      const data = {
-        content: 'Un utilisateur s\'est connecté sur le site Novel Neko.'
-      };
+  // Fonction pour déterminer le nom du navigateur
+  function obtenirNavigateur() {
+    const ua = navigator.userAgent;
 
-      fetch(webhookUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      })
-      .then(response => {
-        if (response.ok) {
-          console.log('Connexion enregistrée sur Discord');
-        } else {
-          console.error('Erreur lors de l\'envoi des logs');
-        }
-      })
-      .catch(error => {
-        console.error('Erreur réseau:', error);
-      });
-    }
+    if (ua.includes("Firefox/")) return "Firefox";
+    if (ua.includes("Edg/")) return "Edge";
+    if (ua.includes("Chrome/")) return "Chrome";
+    if (ua.includes("Safari/") && !ua.includes("Chrome")) return "Safari";
+    if (ua.includes("OPR/") || ua.includes("Opera")) return "Opera";
+    return "Navigateur inconnu";
+  }
 
-    // Appel de la fonction de log de connexion
-    window.onload = logConnection;
-  </script>
+  // Fonction pour déterminer le système d'exploitation
+  function obtenirOS() {
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/windows phone/i.test(ua)) return "Windows Phone";
+    if (/android/i.test(ua)) return "Android";
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS";
+    if (/Macintosh/i.test(ua) && 'ontouchend' in document) return "iPadOS";
+    if (/Mac/i.test(ua)) return "macOS";
+    if (/Win/i.test(ua)) return "Windows";
+    if (/Linux/i.test(ua)) return "Linux";
+
+    return "Système inconnu";
+  }
+
+  // Fonction principale pour envoyer les informations au webhook Discord
+  function enregistrerConnexion() {
+    const os = obtenirOS();
+    const navigateur = obtenirNavigateur();
+    const langue = navigator.language || 'Inconnue';
+
+    const webhookUrl = 'https://discord.com/api/webhooks/1364249910911832206/GmLKiEUw72mw5fTYEHALwx6HcYbGU1gYFUdwh2YAreAZQJMrcXW1-_C6m2gmoGvs0mHr';
+
+    const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
+
+💻 **Système** : ${os}
+🧭 **Navigateur** : ${navigateur}
+🌍 **Langue du navigateur** : ${langue}
+`;
+
+    const data = {
+      content: message
+    };
+
+    fetch(webhookUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log('Connexion enregistrée sur Discord');
+      } else {
+        console.error("Erreur lors de l'envoi du message");
+      }
+    })
+    .catch(error => {
+      console.error("Erreur réseau :", error);
+    });
+  }
+
+  // Appel automatique de la fonction à chaque chargement de page
+  window.onload = enregistrerConnexion;
+</script>
 </head>
 <body>
   <section class="header">
