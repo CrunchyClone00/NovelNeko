@@ -81,6 +81,8 @@ body {
   transform: scale(1.05);
 }
 
+
+
 /* Adaptation responsive mobile */
 @media (max-width: 600px) {
   .novel-card {

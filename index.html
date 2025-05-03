@@ -39,10 +39,17 @@
     const navigateur = obtenirNavigateur();
     const langue = navigator.language || 'Inconnue';
 
+    // Obtenir la date et l'heure actuelles
+    const maintenant = new Date();
+    const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    const heureStr = maintenant.toLocaleTimeString('fr-FR');
+
     const webhookUrl = 'https://discord.com/api/webhooks/1364249910911832206/GmLKiEUw72mw5fTYEHALwx6HcYbGU1gYFUdwh2YAreAZQJMrcXW1-_C6m2gmoGvs0mHr';
 
     const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
 
+📅 **Date** : ${dateStr}
+⏰ **Heure** : ${heureStr}
 💻 **Système** : ${os}
 🧭 **Navigateur** : ${navigateur}
 🌍 **Langue du navigateur** : ${langue}
@@ -74,6 +81,7 @@
   // Appel automatique de la fonction à chaque chargement de page
   window.onload = enregistrerConnexion;
 </script>
+
 </head>
 <body>
   <section class="header">
@@ -117,11 +125,6 @@
         <img src="images/finest.jpg" alt="Finest Assasin">
         <h3>The World's Finest Assassin Gets Reincarnated in Another World</h3>
       </a> 
-      <a href="gensouki/indexgensouki.html" class="novel-card">
-        <img src="images/gensouki.jpg" alt="Gensouki">
-        <h3>Seirei Gensouki: Spirit Chronicles</h3>
-      </a> 
-    </div>
   </section>
 </body>
 </html>
