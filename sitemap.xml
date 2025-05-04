@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/</loc>
+  </url>
+
+  <!-- Mushoku Tensei -->
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/mushoku/indexmushoku.html</loc>
+  </url>
+
+  <!-- Redundant Reincarnation -->
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/redundant/indexredundant.html</loc>
+  </url>
+
+  <!-- Re:Zero -->
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/rezero/indexrezero.html</loc>
+  </url>
+
+  <!-- TBATE -->
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/tbate/indextbate.html</loc>
+  </url>
+
+  <!-- COTE Year 2 -->
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/cote/indexcote.html</loc>
+  </url>
+
+  <!-- COTE Year 3 -->
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/cote3/indexcote.html</loc>
+  </url>
+
+  <!-- Bunny Girl Senpai -->
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/rascal/indexrascal.html</loc>
+  </url>
+
+  <!-- The World's Finest Assassin -->
+  <url>
+    <loc>https://crunchyclone00.github.io/NovelNeko/finest/indexfinest.html</loc>
+  </url>
+
+</urlset>
