@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tokyo Ghoul:Re</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .controls {
+      margin: 20px 0;
+    }
+
+    select, .nav-btn {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #d00;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .nav-btn:hover {
+      background: #a00;
+    }
+
+    #scansPlacement {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .manga-page {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      object-fit: contain;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titreChapitre">Tokyo Ghoul:Re - Chapitre </h1>
+
+  <div class="controls" id="controlsTop">
+    <button class="nav-btn" id="prevBtnTop">⬅ Précédent</button>
+    <select id="chapitreSelectTop"></select>
+    <button class="nav-btn" id="nextBtnTop">Suivant ➡</button>
+  </div>
+
+  <div id="scansPlacement"></div>
+
+  <div class="controls" id="controlsBottom">
+    <button class="nav-btn" id="prevBtnBottom">⬅ Précédent</button>
+    <select id="chapitreSelectBottom"></select>
+    <button class="nav-btn" id="nextBtnBottom">Suivant ➡</button>
+  </div>
+
+  <a href="indexre.html" class="back-btn">⬅ Retour</a>
+
+  <script>
+    const maxChapitres = 180;
+    const scansPlacement = document.getElementById("scansPlacement");
+    const titreChapitre = document.getElementById("titreChapitre");
+
+    const chapitreSelectTop = document.getElementById("chapitreSelectTop");
+    const chapitreSelectBottom = document.getElementById("chapitreSelectBottom");
+    const prevBtnTop = document.getElementById("prevBtnTop");
+    const nextBtnTop = document.getElementById("nextBtnTop");
+    const prevBtnBottom = document.getElementById("prevBtnBottom");
+    const nextBtnBottom = document.getElementById("nextBtnBottom");
+
+    let currentChapitre = parseInt(new URLSearchParams(window.location.search).get("chapitre")) || 1;
+
+    // Remplir les selects
+    for (let i = 1; i <= maxChapitres; i++) {
+      const optionTop = document.createElement("option");
+      optionTop.value = i;
+      optionTop.textContent = `Chapitre ${i}`;
+      chapitreSelectTop.appendChild(optionTop);
+
+      const optionBottom = optionTop.cloneNode(true);
+      chapitreSelectBottom.appendChild(optionBottom);
+    }
+
+    chapitreSelectTop.value = currentChapitre;
+    chapitreSelectBottom.value = currentChapitre;
+
+    function loadChapitre(chapitre) {
+      titreChapitre.textContent = `Tokyo Ghoul:Re - Chapitre ${chapitre}`;
+      scansPlacement.innerHTML = "";
+
+      const baseUrl = `https://anime-sama.fr/s2/scans/Tokyo%20Ghoul%20Re/${chapitre}/`;
+      const maxPages = 40;
+
+      for (let i = 1; i <= maxPages; i++) {
+        const img = document.createElement("img");
+        img.src = `${baseUrl}${i}.jpg`;
+        img.alt = `Page ${i}`;
+        img.className = "manga-page";
+        img.onerror = () => img.remove();
+        scansPlacement.appendChild(img);
+      }
+
+      chapitreSelectTop.value = chapitre;
+      chapitreSelectBottom.value = chapitre;
+      history.replaceState(null, "", `?chapitre=${chapitre}`);
+    }
+
+    function goToPrevious() {
+      if (currentChapitre > 1) {
+        currentChapitre--;
+        loadChapitre(currentChapitre);
+      }
+    }
+
+    function goToNext() {
+      if (currentChapitre < maxChapitres) {
+        currentChapitre++;
+        loadChapitre(currentChapitre);
+      }
+    }
+
+    prevBtnTop.onclick = goToPrevious;
+    nextBtnTop.onclick = goToNext;
+    prevBtnBottom.onclick = goToPrevious;
+    nextBtnBottom.onclick = goToNext;
+
+    chapitreSelectTop.onchange = () => {
+      currentChapitre = parseInt(chapitreSelectTop.value);
+      chapitreSelectBottom.value = currentChapitre;
+      loadChapitre(currentChapitre);
+    };
+
+    chapitreSelectBottom.onchange = () => {
+      currentChapitre = parseInt(chapitreSelectBottom.value);
+      chapitreSelectTop.value = currentChapitre;
+      loadChapitre(currentChapitre);
+    };
+
+    // Initial load
+    loadChapitre(currentChapitre);
+  </script>
+</body>
+</html>

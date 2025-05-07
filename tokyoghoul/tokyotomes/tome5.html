@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tome 5 - Tokyo Ghoul</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fc;
+      color: #222;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .back-btn {
+      padding: 10px 20px;
+      background: #f00;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      display: inline-block;
+      margin-top: 30px;
+    }
+
+    .back-btn:hover {
+      background: #c00;
+    }
+
+    .manga-page {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tome 5 - Tokyo Ghoul</h1>
+
+    <div id="manga-container"></div>
+
+    <a href="../indextokyo.html" class="back-btn">Retour aux tomes</a>
+  </div>
+
+  <script>
+    const container = document.getElementById('manga-container');
+    const totalPages = 195;
+    const baseUrl = 'https://s22.anime-sama.me/s1/scans/Tokyo%20Ghoul/5/TokyoGhoulTome5-';
+
+    for (let i = 1; i <= totalPages; i++) {
+      const num = i.toString().padStart(3, '0');
+      const img = document.createElement('img');
+      img.src = `${baseUrl}${num}.jpg`;
+      img.alt = `Page ${i}`;
+      img.className = 'manga-page';
+      img.onerror = () => img.remove(); // Supprime les pages inexistantes
+      container.appendChild(img);
+    }
+  </script>
+</body>
+</html>

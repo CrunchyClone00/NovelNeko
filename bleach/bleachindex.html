@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>Bleach</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fc;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      animation: fadeIn 1s ease-out;
+      align-items: center;
+    }
+
+    .cover {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .credits {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #0056b3;
+    }
+
+    .chapitres {
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+    }
+
+    .chapitres h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .liste-chapitres {
+      list-style: none;
+      padding: 0;
+      columns: 8;
+      gap: 2rem;
+    }
+
+    .liste-chapitres li {
+      margin: 0.5rem 0;
+    }
+
+    .liste-chapitres a {
+      text-decoration: none;
+      color: #444;
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+    }
+
+    .liste-chapitres a:hover {
+      color: #f00;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <img src="../images/bleach.jpg" alt="Bleach" class="cover">
+    <div class="content">
+      <h1>Bleach</h1>
+      <p class="credits">Trad : Glénat<br>Statut : Terminé</p>
+      <a href="../index.html" class="back-btn">Retour à l'accueil</a>
+    </div>
+  </section>
+
+  <section class="chapitres">
+    <h2>📘 Tomes disponibles</h2>
+    <ul class="liste-chapitres" id="listeTomes"></ul>
+  </section>
+
+  <script>
+    const liste = document.getElementById("listeTomes");
+    for (let i = 1; i <= 74; i++) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = `bleachlecture.html?tome=${i}`;
+      a.target = "_blank";
+      a.textContent = `Tome ${i}`;
+      li.appendChild(a);
+      liste.appendChild(li);
+    }
+  </script>
+</body>
+</html>
