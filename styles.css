@@ -125,6 +125,62 @@ body {
   transform: scale(1.05);
 }
 
+/* FAQ Section */
+.faq-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  margin-top: 40px;
+  border-top: 3px solid #0073e6;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  font-size: 1.5em;
+  color: #0073e6;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.faq-item h3:hover {
+  color: #005bb5;
+}
+
+.faq-item p {
+  font-size: 1.5em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Animation on click for expanding the answers */
+.faq-item p {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.faq-item.open p {
+  max-height: 1000px; /* Une valeur suffisamment grande pour toutes les réponses */
+  opacity: 1;
+}
+
+
 
 
 /* Adaptation responsive mobile */

@@ -88,7 +88,7 @@
   <section class="header">
     <h1>📚 Light Novels Traduit par Ziom</h1>
     <p class="credits">
-      Lecture gratuite en ligne • Traductions FR • Mise à jour régulière<br>
+      Lecture gratuite en ligne • Traductions FR • Mise à jour régulière<br>✉️ <a href="about_contact.html" class="link">Besoin d'aide ? Contact & Support</a> 
     </p>
   </section>
   <section class="chapitres">
@@ -169,6 +169,62 @@
     </a>
     <!-- Ajoute d'autres mangas ici -->
   </div>
+<!-- Dernière section de ton contenu -->
 </section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <h2>❓ FAQ - Questions fréquentes</h2>
+
+  <div class="faq-item">
+    <h3>Qu'est-ce qu'un light novel ?</h3>
+    <p>Un light novel, c’est un roman japonais pour jeunes adultes. Facile à lire, souvent illustré, surtout sur la couverture. Il touche à des genres variés : aventure, romance, fantasy. Beaucoup sont devenus des anime ou mangas. Ces dernières années, leur popularité a explosé, avec des titres comme Sword Art Online, Re:Zero, Mushoku Tensei.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Les traductions sont-elles mises à jour régulièrement ?</h3>
+    <p>Oui, nous faisons de notre mieux pour proposer des traductions de qualité et les mettre à jour régulièrement en fonction de l'avancement des séries.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Comment puis-je soutenir le site ?</h3>
+    <p>Vous pouvez soutenir le site en partageant vos titres préférés avec vos amis et en nous aidant à faire connaître nos traductions sur les réseaux sociaux.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Pourquoi certaines traductions prennent-elles du temps ?</h3>
+    <p>La traduction d'un light novel demande du temps et des efforts pour garantir sa qualité. Nous nous efforçons de vous fournir un contenu précis et bien traduit, ce qui peut parfois entraîner des délais.</p>
+  </div>
+</section>
+<script>
+// Ajouter un événement de clic pour chaque question FAQ
+document.querySelectorAll('.faq-item h3').forEach(item => {
+  item.addEventListener('click', function() {
+    const parent = item.parentElement; // L'élément parent .faq-item
+    const p = parent.querySelector('p'); // La réponse à la question
+    
+    // Vérifier si la réponse est déjà visible
+    const isOpen = parent.classList.contains('open');
+    
+    // Fermer toutes les autres réponses avant d'ouvrir celle-ci
+    document.querySelectorAll('.faq-item').forEach(faq => {
+      if (faq !== parent) {
+        faq.classList.remove('open');
+        faq.querySelector('p').style.maxHeight = null;
+      }
+    });
+    
+    // Ouvrir ou fermer la réponse
+    if (isOpen) {
+      parent.classList.remove('open');
+      p.style.maxHeight = null;
+    } else {
+      parent.classList.add('open');
+      p.style.maxHeight = p.scrollHeight + "px"; // Dérouler l'élément
+    }
+  });
+});
+</script>
+</body>
 </body>
 </html>
