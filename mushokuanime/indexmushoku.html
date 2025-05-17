@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>Mushoku Tensei</title>
+  <style>
+    body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fc;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    animation: fadeIn 1s ease-out;
+    align-items: center;
+  }
+
+  .cover {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .credits {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .back-btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  .back-btn:hover {
+    background: #0056b3;
+  }
+
+  .chapitres {
+    padding: 2rem;
+    animation: slideUp 1s ease-out;
+  }
+
+  .chapitres h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .liste-chapitres {
+    list-style: none;
+    padding: 0;
+    columns: 2; /* Affiche les tomes sur 2 colonnes comme sur PC */
+    gap: 2rem;
+  }
+
+  .liste-chapitres li {
+    margin: 0.5rem 0;
+  }
+
+  .liste-chapitres a {
+    text-decoration: none;
+    color: #444;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+  }
+
+  .liste-chapitres a:hover {
+    color: #f00;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+  <section class="header">
+    <img src="../images/mushokuanime.jpg" alt="Mushoku Tensei" class="cover">
+    <div class="content">
+      <h1>Mushoku Tensei – Réincarnation dans un autre monde</h1>
+      <a href="../index.html" class="back-btn">Retour à l'acceuil</a>
+    </div>
+  </section>
+
+  <section class="chapitres">
+    <h2>📘 Saisons disponibles</h2>
+    <ul class="liste-chapitres">
+      <li><a href="mushokusaisons1/saison1.html" target="_blank">Saison 1</a></li>
+      <li><a href="mushokusaisons2/saison2.html" target="_blank">Saison 2</a></li>
+      
+    </ul>
+  </section>
+
+  <script>
+  // Fonction pour déterminer le nom du navigateur
+  function obtenirNavigateur() {
+    const ua = navigator.userAgent;
+
+    if (ua.includes("Firefox/")) return "Firefox";
+    if (ua.includes("Edg/")) return "Edge";
+    if (ua.includes("Chrome/")) return "Chrome";
+    if (ua.includes("Safari/") && !ua.includes("Chrome")) return "Safari";
+    if (ua.includes("OPR/") || ua.includes("Opera")) return "Opera";
+    return "Navigateur inconnu";
+  }
+
+  // Fonction pour déterminer le système d'exploitation
+  function obtenirOS() {
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/windows phone/i.test(ua)) return "Windows Phone";
+    if (/android/i.test(ua)) return "Android";
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS";
+    if (/Macintosh/i.test(ua) && 'ontouchend' in document) return "iPadOS";
+    if (/Mac/i.test(ua)) return "macOS";
+    if (/Win/i.test(ua)) return "Windows";
+    if (/Linux/i.test(ua)) return "Linux";
+
+    return "Système inconnu";
+  }
+
+  // Fonction principale pour envoyer les informations au webhook Discord
+  function enregistrerConnexion() {
+    const os = obtenirOS();
+    const navigateur = obtenirNavigateur();
+    const langue = navigator.language || 'Inconnue';
+
+    // Obtenir la date et l'heure actuelles
+    const maintenant = new Date();
+    const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    const heureStr = maintenant.toLocaleTimeString('fr-FR');
+
+    const webhookUrl = 'https://discord.com/api/webhooks/1373416432783593572/HM2Cr8ot0Jv0-qWQb32vNp0kL2QgmZLOwypgYLyKKM7s3nx6hfFDeukiyMWCrwtYtn5K';
+
+    const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
+
+📅 **Date** : ${dateStr}
+⏰ **Heure** : ${heureStr}
+💻 **Système** : ${os}
+🧭 **Navigateur** : ${navigateur}
+🌍 **Langue du navigateur** : ${langue}
+`;
+
+    const data = {
+      content: message
+    };
+
+    fetch(webhookUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log('Connexion enregistrée sur Discord');
+      } else {
+        console.error("Erreur lors de l'envoi du message");
+      }
+    })
+    .catch(error => {
+      console.error("Erreur réseau :", error);
+    });
+  }
+
+  // Appel automatique de la fonction à chaque chargement de page
+  window.onload = enregistrerConnexion;
+</script>
+</body>
+</html>
