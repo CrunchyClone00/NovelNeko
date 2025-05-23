@@ -5,100 +5,225 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>À propos & Contact</title>
   <style>
+    :root {
+      --primary: #3a7bd5;
+      --primary-glow: #4e9aff;
+      --secondary: #00d2ff;
+      --accent: #ff6b6b;
+      --background-start: #0f172a;
+      --background-end: #020617;
+      --card-bg: rgba(15, 23, 42, 0.7);
+      --card-hover: rgba(30, 41, 59, 0.9);
+      --card-border: rgba(99, 102, 241, 0.2);
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-accent: #f8fafc;
+    }
+
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8f9fc;
-      color: #222;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--background-start), var(--background-end));
+      color: var(--text-primary);
       margin: 0;
       padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      opacity: 0.5;
+      pointer-events: none;
+      animation: float linear infinite;
     }
 
     .header {
       text-align: center;
       padding: 2rem;
-      background: #fff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      animation: fadeIn 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 2rem auto;
     }
 
     .header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 15px rgba(74, 222, 255, 0.4);
     }
 
     .header .credits {
-      color: #666;
-      font-size: 0.95rem;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
     }
 
     .section {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 2rem auto;
-      background: #fff;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
       padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      animation: slideUp 1s ease-out;
+      position: relative;
+      z-index: 1;
     }
 
     .section h2 {
-      color: #333;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      color: var(--text-accent);
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 10px rgba(74, 222, 255, 0.2);
     }
 
     .section p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: var(--text-secondary);
     }
 
     .contact-form input,
     .contact-form textarea {
       width: 100%;
-      padding: 12px;
+      padding: 1rem;
       margin-bottom: 1rem;
-      border: 1px solid #ccc;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
       border-radius: 8px;
+      color: var(--text-primary);
       font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(74, 222, 255, 0.2);
     }
 
     .contact-form button {
-      padding: 12px 24px;
-      background: #007bff;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
       color: white;
       border: none;
+      padding: 0.8rem 1.5rem;
       border-radius: 8px;
       cursor: pointer;
-      font-weight: bold;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
     }
 
     .contact-form button:hover {
-      background: #0056b3;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
     }
 
     .confirmation-message {
       display: none;
       margin-top: 1rem;
-      background: #28a745;
-      color: white;
-      padding: 10px;
+      background: rgba(40, 167, 69, 0.2);
+      border: 1px solid #28a745;
+      color: var(--text-accent);
+      padding: 1rem;
       border-radius: 8px;
+      animation: fadeIn 0.5s ease-out;
     }
 
     .back-link {
       text-align: center;
-      margin-top: 2rem;
+      margin: 2rem auto;
+      position: relative;
+      z-index: 1;
     }
 
     .back-link a {
-      color: #007bff;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 0.8rem 1.5rem;
       text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
     }
 
     .back-link a:hover {
-      text-decoration: underline;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0;
+      }
+      20% { opacity: 0.5; }
+      80% { opacity: 0.5; }
+      100% {
+        transform: translateY(-100vh) translateX(20px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+
+      .header h1 {
+        font-size: 1.8rem;
+      }
+
+      .section {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div id="particles"></div>
 
   <section class="header">
     <h1>📚 Light Novels Traduit par Ziom</h1>
@@ -109,7 +234,7 @@
 
   <div class="section">
     <h2>À propos</h2>
-    <p>Ce site est une plateforme non officielle dédiée à la lecture de Light Novels traduits en français. L’objectif est de permettre à tous les fans de profiter gratuitement de leurs histoires préférées, avec un accès facile depuis n’importe quel appareil.</p>
+    <p>Ce site est une plateforme non officielle dédiée à la lecture de Light Novels traduits en français. L'objectif est de permettre à tous les fans de profiter gratuitement de leurs histoires préférées, avec un accès facile depuis n'importe quel appareil.</p>
   </div>
 
   <div class="section">
@@ -132,48 +257,68 @@
   </div>
 
   <script>
-        // Fonction pour envoyer le formulaire au Webhook Discord
-        function submitForm() {
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
+    function createParticles() {
+      const particlesContainer = document.createElement('div');
+      particlesContainer.id = 'particles';
+      document.body.insertBefore(particlesContainer, document.body.firstChild);
+      
+      const count = window.innerWidth < 768 ? 30 : 60;
+      
+      for (let i = 0; i < count; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.width = `${Math.random() * 3 + 1}px`;
+        particle.style.height = particle.style.width;
+        particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        
+        particlesContainer.appendChild(particle);
+      }
+    }
 
-            if (email === "" || message === "") {
-                alert("Veuillez remplir tous les champs.");
-                return;
-            }
+    function submitForm() {
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
 
-            // URL du Webhook Discord
-            const webhookUrl = "https://discord.com/api/webhooks/1372524467988992053/FYsvad_qNTSH9j5-xhmgn5ON0sI7M_TrYPFo02psxCiA3f6N5izAhHX_S3Y7hIRbLchX";
+      if (email === "" || message === "") {
+        alert("Veuillez remplir tous les champs.");
+        return;
+      }
 
-            // Données à envoyer au Webhook Discord
-            const data = {
-                content: `Nouveau message de contact\n**Email :** ${email}\n**Message :** ${message}`
-            };
+      const webhookUrl = "https://discord.com/api/webhooks/1372524467988992053/FYsvad_qNTSH9j5-xhmgn5ON0sI7M_TrYPFo02psxCiA3f6N5izAhHX_S3Y7hIRbLchX";
 
-            // Envoi des données via Fetch
-            fetch(webhookUrl, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Afficher le message de confirmation
-                    document.getElementById("confirmationMessage").style.display = "block";
-                    document.getElementById("email").value = "";
-                    document.getElementById("message").value = "";
-                } else {
-                    alert("Une erreur est survenue. Veuillez réessayer.");
-                }
-            })
-            .catch(error => {
-                console.error("Erreur:", error);
-                alert("Une erreur est survenue. Veuillez réessayer.");
-            });
+      const data = {
+        content: `Nouveau message de contact\n**Email :** ${email}\n**Message :** ${message}`
+      };
+
+      fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById("confirmationMessage").style.display = "block";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+        } else {
+          alert("Une erreur est survenue. Veuillez réessayer.");
         }
-    </script>
+      })
+      .catch(error => {
+        console.error("Erreur:", error);
+        alert("Une erreur est survenue. Veuillez réessayer.");
+      });
+    }
 
+    window.onload = function() {
+      createParticles();
+    };
+  </script>
 </body>
 </html>
