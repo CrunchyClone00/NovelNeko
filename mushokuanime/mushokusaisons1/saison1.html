@@ -5,79 +5,222 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.8" />
   <title>Mushoku Tensei - Saison 1</title>
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f8f9fc;
-      color: #222;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    :root {
+      --primary: #3a7bd5;
+      --primary-glow: #4e9aff;
+      --secondary: #00d2ff;
+      --accent: #ff6b6b;
+      --background-start: #0f172a;
+      --background-end: #020617;
+      --card-bg: rgba(15, 23, 42, 0.7);
+      --card-hover: rgba(30, 41, 59, 0.9);
+      --card-border: rgba(99, 102, 241, 0.2);
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-accent: #f8fafc;
     }
-    h1 {
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--background-start), var(--background-end));
+      color: var(--text-primary);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      animation: fadeIn 1s ease-out;
+      align-items: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .cover {
+      max-width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .cover:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 15px rgba(74, 222, 255, 0.4);
+    }
+
+    .credits {
+      color: var(--text-secondary);
+      font-size: 1rem;
       margin-bottom: 1.5rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 1rem;
-    }
-    a {
-      text-decoration: none;
-      color: #007bff;
-      font-size: 1.2rem;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #0056b3;
-    }
+
     .back-btn {
       display: inline-block;
-      margin-top: 2rem;
-      background: #007bff;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
       color: white;
-      padding: 0.5rem 1rem;
+      padding: 0.8rem 1.5rem;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s ease;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+      margin-top: 2rem;
     }
+
     .back-btn:hover {
-      background: #0056b3;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+    }
+
+    .chapitres {
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .chapitres h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--text-accent);
+      text-align: center;
+      text-shadow: 0 0 10px rgba(74, 222, 255, 0.2);
+    }
+
+    .liste-chapitres {
+      list-style: none;
+      padding: 0;
+      columns: 2;
+      gap: 2rem;
+    }
+
+    .liste-chapitres li {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .liste-chapitres li:hover {
+      transform: translateX(10px);
+    }
+
+    .liste-chapitres a {
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+    }
+
+    .liste-chapitres a:hover {
+      color: var(--secondary);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+
+      .cover {
+        max-width: 140px;
+        margin: 0 auto;
+      }
+
+      .liste-chapitres {
+        columns: 1;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Mushoku Tensei – Saison 1 (VOSTFR)</h1>
-  <ul>
-    <li><a href="episode1.html" target="_blank">Épisode 1 - Le Chômeur réincarné</a></li>
-    <li><a href="episode2.html" target="_blank">Épisode 2 - Le Professeur</a></li>
-    <li><a href="episode3.html" target="_blank">Épisode 3 - Amis</a></li>
-    <li><a href="episode4.html" target="_blank">Épisode 4 - Conseil de famille au pied levé</a></li>
-    <li><a href="episode5.html" target="_blank">Épisode 5 - La violence de la jeune demoiselle</a></li>
-    <li><a href="episode6.html" target="_blank">Épisode 6 - Jour de congé à Roa</a></li>
-    <li><a href="episode7.html" target="_blank">Épisode 7 - Ce que réservent les efforts fournis</a></li>
-    <li><a href="episode8.html" target="_blank">Épisode 8 - Le premier tournant</a></li>
-    <li><a href="episode9.html" target="_blank">Épisode 9 - Rencontre fortuite</a></li>
-    <li><a href="episode10.html" target="_blank">Épisode 10 - La valeur de la vie et le premier travail</a></li>
-    <li><a href="episode11.html" target="_blank">Épisode 11 - Les Enfants et le Guerrier</a></li>
-    <li><a href="episode12.html" target="_blank">Épisode 12 - La demoiselle aux yeux démoniaques</a></li>
-    <li><a href="episode13.html" target="_blank">Épisode 13 - Chassé-croisé</a></li>
-    <li><a href="episode14.html" target="_blank">Épisode 14 - Coûteuse gratuité</a></li>
-    <li><a href="episode15.html" target="_blank">Épisode 15 - Quiétude à Doldia </a></li>
-    <li><a href="episode16.html" target="_blank">Épisode 16 - Dispute de famille</a></li>
-    <li><a href="episode17.html" target="_blank">Épisode 17 - Retrouvailles</a></li>
-    <li><a href="episode18.html" target="_blank">Épisode 18 - À chacun son périple</a></li>
-    <li><a href="episode19.html" target="_blank">Épisode 19 - Choix de parcours</a></li>
-    <li><a href="episode20.html" target="_blank">Épisode 20 - Le jour où ma petite sœur est née</a></li>
-    <li><a href="episode21.html" target="_blank">Épisode 21 - Le deuxième tournant</a></li>
-    <li><a href="episode22.html" target="_blank">Épisode 22 - Le rêve devenu réalité</a></li>
-    <li><a href="episode23.html" target="_blank">Épisode 23 - Pas à pas après l'éveil</a></li>
-    <li><a href="episodeoav.html" target="_blank">Épisode 24 (OAV) - La chasse aux gobelins d'Eris</a></li>
+  <section class="header">
+    <img src="../../images/mushokuanime.jpg" alt="Mushoku Tensei" class="cover">
+    <div class="content">
+      <h1>Mushoku Tensei – Saison 1 (VOSTFR)</h1>
+      <p class="credits">Liste des épisodes de la saison 1</p>
+      <a href="../indexmushoku.html" class="back-btn">Retour</a>
+    </div>
+  </section>
 
-    <!-- Ajoute autant d'épisodes que nécessaire -->
-  </ul>
-
-  <a href="../indexmushoku.html" class="back-btn">Retour</a>
+  <section class="chapitres">
+    <h2>📺 Épisodes</h2>
+    <ul class="liste-chapitres">
+      <li><a href="episode1.html" target="_blank">Épisode 1 - Le Chômeur réincarné</a></li>
+      <li><a href="episode2.html" target="_blank">Épisode 2 - Le Professeur</a></li>
+      <li><a href="episode3.html" target="_blank">Épisode 3 - Amis</a></li>
+      <li><a href="episode4.html" target="_blank">Épisode 4 - Conseil de famille au pied levé</a></li>
+      <li><a href="episode5.html" target="_blank">Épisode 5 - La violence de la jeune demoiselle</a></li>
+      <li><a href="episode6.html" target="_blank">Épisode 6 - Jour de congé à Roa</a></li>
+      <li><a href="episode7.html" target="_blank">Épisode 7 - Ce que réservent les efforts fournis</a></li>
+      <li><a href="episode8.html" target="_blank">Épisode 8 - Le premier tournant</a></li>
+      <li><a href="episode9.html" target="_blank">Épisode 9 - Rencontre fortuite</a></li>
+      <li><a href="episode10.html" target="_blank">Épisode 10 - La valeur de la vie et le premier travail</a></li>
+      <li><a href="episode11.html" target="_blank">Épisode 11 - Les Enfants et le Guerrier</a></li>
+      <li><a href="episode12.html" target="_blank">Épisode 12 - La demoiselle aux yeux démoniaques</a></li>
+      <li><a href="episode13.html" target="_blank">Épisode 13 - Chassé-croisé</a></li>
+      <li><a href="episode14.html" target="_blank">Épisode 14 - Coûteuse gratuité</a></li>
+      <li><a href="episode15.html" target="_blank">Épisode 15 - Quiétude à Doldia </a></li>
+      <li><a href="episode16.html" target="_blank">Épisode 16 - Dispute de famille</a></li>
+      <li><a href="episode17.html" target="_blank">Épisode 17 - Retrouvailles</a></li>
+      <li><a href="episode18.html" target="_blank">Épisode 18 - À chacun son périple</a></li>
+      <li><a href="episode19.html" target="_blank">Épisode 19 - Choix de parcours</a></li>
+      <li><a href="episode20.html" target="_blank">Épisode 20 - Le jour où ma petite sœur est née</a></li>
+      <li><a href="episode21.html" target="_blank">Épisode 21 - Le deuxième tournant</a></li>
+      <li><a href="episode22.html" target="_blank">Épisode 22 - Le rêve devenu réalité</a></li>
+      <li><a href="episode23.html" target="_blank">Épisode 23 - Pas à pas après l'éveil</a></li>
+      <li><a href="episodeoav.html" target="_blank">Épisode 24 (OAV) - La chasse aux gobelins d'Eris</a></li>
+    </ul>
+  </section>
 </body>
 </html>
