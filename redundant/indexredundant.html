@@ -186,6 +186,66 @@
       border-color: var(--primary);
     }
 
+    /* New styles for the news section */
+    .news-section {
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .news-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--text-accent);
+      text-align: center;
+      text-shadow: 0 0 10px rgba(74, 222, 255, 0.2);
+    }
+
+    .news-content {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .news-image {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .news-image:hover {
+      transform: scale(1.05);
+    }
+
+    .news-text {
+      flex: 1;
+    }
+
+    .news-badge {
+      display: inline-block;
+      background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
@@ -212,6 +272,16 @@
       .liste-chapitres {
         columns: 1;
       }
+
+      .news-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .news-image {
+        max-width: 200px;
+        margin: 0 auto;
+      }
     }
   </style>
 </head>
@@ -221,7 +291,28 @@
     <div class="content">
       <h1>Mushoku Tensei - Redundant Reincarnation</h1>
       <p class="credits">Trad : Ziom<br>Statut : En cours<br></p>
-      <a href="../index.html" class="back-btn">Retour à l'acceuil</a>
+      <a href="../index.html" class="back-btn">Retour à l'accueil</a>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <h2>📢 Actualités</h2>
+    <div class="news-content">
+      <img src="../images/tome3-preview.jpg" alt="Tome 3 Preview" class="news-image">
+      <div class="news-text">
+        <span class="news-badge">NOUVEAU</span>
+        <h3>Tome 3 - Sortie Imminente !</h3>
+        <p>Le Tome 3 de Mushoku Tensei – Redundant Reincarnation arrive bientôt !
+           Il sera disponible dès le 8 août.</p>
+        <p>En attendant, découvrez en avant-première une illustration inédite mettant en scène un moment fort :
+           Eris face à son propre fils, sous le regard de Rudeus. Une scène intense qui annonce les enjeux dramatiques de ce nouveau volume.</p>
+           <p>Le tome 3 promet d’être encore plus captivant, avec :</p>
+        <ul>
+          <li>De nouveaux personnages fascinants</li>
+          <li>Des illustrations inédites</li>
+          <li>Une histoire qui vous tiendra en haleine</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -309,6 +400,6 @@
 
   // Appel automatique de la fonction à chaque chargement de page
   window.onload = enregistrerConnexion;
-</script>
+  </script>
 </body>
 </html>
