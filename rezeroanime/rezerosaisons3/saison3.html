@@ -5,72 +5,288 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.8" />
   <title>Re:Zero - Saison 3</title>
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f8f9fc;
-      color: #222;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    :root {
+      --primary: #3a7bd5;
+      --primary-glow: #4e9aff;
+      --secondary: #00d2ff;
+      --accent: #ff6b6b;
+      --background-start: #0f172a;
+      --background-end: #020617;
+      --card-bg: rgba(15, 23, 42, 0.7);
+      --card-hover: rgba(30, 41, 59, 0.9);
+      --card-border: rgba(99, 102, 241, 0.2);
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-accent: #f8fafc;
     }
-    h1 {
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--background-start), var(--background-end));
+      color: var(--text-primary);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      animation: fadeIn 1s ease-out;
+      align-items: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .cover {
+      max-width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .cover:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 15px rgba(74, 222, 255, 0.4);
+    }
+
+    .credits {
+      color: var(--text-secondary);
+      font-size: 1rem;
       margin-bottom: 1.5rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 1rem;
-    }
-    a {
-      text-decoration: none;
-      color: #007bff;
-      font-size: 1.2rem;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #0056b3;
-    }
+
     .back-btn {
       display: inline-block;
-      margin-top: 2rem;
-      background: #007bff;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
       color: white;
-      padding: 0.5rem 1rem;
+      padding: 0.8rem 1.5rem;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s ease;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+      margin-top: 2rem;
     }
+
     .back-btn:hover {
-      background: #0056b3;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+    }
+
+    .chapitres {
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .chapitres h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--text-accent);
+      text-align: center;
+      text-shadow: 0 0 10px rgba(74, 222, 255, 0.2);
+    }
+
+    .liste-chapitres {
+      list-style: none;
+      padding: 0;
+      columns: 3;
+      gap: 2rem;
+    }
+
+    .liste-chapitres li {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .liste-chapitres li:hover {
+      transform: translateX(10px);
+    }
+
+    .liste-chapitres a {
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      cursor: pointer;
+    }
+
+    .liste-chapitres a:hover {
+      color: var(--secondary);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary);
+    }
+
+    .video-container {
+      display: none;
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .video-container.active {
+      display: block;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .episode-title {
+      font-size: 1.5rem;
+      color: var(--text-accent);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+
+      .cover {
+        max-width: 140px;
+        margin: 0 auto;
+      }
+
+      .liste-chapitres {
+        columns: 1;
+      }
+
+      .video-container iframe {
+        height: 250px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Re:Zero – Saison 3 (VOSTFR)</h1>
-  <ul>
-    <li><a href="episode1.html" target="_blank">Épisode 1 - Malice théâtrale</a></li>
-    <li><a href="episode2.html" target="_blank">Épisode 2 - Conclusion dans le feu et la glace</a></li>
-    <li><a href="episode3.html" target="_blank">Épisode 3 - Gorgeous Tiger</a></li>
-    <li><a href="episode4.html" target="_blank">Épisode 4 - Opération reprise de la mairie</a></li>
-    <li><a href="episode5.html" target="_blank">Épisode 5 - Inondation</a></li>
-    <li><a href="episode6.html" target="_blank">Épisode 6 - La condition pour être chevalier</a></li>
-    <li><a href="episode7.html" target="_blank">Épisode 7 - Le nouveau héros et le plus ancien héros</a></li>
-    <li><a href="episode8.html" target="_blank">Épisode 8 - L'homme que j'aimerai un jour</a></li>
-    <li><a href="episode9.html" target="_blank">Épisode 9 - Une ville en guerre</a></li>
-    <li><a href="episode10.html" target="_blank">Épisode 10 - Le combat contre l'avarice</a></li>
-    <li><a href="episode11.html" target="_blank">Épisode 11 -   
-    Liliana Mascarade</a></li>
-    <li><a href="episode12.html" target="_blank">Épisode 12 - Regulus Corneas</a></li>
-    <li><a href="episode13.html" target="_blank">Épisode 13 - Les louanges du guerrier</a></li>
-    <li><a href="episode14.html" target="_blank">Épisode 14 - Theresia van Astrea</a></li>
-    <li><a href="episode15.html" target="_blank">Épisode 15 -   
-    L'horrible banquet</a></li>
-    <li><a href="episode16.html" target="_blank">Épisode 16 -   
-    Résultats de la bataille de Priestella</a></li>
-  </ul>
+  <section class="header">
+    <img src="../../images/rezeroanime.jpg" alt="rezero" class="cover">
+    <div class="content">
+      <h1>Re:Zero – Saison 3 (VOSTFR)</h1>
+      <a href="../indexrezero.html" class="back-btn">Retour</a>
+    </div>
+  </section>
 
-  <a href="../indexrezero.html" class="back-btn">Retour</a>
+  <div id="video-container" class="video-container">
+    <div class="episode-title"></div>
+    <iframe allowfullscreen></iframe>
+    <a href="#" class="back-btn" onclick="hideVideo(); return false;">Retour à la liste des épisodes</a>
+  </div>
+
+  <section class="chapitres">
+    <h2>📺 Épisodes</h2>
+    <ul class="liste-chapitres" id="episodeList"></ul>
+  </section>
+
+  <script>
+    const episodes = [
+'https://vidmoly.to/embed-ovg9vbau8who.html',
+'https://vidmoly.to/embed-eg5ufhpy40wu.html',
+'https://vidmoly.to/embed-8z8ofytykasw.html',
+'https://vidmoly.to/embed-c3r78ghx25mx.html',
+'https://vidmoly.to/embed-m03ri6hk1r76.html',
+'https://vidmoly.to/embed-uq9498dwhmdc.html',
+'https://vidmoly.to/embed-ybbfoqqi9r13.html',
+'https://vidmoly.to/embed-dio0hh1c26vc.html',
+'https://vidmoly.to/embed-gx3i1nf90c2t.html',
+'https://vidmoly.to/embed-6tk1yvt895yl.html',
+'https://vidmoly.to/embed-f6a0fl1ufp2v.html',
+'https://vidmoly.to/embed-66t9nfxeorhy.html',
+'https://vidmoly.to/embed-3ugm941ub9ns.html',
+'https://vidmoly.to/embed-k508gniki9mk.html',
+'https://vidmoly.to/embed-nsi3mcwuzw3i.html',
+'https://vidmoly.to/embed-d012rb2lwbdd.html',
+    ];
+
+    const episodeList = document.getElementById('episodeList');
+    const videoContainer = document.getElementById('video-container');
+    const iframe = videoContainer.querySelector('iframe');
+    const episodeTitle = videoContainer.querySelector('.episode-title');
+
+    episodes.forEach((url, index) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.textContent = `Épisode ${index + 1}`;
+      a.onclick = () => showVideo(index);
+      li.appendChild(a);
+      episodeList.appendChild(li);
+    });
+
+    function showVideo(index) {
+      iframe.src = episodes[index];
+      episodeTitle.textContent = `Épisode ${index + 1}`;
+      videoContainer.classList.add('active');
+      document.querySelector('.chapitres').style.display = 'none';
+      window.scrollTo(0, 0);
+    }
+
+    function hideVideo() {
+      videoContainer.classList.remove('active');
+      document.querySelector('.chapitres').style.display = 'block';
+      iframe.src = '';
+    }
+  </script>
 </body>
 </html>

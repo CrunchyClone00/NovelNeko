@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-  <title>Mushoku Tensei - Saison 2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>Sword Art Online</title>
   <style>
     :root {
       --primary: #3a7bd5;
@@ -29,9 +29,42 @@
       min-height: 100vh;
       position: relative;
       overflow-x: hidden;
-      max-width: 900px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      opacity: 0.5;
+      pointer-events: none;
+      animation: float linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0;
+      }
+      20% { opacity: 0.5; }
+      80% { opacity: 0.5; }
+      100% {
+        transform: translateY(-100vh) translateX(20px) rotate(360deg);
+        opacity: 0;
+      }
     }
 
     .header {
@@ -51,7 +84,7 @@
     }
 
     .cover {
-      max-width: 220px;
+      max-width: 300px;
       border-radius: 10px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease;
@@ -91,7 +124,6 @@
       transition: all 0.3s ease;
       font-weight: 500;
       box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
-      margin-top: 2rem;
     }
 
     .back-btn:hover {
@@ -122,7 +154,7 @@
     .liste-chapitres {
       list-style: none;
       padding: 0;
-      columns: 3;
+      columns: 2;
       gap: 2rem;
     }
 
@@ -146,45 +178,12 @@
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--card-border);
-      cursor: pointer;
     }
 
     .liste-chapitres a:hover {
       color: var(--secondary);
       background: rgba(255, 255, 255, 0.1);
       border-color: var(--primary);
-    }
-
-    .video-container {
-      display: none;
-      padding: 2rem;
-      animation: slideUp 1s ease-out;
-      background: var(--card-bg);
-      backdrop-filter: blur(8px);
-      border-radius: 16px;
-      margin: 2rem;
-      border: 1px solid var(--card-border);
-      position: relative;
-      z-index: 1;
-    }
-
-    .video-container.active {
-      display: block;
-    }
-
-    .video-container iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    .episode-title {
-      font-size: 1.5rem;
-      color: var(--text-accent);
-      margin-bottom: 1rem;
-      text-align: center;
     }
 
     @keyframes fadeIn {
@@ -206,98 +205,34 @@
       }
 
       .cover {
-        max-width: 140px;
+        max-width: 200px;
         margin: 0 auto;
       }
 
       .liste-chapitres {
         columns: 1;
       }
-
-      .video-container iframe {
-        height: 250px;
-      }
     }
   </style>
 </head>
 <body>
   <section class="header">
-    <img src="../../images/mushokuanime.jpg" alt="mtsaisons1" class="cover">
+    <img src="../images/saoanime.jpg" alt="saoanime" class="cover">
     <div class="content">
-      <h1>Mushoku Tensei – Saison 2 (VOSTFR)</h1>
-      <a href="../indexmushoku.html" class="back-btn">Retour</a>
+      <h1>Sword Art Online</h1>
+      <a href="../index.html" class="back-btn">Retour à l'acceuil</a>
     </div>
   </section>
 
-  <div id="video-container" class="video-container">
-    <div class="episode-title"></div>
-    <iframe allowfullscreen></iframe>
-    <a href="#" class="back-btn" onclick="hideVideo(); return false;">Retour à la liste des épisodes</a>
-  </div>
-
   <section class="chapitres">
-    <h2>📺 Épisodes</h2>
-    <ul class="liste-chapitres" id="episodeList"></ul>
+    <h2>📘 Saisons disponibles</h2>
+    <ul class="liste-chapitres">
+      <li><a href="saosaisons1/saison1.html" target="_blank">Saison 1</a></li>
+      <li><a href="saosaisons2/saison2.html" target="_blank">Saison 2</a></li>
+      <li><a href="saosaisons3/saison3.html" target="_blank">Saison 3</a></li>
+      <li><a href="saosaisons4/saison4.html" target="_blank">Saison 4</a></li>
+      
+    </ul>
   </section>
-
-  <script>
-    const episodes = [
-'https://vidmoly.to/embed-ek9120cdxj1n.html',
-'https://vidmoly.to/embed-txzo0o0q598q.html',
-'https://vidmoly.to/embed-inh1rgc6vjbm.html',
-'https://vidmoly.to/embed-xmr7putf7hlm.html',
-'https://vidmoly.to/embed-7uds81ngdqvw.html',
-'https://vidmoly.to/embed-ogqmxgm4qk8f.html',
-'https://vidmoly.to/embed-2fr9joibbx3e.html',
-'https://vidmoly.to/embed-hzuv5qaodpdm.html',
-'https://vidmoly.to/embed-c28m8dmhgghc.html',
-'https://vidmoly.to/embed-elie8uzylsu9.html',
-'https://vidmoly.to/embed-grv61lh03hy1.html',
-'https://vidmoly.to/embed-903tuagngn93.html',
-'https://vidmoly.to/embed-rw7bi2r8r9dn.html',
-'https://vidmoly.to/embed-jgwurtzkq3jg.html',
-'https://vidmoly.to/embed-jd63k10mlt9l.html',
-'https://vidmoly.to/embed-n0ii4jpp6b90.html',
-'https://vidmoly.to/embed-hsoxsbu46fye.html',
-'https://vidmoly.to/embed-3golam1bfvny.html',
-'https://vidmoly.to/embed-7c410gj23h93.html',
-'https://vidmoly.to/embed-u299mf0hln2d.html',
-'https://vidmoly.to/embed-r96zn414nyn7.html',
-'https://vidmoly.to/embed-ry7eqs03k8n2.html',
-'https://vidmoly.to/embed-lrfyq11e15xj.html',
-'https://vidmoly.to/embed-x6jl0af0t3n6.html',
-'https://vidmoly.to/embed-6qm7u7nzu9tz.html',
-
-
-    ];
-
-    const episodeList = document.getElementById('episodeList');
-    const videoContainer = document.getElementById('video-container');
-    const iframe = videoContainer.querySelector('iframe');
-    const episodeTitle = videoContainer.querySelector('.episode-title');
-
-    episodes.forEach((url, index) => {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.textContent = `Épisode ${index + 1}`;
-      a.onclick = () => showVideo(index);
-      li.appendChild(a);
-      episodeList.appendChild(li);
-    });
-
-    function showVideo(index) {
-      iframe.src = episodes[index];
-      episodeTitle.textContent = `Épisode ${index + 1}`;
-      videoContainer.classList.add('active');
-      document.querySelector('.chapitres').style.display = 'none';
-      window.scrollTo(0, 0);
-    }
-
-    function hideVideo() {
-      videoContainer.classList.remove('active');
-      document.querySelector('.chapitres').style.display = 'block';
-      iframe.src = '';
-    }
-  </script>
 </body>
 </html>
