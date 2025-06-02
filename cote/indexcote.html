@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>Classroom of The Elite Year 2</title>
+  <title>Classroom of The Elite Year 1</title>
   <style>
     :root {
       --primary: #3a7bd5;
@@ -306,8 +306,8 @@
   <section class="header">
     <img src="../images/cote.jpg" alt="Classroom of the Elite" class="cover">
     <div class="content">
-      <h1>Classroom of the Elite Year 2 </h1>
-      <p class="credits">Trad : J-Garden<br>Statut : Terminé<br>Year 2 = Aprés la saison 3</p>
+      <h1>Classroom of the Elite Year 1 </h1>
+      <p class="credits">Trad : J-Garden<br>Statut : Terminé<br>Year 1 = Saison 1 - 3</p>
       <a href="../index.html" class="back-btn">Retour à l'acceuil</a>
     </div>
   </section>
@@ -316,7 +316,6 @@
     <h2>📘 Tomes disponibles</h2>
     <ul class="liste-chapitres">
       <li><a href="cotetomes/tome1.html" target="_blank">Tome 1</a></li>
-      <li><a href="cotetomes/tome1-05.html" target="_blank">Tome 1.05</a></li>
       <li><a href="cotetomes/tome2.html" target="_blank">Tome 2</a></li>
       <li><a href="cotetomes/tome3.html" target="_blank">Tome 3</a></li>
       <li><a href="cotetomes/tome4.html" target="_blank">Tome 4</a></li>
@@ -324,143 +323,13 @@
       <li><a href="cotetomes/tome5.html" target="_blank">Tome 5</a></li>
       <li><a href="cotetomes/tome6.html" target="_blank">Tome 6</a></li>
       <li><a href="cotetomes/tome7.html" target="_blank">Tome 7</a></li>
+      <li><a href="cotetomes/tome7-5.html" target="_blank">Tome 7.5</a></li>
       <li><a href="cotetomes/tome8.html" target="_blank">Tome 8</a></li>
-      <li><a href="cotetomes/tome0.html" target="_blank">Tome 0</a></li>
       <li><a href="cotetomes/tome9.html" target="_blank">Tome 9</a></li>
-      <li><a href="cotetomes/tome9-5.html" target="_blank">Tome 9.5</a></li>
       <li><a href="cotetomes/tome10.html" target="_blank">Tome 10</a></li>
-      <li><a href="cotetomes/tome10-25.html" target="_blank">Tome 10.25</a></li>
       <li><a href="cotetomes/tome11.html" target="_blank">Tome 11</a></li>
-      <li><a href="cotetomes/tome12.html" target="_blank">Tome 12</a></li>
-      <li><a href="cotetomes/tome12-5.html" target="_blank">Tome 12.5</a></li>
+      <li><a href="cotetomes/tome11-5.html" target="_blank">Tome 11.5</a></li>
     </ul>
   </section>
-
-  <section class="videos-section">
-    <h2>📹 Résumés vidéo des tomes</h2>
-    <div class="videos-grid">
-      <!-- Vidéo 1 -->
-      <a href="https://vm.tiktok.com/ZNdBeNrof/" target="_blank" class="video-card">
-        <div class="video-thumbnail">
-          <img src="thumbnails/resume-tome1.jpg" alt="Résumé Tome 1">
-          <div class="video-info">
-            <h3>Résumé des Tomes 1-4</h3>
-            <p>Début de la deuxième année</p>
-          </div>
-        </div>
-      </a>
-      
-      <!-- Vidéo 2 -->
-      <a href="https://vm.tiktok.com/ZNdBek3hn/" target="_blank" class="video-card">
-        <div class="video-thumbnail">
-          <img src="thumbnails/resume-tome2-3.jpg" alt="Résumé Tomes 2-3">
-          <div class="video-info">
-            <h3>Résumé des Tomes 4.5-7</h3>
-            <p>Examen</p>
-          </div>
-        </div>
-      </a>
-      
-      <!-- Vidéo 3 -->
-      <a href="https://vm.tiktok.com/ZNdBe8Gbf/" target="_blank" class="video-card">
-        <div class="video-thumbnail">
-          <img src="thumbnails/resume-tome4-5.jpg" alt="Résumé Tomes 4-5">
-          <div class="video-info">
-            <h3>Résumé des Tomes 8-12</h3>
-            <p>Voyage Scolaire</p>
-          </div>
-        </div>
-      </a>
-      
-      <!-- Vidéo 4 -->
-      <a href="https://vm.tiktok.com/ZNdBeF5Tx/" target="_blank" class="video-card">
-        <div class="video-thumbnail">
-          <img src="thumbnails/resume-tome6-7.jpg" alt="Résumé Tomes 6-7">
-          <div class="video-info">
-            <h3>Résumé du Tome 12.5</h3>
-            <p>Trahison</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <script>
-  // Fonction pour déterminer le nom du navigateur
-  function obtenirNavigateur() {
-    const ua = navigator.userAgent;
-
-    if (ua.includes("Firefox/")) return "Firefox";
-    if (ua.includes("Edg/")) return "Edge";
-    if (ua.includes("Chrome/")) return "Chrome";
-    if (ua.includes("Safari/") && !ua.includes("Chrome")) return "Safari";
-    if (ua.includes("OPR/") || ua.includes("Opera")) return "Opera";
-    return "Navigateur inconnu";
-  }
-
-  // Fonction pour déterminer le système d'exploitation
-  function obtenirOS() {
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/windows phone/i.test(ua)) return "Windows Phone";
-    if (/android/i.test(ua)) return "Android";
-    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS";
-    if (/Macintosh/i.test(ua) && 'ontouchend' in document) return "iPadOS";
-    if (/Mac/i.test(ua)) return "macOS";
-    if (/Win/i.test(ua)) return "Windows";
-    if (/Linux/i.test(ua)) return "Linux";
-
-    return "Système inconnu";
-  }
-
-  // Fonction principale pour envoyer les informations au webhook Discord
-  function enregistrerConnexion() {
-    const os = obtenirOS();
-    const navigateur = obtenirNavigateur();
-    const langue = navigator.language || 'Inconnue';
-
-    // Obtenir la date et l'heure actuelles
-    const maintenant = new Date();
-    const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    const heureStr = maintenant.toLocaleTimeString('fr-FR');
-
-    const webhookUrl = 'https://canary.discord.com/api/webhooks/1376200303757496320/-06lIApUM0F2QxJG7cyDPLBq23BgYKhBblJHjUH0gr1U47IG2XIi_LCDvJxwYSi8EOjk';
-
-    const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
-
-📅 **Date** : ${dateStr}
-⏰ **Heure** : ${heureStr}
-💻 **Système** : ${os}
-🧭 **Navigateur** : ${navigateur}
-🌍 **Langue du navigateur** : ${langue}
-`;
-
-    const data = {
-      content: message
-    };
-
-    fetch(webhookUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-    .then(response => {
-      if (response.ok) {
-        console.log('Connexion enregistrée sur Discord');
-      } else {
-        console.error("Erreur lors de l'envoi du message");
-      }
-    })
-    .catch(error => {
-      console.error("Erreur réseau :", error);
-    });
-  }
-
-  // Appel automatique de la fonction à chaque chargement de page
-  window.onload = enregistrerConnexion;
-  </script>
-
 </body>
 </html>
