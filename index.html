@@ -82,6 +82,7 @@
       window.onload = function() {
         enregistrerConnexion();
         createParticles();
+        initSearchFunctionality();
       };
 
       // Fonction pour créer les particules d'animation
@@ -127,6 +128,164 @@
           behavior: 'smooth'
         });
       }
+
+      // Fonctionnalité de recherche
+      function initSearchFunctionality() {
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+        const closeSearch = document.getElementById('close-search');
+        
+        // Collecter tous les titres de novels
+        const allNovels = [];
+        const novelCards = document.querySelectorAll('.novel-card');
+        
+        novelCards.forEach(card => {
+          const title = card.querySelector('h3').textContent;
+          const image = card.querySelector('img').src;
+          const link = card.getAttribute('href');
+          const category = determineCategory(card);
+          
+          allNovels.push({
+            title,
+            image,
+            link,
+            category,
+            element: card
+          });
+        });
+        
+        // Déterminer la catégorie basée sur la section parente
+        function determineCategory(card) {
+          const section = card.closest('.chapitres');
+          if (!section) return 'unknown';
+          
+          const sectionTitle = section.querySelector('h2').textContent.toLowerCase();
+          
+          if (sectionTitle.includes('light novel')) return 'light-novel';
+          if (sectionTitle.includes('manga')) return 'manga';
+          if (sectionTitle.includes('animé')) return 'anime';
+          return 'nouveaute';
+        }
+        
+        // Gérer la recherche
+        searchInput.addEventListener('input', function() {
+          const query = this.value.toLowerCase().trim();
+          
+          if (query.length < 1) {
+            searchResults.classList.remove('active');
+            return;
+          }
+          
+          // Filtrer les résultats
+          const filteredResults = allNovels.filter(novel => 
+            novel.title.toLowerCase().includes(query)
+          );
+          
+          // Afficher les résultats
+          renderSearchResults(filteredResults, query);
+        });
+        
+        // Gérer le clic sur le bouton de fermeture
+        closeSearch.addEventListener('click', function() {
+          searchInput.value = '';
+          searchResults.classList.remove('active');
+        });
+        
+        // Fermer les résultats quand on clique en dehors
+        document.addEventListener('click', function(event) {
+          const isClickInsideSearch = searchInput.contains(event.target) || 
+                                      searchResults.contains(event.target);
+          
+          if (!isClickInsideSearch && searchResults.classList.contains('active')) {
+            searchResults.classList.remove('active');
+          }
+        });
+        
+        // Empêcher la propagation du clic dans la zone de recherche
+        searchResults.addEventListener('click', function(event) {
+          event.stopPropagation();
+        });
+        
+        // Rendre les résultats de recherche
+        function renderSearchResults(results, query) {
+          searchResults.innerHTML = '';
+          
+          if (results.length === 0) {
+            searchResults.innerHTML = '<div class="no-results">Aucun résultat trouvé</div>';
+            searchResults.classList.add('active');
+            return;
+          }
+          
+          // Regrouper par catégorie
+          const categories = {
+            'light-novel': [],
+            'manga': [],
+            'anime': [],
+            'nouveaute': []
+          };
+          
+          results.forEach(novel => {
+            if (categories[novel.category]) {
+              categories[novel.category].push(novel);
+            } else {
+              categories.nouveaute.push(novel);
+            }
+          });
+          
+          // Créer les sections de résultats par catégorie
+          for (const [category, novels] of Object.entries(categories)) {
+            if (novels.length === 0) continue;
+            
+            const categoryTitle = getCategoryTitle(category);
+            const categorySection = document.createElement('div');
+            categorySection.className = 'search-category';
+            categorySection.innerHTML = `<h3>${categoryTitle}</h3>`;
+            
+            novels.forEach(novel => {
+              const resultItem = document.createElement('a');
+              resultItem.className = 'search-result-item';
+              resultItem.href = novel.link;
+              
+              // Mettre en surbrillance la partie correspondante
+              const titleLower = novel.title.toLowerCase();
+              const queryLower = query.toLowerCase();
+              const index = titleLower.indexOf(queryLower);
+              
+              let highlightedTitle = novel.title;
+              if (index !== -1) {
+                const before = novel.title.substring(0, index);
+                const match = novel.title.substring(index, index + query.length);
+                const after = novel.title.substring(index + query.length);
+                highlightedTitle = `${before}<span class="highlight">${match}</span>${after}`;
+              }
+              
+              resultItem.innerHTML = `
+                <img src="${novel.image}" alt="${novel.title}">
+                <div class="search-result-info">
+                  <span class="search-result-title">${highlightedTitle}</span>
+                  <span class="search-result-category">${getCategoryTitle(novel.category)}</span>
+                </div>
+              `;
+              
+              categorySection.appendChild(resultItem);
+            });
+            
+            searchResults.appendChild(categorySection);
+          }
+          
+          searchResults.classList.add('active');
+        }
+        
+        function getCategoryTitle(category) {
+          switch(category) {
+            case 'light-novel': return 'Light Novel';
+            case 'manga': return 'Manga';
+            case 'anime': return 'Animé';
+            case 'nouveaute': return 'Nouveauté';
+            default: return 'Autre';
+          }
+        }
+      }
     </script>
   </head>
   <body>
@@ -134,37 +293,35 @@
     <button id="btnTop" onclick="scrollToTop()" title="Retour en haut">↑</button>
     
     <section class="header">
-      <h1>NovelNeko</h1>
+      <div class="header-container">
+        <h1>NovelNeko</h1>
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <input type="text" id="search-input" placeholder="Rechercher un titre...">
+            <button id="close-search" class="search-close-btn">&times;</button>
+          </div>
+          <div id="search-results" class="search-results-container"></div>
+        </div>
+      </div>
       <p class="credits">
         Lecture gratuite en ligne • Traductions FR • Mise à jour régulière<br>
         ✉️ <a href="about_contact.html" class="link">Besoin d'aide ? Contact & Support</a> 
       </p>
-      </div>
     </section>
 
     <section class="chapitres">
       <h2>DERNIERS AJOUTS</h2>
       <div class="grid-novels">
-        <a href="sao/indexsao.html" class="novel-card nouveaute-card">
-          <img src="images/sao.jpg" alt="SAO">
-          <h3>Sword Art Online</h3>
+        <a href="elfjapon/indexjapon.html" class="novel-card nouveaute-card">
+          <img src="images/elfjapon.jpg" alt="elfjapon">
+          <h3>Welcome to Japan, Ms. Elf!</h3>
+          <span class="badge-apparaitre">NOUVEAUTÉ</span>
+        </a> 
+        <a href="loveelf/indexelf.html" class="novel-card nouveaute-card">
+          <img src="images/loveelf.jpg" alt="elflove">
+          <h3>An Archdemon's Dilemma: How to Love Your Elf Bride</h3>
           <span class="badge-apparaitre">NOUVEAUTÉ</span>
         </a>
-        <a href="cote/indexcote.html" class="novel-card nouveaute-card">
-          <img src="images/cote.jpg" alt="Cote Y1">
-          <h3>Classroom Of The Elite Year 1</h3>
-          <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>
-        <a href="irregular/indexirregular.html" class="novel-card nouveaute-card">
-          <img src="images/irregular.jpg" alt="irregular">
-          <h3>The Irregular at Magic High School</h3>
-          <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>
-        <a href="danmachi/indexdanmachi.html" class="novel-card nouveaute-card">
-          <img src="images/danmachi.jpg" alt="danmachi">
-          <h3>DanMachi: La Légende des Familias</h3>
-          <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>   
       </div>
     </section>
 
@@ -227,6 +384,14 @@
           <img src="images/danmachi.jpg" alt="danmachi">
           <h3>DanMachi: La Légende des Familias</h3>
         </a>
+        <a href="loveelf/indexelf.html" class="novel-card">
+          <img src="images/loveelf.jpg" alt="loveelf">
+          <h3>An Archdemon's Dilemma: How to Love Your Elf Bride</h3>
+        </a>
+        <a href="elfjapon/indexjapon.html" class="novel-card">
+          <img src="images/elfjapon.jpg" alt="elfjapon">
+          <h3>Welcome to Japan, Ms. Elf!</h3>
+        </a>
       </div>
     </section>
 
@@ -264,7 +429,7 @@
           <h3>Re:Zero</h3>
         </a>
         <a href="saoanime/saoindex.html" class="novel-card">
-          <img src="images/saoanime.jpg" alt="saoanime"">
+          <img src="images/saoanime.jpg" alt="saoanime">
           <h3>Sword Art Online</h3>
         </a>
       </div>

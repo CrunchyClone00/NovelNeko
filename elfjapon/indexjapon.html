@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>Sword Art Online</title>
+  <title>Welcome to Japan, Ms. Elf!</title>
   <style>
     :root {
       --primary: #3a7bd5;
@@ -217,70 +217,28 @@
 </head>
 <body>
   <section class="header">
-    <img src="../images/saoanime.jpg" alt="saoanime" class="cover">
+    <img src="../images/elfjapon.jpg" alt="elfjapon" class="cover">
     <div class="content">
-      <h1>Sword Art Online</h1>
+      <h1>Welcome to Japan, Ms. Elf!</h1>
+      <p class="credits">Trad : NovelDeGlace<br>Statut : En cours</p>
       <a href="../index.html" class="back-btn">Retour à l'acceuil</a>
     </div>
   </section>
 
   <section class="chapitres">
-    <h2>📘 Saisons disponibles</h2>
+    <h2>📘 Tomes disponibles</h2>
     <ul class="liste-chapitres">
-      <li><a href="saosaisons1/saison1.html" target="_blank">Saison 1</a></li>
-      <li><a href="saosaisons2/saison2.html" target="_blank">Saison 2</a></li>
-      <li><a href="saosaisons3/saison3.html" target="_blank">Saison 3</a></li>
-      <li><a href="saosaisons4/saison4.html" target="_blank">Saison 4</a></li>
-      
+      <li><a href="elftomes/tome1.html" target="_blank">Tome 1</a></li>
+      <li><a href="elftomes/tome2.html" target="_blank">Tome 2</a></li>
+      <li><a href="elftomes/tome3.html" target="_blank">Tome 3</a></li>
+      <li><a href="elftomes/tome4.html" target="_blank">Tome 4</a></li>
+      <li><a href="elftomes/tome5.html" target="_blank">Tome 5</a></li>
+      <li><a href="elftomes/tome6.html" target="_blank">Tome 6</a></li>
+      <li><a href="elftomes/tome7.html" target="_blank">Tome 7</a></li>
+      <li><a href="elftomes/tome8.html" target="_blank">Tome 8</a></li>
+      <li><a href="elftomes/tome9.html" target="_blank">Tome 9</a></li>
     </ul>
-  </section>
-
-  <!-- Ajout du bouton Lien mort et du formulaire caché -->
-<div id="report-link-container" style="text-align:center; margin-top:2rem;">
-  <button id="report-link-btn" style="background:var(--accent);color:white;padding:0.7rem 1.5rem;border:none;border-radius:8px;cursor:pointer;font-weight:600;">
-    🚨 Lien mort ?
-  </button>
-  <div id="report-form" style="display:none;margin-top:1rem;">
-    <input id="report-episode" type="text" placeholder="Épisode concerné" style="padding:0.5rem;border-radius:6px;border:1px solid #ccc;">
-    <input id="report-season" type="text" placeholder="Saison (optionnel)" style="padding:0.5rem;border-radius:6px;border:1px solid #ccc;">
-    <button id="send-report" style="background:var(--primary);color:white;padding:0.5rem 1.2rem;border:none;border-radius:6px;margin-left:0.5rem;cursor:pointer;">Envoyer</button>
-    <span id="report-confirm" style="margin-left:1rem;color:var(--secondary);display:none;">✅ Signalement envoyé !</span>
-  </div>
-</div>
-
-  <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const btn = document.getElementById('report-link-btn');
-  const form = document.getElementById('report-form');
-  const sendBtn = document.getElementById('send-report');
-  const confirm = document.getElementById('report-confirm');
-
-  btn.onclick = () => {
-    form.style.display = form.style.display === 'none' ? 'block' : 'none';
-    confirm.style.display = 'none';
-  };
-
-  sendBtn.onclick = () => {
-    const episode = document.getElementById('report-episode').value.trim();
-    const saison = document.getElementById('report-season').value.trim();
-    if (!episode) return alert("Merci d'indiquer l'épisode concerné.");
-
-    const webhookUrl = 'https://discord.com/api/webhooks/1380569607668240387/orr6i2aFEPMCcaKD1IiTnXpk4Dqrv0jmyGhHXZvs6RD8cGtP_Ba2-ta5qdlZbBbmZvTf';
-    const message = `🚨 **Lien mort signalé sur Sword Art Online**\nSaison : ${saison || 'Non précisé'}\nÉpisode : ${episode}`;
-
-    fetch(webhookUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content: message })
-    }).then(() => {
-      confirm.style.display = 'inline';
-      setTimeout(() => { form.style.display = 'none'; }, 1500);
-      document.getElementById('report-episode').value = '';
-      document.getElementById('report-season').value = '';
-    });
-  };
-});
-</script>
-
+</section>
 </body>
 </html>
+
