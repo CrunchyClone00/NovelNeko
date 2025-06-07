@@ -227,9 +227,9 @@
   <section class="chapitres">
     <h2>📘 Saisons disponibles</h2>
     <ul class="liste-chapitres">
-      <li><a href="rezerosaisons1/saison1.html" target="_blank">Saison 1 (Director's Cut)</a></li>
-      <li><a href="rezerosaisons2/saison2.html" target="_blank">Saison 2</a></li>
-      <li><a href="rezerosaisons3/saison3.html" target="_blank">Saison 3</a></li>
+      <li><a href="rezerosaisons1/saison1.html">Saison 1 (Director's Cut)</a></li>
+      <li><a href="rezerosaisons2/saison2.html">Saison 2</a></li>
+      <li><a href="rezerosaisons3/saison3.html">Saison 3</a></li>
       
     </ul>
   </section>
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const saison = document.getElementById('report-season').value.trim();
     if (!episode) return alert("Merci d'indiquer l'épisode concerné.");
 
-    const webhookUrl = 'https://discord.com/api/webhooks/1380569607668240387/orr6i2aFEPMCcaKD1IiTnXpk4Dqrv0jmyGhHXZvs6RD8cGtP_Ba2-ta5qdlZbBbmZvTf';
+    const webhookUrl = 'https://discord.com/api/webhooks/1380875111246332045/s9tSuPUsT4KfHW47zwBv_Rf9QBERfS0OMLIsdR8TIxkIYiUs2opCJ8LyQbON2483qkCN';
     const message = `🚨 **Lien mort signalé sur Re:Zero**\nSaison : ${saison || 'Non précisé'}\nÉpisode : ${episode}`;
 
     fetch(webhookUrl, {
