@@ -80,10 +80,10 @@
     <div class="pages" id="pages"></div>
   <script>
     const container = document.getElementById('pages');
-    for(let i=2; i<=46; i++) {
-      const num = String(i).padStart(3, '0');
+    const baseUrl = 'https://stockage.manga-scantrad.net/manga_5f62b8e7e7ebb/vol-01-ch-2/';
+    for(let i=1; i<=31; i++) {
       const img = document.createElement('img');
-      img.src = `chapitre2/${num}.jpg`;
+      img.src = `${baseUrl}${i}.jpg`;
       img.alt = `Page ${i}`;
       container.appendChild(img);
     }
