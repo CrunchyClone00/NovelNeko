@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+  <title>Classroom of The Elite - Saison 1</title>
+  <style>
+    :root {
+      --primary: #3a7bd5;
+      --primary-glow: #4e9aff;
+      --secondary: #00d2ff;
+      --accent: #ff6b6b;
+      --background-start: #0f172a;
+      --background-end: #020617;
+      --card-bg: rgba(15, 23, 42, 0.7);
+      --card-hover: rgba(30, 41, 59, 0.9);
+      --card-border: rgba(99, 102, 241, 0.2);
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-accent: #f8fafc;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--background-start), var(--background-end));
+      color: var(--text-primary);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      animation: fadeIn 1s ease-out;
+      align-items: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .cover {
+      max-width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .cover:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 15px rgba(74, 222, 255, 0.4);
+    }
+
+    .credits {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+      margin-top: 2rem;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+    }
+
+    .chapitres {
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .chapitres h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--text-accent);
+      text-align: center;
+      text-shadow: 0 0 10px rgba(74, 222, 255, 0.2);
+    }
+
+    .liste-chapitres {
+      list-style: none;
+      padding: 0;
+      columns: 3;
+      gap: 2rem;
+    }
+
+    .liste-chapitres li {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .liste-chapitres li:hover {
+      transform: translateX(10px);
+    }
+
+    .liste-chapitres a {
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      cursor: pointer;
+    }
+
+    .liste-chapitres a:hover {
+      color: var(--secondary);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary);
+    }
+
+    .video-container {
+      display: none;
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .video-container.active {
+      display: block;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .episode-title {
+      font-size: 1.5rem;
+      color: var(--text-accent);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+
+      .cover {
+        max-width: 140px;
+        margin: 0 auto;
+      }
+
+      .liste-chapitres {
+        columns: 1;
+      }
+
+      .video-container iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <img src="../../images/coteanime.jpg" alt="cote" class="cover">
+    <div class="content">
+      <h1>Classroom of The Elite – Saison 1 (VOSTFR)</h1>
+      <a href="../indexcote.html" class="back-btn">Retour</a>
+    </div>
+  </section>
+
+  <div id="video-container" class="video-container">
+    <div class="episode-title"></div>
+    <iframe allowfullscreen></iframe>
+    <a href="#" class="back-btn" onclick="hideVideo(); return false;">Retour à la liste des épisodes</a>
+  </div>
+
+  <section class="chapitres">
+    <h2>📺 Épisodes</h2>
+    <ul class="liste-chapitres" id="episodeList"></ul>
+  </section>
+
+  <script>
+    const episodes = [
+'https://vidmoly.to/embed-rjnzgaf5w0ws.html',
+'https://vidmoly.to/embed-cikjuhfts65b.html',
+'https://vidmoly.to/embed-p7zc4vzjz2lb.html',
+'https://vidmoly.to/embed-y4l224ktmch4.html',
+'https://vidmoly.to/embed-jiwcaigraw5w.html',
+'https://vidmoly.to/embed-lr8dl22lgmu6.html',
+'https://vidmoly.to/embed-v9czimxwgm88.html',
+'https://vidmoly.to/embed-pe65p0eciuvq.html',
+'https://vidmoly.to/embed-i4yfmqdil7es.html',
+'https://vidmoly.to/embed-gw1iq07yxijz.html',
+'https://vidmoly.to/embed-9vfps6qsc8xs.html',
+'https://vidmoly.to/embed-nx9clh683mai.html',
+
+];
+
+    const episodeList = document.getElementById('episodeList');
+    const videoContainer = document.getElementById('video-container');
+    const iframe = videoContainer.querySelector('iframe');
+    const episodeTitle = videoContainer.querySelector('.episode-title');
+
+    episodes.forEach((url, index) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.textContent = `Épisode ${index + 1}`;
+      a.onclick = () => showVideo(index);
+      li.appendChild(a);
+      episodeList.appendChild(li);
+    });
+
+    function showVideo(index) {
+      iframe.src = episodes[index];
+      episodeTitle.textContent = `Épisode ${index + 1}`;
+      videoContainer.classList.add('active');
+      document.querySelector('.chapitres').style.display = 'none';
+      window.scrollTo(0, 0);
+    }
+
+    function hideVideo() {
+      videoContainer.classList.remove('active');
+      document.querySelector('.chapitres').style.display = 'block';
+      iframe.src = '';
+    }
+  </script>
+</body>
+</html>
