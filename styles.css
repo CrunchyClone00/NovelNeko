@@ -335,6 +335,327 @@ body {
   box-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
 }
 
+/* Suggestion CTA Section */
+.suggestion-cta {
+  background: linear-gradient(135deg, rgba(58, 123, 213, 0.1), rgba(0, 210, 255, 0.1));
+  backdrop-filter: blur(10px);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--card-border);
+  margin: 2rem 0;
+}
+
+.suggestion-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.suggestion-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px rgba(74, 222, 255, 0.4);
+}
+
+.suggestion-cta p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+}
+
+/* Floating Suggestion Button */
+.suggestion-float-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 98;
+  background: linear-gradient(135deg, var(--accent), #ff8a80);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  transition: all 0.3s ease;
+  animation: suggestionPulse 3s infinite;
+}
+
+.suggestion-float-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+  animation: none;
+}
+
+@keyframes suggestionPulse {
+  0% {
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(255, 107, 107, 0.7);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  }
+}
+
+/* Suggestion Modal */
+.suggestion-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.suggestion-modal-content {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--card-border);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.suggestion-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 1rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.suggestion-modal-header h2 {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.close-modal-btn:hover {
+  background: rgba(255, 107, 107, 0.1);
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+/* Suggestion Form */
+.suggestion-form {
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-accent);
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(15, 23, 42, 0.5);
+  border: 2px solid var(--card-border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  backdrop-filter: blur(4px);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 15px rgba(58, 123, 213, 0.3);
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.5;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group select option {
+  background: var(--background-start);
+  color: var(--text-primary);
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-btn.loading {
+  background: linear-gradient(135deg, var(--text-secondary), #64748b);
+  animation: loadingPulse 1.5s infinite;
+}
+
+@keyframes loadingPulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.submit-btn.success {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.submit-btn.error {
+  background: linear-gradient(135deg, var(--accent), #dc2626);
+}
+
+/* Notifications */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transform: translateX(400px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  max-width: 350px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notification.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.notification.success {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9));
+}
+
+.notification.error {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.9), rgba(220, 38, 38, 0.9));
+}
+
+.notification.info {
+  background: linear-gradient(135deg, rgba(58, 123, 213, 0.9), rgba(0, 210, 255, 0.9));
+}
+
 /* Sections */
 .chapitres {
   padding: 2rem 1rem;
@@ -550,6 +871,14 @@ body {
   .chapitres h2 {
     font-size: 1.75rem;
   }
+  
+  .suggestion-cta h2 {
+    font-size: 2rem;
+  }
+  
+  .suggestion-cta p {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -582,6 +911,38 @@ body {
   
   .search-container {
     max-width: 90%;
+  }
+  
+  .suggestion-cta {
+    padding: 2rem 1rem;
+  }
+  
+  .suggestion-cta h2 {
+    font-size: 1.8rem;
+  }
+  
+  .suggestion-cta p {
+    font-size: 1rem;
+  }
+  
+  .suggestion-modal {
+    padding: 1rem;
+  }
+  
+  .suggestion-modal-content {
+    max-height: 95vh;
+  }
+  
+  .suggestion-modal-header,
+  .suggestion-form {
+    padding: 1.5rem;
+  }
+  
+  .suggestion-float-btn {
+    bottom: 80px;
+    right: 20px;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -645,4 +1006,32 @@ body {
     max-height: 300px;
   }
   
+  .suggestion-cta h2 {
+    font-size: 1.5rem;
+  }
+  
+  .suggestion-cta p {
+    font-size: 0.9rem;
+  }
+  
+  .cta-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .suggestion-float-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.75rem;
+  }
+  
+  .notification {
+    right: 10px;
+    left: 10px;
+    max-width: none;
+    transform: translateY(-100px);
+  }
+  
+  .notification.show {
+    transform: translateY(0);
+  }
 }
