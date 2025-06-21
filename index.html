@@ -78,155 +78,12 @@
         });
       }
 
-      // Fonction pour envoyer une proposition via webhook Discord
-      function envoyerProposition(type, titre, description, utilisateur) {
-        const maintenant = new Date();
-        const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-        const heureStr = maintenant.toLocaleTimeString('fr-FR');
-
-        const webhookUrl = 'https://discord.com/api/webhooks/1384997374887202997/em3PYQniimRzPu540J5YEsdrSVJ2Z_ffawPhIwhcxJ_Rwmipc2rLD6-URrJaabZvTV98';
-
-        const message = `📝 **Nouvelle proposition reçue sur NovelNeko !**
-
-📚 **Type** : ${type}
-📖 **Titre proposé** : ${titre}
-👤 **Proposé par** : ${utilisateur || 'Anonyme'}
-📋 **Description/Raison** : ${description || 'Aucune description fournie'}
-
-📅 **Date** : ${dateStr}
-⏰ **Heure** : ${heureStr}
-
-*Merci pour cette suggestion ! L'équipe NovelNeko va l'examiner.* ✨`;
-
-        const data = {
-          content: message
-        };
-
-        return fetch(webhookUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        });
-      }
-
       // Appel automatique de la fonction à chaque chargement de page
       window.onload = function() {
         enregistrerConnexion();
         createParticles();
         initSearchFunctionality();
-        initSuggestionForm();
       };
-
-      // Initialiser le formulaire de suggestion
-      function initSuggestionForm() {
-        const suggestionBtn = document.getElementById('suggestion-btn');
-        const suggestionModal = document.getElementById('suggestion-modal');
-        const closeSuggestionModal = document.getElementById('close-suggestion-modal');
-        const suggestionForm = document.getElementById('suggestion-form');
-
-        // Ouvrir la modal
-        suggestionBtn.addEventListener('click', function() {
-          suggestionModal.style.display = 'flex';
-          document.body.style.overflow = 'hidden';
-        });
-
-        // Fermer la modal
-        function closeSuggestion() {
-          suggestionModal.style.display = 'none';
-          document.body.style.overflow = 'auto';
-          suggestionForm.reset();
-        }
-
-        closeSuggestionModal.addEventListener('click', closeSuggestion);
-
-        // Fermer en cliquant sur le fond
-        suggestionModal.addEventListener('click', function(e) {
-          if (e.target === suggestionModal) {
-            closeSuggestion();
-          }
-        });
-
-        // Gérer la soumission du formulaire
-        suggestionForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          
-          const submitBtn = suggestionForm.querySelector('.submit-btn');
-          const originalText = submitBtn.textContent;
-          
-          // Désactiver le bouton pendant l'envoi
-          submitBtn.disabled = true;
-          submitBtn.textContent = 'Envoi en cours...';
-          submitBtn.classList.add('loading');
-
-          const formData = new FormData(suggestionForm);
-          const type = formData.get('type');
-          const titre = formData.get('titre');
-          const description = formData.get('description');
-          const utilisateur = formData.get('utilisateur');
-
-          envoyerProposition(type, titre, description, utilisateur)
-            .then(response => {
-              if (response.ok) {
-                // Succès
-                submitBtn.textContent = 'Envoyé ! ✓';
-                submitBtn.classList.remove('loading');
-                submitBtn.classList.add('success');
-                
-                setTimeout(() => {
-                  closeSuggestion();
-                  submitBtn.disabled = false;
-                  submitBtn.textContent = originalText;
-                  submitBtn.classList.remove('success');
-                  
-                  // Afficher une notification de succès
-                  showNotification('Merci pour votre suggestion ! Elle a été envoyée à l\'équipe NovelNeko.', 'success');
-                }, 2000);
-              } else {
-                throw new Error('Erreur de réponse');
-              }
-            })
-            .catch(error => {
-              console.error('Erreur lors de l\'envoi:', error);
-              submitBtn.textContent = 'Erreur ✗';
-              submitBtn.classList.remove('loading');
-              submitBtn.classList.add('error');
-              
-              setTimeout(() => {
-                submitBtn.disabled = false;
-                submitBtn.textContent = originalText;
-                submitBtn.classList.remove('error');
-              }, 3000);
-              
-              showNotification('Erreur lors de l\'envoi. Veuillez réessayer plus tard.', 'error');
-            });
-        });
-      }
-
-      // Fonction pour afficher des notifications
-      function showNotification(message, type = 'info') {
-        const notification = document.createElement('div');
-        notification.className = `notification ${type}`;
-        notification.textContent = message;
-        
-        document.body.appendChild(notification);
-        
-        // Animation d'apparition
-        setTimeout(() => {
-          notification.classList.add('show');
-        }, 100);
-        
-        // Suppression automatique
-        setTimeout(() => {
-          notification.classList.remove('show');
-          setTimeout(() => {
-            if (notification.parentNode) {
-              notification.parentNode.removeChild(notification);
-            }
-          }, 300);
-        }, 5000);
-      }
 
       // Fonction pour créer les particules d'animation
       function createParticles() {
@@ -433,53 +290,8 @@
   </head>
   <body>
     <div id="particles"></div>
+    <a href="suggestion.html" id="btnSuggestion" title="Suggérer une œuvre">💡 Suggestion</a>
     <button id="btnTop" onclick="scrollToTop()" title="Retour en haut">↑</button>
-    
-    <!-- Bouton de suggestion flottant -->
-    <button id="suggestion-btn" class="suggestion-float-btn" title="Proposer un nouveau titre">
-      💡 Suggérer
-    </button>
-
-    <!-- Modal de suggestion -->
-    <div id="suggestion-modal" class="suggestion-modal">
-      <div class="suggestion-modal-content">
-        <div class="suggestion-modal-header">
-          <h2>📝 Proposer un nouveau titre</h2>
-          <button id="close-suggestion-modal" class="close-modal-btn">&times;</button>
-        </div>
-        
-        <form id="suggestion-form" class="suggestion-form">
-          <div class="form-group">
-            <label for="type">Type de contenu *</label>
-            <select name="type" id="type" required>
-              <option value="">Choisissez le type...</option>
-              <option value="Light Novel">📚 Light Novel</option>
-              <option value="Manga">📖 Manga</option>
-              <option value="Anime">🎬 Anime</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="titre">Titre du contenu *</label>
-            <input type="text" name="titre" id="titre" placeholder="Ex: Arifureta, Your name..." required>
-          </div>
-
-          <div class="form-group">
-            <label for="utilisateur">Votre nom (optionnel)</label>
-            <input type="text" name="utilisateur" id="utilisateur" placeholder="Laissez vide pour rester anonyme">
-          </div>
-
-          <div class="form-group">
-            <label for="description">Pourquoi ce titre ? (optionnel)</label>
-            <textarea name="description" id="description" rows="4" placeholder="Décrivez pourquoi vous aimeriez voir ce titre sur NovelNeko..."></textarea>
-          </div>
-
-          <button type="submit" class="submit-btn">
-            🚀 Envoyer ma suggestion
-          </button>
-        </form>
-      </div>
-    </div>
     
     <section class="header">
       <div class="header-container">
@@ -498,28 +310,29 @@
       </p>
     </section>
 
-    <!-- Section CTA pour les suggestions -->
-    <section class="suggestion-cta">
-      <div class="suggestion-cta-content">
-        <h2>💡 Une idée de nouveau titre ?</h2>
-        <p>Aidez-nous à enrichir la bibliothèque NovelNeko ! Proposez vos light novels, mangas et animes préférés.</p>
-        <button onclick="document.getElementById('suggestion-btn').click()" class="cta-btn">
-          📝 Faire une suggestion
-        </button>
-      </div>
-    </section>
-
     <section class="chapitres">
       <h2>DERNIERS AJOUTS</h2>
       <div class="grid-novels">
+        <a href="tunnel/indextunnel.html" class="novel-card nouveaute-card">
+          <img src="images/tunnel.jpg" alt="tunnel">
+          <h3>Tunnel to Summer</h3>
+          <span class="badge-apparaitre">NOUVEAUTÉ</span>
+        </a>
+        <a href="rezerowebnovel/indexweb.html" class="novel-card nouveaute-card">
+          <img src="images/webnovel.jpg" alt="Re:Zero">
+          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro (WebNovel)</h3>
+          <span class="badge-apparaitre">NOUVEAUTÉ</span>
+        </a>
         <a href="sao/indexsao.html" class="novel-card nouveaute-card">
           <img src="images/saotome19.jpg" alt="sword">
           <h3>Sword Art Online Tome 19</h3>
           <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>  
+        </a>   
       </div>
     </section>
+
     
+  
     <section class="chapitres">
       <h2>Light novel</h2>
       <div class="grid-novels">
@@ -534,6 +347,10 @@
         <a href="rezero/indexrezero.html" class="novel-card">
           <img src="images/rezero.jpg" alt="Re:Zero">
           <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro</h3>
+        </a>
+         <a href="rezerowebnovel/indexweb.html" class="novel-card">
+          <img src="images/webnovel.jpg" alt="Re:Zero">
+          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro (WebNovel)</h3>
         </a>
         <a href="tbate/indextbate.html" class="novel-card">
           <img src="images/tbate.jpg" alt="The beginning after the end">
@@ -657,7 +474,7 @@
         </a>
         <a href="sword/indexdword.html" class="novel-card">
           <img src="images/sword.jpg" alt="sword">
-          <h3>Sword of the Demon Hunter: Kijin Gentosho</h3>cv  
+          <h3>Sword of the Demon Hunter: Kijin Gentosho</h3> 
         </a> 
           <a href="simple/indexsimple.html" class="novel-card">
           <img src="images/simple.jpg" alt="simple">
@@ -672,6 +489,14 @@
           <img src="images/chuunibyuu.jpg" alt="simple">
           <h3>My Big Sister Lives in a Fantasy World</h3>
         </a>  
+        <a href="prince/indexprince.html" class="novel-card">
+          <img src="images/prince.jpg" alt="prince">
+          <h3>The Insipid Prince</h3>
+        </a>
+        <a href="tunnel/indextunnel.html" class="novel-card">
+          <img src="images/tunnel.jpg" alt="tunnel">
+          <h3>Tunnel to Summer</h3>
+        </a>
       </div>
     </section>
 
@@ -715,6 +540,10 @@
         <a href="saoanime/saoindex.html" class="novel-card">
           <img src="images/saoanime.jpg" alt="saoanime">
           <h3>Sword Art Online</h3>
+        </a>
+        <a href="lordanime/lordindex.html" class="novel-card">
+          <img src="images/lord.jpg" alt="lordanime">
+          <h3>Lord of the Mysteries</h3>
         </a>
       </div>
     </section>

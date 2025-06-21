@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tome 2 - Alya Sometimes Hides Her Feelings in Russian</title>
+  <title>Tome 5 - The Eminence in Shadow</title>
   <style>
     :root {
       --primary: #3a7bd5;
@@ -166,17 +166,54 @@
   </style>
 </head>
 <body>
+  <div id="particles"></div>
+  
   <div class="container">
-    <h1>Tome 2 - Alya Sometimes Hides Her Feelings in Russian</h1>
+    <h1>Tome 5 - The Eminence in Shadow</h1>
 
-    <!-- Bouton pour ouvrir le PDF sur mobile -->
-    <a class="open-pdf-btn" href="tome2.pdf" target="_blank">📖 Ouvrir le PDF</a>
+    <div class="pdf-container">
+      <!-- Bouton pour ouvrir le PDF sur mobile -->
+      <a class="open-pdf-btn" href="tome5.pdf" target="_blank">
+        📖 Ouvrir le PDF
+      </a>
 
-    <!-- PDF intégré pour PC uniquement -->
-    <embed id="pdf-viewer" src="tome2.pdf" type="application/pdf" />
+      <!-- PDF intégré pour PC uniquement -->
+      <embed id="pdf-viewer" src="tome5.pdf" type="application/pdf" />
+    </div>
 
-    <br><br>
-    <a href="../indexalya.html" class="back-btn">Retour aux tomes</a>
+    <div style="text-align: center;">
+      <a href="../indexeminence.html" class="back-btn">
+        ← Retour aux tomes
+      </a>
+    </div>
   </div>
+
+  <script>
+    function createParticles() {
+      const particlesContainer = document.createElement('div');
+      particlesContainer.id = 'particles';
+      document.body.insertBefore(particlesContainer, document.body.firstChild);
+      
+      const count = window.innerWidth < 768 ? 30 : 60;
+      
+      for (let i = 0; i < count; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.width = `${Math.random() * 3 + 1}px`;
+        particle.style.height = particle.style.width;
+        particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        
+        particlesContainer.appendChild(particle);
+      }
+    }
+
+    window.onload = function() {
+      createParticles();
+    };
+  </script>
 </body>
 </html>

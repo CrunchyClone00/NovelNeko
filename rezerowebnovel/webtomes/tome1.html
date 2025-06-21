@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tome 2 - Alya Sometimes Hides Her Feelings in Russian</title>
+  <title>Tome 1 - Re:Zero Web Novel PDF</title>
   <style>
     :root {
       --primary: #3a7bd5;
@@ -121,11 +121,42 @@
       font-weight: 500;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+      margin-right: 1rem;
     }
 
     .back-btn:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+    }
+
+    .info-section {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease-out 0.2s both;
+    }
+
+    .info-section h3 {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .info-section p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: bold;
     }
 
     @keyframes float {
@@ -162,21 +193,35 @@
       .pdf-container {
         padding: 1rem;
       }
+
+      .info-section {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div id="particles"></div>
+
   <div class="container">
-    <h1>Tome 2 - Alya Sometimes Hides Her Feelings in Russian</h1>
+    <h1>📖 Tome 1 - Re:Zero Web Novel</h1>
 
-    <!-- Bouton pour ouvrir le PDF sur mobile -->
-    <a class="open-pdf-btn" href="tome2.pdf" target="_blank">📖 Ouvrir le PDF</a>
+    <div class="info-section">
+      <h3>🌟 À propos de ce tome</h3>
+      <p>Le <span class="highlight">Tome 1</span> du Web Novel Re:Zero marque le début de l'aventure de Subaru Natsuki dans un monde parallèle. Ce premier tome couvre l'arrivée de Subaru, sa rencontre avec Emilia, et ses premières expériences avec le pouvoir "Return by Death".</p>
+      <p><strong>Contenu :</strong> Chapitres 1 à 22 du Web Novel originale</p>
+      <p><strong>Note :</strong> Cette version PDF contient la traduction complète du tome avec toutes les scènes détaillées de la version web.</p>
+    </div>
 
-    <!-- PDF intégré pour PC uniquement -->
-    <embed id="pdf-viewer" src="tome2.pdf" type="application/pdf" />
+    <div class="pdf-container">
+      <!-- Bouton pour ouvrir le PDF sur mobile -->
+      <a class="open-pdf-btn" href="tome1.pdf" target="_blank">📖 Ouvrir le PDF</a>
 
-    <br><br>
-    <a href="../indexalya.html" class="back-btn">Retour aux tomes</a>
+      <!-- PDF intégré pour PC uniquement -->
+      <embed id="pdf-viewer" src="tome1.pdf" type="application/pdf" />
+    </div>
+
+    <a href="../indexweb.html" class="back-btn">← Retour</a>
   </div>
 </body>
 </html>

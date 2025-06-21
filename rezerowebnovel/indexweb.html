@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>DanMachi: La Légende des Familias</title>
+  <title>Re:Zero - Web Novel</title>
   <style>
     :root {
       --primary: #3a7bd5;
@@ -124,6 +124,7 @@
       transition: all 0.3s ease;
       font-weight: 500;
       box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+      margin-right: 1rem;
     }
 
     .back-btn:hover {
@@ -162,6 +163,7 @@
       margin: 1rem 0;
       padding: 0.5rem;
       transition: transform 0.3s ease;
+      break-inside: avoid;
     }
 
     .liste-chapitres li:hover {
@@ -174,7 +176,7 @@
       transition: color 0.3s ease;
       font-size: 1.1rem;
       display: block;
-      padding: 0.5rem;
+      padding: 0.8rem;
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--card-border);
@@ -184,6 +186,37 @@
       color: var(--secondary);
       background: rgba(255, 255, 255, 0.1);
       border-color: var(--primary);
+    }
+
+    .description {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      padding: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+      animation: slideUp 1s ease-out 0.2s both;
+    }
+
+    .description h3 {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .description p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: bold;
     }
 
     @keyframes fadeIn {
@@ -212,28 +245,71 @@
       .liste-chapitres {
         columns: 1;
       }
+
+      .chapitres, .description {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div id="particles"></div>
+
   <section class="header">
-    <img src="../images/danmachi.jpg" alt="danmachi" class="cover">
+    <img src="../images/webnovel.jpg" alt="Re:Zero Web Novel" class="cover">
     <div class="content">
-      <h1>DanMachi: La Légende des Familias</h1>
-      <a href="../index.html" class="back-btn">Retour à l'acceuil</a>
+      <h1>📖 Re:Zero Web Novel</h1>
+      <p class="credits">Version Web Novel Originale<br>Traduction : Rezerowebnovelfr<br>Statut : En cours de traduction</p>
+      <a href="../index.html" class="back-btn">🏠 Accueil</a>
     </div>
   </section>
 
-  <section class="chapitres">
-    <h2>📘 Tomes disponibles</h2>
-    <ul class="liste-chapitres">
-      <li><a href="danmachitomes/tome1.html">Tome 1</a></li>
-      <li><a href="danmachitomes/tome2.html">Tome 2</a></li>
-      <li><a href="danmachitomes/tome3.html">Tome 3</a></li>
-      <li><a href="danmachitomes/tome4.html">Tome 4</a></li>
-      <li><a href="danmachitomes/tome5.html">Tome 5</a></li>
+  <section class="description">
+    <h3>🌟 À propos de la Web Novel</h3>
+    <p>Le <span class="highlight">Web Novel Re:Zero</span> est la version originale écrite par Tappei Nagatsuki, publiée gratuitement sur le web. Elle contient plus de détails et de développements que les light novels et l'anime.</p>
+    <p><strong>À savoir :</strong> L'<span class="highlight">Arc V</span> couvre l'intégralité de la saison 3 de l'anime.</p>
+    <p>Cette version offre une expérience de lecture plus approfondie avec des scènes étendues, des monologues intérieurs détaillés et des développements de personnages plus poussés.</p>
+    <p><strong>Note :</strong> Les chapitres sont traduits par rezerowebnovelfr et mis à jour régulièrement.</p>
+  </section>
 
+  <section class="chapitres">
+    <h2>📚 Tomes disponibles</h2>
+    
+    <h3>ARC V : LES ÉTOILES QUI ÉCRIVENT L’HISTOIRE (Saison 3)</h3>
+    <ul class="liste-chapitres">
+      <li><a href="webtomes/tome16.pdf">📖 ARC V - Volume 16</a></li>
+      <li><a href="webtomes/tome17.pdf">📖 ARC V - Volume 17</a></li>
+      <li><a href="webtomes/tome18.pdf">📖 ARC V - Volume 18</a></li>
+      <li><a href="webtomes/tome19.pdf">📖 ARC V - Volume 19</a></li>
+      <li><a href="webtomes/tome20.pdf">📖 ARC V - Volume 20</a></li>
+    </ul>
+
+    <h3>ARC VI : LE CORRIDOR DES SOUVENIRS</h3>
+    <ul class="liste-chapitres">
+      <li><a href="webtomes/tome21.pdf">📖 ARC VI - Volume 21</a></li>
+      <li><a href="webtomes/tome22.pdf">📖 ARC VI - Volume 22</a></li>
+      <li><a href="webtomes/tome23.pdf">📖 ARC VI - Volume 23</a></li>
+      <li><a href="webtomes/tome24.pdf">📖 ARC VI - Volume 24</a></li>
+      <li><a href="webtomes/tome25.pdf">📖 ARC VI - Volume 25</a></li>
+    </ul>
+
+    <h3>ARC VII : LA TERRE DES LOUPS</h3>
+    <ul class="liste-chapitres">
+      <li><a href="webtomes/tome26.pdf">📖 ARC VII - Volume 26</a></li>
+      <li><a href="webtomes/tome27.pdf">📖 ARC VII - Volume 27</a></li>
+      <li><a href="webtomes/tome28.pdf">📖 ARC VII - Volume 28 (Bientôt Disponible)</a></li>
+    </ul>
+
+    <h3>ARC VIII : VINCENT VOLLACHIA</h3>
+    <ul class="liste-chapitres">
+      <!-- Ajoute ici les tomes de l'Arc VIII -->
+    </ul>
+
+    <h3>ARC IX : LA LUMIÈRE D’UNE ÉTOILE SANS NOM</h3>
+    <ul class="liste-chapitres">
+      <!-- Ajoute ici les tomes de l'Arc IX -->
+    </ul>
   </section>
 </body>
 </html>
-

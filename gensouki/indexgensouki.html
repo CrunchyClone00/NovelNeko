@@ -220,7 +220,7 @@
     <img src="../images/gensouki.jpg" alt="Seirei Gensouki" class="cover">
     <div class="content">
       <h1>Seirei Gensouki</h1>
-      <p class="credits">Statut : En cours<br></p>
+      <p class="credits">Statut : En cours<br>Reprendre au tome 8</p>
       <a href="../index.html" class="back-btn">Retour à l'acceuil</a>
     </div>
   </section>
@@ -229,85 +229,34 @@
     <h2>📘 Tomes disponibles</h2>
     <ul class="liste-chapitres">
       <li><a href="gensoukitomes/tome1.html">Tome 1</a></li>
+      <li><a href="gensoukitomes/tome2.html">Tome 2</a></li>
+      <li><a href="gensoukitomes/tome3.html">Tome 3</a></li>
+      <li><a href="gensoukitomes/tome4.html">Tome 4</a></li>
+      <li><a href="gensoukitomes/tome5.html">Tome 5</a></li>
+      <li><a href="gensoukitomes/tome6.html">Tome 6</a></li>
+      <li><a href="gensoukitomes/tome7.html">Tome 7</a></li>
+      <li><a href="gensoukitomes/tome8.html">Tome 8</a></li>
+      <li><a href="gensoukitomes/tome9.html">Tome 9</a></li>
+      <li><a href="gensoukitomes/tome10.html">Tome 10</a></li>
+      <li><a href="gensoukitomes/tome11.html">Tome 11</a></li>
+      <li><a href="gensoukitomes/tome12.html">Tome 12</a></li>
+      <li><a href="gensoukitomes/tome13.html">Tome 13</a></li>
+      <li><a href="gensoukitomes/tome14.html">Tome 14</a></li>
+      <li><a href="gensoukitomes/tome15.html">Tome 15</a></li>
+      <li><a href="gensoukitomes/tome16.html">Tome 16</a></li>
+      <li><a href="gensoukitomes/tome17.html">Tome 17</a></li>
+      <li><a href="gensoukitomes/tome18.html">Tome 18</a></li>
+      <li><a href="gensoukitomes/tome19.html">Tome 19</a></li>
+      <li><a href="gensoukitomes/tome20.html">Tome 20</a></li>
+      <li><a href="gensoukitomes/tome21.html">Tome 21</a></li>
+      <li><a href="gensoukitomes/tome22.html">Tome 22</a></li>
+      <li><a href="gensoukitomes/tome23.html">Tome 23</a></li>
+      <li><a href="gensoukitomes/tome24.html">Tome 24</a></li>
+      <li><a href="gensoukitomes/tome25.html">Tome 25</a></li>
+      <li><a href="gensoukitomes/tome26.html">Tome 26</a></li>
+
 
   </section>
-
-  <script>
-  // Fonction pour déterminer le nom du navigateur
-  function obtenirNavigateur() {
-    const ua = navigator.userAgent;
-
-    if (ua.includes("Firefox/")) return "Firefox";
-    if (ua.includes("Edg/")) return "Edge";
-    if (ua.includes("Chrome/")) return "Chrome";
-    if (ua.includes("Safari/") && !ua.includes("Chrome")) return "Safari";
-    if (ua.includes("OPR/") || ua.includes("Opera")) return "Opera";
-    return "Navigateur inconnu";
-  }
-
-  // Fonction pour déterminer le système d'exploitation
-  function obtenirOS() {
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/windows phone/i.test(ua)) return "Windows Phone";
-    if (/android/i.test(ua)) return "Android";
-    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS";
-    if (/Macintosh/i.test(ua) && 'ontouchend' in document) return "iPadOS";
-    if (/Mac/i.test(ua)) return "macOS";
-    if (/Win/i.test(ua)) return "Windows";
-    if (/Linux/i.test(ua)) return "Linux";
-
-    return "Système inconnu";
-  }
-
-  // Fonction principale pour envoyer les informations au webhook Discord
-  function enregistrerConnexion() {
-    const os = obtenirOS();
-    const navigateur = obtenirNavigateur();
-    const langue = navigator.language || 'Inconnue';
-
-    // Obtenir la date et l'heure actuelles
-    const maintenant = new Date();
-    const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    const heureStr = maintenant.toLocaleTimeString('fr-FR');
-
-    const webhookUrl = 'https://canary.discord.com/api/webhooks/1376196971190292611/_2VNBL55XfM34SsNBPTOXcgA6xF66fLrANmPZTspMc95rOTFbevX43yyo2mfIErjfADC';
-
-    const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
-
-📅 **Date** : ${dateStr}
-⏰ **Heure** : ${heureStr}
-💻 **Système** : ${os}
-🧭 **Navigateur** : ${navigateur}
-🌍 **Langue du navigateur** : ${langue}
-`;
-
-    const data = {
-      content: message
-    };
-
-    fetch(webhookUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-    .then(response => {
-      if (response.ok) {
-        console.log('Connexion enregistrée sur Discord');
-      } else {
-        console.error("Erreur lors de l'envoi du message");
-      }
-    })
-    .catch(error => {
-      console.error("Erreur réseau :", error);
-    });
-  }
-
-  // Appel automatique de la fonction à chaque chargement de page
-  window.onload = enregistrerConnexion;
-</script>
 </body>
 </html>
 
