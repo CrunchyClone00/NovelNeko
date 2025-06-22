@@ -585,6 +585,67 @@ body {
   }
 }
 
+.alert-box {
+  max-width: 800px;
+  margin: 2rem auto 1.5rem auto;
+  background: rgba(30, 30, 30, 0.95);
+  border: 2px solid #ffb300;
+  border-radius: 12px;
+  color: #fffbe7;
+  box-shadow: 0 4px 18px rgba(255, 179, 0, 0.10);
+  padding: 1.2em 1.5em;
+  text-align: left;
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.alert-icon {
+  font-size: 1.5em;
+  color: #ffb300;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.alert-title {
+  font-weight: bold;
+  color: #ffb300;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.alert-message {
+  color: #fffbe7;
+  font-size: 0.98em;
+  margin-left: 2em;
+}
+
+.alert-link {
+  color: #ffd700;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.alert-link:hover {
+  color: #fffbe7;
+}
+
+@media (max-width: 600px) {
+  .alert-box {
+    font-size: 0.92rem;
+    padding: 0.8em 0.7em;
+  }
+  .alert-message {
+    margin-left: 0.5em;
+  }
+}
+
 /* Bouton Suggestion */
 #btnSuggestion {
   display: inline-block;
