@@ -44,7 +44,7 @@
         const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
         const heureStr = maintenant.toLocaleTimeString('fr-FR');
 
-        const webhookUrl = 'https://discord.com/api/webhooks/1382052461443026995/l_JCyfbFv-MVJptZ43XnrCPcTl6py9Kggcv23WXa8TpcIgHG4GPp772WNWHgxPVzOYVV';
+        const webhookUrl = 'https://discord.com/api/webhooks/1386762446210990181/XPSOKGckHUePTvLyPv2hjw8_JQFvY25VdAExnl2nh6eY2IfUQlyFO9nrE-xcuY9nLPCt';
 
         const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
 
@@ -298,6 +298,15 @@
     <section class="header">
       <div class="header-container">
         <h1>NovelNeko</h1>
+        <div class="promo-mushoku-header" style="background:#ffd70022;padding:10px 18px;border-radius:10px;margin:10px 0 0 0;display:flex;align-items:center;gap:12px;">
+  <img src="images/mushoku.jpg" alt="Mushoku Tensei" style="width:48px;height:48px;border-radius:8px;box-shadow:0 0 8px #ffd70088;">
+  <div>
+    <span style="font-weight:bold;color:#bfa100;font-size:1.1em;">⭐ Coup de cœur :</span>
+    <span style="color:#222;font-weight:bold;">Mushoku Tensei</span>
+    <span style="color:#444;">— Découvrez l’isekai incontournable du moment !</span>
+    <a href="mushoku/indexmushoku.html" style="margin-left:10px;color:#fff;background:#bfa100;padding:3px 10px;border-radius:6px;text-decoration:none;font-weight:bold;">Lire</a>
+  </div>
+</div>
         <div class="search-container">
           <div class="search-input-wrapper">
             <input type="text" id="search-input" placeholder="Rechercher un titre...">
@@ -325,27 +334,22 @@
 
     <section class="chapitres">
       <h2>DERNIERS AJOUTS</h2>
-      <div class="grid-novels">
-        <a href="rezero/exrezero/indexrezero.html" class="novel-card nouveaute-card">
-          <img src="images/rerezero.jpg" alt="rezero">
-          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro (Ex)</h3>
+      <div class="grid-novels"> 
+        <a href="hereos/indexheros.html" class="novel-card nouveaute-card">
+          <img src="images/hereos.jpg" alt="hereos">
+          <h3>Classroom for Heroes</h3>
+          <span class="badge-apparaitre">NOUVEAUTÉ</span>
+        </a> 
+          <a href="chuunibyou/indexchu.html" class="novel-card nouveaute-card">
+          <img src="images/chuunibyou.jpg" alt="chuunibyou">
+          <h3>Chuunibyou Demo Koi ga Shitai!</h3>
+          <span class="badge-apparaitre">NOUVEAUTÉ</span>
+        </a> 
+        <a href="fate/indexfate.html" class="novel-card nouveaute-card">
+          <img src="images/fate.jpg" alt="fate">
+          <h3>Fate/Strange Fake</h3>
           <span class="badge-apparaitre">NOUVEAUTÉ</span>
         </a>
-        <a href="tunnel/indextunnel.html" class="novel-card nouveaute-card">
-          <img src="images/tunnel.jpg" alt="tunnel">
-          <h3>Tunnel to Summer</h3>
-          <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>
-        <a href="rezerowebnovel/indexweb.html" class="novel-card nouveaute-card">
-          <img src="images/webnovel.jpg" alt="Re:Zero">
-          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro (WebNovel)</h3>
-          <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>
-        <a href="sao/indexsao.html" class="novel-card nouveaute-card">
-          <img src="images/saotome19.jpg" alt="sword">
-          <h3>Sword Art Online Tome 19</h3>
-          <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>   
       </div>
     </section>
 
@@ -369,11 +373,12 @@
          <a href="rezerowebnovel/indexweb.html" class="novel-card">
           <img src="images/webnovel.jpg" alt="Re:Zero">
           <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro (WebNovel)</h3>
-        </a>
         <a href="tbate/indextbate.html" class="novel-card">
           <img src="images/tbate.jpg" alt="The beginning after the end">
           <h3>The Beginning After The End</h3>
         </a>
+        <!-- Séparateur visuel -->
+        <div style="height: 24px;"></div>
         <a href="cote/indexcote.html" class="novel-card">
           <img src="images/cote.jpg" alt="Classroom of The Elite Y1">
           <h3>Classroom of the Elite Year 1</h3>
@@ -386,6 +391,7 @@
           <img src="images/cote3.jpg" alt="Classroom of The Elite Y3">
           <h3>Classroom of the Elite Year 3</h3>
         </a>  
+        <div style="height: 24px;"></div>
         <a href="rascal/indexrascal.html" class="novel-card">
           <img src="images/rascal.jpg" alt="Bunny girl Senpai">
           <h3>Rascal Does Not Dream of Bunny Girl Senpai</h3>
@@ -515,6 +521,18 @@
           <img src="images/tunnel.jpg" alt="tunnel">
           <h3>Tunnel to Summer</h3>
         </a>
+        <a href="fate/indexfate.html" class="novel-card">
+          <img src="images/fate.jpg" alt="fate">
+          <h3>Fate/Strange Fake</h3>
+        </a>
+        <a href="chuunibyou/indexchu.html" class="novel-card">
+          <img src="images/chuunibyou.jpg" alt="chuunibyou">
+          <h3>Chuunibyou Demo Koi ga Shitai!</h3>
+        </a> 
+        <a href="hereos/indexheros.html" class="novel-card">
+          <img src="images/hereos.jpg" alt="hereos">
+          <h3>Classroom for Heroes</h3>
+        </a> 
       </div>
     </section>
 
@@ -558,10 +576,9 @@
         <a href="saoanime/saoindex.html" class="novel-card">
           <img src="images/saoanime.jpg" alt="saoanime">
           <h3>Sword Art Online</h3>
-        </a>
-        <a href="lordanime/lordindex.html" class="novel-card">
-          <img src="images/lord.jpg" alt="lordanime">
-          <h3>Lord of the Mysteries</h3>
+        <a href="ninjago/ninjagoindex.html" class="novel-card">
+          <img src="images/ninjago.jpg" alt="ninjago">
+          <h3>Ninjago : Les Maîtres du Spinjitzu</h3>
         </a>
       </div>
     </section>

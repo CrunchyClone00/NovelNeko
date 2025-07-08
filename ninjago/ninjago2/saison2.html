@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+  <title>Ninjago : Les Maîtres du Spinjitzu</title>
+  <style>
+    :root {
+      --primary: #3a7bd5;
+      --primary-glow: #4e9aff;
+      --secondary: #00d2ff;
+      --accent: #ff6b6b;
+      --background-start: #0f172a;
+      --background-end: #020617;
+      --card-bg: rgba(15, 23, 42, 0.7);
+      --card-hover: rgba(30, 41, 59, 0.9);
+      --card-border: rgba(99, 102, 241, 0.2);
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-accent: #f8fafc;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--background-start), var(--background-end));
+      color: var(--text-primary);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      animation: fadeIn 1s ease-out;
+      align-items: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .cover {
+      max-width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .cover:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 15px rgba(74, 222, 255, 0.4);
+    }
+
+    .credits {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+      margin-top: 2rem;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+    }
+
+    .chapitres {
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .chapitres h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--text-accent);
+      text-align: center;
+      text-shadow: 0 0 10px rgba(74, 222, 255, 0.2);
+    }
+
+    .liste-chapitres {
+      list-style: none;
+      padding: 0;
+      columns: 3;
+      gap: 2rem;
+    }
+
+    .liste-chapitres li {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .liste-chapitres li:hover {
+      transform: translateX(10px);
+    }
+
+    .liste-chapitres a {
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      cursor: pointer;
+    }
+
+    .liste-chapitres a:hover {
+      color: var(--secondary);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary);
+    }
+
+    .video-container {
+      display: none;
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .video-container.active {
+      display: block;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .episode-title {
+      font-size: 1.5rem;
+      color: var(--text-accent);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+
+      .cover {
+        max-width: 140px;
+        margin: 0 auto;
+      }
+
+      .liste-chapitres {
+        columns: 1;
+      }
+
+      .video-container iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <img src="../../images/ninjago.jpg" alt="ninjago" class="cover">
+    <div class="content">
+      <h1>Ninjago : Les Maîtres du Spinjitzu Saison 2</h1>
+      <a href="../ninjagoindex.html" class="back-btn">Retour</a>
+    </div>
+  </section>
+
+  <div id="video-container" class="video-container">
+    <div class="episode-title"></div>
+    <iframe allowfullscreen></iframe>
+    <a href="#" class="back-btn" onclick="hideVideo(); return false;">Retour à la liste des épisodes</a>
+  </div>
+
+  <section class="chapitres">
+    <h2>📺 Épisodes</h2>
+    <ul class="liste-chapitres" id="episodeList"></ul>
+  </section>
+
+  <script>
+    const episodes = [
+      'https://app.videas.fr/embed/media/uid/858a75aa-708c-4dc7-9d4d-6c65a46e1cb8/?title=false&logo=false&auth=1uV98N:gFimNfYhIN0NrolbWcU6eP57bBQ2Wgrwe4S7_lvRdgM',
+      'https://app.videas.fr/embed/media/uid/daa63351-2527-4e9f-81ed-4bf1fa97f331/?title=false&logo=false&auth=1uV98Q:OsNy0OQLNJFFmj922le1TsFgyjrOnpP4Q6pSAdtyEFE',
+      'https://app.videas.fr/embed/media/uid/f88d2ad8-e751-4cad-a50d-727e994f669a/?title=false&logo=false&auth=1uV98S:CeLw9OGstunLMHGZMGz94fXxRlNcR_l2PsDjjnzpWfc',
+      'https://app.videas.fr/embed/media/uid/c107b467-6ed3-40a9-b5a9-d21d8d603f1a/?title=false&logo=false&auth=1uV98V:FvGROo5osrPSNRgjhjY4kJPaML7Y59JoCf1q06nKbJE',
+      'https://app.videas.fr/embed/media/uid/22a9857f-73b8-49d5-aa90-ec2613c748c7/?title=false&logo=false&auth=1uV98X:105lMs1RyM0nMzbr6OvBZbXT1rA5onVeTf2_ZJ_YqAc',
+      'https://app.videas.fr/embed/media/uid/d25e13f1-44c2-4e3e-8b28-3c07d65e6948/?title=false&logo=false&auth=1uV98d:CTda6YqJ76p8F7tzOvN1ZstrXgotuV6BTDlkC7a5tBI',
+      'https://app.videas.fr/embed/media/uid/4eb45b2a-21f4-4b1a-abd6-d1203bf1ea20/?title=false&logo=false&auth=1uV98g:4Lnaz8PsOmo8GFcaXUJY_rv3o7SLgROXzbAWQKW_nmE',
+      'https://app.videas.fr/embed/media/uid/8a153a09-1bc2-42f2-847a-784697412257/?title=false&logo=false&auth=1uV98i:aJRdH2VeIgP50HJz-CUVgOOKhHoOM4d-vX_ZNBYoR8c',
+      'https://app.videas.fr/embed/media/uid/021f6eeb-514d-4678-8c3d-aaa1bdb3ac3f/?title=false&logo=false&auth=1uV98k:N3iCfR1ek-ibXfd3jES_u0GcnNhj4Ol4MbvzyQOiMvs',
+      'https://app.videas.fr/embed/media/uid/39a08fb4-574f-419d-b28d-a785508b8796/?title=false&logo=false&auth=1uV98n:zuKUJRe_UlZ90jk5S6SvKgmawWWyXqRPqhn6Rnmvir0',
+      'https://app.videas.fr/embed/media/uid/ca939760-69d2-4800-8584-d29b60e3102f/?title=false&logo=false&auth=1uV98n:NGFA8WQ8NjNDlrzB4TzTj3vRL8_wgrQNaltp8a5PWyE',
+      'https://app.videas.fr/embed/media/uid/5be8bbf7-8688-4aa0-9d21-d0abbd5d9dea/?title=false&logo=false&auth=1uV98q:2e_ZN-KOaH253X_sTdvis3CiyDpc5dZGgquhPRu6iic',
+      'https://app.videas.fr/embed/media/uid/6c098f1b-0b35-4739-8342-3d8de93f4b0f/?title=false&logo=false&auth=1uV98r:N9VTJ29iK-3cQyB2WHl3e5XCvVep2oEj0o_Z6ak6vLw',
+    ];
+
+    const episodeList = document.getElementById('episodeList');
+    const videoContainer = document.getElementById('video-container');
+    const iframe = videoContainer.querySelector('iframe');
+    const episodeTitle = videoContainer.querySelector('.episode-title');
+
+    episodes.forEach((url, index) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.textContent = `Épisode ${index + 1}`;
+      a.onclick = () => showVideo(index);
+      li.appendChild(a);
+      episodeList.appendChild(li);
+    });
+
+    function showVideo(index) {
+      iframe.src = episodes[index];
+      episodeTitle.textContent = `Épisode ${index + 1}`;
+      videoContainer.classList.add('active');
+      document.querySelector('.chapitres').style.display = 'none';
+      window.scrollTo(0, 0);
+    }
+
+    function hideVideo() {
+      videoContainer.classList.remove('active');
+      document.querySelector('.chapitres').style.display = 'block';
+      iframe.src = '';
+    }
+  </script>
+</body>
+</html>

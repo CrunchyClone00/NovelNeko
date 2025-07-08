@@ -669,6 +669,8 @@ body {
   opacity: 1;
 }
 
+
+
 @media (max-width: 480px) {
   .header h1 {
     font-size: 1.75rem;
