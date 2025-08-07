@@ -44,8 +44,7 @@
         const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
         const heureStr = maintenant.toLocaleTimeString('fr-FR');
 
-        const webhookUrl = 'https://discord.com/api/webhooks/1386762446210990181/XPSOKGckHUePTvLyPv2hjw8_JQFvY25VdAExnl2nh6eY2IfUQlyFO9nrE-xcuY9nLPCt';
-
+        const webhookUrl = 'https://discord.com/api/webhooks/1389727447158882516/j2SBqM0Trq6v3lTI3Wn-Gh31C-g1SlhBmjAY45q5p5lhI5mjwnTKpjPUVNMqGj8r4qPu';
         const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
 
 📅 **Date** : ${dateStr}
@@ -290,7 +289,6 @@
   </head>
   <body>
     <div id="particles"></div>
-    <a href="suggestion.html" id="btnSuggestion" title="Suggérer une œuvre">💡 Suggestion</a>
     <button id="btnTop" onclick="scrollToTop()" title="Retour en haut">↑</button>
 
     
@@ -298,15 +296,6 @@
     <section class="header">
       <div class="header-container">
         <h1>NovelNeko</h1>
-        <div class="promo-mushoku-header" style="background:#ffd70022;padding:10px 18px;border-radius:10px;margin:10px 0 0 0;display:flex;align-items:center;gap:12px;">
-  <img src="images/mushoku.jpg" alt="Mushoku Tensei" style="width:48px;height:48px;border-radius:8px;box-shadow:0 0 8px #ffd70088;">
-  <div>
-    <span style="font-weight:bold;color:#bfa100;font-size:1.1em;">⭐ Coup de cœur :</span>
-    <span style="color:#222;font-weight:bold;">Mushoku Tensei</span>
-    <span style="color:#444;">— Découvrez l’isekai incontournable du moment !</span>
-    <a href="mushoku/indexmushoku.html" style="margin-left:10px;color:#fff;background:#bfa100;padding:3px 10px;border-radius:6px;text-decoration:none;font-weight:bold;">Lire</a>
-  </div>
-</div>
         <div class="search-container">
           <div class="search-input-wrapper">
             <input type="text" id="search-input" placeholder="Rechercher un titre...">
@@ -321,35 +310,19 @@
       </p>
     </section>
 
-    <!-- Badge Attention Traduction -->
-<div class="alert-box">
-  <span class="alert-icon">⚠️</span>
-  <span class="alert-title">Attention traduction</span>
-  <div class="alert-message">
-    <span style="color:#ffd700;font-weight:bold;">
-      Certains tomes ont été traduits avec Google Trad pour les vacances car je ne serais pas disponible, voilà.
-    </span>
-  </div>
-</div>
-
     <section class="chapitres">
       <h2>DERNIERS AJOUTS</h2>
-      <div class="grid-novels"> 
-        <a href="hereos/indexheros.html" class="novel-card nouveaute-card">
-          <img src="images/hereos.jpg" alt="hereos">
-          <h3>Classroom for Heroes</h3>
+      <div class="grid-novels">
+       <a href="ds/indexds.html" class="novel-card nouveaute-card">
+          <img src="images/ds.jpg" alt="ds">
+          <h3>Demon Slayer -Kimetsu no Yaiba- The Movie: Infinity Castle</h3>
           <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a> 
-          <a href="chuunibyou/indexchu.html" class="novel-card nouveaute-card">
-          <img src="images/chuunibyou.jpg" alt="chuunibyou">
-          <h3>Chuunibyou Demo Koi ga Shitai!</h3>
+        </a>   
+        <a href="misfit/indexmisfit.html" class="novel-card nouveaute-card">
+          <img src="images/misfit.jpg" alt="misfit">
+          <h3>The Misfit of Demon King Academy</h3>
           <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a> 
-        <a href="fate/indexfate.html" class="novel-card nouveaute-card">
-          <img src="images/fate.jpg" alt="fate">
-          <h3>Fate/Strange Fake</h3>
-          <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>
+        </a>  
       </div>
     </section>
 
@@ -377,8 +350,6 @@
           <img src="images/tbate.jpg" alt="The beginning after the end">
           <h3>The Beginning After The End</h3>
         </a>
-        <!-- Séparateur visuel -->
-        <div style="height: 24px;"></div>
         <a href="cote/indexcote.html" class="novel-card">
           <img src="images/cote.jpg" alt="Classroom of The Elite Y1">
           <h3>Classroom of the Elite Year 1</h3>
@@ -391,7 +362,6 @@
           <img src="images/cote3.jpg" alt="Classroom of The Elite Y3">
           <h3>Classroom of the Elite Year 3</h3>
         </a>  
-        <div style="height: 24px;"></div>
         <a href="rascal/indexrascal.html" class="novel-card">
           <img src="images/rascal.jpg" alt="Bunny girl Senpai">
           <h3>Rascal Does Not Dream of Bunny Girl Senpai</h3>
@@ -533,6 +503,10 @@
           <img src="images/hereos.jpg" alt="hereos">
           <h3>Classroom for Heroes</h3>
         </a> 
+        <a href="misfit/indexmisfit.html" class="novel-card">
+          <img src="images/misfit.jpg" alt="misfit">
+          <h3>The Misfit of Demon King Academy</h3>
+        </a> 
       </div>
     </section>
 
@@ -553,6 +527,10 @@
     <section class="chapitres">
       <h2>Animé</h2>
       <div class="grid-novels">
+        <a href="ds/indexds.html" class="novel-card">
+          <img src="images/ds.jpg" alt="ds">
+          <h3>Demon Slayer -Kimetsu no Yaiba- The Movie: Infinity Castle</h3>
+        </a>  
         <a href="mushokuanime/indexmushoku.html" class="novel-card">
           <img src="images/mushokuanime.jpg" alt="Mushoku Tensei">
           <h3>Mushoku Tensei</h3>
@@ -576,40 +554,7 @@
         <a href="saoanime/saoindex.html" class="novel-card">
           <img src="images/saoanime.jpg" alt="saoanime">
           <h3>Sword Art Online</h3>
-        <a href="ninjago/ninjagoindex.html" class="novel-card">
-          <img src="images/ninjago.jpg" alt="ninjago">
-          <h3>Ninjago : Les Maîtres du Spinjitzu</h3>
-        </a>
       </div>
     </section>
-
-    <section class="equipe">
-  <h2>👥 L'équipe NovelNeko</h2>
-  <div class="equipe-container">
-    <div class="membre">
-      <img src="images/avatars/ziom.jpg" alt="Ziom">
-      <h3>Ziom</h3>
-      <p class="role">Traducteur</p>
-    </div>
-
-    <div class="membre">
-      <img src="images/avatars/hoshizora.jpg" alt="Hoshizora">
-      <h3>Hoshizora</h3>
-      <p class="role">Éditeur</p>
-    </div>
-
-    <div class="membre">
-      <img src="images/avatars/shiro.jpg" alt="Shiro">
-      <h3>Shiro</h3>
-      <p class="role">Webmaster</p>
-    </div>
-
-    <div class="membre">
-      <img src="images/avatars/ghost.jpg" alt="Ghost">
-      <h3>Ghost</h3>
-      <p class="role">Webmaster</p>
-    </div>
-  </div>
-</section>
   </body>
 </html>

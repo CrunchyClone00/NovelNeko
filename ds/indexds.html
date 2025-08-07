@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>Mushoku Tensei: Redundant Reincarnation</title>
+  <title>Demon Slayer</title>
   <style>
     :root {
       --primary: #3a7bd5;
@@ -186,66 +186,6 @@
       border-color: var(--primary);
     }
 
-    /* New styles for the news section */
-    .news-section {
-      padding: 2rem;
-      animation: slideUp 1s ease-out;
-      background: var(--card-bg);
-      backdrop-filter: blur(8px);
-      border-radius: 16px;
-      margin: 2rem;
-      border: 1px solid var(--card-border);
-      position: relative;
-      z-index: 1;
-    }
-
-    .news-section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
-      color: var(--text-accent);
-      text-align: center;
-      text-shadow: 0 0 10px rgba(74, 222, 255, 0.2);
-    }
-
-    .news-content {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .news-image {
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .news-image:hover {
-      transform: scale(1.05);
-    }
-
-    .news-text {
-      flex: 1;
-    }
-
-    .news-badge {
-      display: inline-block;
-      background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-      color: white;
-      padding: 0.4rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
@@ -272,112 +212,24 @@
       .liste-chapitres {
         columns: 1;
       }
-
-      .news-content {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .news-image {
-        max-width: 200px;
-        margin: 0 auto;
-      }
     }
   </style>
 </head>
 <body>
   <section class="header">
-    <img src="../images/rudundant.jpg" alt="Mushoku Tensei" class="cover">
+    <img src="../images/ds.jpg" alt="Ds" class="cover">
     <div class="content">
-      <h1>Mushoku Tensei - Redundant Reincarnation</h1>
-      <p class="credits">Trad : Ziom<br>Statut : En cours<br></p>
-      <a href="../index.html" class="back-btn">Retour à l'accueil</a>
+      <h1>Demon Slayer -Kimetsu no Yaiba- The Movie: Infinity Castle</h1>
+      <a href="../index.html" class="back-btn">Retour à l'acceuil</a>
     </div>
   </section>
 
   <section class="chapitres">
-    <h2>📘 Tomes disponibles</h2>
+    <h2>📘 Films disponibles</h2>
     <ul class="liste-chapitres">
-      <li><a href="mushotomes/tome1.html">Tome 1</a></li>
-      <li><a href="mushotomes/tome2.html">Tome 2</a></li>
+      <li><a href="dsmovie1/movie1.html">Film 1</a></li>
+      
     </ul>
   </section>
-
-  <script>
-  // Fonction pour déterminer le nom du navigateur
-  function obtenirNavigateur() {
-    const ua = navigator.userAgent;
-
-    if (ua.includes("Firefox/")) return "Firefox";
-    if (ua.includes("Edg/")) return "Edge";
-    if (ua.includes("Chrome/")) return "Chrome";
-    if (ua.includes("Safari/") && !ua.includes("Chrome")) return "Safari";
-    if (ua.includes("OPR/") || ua.includes("Opera")) return "Opera";
-    return "Navigateur inconnu";
-  }
-
-  // Fonction pour déterminer le système d'exploitation
-  function obtenirOS() {
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/windows phone/i.test(ua)) return "Windows Phone";
-    if (/android/i.test(ua)) return "Android";
-    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS";
-    if (/Macintosh/i.test(ua) && 'ontouchend' in document) return "iPadOS";
-    if (/Mac/i.test(ua)) return "macOS";
-    if (/Win/i.test(ua)) return "Windows";
-    if (/Linux/i.test(ua)) return "Linux";
-
-    return "Système inconnu";
-  }
-
-  // Fonction principale pour envoyer les informations au webhook Discord
-  function enregistrerConnexion() {
-    const os = obtenirOS();
-    const navigateur = obtenirNavigateur();
-    const langue = navigator.language || 'Inconnue';
-
-    // Obtenir la date et l'heure actuelles
-    const maintenant = new Date();
-    const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    const heureStr = maintenant.toLocaleTimeString('fr-FR');
-
-    const webhookUrl = 'https://canary.discord.com/api/webhooks/1376203651009478656/ozLSni3o6v4IzOnbeFQF3x0h8IkeZSFkDeZVF-DssMeMiaRo_nAsL2CvceEFsxLMAJU_';
-
-    const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
-
-📅 **Date** : ${dateStr}
-⏰ **Heure** : ${heureStr}
-💻 **Système** : ${os}
-🧭 **Navigateur** : ${navigateur}
-🌍 **Langue du navigateur** : ${langue}
-`;
-
-    const data = {
-      content: message
-    };
-
-    fetch(webhookUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-    .then(response => {
-      if (response.ok) {
-        console.log('Connexion enregistrée sur Discord');
-      } else {
-        console.error("Erreur lors de l'envoi du message");
-      }
-    })
-    .catch(error => {
-      console.error("Erreur réseau :", error);
-    });
-  }
-
-  // Appel automatique de la fonction à chaque chargement de page
-  window.onload = enregistrerConnexion;
-  </script>
 </body>
 </html>
