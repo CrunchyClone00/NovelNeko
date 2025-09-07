@@ -1,0 +1,120 @@
+Chapitre 266
+====================
+
+Avis : Variable non définie : zoom_front_end dans /home/xiaoxiao/public_html/wp-content/plugins/zoom-widget/zoom.php à la ligne 386
+
+Chapitre 261 Chapitre annexe – L’évasion élégante de Rimuru – 05
+
+Les étudiants laissés pour compte ont eu diverses réactions.
+
+La majorité des étudiants ont sombré dans le désespoir.
+
+Je suppose qu’il n’est pas si étrange qu’ils soient tombés dans un état de panique et de désordre, puisque les personnes sur lesquelles ils comptaient, les instructeurs, n’avaient aucune chance.
+
+Cependant, une partie des étudiants a pris l’initiative et a commencé à se rassembler pour confirmer quels types d’objets ils avaient à portée de main.
+
+De plus, il semble que les instructeurs non-combattants n’aient pas non plus oublié leur devoir professionnel.
+
+« L’état des instructeurs s’est stabilisé. Nous n’avons pas pu confirmer d’effets secondaires du combat ni de traces de sorts de type malédiction. Ils se réveilleront probablement après une journée de repos. »
+
+Le médecin était une jolie femme aux cheveux argentés.
+
+Elle était très calme et agissait sans oublier son travail.
+
+Elle a posé les 4 instructeurs vaincus par Laplace et a sorti sa trousse de premiers secours.
+
+Elle a également sorti une couverture de son « stockage d’espace » et faisait attention à l’hygiène.
+
+Comme on pouvait s’y attendre d’un instructeur du Développement des Ressources Humaines de Tempest (Tempest DHR dorénavant).
+
+Au fait, bien que les effets personnels des passagers soient vérifiés lors de l’embarquement, ces « stockages d’espace » ne sont pas soumis à cette vérification.
+
+Et en fait, la vérification serait une corvée.
+
+Ou plutôt, l’état actuel était tel que les gardes resteraient silencieux à moins que quelqu’un ne porte une arme de façon évidente.
+
+La raison en est simple : une personne qui est réellement forte le sera aussi à mains nues. J’ai décidé que cela ne valait pas la peine de faire tout un cinéma pour une arme.
+
+L’inspection des affaires personnelles n’est qu’une formalité, ce qui est réellement important, c’est de diffuser l’information selon laquelle l’utilisation de compétences ou de magie à l’intérieur de l’avion est interdite.
+
+Et pour cela, j’ai mis en place un système qui surveille parfaitement l’utilisation de magie ou de compétences à l’intérieur de l’endroit.
+
+Le dispositif d’annulation de magie, qui était en cours de recherche dans l’Empire, a été réduit en taille et installé dans toutes les parties de l’avion. Avec cela, personne ne peut utiliser la magie à l’intérieur de l’avion.
+
+Bien que, il soit aussi vrai que pour des personnes comme moi, capables d’utiliser la magie librement sans incantation, cela ne semble pas fonctionner.
+
+Cependant, le jammer de magie réduit en taille s’avère être un dispositif de surveillance très utile. Il peut détecter une distorsion de l’espace due à des tremblements de mana.
+
+Il peut non seulement détecter l’utilisation normale de magie, mais aussi lorsqu’on utilise un « stockage d’espace » ou un « voyage spatial », et il a plus d’usages que son but initial.
+
+Grâce à cela, il est possible d’arrêter instantanément quelqu’un qui effectue un acte interdit à l’intérieur de l’avion.
+
+Ah, je suis un peu sorti du sujet.
+
+Et pour ces raisons, la belle médecin aux cheveux argentés pouvait transporter ses outils liés au travail avec un « stockage d’espace ».
+
+Il semble qu’elle ait aussi une tente simple avec elle, qu’elle a rapidement commencé à monter.
+
+Quelques étudiants l’ont aidée, et une tente de taille assez grande a été montée en très peu de temps.
+
+On pourrait dire qu’un hôpital de campagne a été installé ici.
+
+Et si je devais aussi ajouter, à ce moment-là, le score de la médecin avait dépassé 20.
+
+Il était clair que les actions d’assistance étaient beaucoup plus efficaces pour marquer des points que de combattre des monstres. Cela montre à quel point il est important de s’entraider ici plutôt que d’agir seul, mais qui sait combien d’entre eux ont réalisé cela.
+
+D’après ce que je pouvais voir, seuls les étudiants qui ont aidé semblaient avoir compris cela.
+
+Bien que la survie ne fasse que commencer, j’étais extrêmement curieux de voir comment les étudiants agiraient en fonction de la situation durant cette semaine.
+
+La médecin n’était pas la seule à agir rapidement.
+
+Même l’instructeur de recherche qui est membre du laboratoire de recherche était fidèle à son devoir.
+
+Celui-ci semble être affilié à l’Académie d’Investigation de la Science Magique de NNU (NNU MSIA pour la suite).
+
+« Il semble que nous ne puissions pas contacter le monde extérieur. Il y a probablement une tempête magique de haute densité couvrant toute l’île. Si la tempête était dispersée par une magie puissante depuis un bord de l’île, nous pourrions peut-être établir un contact temporairement… »
+
+Lui aussi était calme et expliquait simplement la situation grave.
+
+Je pouvais déjà voir quelques étudiants fondre en larmes, espérant établir un contact avec le monde extérieur maintenant que Laplace avait disparu.
+
+Bien que je ressente de la pitié pour eux, c’est aussi un test. Je dois leur faire de mon mieux.
+
+Mis à part cela, cet instructeur…
+
+Préparait-il les étudiants à réaliser la gravité de la situation en insistant sur sa gravité ?
+
+Peut-on réellement, dans une situation proche de la panique, devenir calme en sachant qu’il est peu probable que de l’aide arrive ?
+
+Bien que je ne sois pas certain qu’il visait cela ou non, même si certains étudiants semblaient attristés, aucun ne se comportait de manière imprudente.
+
+De plus, il y a une solution.
+
+Il semble que la partie des étudiants compétents ait pensé à un plan après avoir écouté l’explication de cet instructeur.
+
+« En d’autres termes, il suffit de trouver le point où la tempête magique est la plus faible au bord de l’île. En plus, tout le monde sauf l’équipe de communication continuera d’essayer de faire en sorte que le contact soit possible, c’est bien ça ? »
+
+Rosalie, étudiante de NNU, a posé une question à l’instructeur en tant que représentante du reste.
+
+Sans répondre, l’instructeur a réfléchi.
+
+« Hmmm… Que ce soit possible ou non, je ne peux pas en être sûr. Juste que c’est une des options que nous avons sur la table. Si nous devons attendre dans cette situation où notre connexion avec le monde extérieur a été coupée, nous n’avons que deux choix : soit respecter cette maxime du Cirque de la Convoitise, soit aller à l’encontre. Considérez cela comme si une autre option avait été ajoutée : demander de l’aide dans la semaine. Quoi qu’il en soit, vous devrez faire confiance à votre jugement. »
+
+Il a terminé en semblant indifférent.
+
+Plutôt que de leur donner la réponse, il veut probablement confier cela à la volonté libre des étudiants.
+
+Quel courage cet instructeur a, pour pouvoir faire cela dans ces circonstances.
+
+Parmi tout cela, un instructeur de l’Académie de Synthèse d’Ingracia a pris la parole.
+
+« Je viens de terminer l’analyse de ce bracelet. Il semble s’agir d’un objet fabriqué avec des techniques magiques de haut niveau. Il possède également des fonctionnalités permettant de communiquer entre nous et de voir nos statistiques. Sa structure ressemble à celle de monstres parasites, donc il sera difficile à retirer. »
+
+Il a commencé à annoncer les résultats de l’analyse du bracelet parasite.
+
+Il semble être un instructeur très compétent, puisqu’il a aussi repéré la fonction cachée.
+
+Cette fonction de communication dans le bracelet permet de communiquer entre 6 personnes au total, et il est assez doué pour l’avoir découvert.
+
+Bon, ils le sauraient immédiatement une fois qu’ils l’utiliseraient réellement.

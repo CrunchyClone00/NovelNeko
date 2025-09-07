@@ -1,0 +1,1126 @@
+Chapitre 36
+====================
+
+Partie 1
+
+Après 3 semaines, nous avons atteint le rang D.
+
+Je pense que nous sommes montés très vite, alors je l’ai vérifié.
+
+Les conditions pour augmenter les rangs sont indiquées ci-dessous.
+
+=============
+
+F –> E
+
+Terminer 10 missions de rang F.
+
+Terminer 5 missions consécutives de rang E.
+
+E –> D
+
+Terminer 50 missions de rang F.
+
+Terminer 25 missions de rang E.
+
+Terminer 10 missions consécutives de rang D.
+
+D –> C
+
+Terminer 100 missions de rang E.
+
+Terminer 40 missions de rang D.
+
+Terminer 10 missions de rang C.
+
+C –> B
+
+Terminer 100 missions de rang D.
+
+Terminer 50 missions de rang C.
+
+Terminer 20 missions consécutives de rang B.
+
+B –> A
+
+Terminer 300 missions de rang C.
+
+Terminer 100 missions de rang B.
+
+Terminer 20 missions de rang A.
+
+A –> S
+
+Terminer 100 missions de rang A.
+
+Terminer 20 missions de rang S.
+
+Il existe également une rétrogradation si l’on échoue à plusieurs reprises à réaliser les missions.
+
+Échouer 5 missions consécutives d’un rang inférieur entraînera une rétrogradation.
+
+Échouer 10 missions consécutives du même rang entraînera une rétrogradation.
+
+Échouer 5 missions consécutives d’un rang supérieur ne conduira pas à une rétrogradation, mais vous ne pourrez plus recevoir de missions de rang supérieur.
+
+================
+
+Parce que nous comptions sur Veskel et Jaril pour faire les missions de rang F et E, nous avons facilement augmenté nos rangs.
+
+Maintenant, nous sommes de rang D, ce qui signifie aussi que nous pouvons recevoir des missions de rang C.
+
+Les demandes de rang C sont assez simples, donc nous devrions pouvoir facilement monter au rang C. Il est temps de mettre fin à notre partenariat avec Jaril et Veskel.
+
+Même s’ils ne feront plus de choses comme des enlèvements, je ne sais pas quels genres de mauvaises influences pourraient survenir en échangeant nos demandes.
+
+Nous sommes venus dans cette ville pour gagner de l’argent, et ce pourrait être une bonne occasion de partir et de faire nos adieux.
+
+Mais il y a encore des choses dont nous pouvons tirer parti avant d’atteindre le rang C. Même si la situation actuelle ne pose pas de problème, il est un peu regrettable de laisser notre statu quo actuel.
+
+Quand il s’agit d’argent, il vaut mieux en avoir plus.
+
+Notre richesse actuelle se compose d’une pièce d’ore de vert, 7 pièces de fer, 14 pièces de ferraille de fer, et 35 pièces de pierre.
+
+Si tout convertit en pièces de pierre, nous avons 1875 pièces de pierre.
+
+1875 yens……
+
+Si je compte tout ce que nous avons, ce n’est même pas deux grosses pièces de cuivre Asura.
+
+Non, je devrais arrêter de penser aux prix d’un autre continent.
+
+Une fois que nous aurons atteint le rang C, nous nous séparerons de Jaril et Veskel, puis quitterons cette ville.
+
+Nous devons progresser dans cette direction.
+
+Partie 2
+
+Je trouve une demande particulière.
+
+=================
+
+Mission : Rechercher/détruire les monstres mystérieux.
+
+Récompense : 5 pièces de ferraille (2 pièces de fer si ils sont tués)
+
+Contenu de la mission : La recherche/détruction de monstres.
+
+Lieu : Forêt du sud (Forêt de la pétrification)
+
+Durée : Jusqu’à la fin du mois prochain.
+
+Limite de temps : Dès que possible.
+
+Nom du demandeur : Marchand ambulant Bellver
+
+Notes : J’ai vu des ombres qui se tortillent au fond de la forêt, et je veux enquêter sur leur véritable identité. S’il s’agit d’une entité dangereuse, veuillez les éliminer.
+
+==============
+
+Jaril et moi tenons tous deux notre menton en même temps, troublés par cela.
+
+Les créatures mystérieuses.
+
+Cette demande est vraiment floue.
+
+En fait, cette créature pourrait même ne pas exister.
+
+Même si elles existent, comment prouver que c’est la créature qu’il a vue ?
+
+Mais les récompenses sont assez bonnes, même si vous ne les tuez pas, nous pouvons toujours recevoir 5 pièces de ferraille, donc ce n’est pas du tout mauvais.
+
+[Cette demande te préoccupe-t-elle ?]
+
+[Même si la récompense est assez bonne, c’est un peu suspect.]
+
+Jaril acquiesce également.
+
+Il est probable que même si vous faites cette demande, vous n’en tirerez rien, il vaut mieux ne pas le faire.
+
+Quelque chose de semblable s’est également produit une fois, il y a environ deux semaines.
+
+Une demande de « S’il vous plaît, aidez-moi à rassembler le Loup Acide ».
+
+Nous avons fait ce que nous faisons habituellement, et avons rassemblé les crocs et les queues du Loup Acide.
+
+Mais on nous a dit qu’ils avaient besoin du corps entier du Loup Acide.
+
+Même si le contenu du contrat n’était pas détaillé, nous avons quand même payé la pénalité pour avoir rompu le contrat.
+
+En y repensant, je me sens humilié.
+
+Pour éviter que cela ne se reproduise, il vaut mieux ne pas accepter cette demande… Mais.
+
+Je suis ébloui par l’argent.
+
+[Hum, mais ce ne sont que 2 pièces de fer… Même si nous payons d’autres [frais d’études], cela pourrait quand même en valoir la peine.]
+
+[N’as-tu pas déjà honte d’avoir été mordu une fois ?]
+
+[Dans cette situation, la pénalité est toujours de 5 pièces de fer en ferraille, n’est-ce pas ?]
+
+[Oui, car les crochets là-bas indiqueraient que c’est une récompense spéciale.]
+
+Juste pour ajouter, parce que je trouve ça irritant que Nokopara dérange Ruijerd, et que les autres aventuriers dérangent Eris, je laisse tous deux attendre dehors.
+
+Veskel n’est pas non plus à la guilde.
+
+Donc, il n’y a personne pour m’arrêter.
+
+[Bon, si c’est la forêt de pétrification, même si nous ne pouvons pas accomplir cette demande, nous pouvons toujours obtenir quelque chose qui peut être vendu. Si c’est vous, vous pouvez encore couvrir vos frais en brisant le contrat, n’est-ce pas ?]
+
+[D’accord, alors nous allons faire de notre mieux de notre côté.]
+
+En y repensant, peu importe comment je le vois, je sens que j’ai commis une erreur de jugement.
+
+Parce que je m’étais habitué aux choses, je suis devenu complaisant.
+
+En raison de la progression fluide des événements, j’ai sous-estimé les risques.
+
+Je suis allé trop loin dans la recherche de récompenses.
+
+J’aurais pu faire mieux, mais contrairement à cette pensée, je me suis simplement arrêté à ce point.
+
+Je me suis évalué ainsi.
+
+Partie 3
+
+La forêt de pétrification.
+
+Elle se trouve à environ une journée de voyage de la ville de Rikaris.
+
+Le long du chemin menant à la forêt, il y a des arbres pointus ressemblant à des os qui poussent partout, donnant l’impression que la forêt a été transformée en pierre.
+
+Il y a aussi des monstres de rang B très dangereux, appelés Anaconda Amande et Exécuteur, qui résident dans la forêt.
+
+Même si c’est un raccourci pour atteindre la ville suivante à travers cette forêt, seuls des marchands itinérants en urgence utiliseront cette route, et ils engageront de nombreux gardes qualifiés.
+
+Dans ce monde, les forêts sont dangereuses sans exception, mais la forêt du continent magique l’est encore plus.
+
+Partie 4
+
+À l’entrée de la forêt, trois groupes sont rassemblés.
+
+Un groupe de rang B [Super Blaze], un groupe de rang D [Trouble village hooligans], et un rang D [Dead End].
+
+Les chefs des équipes se rencontrent.
+
+Il semble être de bon sens parmi les aventuriers de se rencontrer, si les groupes se croisent dans des endroits comme la forêt.
+
+Même si je veux les ignorer, ce serait problématique si nous nous croisions dans la forêt.
+
+En tout cas, nous devrions nous montrer maintenant.
+
+[Hé, qu’est-ce que vous faites là, bande de gars ?]
+
+La première phrase qui sort de lui.
+
+Le visage irrité du chef de [Super Blaze], Blaze.
+
+J’ai encore une impression de son visage, c’est probablement la personne à tête de cochon qui a ri de nous le premier jour.
+
+Ah, je ne l’insulte pas.
+
+C’est parce que son visage ressemble vraiment à celui d’un cochon.
+
+Il appartient à la même race que le gardien de la porte qui regardait Eris avec une expression lascive.
+
+Quel est le nom de sa race…
+
+En effet, je l’ai classé comme une race à visage de cochon, « orc ».
+
+Ils semblent être composés de nombreuses races dans leur groupe de 6 hommes. Il y a une Lamia, une personne semblable à un sprite, un centaure, etc.
+
+Pour monter au rang C, il faut maîtriser les compétences de chasse aux monstres environnants.
+
+Si l’on atteint le rang B, on devient un vétéran avec des compétences assurées.
+
+[Nous sommes ici pour faire des quêtes !]
+
+Le leader de [Trouble Village Hooligans], Kurt, dit avec une expression sombre.
+
+C’est un jeune homme charmant et beau, avec 2 cornes.
+
+[Nous sommes ici pour faire la même chose.]
+
+Le leader de [Dead End] hoche la tête, tout comme le groupe à droite.
+
+Eh bien, c’est moi.
+
+Blaze ricane en remuant la langue après avoir écouté les deux personnes de rang D.
+
+[Y a-t-il des gens qui ont réservé cela ? Il y a quelque chose de louche……]
+
+Blaze se gratte irrité l’arrière du cou.
+
+[R, réserver quoi ?]
+
+[Hein !?]
+
+Kurt demande timidement, et ce cochon s’énerve soudainement.
+
+[Eh bien, eh bien, calmons-nous, calmons-nous, s’il vous plaît, enseignez-nous, débutants.]
+
+Je frotte mes mains et m’approche, et Blaze crache par terre.
+
+[Cela signifie que différentes personnes font la même demande en même temps, et la guilde ne l’a pas bien gérée.]
+
+Je comprends.
+
+Réservation double.
+
+Il y a 3 personnes qui ont fait une demande. Il y a 3 personnes qui effectuent les demandes. Même si les demandes semblent différentes, ce sont en réalité la même.
+
+Ce genre de chose arrive effectivement.
+
+[Puis-je connaître la demande de chacun ?]
+
+Je demande.
+
+La demande de Blaze : [Tuer le Cobra à Dents Blanches dans la Forêt de la Petrification].
+
+La demande de Kurt : [Collecter l’œuf mystérieux dans la Forêt de la Petrification].
+
+La demande de Rudeus : [Chercher le monstre mystérieux].
+
+[Chercher ? Hein ? Il y a une demande comme ça en rang D ?]
+
+Demande Kurt.
+
+Bien sûr, j’ai réfléchi à des moyens de gérer cela.
+
+[C’est une demande de rang C qui a été postée après votre départ de la guilde.]
+
+[Je vois…… Votre demande est vraiment bonne……]
+
+Je jette un coup d’œil discret à Kurt qui grogne, et commence à réfléchir.
+
+Ces demandes semblent se recouper un peu.
+
+Tout d’abord, il n’y a pas de Cobra à Dents Blanches dans cette forêt. Étant donné qu’une demande a été faite, cela signifie qu’on en a trouvé un.
+
+C’est-à-dire que la créature mystérieuse pourrait être le cobra blanc à dents.
+
+Les œufs mystérieux… pourraient être ceux du cobra blanc à dents.
+
+Bien sûr, il est possible que toutes ces mystérieuses choses ne soient pas liées au cobra blanc à dents. Il est encore trop tôt pour conclure à une réservation double.
+
+[En laissant cela de côté, pourquoi quelque chose comme ça arriverait-il ?]
+
+[Qui sait, il arrive que des choses comme ça se produisent.]
+
+Eh bien, ce n’est pas grave, puisqu’ils n’utilisent pas d’ordinateur pour gérer les choses.
+
+[Et alors ? Comment réglons-nous ça ?]
+
+[Rien de plus simple, la personne la plus rapide gagne.]
+
+Blaze dit ça, et Kurt s’écrie avec surprise.
+
+[Quoi ! Si vous tuez les monstres, qu’en est-il de notre demande !]
+
+[Hein ? Vous rassemblez les œufs ? Si on voit ça, on le détruira. C’est très embêtant si le cobra à dents blanches se reproduit.]
+
+Blaze se moque de Kurt en riant.
+
+[Hé, Rudeus, dis quelque chose ! S’ils battent les monstres, nos demandes… !]
+
+Kurt me passe le relais.
+
+En effet, s’ils battent les monstres, nous échouerons aussi……
+
+Non, notre mission est de rechercher, si nous rapportons [Le cobra à dents blanches est dans la forêt], je pense que la mission sera accomplie.
+
+Si cela n’est toujours pas comptabilisé, nous chasserons les monstres dans la forêt, et payerons la pénalité pour rupture de contrat.
+
+[Il est encore trop tôt pour décider que nos demandes se répètent, il se peut que ce ne soit pas un cobra à dents blanches mais un autre monstre.]
+
+Blaze affiche une expression de dégoût après m’avoir entendu dire cela.
+
+[Tu veux dire que tu veux qu’on le cherche ensemble ? Tu veux qu’on protège les enfants ?]
+
+Hein ? Comment les choses ont-elles tourné ainsi ?
+
+Pendant que je suis confus, Kurt saute sur les mots « protéger les enfants ».
+
+[Qui a dit qu’on avait besoin de vous pour s’occuper de nous !]
+
+[Même si tu dis ça, n’est-il pas mieux avec notre protection ? C’est très dur pour les rangs D dans cette forêt.]
+
+Ah, je vois, c’est comme ça.
+
+Avec deux autres groupes, Kurt et moi, sommes comme des excréments de poisson rouge collés à lui. Il ne veut probablement pas terminer la mission facilement en nous emmenant avec lui.
+
+Cela ne fera qu’augmenter la charge du groupe de Blaze.
+
+Bien sûr, je ne veux pas non plus bouger avec eux, car je ne souhaite à personne de voir Ruijerd utiliser une lance. Il est vraiment trop fort, et pourrait facilement révéler la vérité : qu’il est un vrai Superd.
+
+Nous allons donc laisser Kurt saisir l’occasion.
+
+[En effet, ce sera désagréable. Nous n’avons pas besoin de protection, 『Dead End』 fonctionnera de manière autonome.]
+
+Je dis cela et quitte le cercle formé par les chefs.
+
+Partie 5
+
+Je retourne auprès de Ruijerd et Eris. Ruijerd regarde la forêt tandis qu’Eris attend paresseusement à ses côtés.
+
+[Que s’est-il passé ?]
+
+Demande Eris, son apparence semblant dire [Je ne peux plus attendre].
+
+[Le contenu de la demande a été doublement réservé.]
+
+[Double réservé ?]
+
+[Ça veut dire que nos demandes se sont chevauchées.]
+
+[Alors, que devons-nous faire ? Leur donner ?]
+
+[Comment est-ce possible ? Celui qui est le plus rapide est le gagnant.]
+
+[Je vois, c’est une question de compétences.]
+
+Eris est pleine d’enthousiasme. Il semble qu’elle en ait assez de la chasse qui ne ressemble pas à celle d’une aventurière.
+
+Plutôt que de dire que c’est de la chasse, c’est plus comme du [Devoir].
+
+En même temps, en ce moment, Blaze et Kurt semblent finir de parler. Kurt dit quelques mots à ses deux autres alliés et ils entrent dans la forêt.
+
+『Super Blaze』 prend un autre chemin et entre dans la forêt.
+
+[Hé, que devons-nous faire maintenant ?]
+
+[Hm… Nous devrions laisser Ruijerd chercher l’ennemi comme d’habitude, et aller dans la direction de cette mystérieuse créature.]
+
+Mais Ruijerd secoue la tête quand je dis cela.
+
+[Attends.]
+
+[Quoi ?]
+
+[Je m’inquiète pour les trois enfants.]
+
+Les 3 enfants font probablement référence aux Hooligans.
+
+[Avec leurs capacités, ils ne peuvent pas survivre dans cette forêt.]
+
+[Cela veut dire ?]
+
+[Nous devrions leur venir en aide.]
+
+[…… Mais si nous restons trop longtemps ensemble, tu révéleras que tu es un Superd.]
+
+[C’est bon.]
+
+Je dis que cela n’a pas d’importance !
+
+[Mais si tu révèles que tu es un Superd, cela deviendra problématique.]
+
+[Veux-tu dire que tu veux les laisser mourir sans leur venir en aide ?]
+
+[Je n’ai pas dit ça. Nous les suivrons de loin, et si quelque chose arrive, nous les aiderons.]
+
+Il n’y a pas d’autre choix, je vais changer de stratégie. Je vais renoncer aux 2 pièces de monnaie en fer et demander des remerciements plus tard.
+
+Mais est-ce que c’est acceptable de simplement leur venir en aide ? Les chances que son identité de Superd soit révélée sont très élevées.
+
+Même si j’ai pensé qu’ils ne discrimineraient pas si nous les sauvions, l’existence de Dead End est spéciale dans ce Continent Magique.
+
+Je ne sais pas comment les choses évolueront.
+
+S’il se passe quelque chose, pourquoi ne pas les recruter comme Jaril et Veskel……
+
+Juste comme ça, nous avons commencé à suivre Kurt et les autres.
+
+Le groupe de Kurt entre avec entrain dans la forêt, et Ruijerd fronce les sourcils en voyant cela.
+
+[Que devons-nous faire ?]
+
+[Est-ce leur première fois dans la forêt ?]
+
+[Haah, je ne suis pas sûr non plus.]
+
+[Ils sont trop imprudents.]
+
+Tout comme nous nous en sommes inquiétés, Kurt n’a pas réussi à trouver l’ennemi, et il a rencontré un Exécuteur.
+
+L’Exécuteur est un ennemi humanoïde. Ce sont des aventuriers qui se sont transformés en zombies.
+
+Je ne sais pas pourquoi ce zombie équipe une épée énorme et une armure très épaisse.
+
+Même s’il n’est pas très rapide, il est très déterminé et possède des techniques d’épée.
+
+Selon le niveau de danger, c’est un Rang B.
+
+Il agit seul, et il n’est pas très grand.
+
+Même ainsi, il reste Rang B.
+
+Un ennemi puissant.
+
+Pour ajouter, l’armure et l’épée disparaîtront une fois qu’il mourra. C’est un ennemi ennuyeux qui ne peut pas être transformé en argent.
+
+Le groupe de Kurt s’enfuit avec tout ce qu’il a lorsqu’il rencontre ce Monstre.
+
+[Va leur porter secours !]
+
+[Non, le moment n’est pas encore venu.]
+
+Je stoppe Ruijerd qui se prépare à sauter.
+
+[Pourquoi !]
+
+[Ce n’est pas encore si dangereux.]
+
+Même si la vitesse de l’Exécuteur est plus rapide qu’il n’y paraît avec l’armure, ce n’est toujours pas plus rapide que la retraite complète de Kurt.
+
+La distance s’allonge progressivement, et s’ils continuent à courir, ils peuvent s’échapper.
+
+Mais la chance du groupe de Kurt s’épuise ici.
+
+Devant leur fuite, se trouvent des Anacondas aux amandes.
+
+Ce sont des monstres qui se déplacent en groupe de 3 à 5, et ils ont une forme de tatouage d’amande sur leur corps.
+
+Ils sont donc classés Rang B.
+
+Ce sont des ennemis puissants.
+
+Ils sont les représentants de la Forêt de la Pétrification, les deux monstres les plus redoutés que personne ne veut rencontrer.
+
+Ils sont en fait entourés par ces deux types de monstres en même temps.
+
+Le groupe de Kurt affiche des expressions à moitié en pleurs, à moitié souriantes.
+
+Ils pensent probablement qu’ils peuvent simplement s’enfuir s’ils rencontrent quelque chose.
+
+En vérité, je pense qu’ils peuvent effectivement dépasser l’Exécuteur.
+
+Ce qui a mal tourné, c’est leur manque de considération.
+
+Ils ne peuvent clairement pas tenter des choses qui ne correspondent pas à leurs capacités.
+
+Mais je peux aussi comprendre pourquoi ils veulent faire des choses au-delà de leurs capacités.
+
+Leurs pensées sont superficielles.
+
+[Va leur porter secours !]
+
+[Non, attends un peu plus longtemps.]
+
+Je stoppe Ruijerd qui est sur le point de leur venir en aide immédiatement.
+
+Un stratagème pour créer le danger juste devant leur nez.
+
+Plus le danger est grand, plus ils seront reconnaissants. Quand leurs corps seront pleins de blessures, je n’aurai qu’à utiliser la magie de soin pour les soigner.
+
+Kuhaha.
+
+Mes plans sont parfaits.
+
+[Ah !]
+
+Eris crie.
+
+Le jeune homme qui ressemble à un oiseau a son corps coupé en deux en plein air.
+
+Une seule frappe.
+
+Il n’a pas pu esquiver l’attaque de l’Exécuteur, et il a été tué d’un seul coup.
+
+Mon sourire maléfique se tord.
+
+Je réalise plus tard que je me suis trompé, ils sont déjà à la porte de la mort.
+
+Celui qui est superficiel, c’est moi.
+
+[Voilà pourquoi j’ai déjà dit !]
+
+La voix de Ruijerd est mêlée d’irritation.
+
+Je utilise immédiatement un canon de pierre, et en même temps Ruijerd se précipite.
+
+Après avoir reçu mon attaque magique, l’Exécuteur est encore en vie. Il est toujours debout après avoir reçu mon canon de pierre qui peut abattre un arbre de pierre en un seul coup.
+
+Ce bâtard est trop fort, je pense à cela, mais en regardant de plus près, sa main droite a été arrachée.
+
+J’ai raté la cible.
+
+Il ramasse l’épée avec sa main gauche, et court vers ici. Même si cela semble lent vu de loin, s’il court ici à cette vitesse, je sens que c’est une vitesse qui ne peut pas être jugée à cause de son apparence lourde.
+
+Je prépare calmement un marais doux devant ses pieds. Il y enfonce une jambe dedans, et tombe en arrière.
+
+Je convoque alors un énorme rocher au-dessus de lui, et je le brise violemment.
+
+En même temps, Ruijerd et le reste ont tué les anacondas aux amandes.
+
+Partie 6
+
+[…… Haa, haa…… C’est…… Haa, haa…… une très grande aide.]
+
+Kurt tremble avec un visage pâli, mais il nous remercie sincèrement.
+
+[Y, tu es……… vraiment fort……]
+
+L’exécuteur s’est transformé en coussin pour le rocher, et la tête de l’anaconda aux amandes a été coupée proprement.
+
+Eh bien, c’est une victoire facile.
+
+Même si c’était si simple de les vaincre, nous ne l’avons pas sauvé.
+
+[Non, ne pas avoir pu te sauver à temps…… Je suis désolé.]
+
+Les yeux de Kurt sont pleins de respect.
+
+Ma poitrine me fait vraiment mal et je détourne le regard.
+
+Les yeux qui se détournent rencontrent le jeune homme dont le corps a été coupé en deux.
+
+Un visage avec un bec d’oiseau, et je pense que son nom est Gablin. Si je ne pensais pas à des choses inutiles, il ne serait probablement pas mort.
+
+En réfléchissant à cela, Ruijerd attrape le devant de ma chemise, pousse son menton en avant pour pointer le corps et dit.
+
+[C’est ta faute.]
+
+Sans aucune réserve, pour me transpercer le cœur.
+
+[Oui……]
+
+[Les trois auraient pu être sauvés immédiatement !]
+
+Je sais.
+
+Je le sais.
+
+Je ne voulais pas que cela tourne comme ça non plus !
+
+Je me sens désemparé.
+
+Je ne voulais vraiment pas que ce soit ce résultat.
+
+Je réfléchis.
+
+Je regrette.
+
+Pourquoi me reproches-tu alors que j’essaie de me repentir ?
+
+[J’essaie aussi de faire de mon mieux ! J’essaie d’obtenir les meilleurs résultats au meilleur moment ! Pourquoi essaies-tu de me rejeter la faute !]
+
+[Parce que quelqu’un est mort !]
+
+Je hausse involontairement la voix, et la réplique de Ruijerd me revient parfaitement.
+
+[Urgh……]
+
+Je ne peux pas répliquer.
+
+Il donne vraiment l’impression d’avoir été tué par moi.
+
+Eris reste silencieuse jusqu’à présent.
+
+Elle doit avoir ses propres pensées, car elle fixe le corps de Gablin devant elle.
+
+Elle n’a probablement rien à me dire.
+
+C’est parce que j’ai effectivement échoué. Dans une situation où des vies sont en jeu, je ne pense qu’à mes gains et je n’ai pas réussi à sauver quelqu’un à temps.
+
+[Hé, hé, ne vous battez pas entre vous.]
+
+Finalement, celui qui vient nous arrêter est Kurt.
+
+[Ce n’est pas de votre faute, c’est la faute de ce gars.]
+
+Ruijerd ne prête pas attention à lui, mais Kurt ne s’arrête pas.
+
+[Même si ce n’est pas de ma faute, je sais que vous vous battez pour savoir si vous allez nous abandonner ou nous aider quand vous nous avez vus nous battre, n’est-ce pas ?!]
+
+Non. Plutôt que de dire que nous nous sommes battus entre nous, j’ai arbitrairement décidé d’abandonner vous seul.
+
+[Tu es vraiment très fort et la situation était critique pour nous, mais tu n’avais pas l’obligation de nous aider !]
+
+Les cheveux de Ruijerd semblent se dresser.
+
+[Que veux-tu dire par obligation ! Aider les enfants est la responsabilité d’un adulte !]
+
+Kurt se lève immédiatement en entendant cette phrase.
+
+[Nous ne sommes pas des enfants ! Nous sommes des aventuriers ! Rudeus a pris la bonne décision en tant que chef !]
+
+[Hmm……]
+
+Ruijerd cesse de parler.
+
+Cependant, je ne pense pas que ma décision soit juste.
+
+[Mais ton compagnon est mort ?]
+
+[Tout le monde comprend ça en le voyant ! En effet, nous espérions tous continuer ainsi jusqu’au bout ! Mais nous avons aussi la résolution d’accepter la mort ! Un aventurier, qu’il soit jeune ou vieux, aura cette résolution !]
+
+Ma poitrine brûle de douleur.
+
+Je n’ai pas cette résolution.
+
+À mes yeux, le métier d’aventurier n’est qu’une méthode pour gagner de l’argent.
+
+[Je suis très reconnaissant que vous nous ayez aidés ! Mais les choses concernant nos membres sont nos propres problèmes… Non, c’est notre responsabilité de ne pas avoir réfléchi clairement à la difficulté de la demande.]
+
+Les paroles de Kurt sont pleines de naïveté.
+
+On peut y voir un sens de la justice de la jeunesse, ou on peut y voir un gamin qui n’a pas été poli par la société.
+
+Mais on peut aussi percevoir le désespoir dans ses efforts.
+
+C’est quelque chose qui me manque clairement ces derniers temps.
+
+À mes yeux, il n’y a que l’argent dans ma main et nos rangs dans la guilde. Je traite la demande comme un jeu, et c’est pourquoi je n’ai pas fait d’effort.
+
+[Toi là-bas… Tu es Kurt ? Je suis désolé de t’avoir traité comme un enfant. Tu es un guerrier qui est devenu adulte.]
+
+Il semble avoir compris quelque chose de Kurt.
+
+[Et, Rudeus, je suis désolé.]
+
+Ruijerd me remet sur le sol et s’excuse.
+
+Cet incident d’aujourd’hui. Ruijerd n’a aucune raison de s’excuser.
+
+[Ne t’excuse pas. C’est la vérité, j’ai fait une erreur.]
+
+[Non, ce n’est pas une erreur. Tu protégeais leur fierté en tant que guerriers. J’ai voulu sans réfléchir y aller immédiatement pour les sauver.]
+
+[Non……]
+
+Je n’ai pas du tout réfléchi à ce point.
+
+[C’est la même chose quand nous avons rencontré le groupe des deux petits méchants……]
+
+Ruijerd en vient à une compréhension par lui-même.
+
+Je ne l’ai pas encore compris.
+
+Je dois réfléchir à cette question sans faute.
+
+Mes points faibles vont être immédiatement révélés, et pour éviter que cela ne se reproduise la prochaine fois, je dois tout consolider.
+
+C’est ce que je pense, mais…
+
+J’ai tellement de chance que Ruijerd ait compris de travers par erreur.
+
+Puisque tout est réglé, n’est-ce pas suffisant ?
+
+Cette pensée superficielle surgit malgré moi.
+
+Je commence à me détester un peu.
+
+Partie 7
+
+Kurt dit qu’il ramènera le corps en ville, et nous le gardons jusqu’à ce que nous atteignions l’entrée de la forêt.
+
+Même si je pense que Ruijerd voulait dire [Laisse-moi te ramener en ville].
+
+Il ne l’a pas dit.
+
+C’est probablement parce qu’il a reconnu le groupe de Kurt comme des guerriers.
+
+[Même si nous ne pouvons peut-être pas retourner en ville parce que nous avons perdu quelqu’un, nous sommes prêts à mourir.]
+
+Eris court spontanément vers lui quand il dit cela, de son dos solitaire.
+
+『Bonne chance !』
+
+Elle leur dit cela.
+
+Même s’ils ne peuvent pas communiquer entre eux, Kurt semble comprendre ce qu’elle essaie de transmettre.
+
+[Merci…… Euh, comment ça marche ?]
+
+『Eh !』
+
+Il embrasse la base de son pouce.
+
+Et il part en souriant.
+
+Eris est stupéfaite.
+
+Je ne sais pas non plus quoi faire.
+
+Eris tourne le dos à moi, puis essuie la partie où elle a été embrassée sur le poignet de son armure avec un bruit de frottement.
+
+『Ce, ce n’est pas comme ça !』
+
+Eris le fait avec une expression frénétique.
+
+Même si elle a été embrassée, la réalité est qu’elle a été embrassée sur sa gant.
+
+Même si je ne ressens pas le besoin de le faire si désespérément…
+
+『Ce n’est plus nécessaire !』
+
+Eris enlève sa gant, et la jette négligemment dans la forêt.
+
+Hé, hé, la gant ne coûte pas rien.
+
+『Ne jette pas ton équipement !』
+
+『C’est du gaspillage d’acheter un nouveau !』
+
+Ruijerd et moi réprimandons Eris d’une voix en même temps.
+
+Même si c’est le réflexe de mon esprit, à ce moment-là je pense encore à l’argent.
+
+Haaa……
+
+『Tais-toi !』
+
+Eris frappe le sol avec des larmes aux yeux.
+
+Je n’ai pas vu cette Eris depuis longtemps.
+
+Qu’est-ce que c’est ?
+
+La signification d’embrasser le pouce.
+
+『Rudeus ! Ici !』
+
+Elle tend sa main vers moi.
+
+Je la lèche involontairement.
+
+Le visage d’Eris devient cramoisi, et elle me donne un coup de poing.
+
+Un coup sérieux qui semble vouloir m’arracher la conscience.
+
+J’ai l’impression que mes os se brisent.
+
+Si l’on possède ce coup, on peut obtenir le monde.
+
+Je tombe au sol de manière peu élégante.
+
+Que dois-je faire ?
+
+En même temps, je vois Eris fixer la partie que j’ai léchée. Elle la lèche ensuite avec sa langue.
+
+Après quoi, le rouge monte jusqu’à ses oreilles, et elle essuie sa main sur ses vêtements.
+
+『Je, je suis désolée Rudeus, mais tu ne peux pas la lécher !』
+
+Ses actions sont trop mignonnes, alors je lui pardonne complètement.
+
+Cet échec précédent qui m’avait rendu abattu a été légèrement effacé.
+
+Partie 8
+
+Je réfléchis aux choses concernant Ruijerd pendant que nous marchons dans la forêt.
+
+– Aime les enfants
+
+– A un sens de la justice.
+
+C’est ce que je savais de Ruijerd dans le passé.
+
+Mais aujourd’hui, j’ai un nouveau mot de vocabulaire pour lui.
+
+– Guerrier.
+
+[Ruijerd-san, qu’est-ce qu’un guerrier pour vous ?]
+
+[Un guerrier est celui qui protège les enfants et chérit ses alliés.]
+
+Il répond immédiatement.
+
+Mais je comprends enfin la raison pour laquelle Ruijerd est en colère.
+
+Il n’a jamais pensé à avoir un sens de la justice, il a seulement poursuivi les objectifs de la fierté d’un guerrier.
+
+Un guerrier ne doit jamais faire de mal aux enfants.
+
+Un guerrier doit toujours protéger les enfants.
+
+Un guerrier ne doit jamais abandonner ses alliés.
+
+Un guerrier doit toujours protéger ses alliés.
+
+Il n’a considéré que ces choses.
+
+Par conséquent, il a dû penser que le ravisseur qui m’a donné un coup de pied était une mauvaise personne.
+
+Les deux personnes qui n’ont pas combattu leurs ennemis mais ont supplié pour leur vie sont de mauvaises personnes.
+
+Le groupe de Kurt a probablement été considéré comme des enfants. Pour les laisser seuls, Ruijerd a dû me considérer comme une mauvaise personne.
+
+Mais après que Kurt lui ait réfuté, il a changé d’avis. Il les voit maintenant comme des enfants qui sont devenus des guerriers.
+
+Et ainsi, il a pardonné mes actions.
+
+Ou peut-être doit-il réfléchir à ce qu’il n’a pas fait auparavant, c’est-à-dire qu’il ne les a pas traités comme des guerriers.
+
+Je n’ai vraiment aucune idée de comment il trace la ligne entre guerriers et enfants.
+
+Même si Eris est considérée comme une enfant, qu’est-ce que je suis ?
+
+Devrais-je demander, ou pas ?
+
+[Il y a une bataille en cours.]
+
+Ruijerd dit soudain une phrase de prudence alors que je suis en conflit intérieur.
+
+[C’est…… la troupe de Blaze ?]
+
+[Oui.]
+
+Il semble que ce soit Blaze.
+
+Je ne sais pas comment le troisième œil de Ruijerd peut voir les choses. Même s’il est couvert par une capuche, il peut voir.
+
+De plus, ce n’est pas seulement un radar, il peut différencier les individus.
+
+C’est vraiment pratique, je veux aussi en avoir un.
+
+[Devons-nous les aider ?]
+
+[Pas besoin.]
+
+Comme on pouvait s’y attendre d’un Rang B, Ruijerd semble les avoir considérés comme des guerriers.
+
+Devant la forêt, un énorme serpent est enroulé là. Et autour, il y a quatre corps.
+
+Mais ils sont morts.
+
+Oh, donc il n’est pas nécessaire de les aider, cela fait référence à cela ?
+
+Je ne parviens pas à trouver le corps de Blaze, peut-être s’est-il enfui.
+
+[Et les deux autres ?]
+
+[Ils sont morts.]
+
+Il semble qu’ils aient été complètement anéantis.
+
+Je joins mes paumes.
+
+[Mais qu’est-ce que ce monstre ?]
+
+Le monstre qui a détruit la troupe de Blaze est incroyablement énorme.
+
+[C’est un Cobra à dents rouges.]
+
+Le corps du serpent rouge ne peut pas être couvert à la fois par mes bras et ceux d’Eris, son corps fait environ 10 mètres de long, et son cou est ouvert comme pour nous menacer.
+
+Au centre de son corps se trouve une grosse boule, j’ai bien peur que ce soit ce cochon.
+
+En y repensant, n’est-ce pas un serpent blanc ?
+
+[Pour penser que cette forêt abrite en réalité une Cobra à crocs rouges, et qu’elle est si grande.]
+
+[Tu veux dire qu’en général il n’y en a pas ?]
+
+[En général. Mais il y a une petite chance qu’une apparaisse.]
+
+Une Cobra à crocs rouges est une espèce de rang supérieur.
+
+Elle a un corps plus gros que celui de la Cobra à crocs blancs, et elle est beaucoup plus agile. Son corps est entièrement recouvert d’écailles résistantes au feu, et ses dents acérées contiennent également un venin mortel.
+
+Je ne suis pas sûr de ce que mange une Cobra à crocs blancs pour devenir une Cobra à crocs rouges, mais il y a une petite chance qu’une d’elles apparaisse parmi les Cobras à crocs blancs.
+
+Même si la Cobra à crocs blanc est de rang B, la Cobra à crocs rouges est un ennemi puissant de rang A.
+
+Un groupe de rang B sera probablement tué immédiatement.
+
+Elle est en train de profiter de son repas, et ne semble pas préoccupée par nous. Il semble qu’elle s’apprête à manger son troisième repas.
+
+[Pouvons-nous le faire ?]
+
+Eris sort son épée avec confiance.
+
+[On devrait le faire ?]
+
+Ruijerd demande mon avis.
+
+…… Es-tu sûr de vouloir me laisser décider ?
+
+[Je te laisse la décision.]
+
+[Qui d’autre peut décider ?]
+
+Je suis chargé de la décision.
+
+Après une légère réflexion, la demande est de découvrir ou d’éliminer le Monstre mystérieux.
+
+Peut-être ont-ils confondu une Cobra à crocs rouges avec une Cobra à crocs blancs.
+
+Il semble qu’il n’y ait pas de Cobra à crocs blancs ici.
+
+Maintenant que nous avons découvert quelque chose comme ça, même si nous rentrons, cette demande sera considérée comme réussie.
+
+Mais si nous la battons, nous recevrons 2 pièces de fer en récompense.
+
+Si nous pouvons la vaincre, je veux toujours la battre.
+
+Mais même si je veux le faire, il y a des mots pour décrire des situations comme celle-ci.
+
+Celui qui combat et s’enfuit peut vivre pour combattre un autre jour.
+
+Juste à ce moment-là, quelqu’un est mort devant mes yeux.
+
+Si nous perdons, nous mourrons.
+
+Nous ne devrions pas traverser ce pont dangereux.
+
+[Si tu veux le faire, je peux le tuer moi-même.]
+
+Ruijerd suggère cela quand je suis en conflit.
+
+[Ruijerd-san veut le vaincre seul ?]
+
+[Je suis capable de le tuer.]
+
+C’est une phrase vraiment fiable.
+
+Il ressemble un peu à Dash-san.
+
+Il est capable de gérer des créatures de rang A.
+
+Bon, puisque Ruijerd dit déjà cela, ça devrait aller.
+
+D’accord.
+
+[Alors, faisons-le.]
+
+Je prends une décision.
+
+Partie 9
+
+Les deux combattent en combat rapproché, pendant que je combats à distance avec la magie.
+
+C’est la combinaison habituelle, alors j’utilise le Canon de Pierre comme d’habitude.
+
+Cette fois, puisque l’adversaire est une Monstre de rang A, j’ai augmenté la puissance et façonné les munitions en forme de coin, afin de produire un effet explosif après l’impact, en y ajoutant également de la magie de feu.
+
+Décharge.
+
+La balle sort à une vitesse supersonique, visant le serpent rouge, et se termine par une énorme explosion.
+
+C’est ainsi que je l’ai imaginé dans mon esprit.
+
+[Quoi !?]
+
+La Cobra à crocs rouges tord son corps et esquive la balle.
+
+Elle a évité l’attaque.
+
+Ce n’est pas une coïncidence. Elle a clairement vu l’attaque et l’a évitée.
+
+La balle vole vers un endroit éloigné et explose.
+
+[C’est une blague, n’est-ce pas……]
+
+L’attaque préventive a échoué.
+
+Mais notre force spéciale ne s’arrêtera pas. Ruijerd mène l’avant-garde, tandis qu’Eris suit derrière.
+
+C’est un peu différent de la formation habituelle, d’habitude c’est Eris qui est en tête.
+
+[Saaa !]
+
+[……Hmph !!]
+
+Ruijerd vise férocement la tête, utilisant comme toujours la courte lance pour la piquer. La Cobra à Crocs Rouges se tord pour éviter son attaque, puis profite du recul pour mordre Ruijerd.
+
+Ruijerd repousse facilement l’attaque avec sa lance, et le sol se déchire avec un grand trou causé par les crocs.
+
+En même temps, Eris contourne le serpent et balance son épée pour couper sa queue, mais elle ne se coupe pas.
+
+C’est parce que soit les écailles, la chair ou les deux sont très durs.
+
+[Saaaa !]
+
+Le serpent concentre son attention sur Eris, et en même temps, Eris et Ruijerd s’éloignent du corps du serpent.
+
+Profitant de cette ouverture, ma magie fonce sur la Cobra à Crocs Rouges.
+
+1. Moi
+
+2. Eris
+
+3. Ruijerd
+
+Même si 2 et 3 sont inversés, cette signalisation suit toujours la combinaison que nous avions mise en place précédemment.
+
+[Je l’ai encore raté !?]
+
+Mais la Cobra à Crocs Rouges évite à nouveau l’attaque.
+
+Cette fois, l’avant du projectile a une pointe acérée, ce qui augmente la vitesse, mais il passe à côté du côté de la Cobra à Crocs Rouges et brise plusieurs arbres derrière son dos.
+
+Il l’a encore fait, esquivant l’attaque après l’avoir vue.
+
+Même si les choses tournent ainsi, peu importe si ça ne touche pas.
+
+Les attaques de Ruijerd et Eris ressemblent à une vague. Ruijerd vise résolument son cerveau et son cœur, tandis qu’Eris coupe la queue pour la distraire.
+
+La magie qui le frôle de temps en temps ne cause qu’un léger dommage.
+
+Bien que cette formation soit simple, ce n’est pas quelque chose qu’on peut facilement gérer.
+
+Même si une ouverture pourrait se présenter si elle vise Eris avec précaution, le contrôle de Ruijerd est parfait, ce qui le rend incapable de nous ignorer.
+
+Les attaques de Ruijerd ne peuvent pas l’atteindre, mais la Cobra à Crocs Rouges commence lentement à se fatiguer et ses mouvements deviennent plus lents.
+
+Et puis, le Canon de Pierre finit par toucher le corps du Serpent.
+
+Partie 10
+
+Lorsque la Cobra à Crocs Rouges a finalement été découpée, le soleil s’est déjà couché.
+
+Ce jour-là, notre repas du soir est la viande de la Cobra à Crocs Rouges.
+
+Même si je ne sais pas où elle peut être vendue, nous avons arraché les crocs et roulé sa peau comme un tapis.
+
+Les œufs que Kurt voulait trouver ont aussi été trouvés, mais ils sont vraiment trop gros pour être transportés. Après avoir réfléchi longtemps, nous avons décidé de les détruire.
+
+C’est parce qu’il est interdit d’augmenter la population des Monstres.
+
+Après avoir débarrassé le groupe de Blaze de tout ce qui peut être vendu, nous les avons brûlés et enterrés.
+
+Si nous les laissons tranquilles, ils pourraient devenir des Exécuteurs.
+
+Je ne comprends vraiment pas comment ils renaissent en zombies.
+
+(Mais je dois dire que la Cobra à Crocs Rouges est vraiment impressionnante.)
+
+Je pense au combat que nous avons eu plus tôt. Je me souviens comment elle a constamment esquivé mes attaques magiques.
+
+Elle a esquivé.
+
+Elle a esquivé d’innombrables fois.
+
+Jusqu’au dernier moment, il y a presque eu aucune attaque qui l’a touchée.
+
+En y réfléchissant, l’Exécuteur a fait la même chose.
+
+Je pensais qu’il aurait été touché, mais il n’a perdu qu’une seule main.
+
+Donc, les Monstres qui atteignent le Rang B et plus peuvent esquiver les attaques magiques ?
+
+Cobra à Crocs Rouges.
+
+Elle peut même éviter la lance de Ruijerd……
+
+Mais cela doit être Ruijerd qui ne prend pas ça au sérieux. S’il était sérieux, il pourrait probablement la finir en un seul coup.
+
+Elle n’a pas évité l’épée d’Eris parce que la menace était trop faible, donc elle n’avait pas besoin d’esquiver.
+
+Mais les créatures de ce monde sont toutes des monstres fous.
+
+Même un humain peut éviter les attaques magiques, donc les Monstres peuvent aussi les esquiver.
+
+Il se pourrait que des Monstres de rang S ne soient même pas blessés par le Canon de Pierre.
+
+C’est vraiment effrayant.
+
+Il vaut mieux que je ne m’approche pas de lieux aussi dangereux.
+
+Avec cela, nous avons accompli la demande.
+
+Et puis, cette demande est devenue notre dernière demande dans cette ville.

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <title>I Was Reincarnated as the 7th Prince (WebNovel)</title>
+  <style>
+    :root {
+      --primary: #a259c6;
+      --primary-glow: #c084fc;
+      --secondary: #6ee7b7;
+      --accent: #fbbf24;
+      --background-start: #1e293b;
+      --background-end: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-hover: rgba(51, 65, 85, 0.9);
+      --card-border: rgba(168, 85, 247, 0.2);
+      --text-primary: #f1f5f9;
+      --text-secondary: #a3a3a3;
+      --text-accent: #f8fafc;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--background-start), var(--background-end));
+      color: var(--text-primary);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      animation: fadeIn 1s ease-out;
+      align-items: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .cover {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .cover:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+    }
+
+    .credits {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
+    }
+
+    .back-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+    }
+
+    .novel-info {
+      margin-bottom: 1.5rem;
+    }
+
+    .novel-info strong {
+      color: var(--secondary);
+    }
+
+    .chapitres {
+      padding: 2rem;
+      animation: slideUp 1s ease-out;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      margin: 2rem;
+      border: 1px solid var(--card-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .chapitres h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--text-accent);
+      text-align: center;
+      text-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+    }
+
+    .liste-chapitres {
+      list-style: none;
+      padding: 0;
+      columns: 2;
+      gap: 2rem;
+    }
+
+    .liste-chapitres li {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .liste-chapitres li:hover {
+      transform: translateX(10px);
+    }
+
+    .liste-chapitres a {
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+    }
+
+    .liste-chapitres a:hover {
+      color: var(--secondary);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+
+      .cover {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+
+      .liste-chapitres {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <img src="../images/7thprince.jpg" alt="7th Prince" class="cover">
+    <div class="content">
+      <h1>I Was Reincarnated as the 7th Prince<br>so I Can Take My Time Perfecting My Magical Ability (WebNovel)</h1>
+        <div class="novel-info">
+            <strong>Traducteur :</strong> Ziom<br>
+            <strong>Genre :</strong> Fantasy, Aventure, Isekai<br>
+            <strong>Statut :</strong> En cours<br>
+      <div class="novel-info">
+      </div>
+      <a href="../index.html" class="back-btn">Retour à l'accueil</a>
+    </div>
+  </section>
+
+  <section class="chapitres">
+    <h2>📖 Chapitres disponibles</h2>
+    <ul class="liste-chapitres">
+      <li><a href="chapitres/chapitre1.html">Chapitre 1 : Je me suis réincarné en tant que septième prince</a></li>
+      <li><a href="chapitres/chapitre2.html">Chapitre 2 : La femme de chambre prépare quelque chose.</a></li>
+      <li><a href="chapitres/chapitre3.html">Chapitre 3 : Mon frère prépare aussi quelque chose.</a></li>
+      <li><a href="chapitres/chapitre4.html">Chapitre 4 : Même le roi planifie quelque chose</a></li>
+      <li><a href="chapitres/chapitre5.html">Chapitre 5 : J’ai eu des informations près de mon oreille.</a></li>
+      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/je-me-suis-r%C3%A9incarn%C3%A9-en-tant-que-septi%C3%A8me-prince_90280784732145938">Chapitre 6 : J’ai rencontré un démon.</a></li>
+      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/j%E2%80%99ai-lev%C3%A9-le-sceau-du-d%C3%A9mon._90281016794600013">Chapitre 7 : J’ai levé le sceau du démon.</a></li>
+      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/le-d%C3%A9mon-est-devenu-mon-familier._90281036121959054">Chapitre 8 : Le démon est devenu mon familier.</a></li>
+      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/je-vais-essayer-la-double-incantation._90281042295976976">Chapitre 9 : Je vais essayer la double incantation.</a></li>
+      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/le-d%C3%A9mon-est-confus._90281047396252739">Chapitre 10 : Le démon est confus.</a></li>
+      <!-- Ajoute ici les liens vers les autres chapitres -->
+    </ul>
+  </section>
+</body>
+</html>
