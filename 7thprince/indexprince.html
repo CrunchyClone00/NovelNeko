@@ -20,6 +20,17 @@
       --text-accent: #f8fafc;
     }
 
+.remarque-contour {
+  display: inline-block;
+  border: 1.5px solid #a259c6;
+  border-radius: 8px;
+  padding: 6px 12px;
+  background: rgba(168, 85, 247, 0.07);
+  color: #a3a3a3;
+  font-size: 0.95em;
+  margin-top: 8px;
+}
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: linear-gradient(135deg, var(--background-start), var(--background-end));
@@ -143,6 +154,31 @@
       transform: translateX(10px);
     }
 
+    /* ...existing code... */
+.header2 {
+  background: var(--card-bg, #f8f0ff);
+  border: 1.5px solid #a259c6;
+  border-radius: 12px;
+  margin: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(168, 85, 247, 0.08);
+  color: #6b21a8;
+}
+
+.header2 h2 {
+  margin-top: 0;
+  color: #a259c6;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.header2 p {
+  color: #444;
+  font-size: 1rem;
+  margin: 0;
+}
+/* ...existing code... */
+
     .liste-chapitres a {
       text-decoration: none;
       color: var(--text-primary);
@@ -196,30 +232,42 @@
     <div class="content">
       <h1>I Was Reincarnated as the 7th Prince<br>so I Can Take My Time Perfecting My Magical Ability (WebNovel)</h1>
         <div class="novel-info">
-            <strong>Traducteur :</strong> Ziom<br>
+            <strong>Traducteur :</strong> IA NovelNeko<br>
             <strong>Genre :</strong> Fantasy, Aventure, Isekai<br>
             <strong>Statut :</strong> En cours<br>
+            <em class="remarque-contour">
+    Remarque : nouvelle IA de NovelNeko en forme de test.
+  </em>
       <div class="novel-info">
       </div>
       <a href="../index.html" class="back-btn">Retour à l'accueil</a>
     </div>
   </section>
 
+  <section class="header2">
+  <h2>Fonctionnement de la nouvelle IA NovelNeko</h2>
+  <p>
+    La nouvelle IA de NovelNeko utilise des algorithmes avancés pour traduire automatiquement les chapitres depuis l’anglais vers le français.  
+    Ce système est en phase de test : il peut y avoir des erreurs ou des formulations étranges.  
+    N’hésitez pas à nous signaler les passages à améliorer !
+  </p>
+</section>
+
   <section class="chapitres">
-    <h2>📖 Chapitres disponibles</h2>
-    <ul class="liste-chapitres">
-      <li><a href="chapitres/chapitre1.html">Chapitre 1 : Je me suis réincarné en tant que septième prince</a></li>
-      <li><a href="chapitres/chapitre2.html">Chapitre 2 : La femme de chambre prépare quelque chose.</a></li>
-      <li><a href="chapitres/chapitre3.html">Chapitre 3 : Mon frère prépare aussi quelque chose.</a></li>
-      <li><a href="chapitres/chapitre4.html">Chapitre 4 : Même le roi planifie quelque chose</a></li>
-      <li><a href="chapitres/chapitre5.html">Chapitre 5 : J’ai eu des informations près de mon oreille.</a></li>
-      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/je-me-suis-r%C3%A9incarn%C3%A9-en-tant-que-septi%C3%A8me-prince_90280784732145938">Chapitre 6 : J’ai rencontré un démon.</a></li>
-      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/j%E2%80%99ai-lev%C3%A9-le-sceau-du-d%C3%A9mon._90281016794600013">Chapitre 7 : J’ai levé le sceau du démon.</a></li>
-      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/le-d%C3%A9mon-est-devenu-mon-familier._90281036121959054">Chapitre 8 : Le démon est devenu mon familier.</a></li>
-      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/je-vais-essayer-la-double-incantation._90281042295976976">Chapitre 9 : Je vais essayer la double incantation.</a></li>
-      <li><a href="https://www.webnovel.com/book/i-was-reincarnated-as-the-7th-prince_33627931900821405/le-d%C3%A9mon-est-confus._90281047396252739">Chapitre 10 : Le démon est confus.</a></li>
-      <!-- Ajoute ici les liens vers les autres chapitres -->
-    </ul>
+    <h2>📘 Chapitres disponibles</h2>
+    <ul class="liste-chapitres" id="chapitreList"></ul>
   </section>
+
+  <script>
+    const list = document.getElementById("chapitreList");
+    for (let i = 1; i <= 232; i++) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = `lecture.html?chapitre=${i}`;
+      a.textContent = `Chapitre ${i}`;
+      li.appendChild(a);
+      list.appendChild(li);
+    }
+  </script>
 </body>
 </html>
