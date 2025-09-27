@@ -161,6 +161,7 @@
           const sectionTitle = section.querySelector('h2').textContent.toLowerCase();
           
           if (sectionTitle.includes('light novel')) return 'light-novel';
+          if (sectionTitle.includes('web-novel') || sectionTitle.includes('webnovel')) return 'webnovel'; // Ajouté
           if (sectionTitle.includes('manga')) return 'manga';
           if (sectionTitle.includes('animé')) return 'anime';
           return 'nouveaute';
@@ -218,6 +219,7 @@
           // Regrouper par catégorie
           const categories = {
             'light-novel': [],
+            'webnovel': [],
             'manga': [],
             'anime': [],
             'nouveaute': []
@@ -278,6 +280,7 @@
         function getCategoryTitle(category) {
           switch(category) {
             case 'light-novel': return 'Light Novel';
+            case 'webnovel': return 'WebNovel'; // Ajouté
             case 'manga': return 'Manga';
             case 'anime': return 'Animé';
             case 'nouveaute': return 'Nouveauté';
@@ -318,16 +321,11 @@
             <h3>I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability (WebNovel)</h3>
             <span class="badge-apparaitre">NOUVEAUTÉ</span>
         </a>
-        <a href="slimeweb/indexslime.html" class="novel-card nouveaute-card">
-        <img src="images/slime.jpg" alt="slime">
-        <h3>Tensei shitara Slime datta ken (WebNovel)</h3>
-        <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a> 
-        <a href="slweb/indexsl.html" class="novel-card nouveaute-card">
-        <img src="images/slweb.jpg" alt="slweb">
-        <h3>Solo Leveling (WebNovel)</h3>
-        <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a> 
+        <a href="redudantweb/index.html" class="novel-card nouveaute-card">
+          <img src="images/redundantweb.jpg" alt="redundantweb">
+          <h3>Mushoku Tensei - Redundant Reincarnation (WebNovel)</h3>
+          <span class="badge-apparaitre">NOUVEAUTÉ</span>
+        </a>
       </div>
     </section>
 
@@ -340,10 +338,6 @@
           <img src="images/mushoku.jpg" alt="Mushoku Tensei">
           <h3>Mushoku Tensei</h3>
         </a>
-        <a href="mushokuweb/indexmushoku.html" class="novel-card">
-          <img src="images/mushokuweb.jpg" alt="Mushoku Tensei webnovel">
-          <h3>Mushoku Tensei (WebNovel)</h3>
-        </a>
         <a href="redundant/indexredundant.html" class="novel-card">
           <img src="images/rudundant.jpg" alt="Mushoku Tensei">
           <h3>Mushoku Tensei - Redundant Reincarnation</h3>
@@ -351,10 +345,6 @@
         <a href="rezero/indexrezero.html" class="novel-card">
           <img src="images/rezero.jpg" alt="Re:Zero">
           <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro</h3>
-        </a>
-         <a href="rezerowebnovel/indexweb.html" class="novel-card">
-          <img src="images/webnovel.jpg" alt="Re:Zero">
-          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro (WebNovel)</h3>
         </a>
         <a href="tbate/indextbate.html" class="novel-card">
           <img src="images/tbate.jpg" alt="The beginning after the end">
@@ -388,10 +378,6 @@
         <img src="images/gensouki.jpg" alt="Gensouki">
         <h3>Seirei Gensouki: Spirit Chronicles</h3>
         </a>
-        <a href="gensoukiweb/indexgensouki.html" class="novel-card">
-        <img src="images/gensoukiweb.jpg" alt="Gensoukiweb">
-        <h3>Seirei Gensouki: Spirit Chronicles (WebNovel)</h3>
-        </a>
         <a href="sao/indexsao.html" class="novel-card">
           <img src="images/sao.jpg" alt="Sao">
           <h3>Sword Art Online</h3>
@@ -415,10 +401,6 @@
         <a href="ange/indexange.html" class="novel-card">
           <img src="images/ange.jpg" alt="ange">
           <h3>The Angel Next Door Spoils Me Rotten</h3>
-        </a>
-        <a href="angeweb/indexange.html" class="novel-card">
-          <img src="images/ange.jpg" alt="angeweb">
-          <h3>The Angel Next Door Spoils Me Rotten (WebNovel)</h3>
         </a>
         <a href="days/indexdays.html" class="novel-card">
           <img src="images/days.jpg" alt="days">
@@ -524,10 +506,6 @@
           <img src="images/misfit.jpg" alt="misfit">
           <h3>The Misfit of Demon King Academy</h3>
         </a> 
-        <a href="misfitweb/indexmisfit.html" class="novel-card">
-          <img src="images/misfitweb.jpg" alt="misfitweb">
-          <h3>The Misfit of Demon King Academy (WebNovel)</h3>
-        </a> 
         <a href="kukakuma/indexkuma.html" class="novel-card">
           <img src="images/kukakuma.jpg" alt="kuma">
           <h3>Kuma Kuma Kuma Bear</h3>  
@@ -540,24 +518,86 @@
           <img src="images/assasin.jpg" alt="yakusoku">
           <h3>La Fierté d'Assassin</h3>
         </a>
-        <a href="slweb/indexsl.html" class="novel-card">
+      </div>
+    </section>
+
+    <section class="chapitres">
+      <h2>Web-novels</h2>
+      <div class="grid-novels">
+        <a href="mushokuweb/indexmushoku.html" class="novel-card">
+          <img src="images/mushokuweb.jpg" alt="Mushoku Tensei webnovel">
+          <h3>Mushoku Tensei (WebNovel)</h3>
+        </a>
+          <a href="redudantweb/index.html" class="novel-card">
+          <img src="images/redundantweb.jpg" alt="redundantweb">
+          <h3>Mushoku Tensei - Redundant Reincarnation (WebNovel)</h3>
+        </a>
+          <a href="rezerowebnovel/indexweb.html" class="novel-card">
+          <img src="images/webnovel.jpg" alt="Re:Zero">
+          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro (WebNovel)</h3>
+        </a>
+          <a href="eminenceweb/indexeminence.html" class="novel-card">
+          <img src="images/eminenceweb.jpg" alt="Éminence des Ombres">
+          <h3>The Eminence in Shadow (WebNovel)</h3> 
+        </a>
+          <a href="gensoukiweb/indexgensouki.html" class="novel-card">
+          <img src="images/gensoukiweb.jpg" alt="Gensoukiweb">
+          <h3>Seirei Gensouki: Spirit Chronicles (WebNovel)</h3>
+        </a>
+          <a href="saoweb/indexsao.html" class="novel-card">
+          <img src="images/saoweb.jpg" alt="Saoweb">
+          <h3>Sword Art Online (WebNovel)</h3>
+        </a>
+          <a href="angeweb/indexange.html" class="novel-card">
+          <img src="images/ange.jpg" alt="angeweb">
+          <h3>The Angel Next Door Spoils Me Rotten (WebNovel)</h3>
+        </a>
+          <a href="misfitweb/indexmisfit.html" class="novel-card">
+          <img src="images/misfitweb.jpg" alt="misfitweb">
+          <h3>The Misfit of Demon King Academy (WebNovel)</h3>
+        </a> 
+          <a href="slweb/indexsl.html" class="novel-card">
           <img src="images/slweb.jpg" alt="slweb">
           <h3>Solo Leveling (WebNovel)</h3>
         </a>
-        <a href="slragnaweb/indexsl.html" class="novel-card">
+          <a href="slragnaweb/indexsl.html" class="novel-card">
           <img src="images/slragnaweb.jpg" alt="slragnaweb">
           <h3>Solo Leveling Ragnarok (WebNovel)</h3>
         </a>
-        <a href="slimeweb/indexslime.html" class="novel-card">
+          <a href="slimeweb/indexslime.html" class="novel-card">
           <img src="images/slime.jpg" alt="slime">
           <h3>Tensei shitara Slime datta ken (WebNovel)</h3>
         </a> 
-        <a href="7thprince/indexprince.html" class="novel-card">
+          <a href="7thprince/indexprince.html" class="novel-card">
           <img src="images/7thprince.jpg" alt="7thprince">
-            <h3>I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability (WebNovel)</h3>
+          <h3>I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability (WebNovel)</h3>
         </a>
+          <a href="wiseman/indexman.html" class="novel-card">
+          <img src="images/wiseman.jpg" alt="wiseman">
+          <h3>Wise Man's Grandchild (WebNovel)</h3>
+        </a>
+          <a href="dailylife/indexdaily.html" class="novel-card">
+          <img src="images/dailylife.jpg" alt="daily">
+          <h3>The Daily Life Of The Immortal King (WebNovel)</h3>
+        </a>
+          <a href="lotm/indexlotm.html" class="novel-card">
+          <img src="images/lotm.jpg" alt="lotm">
+          <h3>Lord Of The Mysteries (WebNovel)</h3>
+        </a>
+          <a href="lotm2/indexlotm.html" class="novel-card">
+          <img src="images/lotm2.jpg" alt="lotm">
+          <h3>Lord of Mysteries 2: Circle of Inevitability (WebNovel)</h3>
+        </a>
+          <a href="heimin/index.html" class="novel-card">
+          <img src="images/heimin.jpg" alt="heimin">
+          <h3>Heimin Shusshin no Teikoku Shōkan, Munō na Kizoku Jōkan wo Jūrin shite Nariagaru (WebNovel)</h3>
+        </a>
+
+
       </div>
     </section>
+
+    
 
     <section class="chapitres">
       <h2>Mangas</h2>

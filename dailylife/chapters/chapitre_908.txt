@@ -1,0 +1,70 @@
+Chapitre 908
+====================
+
+Le souhait de Bai Qiao était étonnamment inhabituel, mais il n’était pas irréalisable. Après la convention d’exorcisme, Boss Jin avait reçu une somme importante de prix. Il était extrêmement généreux avec sa fille sauvage, même si aux yeux de Bai Qiao, ce père était rien d’autre qu’un moyen pour son propre plaisir…
+
+Après la négociation, Bai Qiao a signé un nouveau contrat avec Wang Ling : tant qu’il pourrait réaliser son souhait de développer un jeu, elle serait prête à revenir avec lui.
+
+Mais il y avait maintenant un autre problème.
+
+Tout le monde ici était bon pour jouer à des jeux, mais pas pour en créer… Les jeux ne nécessitaient pas seulement un haut niveau de créativité – le niveau de contrôle s’était progressivement accru ces dernières années, et beaucoup de nouveaux jeux n’avaient même pas pu obtenir d’approbation de licence de l’organisme compétent, finissant tous par pourrir dans les mains des sociétés de jeux.
+
+En échange de ces coûts d’investissement énormes, les jeux ne pouvaient même pas être commercialisés – pour l’instant, les sociétés de jeux, grandes ou petites, sur le marché, étaient prises dans un dilemme.
+
+Donc, la question était de savoir quel type de jeu ils devraient créer. De grandes sociétés de jeux comme Horseguin et NetHard1 dominaient les classements avec des jeux comme MOBA et PUBG. Si elles développaient un jeu similaire, il serait très difficile de prendre une part de ce gâteau.
+
+Mais avant même d’en arriver là, peu importe la finesse de la conception d’un jeu, les petites sociétés de jeux ne pouvaient pas rivaliser avec les entreprises établies en termes d’exploitation et de maintenance des serveurs – dès qu’un grand nombre d’utilisateurs envahissait le serveur, il risquait de planter.
+
+Mais Bai Qiao avait déjà ses propres idées sur la conception du jeu. Si un nouveau jeu voulait s’imposer sur le marché monopolistique des jeux, la créativité serait un facteur clé.
+
+C’était le 29 août, le seizième jour des vacances d’été. La chambre de Wang Ling n’avait jamais été aussi animée avec autant de personnes. Wang Ming, qui avait été malmené pendant longtemps dans le laboratoire par Zhai Yin, était également venu… cependant, ce n’était pas Wang Ming lui-même qui était venu, mais l’armure de mécha qu’il contrôlait à distance, Wang Ling Deux.
+
+Après le voyage aux Restes du Roi des Bêtes la dernière fois, le dernier Wang Ling Deux avait été amélioré et modifié en utilisant Wang Ling Un comme base. Non seulement il pouvait être utilisé en combat via un contrôle à distance, mais il pouvait aussi être rappelé d’un clic pour se combiner avec le corps original. Plus important encore, Wang Ling Deux possédait déjà une intelligence artificielle de base et avait donc sa propre conscience.
+
+Cela signifie que la capacité actuelle de Wang Ling Deux était déjà très proche de celle du clone avancé « Monarque de la Voie des Nouilles Croquantes » que Wang Ling avait créé en utilisant le Sort de Grande Séparation. Les souvenirs de Wang Ling Deux se synchroniseraient également avec le cerveau de Wang Ming. La seule différence était que Wang Ling Deux n’était pas aussi puissant que le Monarque de la Voie des Nouilles Croquantes.
+
+Dans la pièce, Dog Two, Jingke, Little Silver, le Senior Immortel Lance-Grenade et Wang Ling Deux entouraient Bai Qiao en cercle.
+
+« Dis-nous d’abord tes idées pour la conception ; tu peux me laisser le reste après. » Quand Wang Ling Deux, cette réplique humaine artificielle, parla, c’était avec la voix distincte de Wang Ming.
+
+« Je veux concevoir un jeu de simulation de cultivation en bac à sable avec une grande liberté d’action ! » Le visage de Bai Qiao s’illumina lorsque le sujet des jeux fut évoqué, et ses yeux semblaient briller de lumière. « Je vais l’appeler ‘Émulateur de Cultivation’. Personnages, sorts, arts de cultivation, artefacts magiques… y compris le monde lui-même, chacun pourra définir ses propres paramètres. Les joueurs ne contrôlent pas des personnages, mais un monde entier – ils doivent considérer l’équilibre des forces et maintenir l’ordre dans le monde. Pour garantir que le monde que vous créez puisse évoluer de manière durable – c’est la clé de ce jeu ! »
+
+« Donc, le point principal du jeu est de gérer un monde entier ? Les achats intégrés seront-ils possibles ? » demanda Little Silver. En tant qu’autre fan de jeux, il avait joué à certains des jeux les plus populaires durant les mois où il vivait chez l’Immortel Senior Lanceur de Grenades, et tout ce qu’il pouvait dépenser, il le ferait ! Celui qu’il détestait le plus était « Donjon & Démons ». Il était sans voix face au système de mise à niveau des armes du jeu – il avait même dépensé son argent pour la livraison de nourriture, mais ne pouvait toujours pas améliorer ses armes, peu importe ce qu’il faisait.
+
+Plus tard, après avoir regardé quelques vidéos en ligne, Little Silver découvrit que ceux qui avaient réussi à améliorer leurs armes s’étaient inclinés sur le côté pendant que cela se produisait – ils utilisaient leur front pour cliquer sur la souris afin de montrer leur sincérité…
+
+« Il n’y aura pas d’achats intégrés ; c’est un jeu absolument équitable. Cependant, pour gagner de l’argent, nous pouvons plutôt concevoir des modes à la mode à vendre. »
+
+« Porter des vêtements tendance augmentera-t-il vos attributs ? Comme 10 points d’ATK en plus ? » demanda Little Silver en levant la main.
+
+« Non. »
+
+Bai Qiao secoua résolument la tête.
+
+« Qu’en est-il de la lutte pour le pouvoir ? »
+
+« Cela se produira automatiquement en fonction des paramètres de conception et des personnages de base. Par exemple, vous pouvez préconfigurer le nombre de forces majeures dans votre monde, la répartition du pouvoir, etc. Cependant, la composition et la taille de la force dépendront des paramètres des personnages. Quant aux talents, attributs, personnalités de chaque personnage… le joueur pourra tout concevoir librement au début. »
+
+« En fonction de leurs attributs et personnalités, ces personnages évolueront librement dans le monde et formeront finalement leurs propres forces selon le script préinstallé. Les joueurs n’auront aucun contrôle sur cela, c’est pourquoi la personnalité des personnages doit être définie dès le départ. »
+
+« Pouvons-nous créer un monde sans méchants ? » demanda Dog Two.
+
+« Vous pouvez ! Dans ce monde de cultivation libre, le joueur est Dieu. Bien sûr, il est possible de créer un monde parfait sans mal. Cependant, la question de savoir si un tel monde peut continuer à fonctionner est une autre affaire. Vous avez entendu parler de l’histoire du poisson-chat et des sardines, n’est-ce pas ? Une civilisation grandit dans la lutte. S’il n’y a pas de quête ou de désir de changer, le monde lui-même ne progressera pas, » expliqua Bai Qiao.
+
+Wang Ling Two hocha la tête. « Je commence à avoir une idée approximative de ce que vous voulez. Cependant, nous avons encore besoin d’un modèle de jeu bac à sable et de quelques paramètres de programmation de base. J’ai besoin de données concrètes comme référence. »
+
+Juste après que Wang Ming eut dit cela, le Livre de l’Immortel Sage prit la parole soudainement avant que Wang Ling ne puisse dire un mot. « Je calcule qu’il y a 98 % de chances que mon seigneur me fasse rechercher un monde approprié et imiter ses paramètres. »
+
+Wang Ling : « … »
+
+« Un tablette super dépassée comme toi peut-elle faire cela ? » Les yeux de Bai Qiao brillèrent.
+
+« Oui, Mademoiselle Bai Qiao ! C’est très facile ! » répondit le Livre de l’Immortel Sage.
+
+Livre du Sage Immortel projeta ensuite une image d’une planète bleue et brune. « Voici les paramètres pour la Terre dans le dixième univers, il y a six cents millions d’années. Miss Bai Qiao peut maintenant créer les personnages ; je vais les combiner avec ce dixième univers, et en extrapolant à partir de là, simuler le développement futur du monde.
+
+« Pas seulement Miss Bai Qiao, mais tout le monde ici peut aussi essayer de créer ses propres personnages. Voyons quel genre d’impact ils auront sur le monde à l’avenir… »
+
+En disant cela, le Livre du Sage Immortel se tourna pour regarder Wang Ling. « Mon seigneur, souhaitez-vous créer le premier personnage ? »
+
+Le Livre du Sage Immortel savait parfaitement qu’en fin de compte, son maître était Wang Ling. Donner la priorité à Wang Ling pour la création d’un personnage, c’était lui faire honneur, et il y avait 78 % de chances que son seigneur ne le détruise pas en morceaux…
