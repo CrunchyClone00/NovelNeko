@@ -1,12 +1,707 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NovelNeko</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-      // Fonction pour déterminer le nom du navigateur
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovelNeko</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #e2e8f0;
+      background: #1a1d2e;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Particules d'arrière-plan */
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      background: radial-gradient(circle, rgba(58, 123, 213, 0.3), transparent);
+      border-radius: 50%;
+      animation: float 20s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.3;
+      }
+      25% {
+        transform: translate(50px, -30px) scale(1.2);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translate(-30px, 50px) scale(0.8);
+        opacity: 0.4;
+      }
+      75% {
+        transform: translate(30px, 20px) scale(1.1);
+        opacity: 0.6;
+      }
+    }
+
+    /* Header */
+    .header {
+      background: #2c3040;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .nav-link:hover {
+      color: #fff;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Recherche */
+    .search-box {
+      position: relative;
+    }
+
+    .search-input {
+      background: #1a1d2e;
+      border: 1px solid #3a4050;
+      border-radius: 6px;
+      padding: 0.5rem 2.5rem 0.5rem 1rem;
+      color: #e2e8f0;
+      width: 250px;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: #3a7bd5;
+      width: 300px;
+    }
+
+    .close-search {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      font-size: 1.2rem;
+      padding: 0.25rem;
+      display: none;
+      transition: color 0.2s;
+    }
+
+    .close-search:hover {
+      color: #fff;
+    }
+
+    .close-search.active {
+      display: block;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(58, 123, 213, 0.1), rgba(0, 210, 255, 0.05));
+    }
+
+    .hero-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent, rgba(26, 29, 46, 0.9));
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 3rem 2rem 2rem 2rem;
+    }
+
+    .hero-logo {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 8px 30px rgba(58, 123, 213, 0.5);
+    }
+
+    .hero-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      text-align: center;
+      font-size: 1rem;
+      color: #94a3b8;
+    }
+
+    .hero-link {
+      color: #3a7bd5;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .hero-link:hover {
+      color: #00d2ff;
+    }
+
+    /* Section News */
+    .news-section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .news-section h2 {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+
+    /* Article principal */
+    .news-main {
+      background: #252837;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #e2e8f0;
+    }
+
+    .news-main:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .news-main-image {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .news-main-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .news-main:hover .news-main-image img {
+      transform: scale(1.05);
+    }
+
+    .news-main-content {
+      padding: 1.5rem;
+    }
+
+    .news-main-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.8rem;
+      line-height: 1.3;
+    }
+
+    .news-main-excerpt {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .news-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    .news-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* Articles secondaires */
+    .news-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .news-item {
+      background: #252837;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .news-item-image {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .news-item-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .news-item:hover .news-item-image img {
+      transform: scale(1.05);
+    }
+
+    .news-item-content {
+      padding: 1rem;
+    }
+
+    .news-item-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .news-item-date {
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+
+    /* Bouton retour en haut */
+    #btnTop {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 100;
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(58, 123, 213, 0.3);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    #btnTop:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(58, 123, 213, 0.5);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .header {
+        padding: 1rem;
+      }
+
+      .nav-menu {
+        gap: 1rem;
+      }
+
+      .search-input {
+        width: 200px;
+      }
+
+      .search-input:focus {
+        width: 250px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .news-main-image {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-left {
+        gap: 1rem;
+      }
+
+      .nav-menu {
+        display: none;
+      }
+
+      .search-input {
+        width: 150px;
+      }
+
+      .search-input:focus {
+        width: 200px;
+      }
+
+      .hero-banner {
+        height: 250px;
+      }
+
+      .hero-logo {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+      }
+
+      .hero-title {
+        font-size: 1.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 0.9rem;
+      }
+
+      .news-section {
+        padding: 2rem 1rem;
+      }
+
+      .news-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .news-main-image {
+        height: 250px;
+      }
+
+      .news-main-title {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .header-right {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .search-box {
+        flex: 1;
+      }
+
+      .search-input {
+        width: 100%;
+      }
+
+      .search-input:focus {
+        width: 100%;
+      }
+
+      .hero-banner {
+        height: 200px;
+      }
+
+      .news-main-image {
+        height: 200px;
+      }
+
+      .news-item-image {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <span class="logo-text">NovelNeko</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="lightnovel.html" class="nav-link">📘 LIGHT NOVELS</a></li>
+          <li><a href="webnovels.html" class="nav-link">📙 WEB-NOVELS</a></li>
+          <li><a href="mangas.html" class="nav-link">📰 MANGAS</a></li>
+          <li><a href="#" class="nav-link">💬 DISCORD</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="https://discord.gg/9n7gX8Jj9B" class="logo">
+        <span class="logo-text">Yurei Scan</span>
+      </a>
+      <div class="search-box">
+        <input type="text" id="search-input" class="search-input" placeholder="Rechercher..." autocomplete="off">
+        <button id="close-search" class="close-search">×</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-overlay">
+      <div class="hero-logo">N</div>
+      <h1 class="hero-title">NovelNeko</h1>
+      <p class="hero-subtitle">
+        Lecture gratuite en ligne • Traductions FR • Mise à jour régulière<br>
+        ✉️ <a href="about_contact.html" class="hero-link">Besoin d'aide ? Contact & Support</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Section News -->
+  <section class="news-section">
+    <h2>Nos Sorties</h2>
+    <div class="news-grid">
+      <!-- Article principal -->
+      <a href="tonikaku/index.html" class="news-main">
+        <div class="news-main-image">
+        <img src="images/tonikaku.jpg" alt="Tonikaku Kawaii — visuel principal">
+</div>
+<div class="news-main-content">
+  <h3 class="news-main-title">Ajout du manga Tonikaku Kawaii</h3>
+  <p class="news-main-excerpt">
+    Le manga <em>Tonikaku Kawaii</em> rejoint le site !  
+    Suivez la romance entre Nasa et Tsukasa, un couple marié dès le premier rendez-vous, dans une comédie douce et pleine de mystère.  
+    Les chapitres sont disponibles, traduits par la Yurei Scan.
+  </p>
+  <div class="news-meta">
+    <span>📅 Oct 12, 2025</span>
+    <span>👤 By Ziom</span>
+    <span>🏷️ Ajout de contenu</span>
+  </div>
+</div>
+</a>
+
+      <!-- Articles secondaires -->
+      <div class="news-sidebar">
+        <a href="demonmanga/indexdemon.html" class="news-item">
+          <div class="news-item-image">
+            <img src="images/demonslayer.jpg" alt="News 2">
+          </div>
+          <div class="news-item-content">
+            <h4 class="news-item-title">Ajout du manga Demon Slayer</h4>
+            <p class="news-item-date">📅 Oct 10, 2025</p>
+          </div>
+        </a>
+
+        <a href="mushoku/sidestory/index.html" class="news-item">
+          <div class="news-item-image">
+            <img src="images/mushoku.jpg" alt="News 3">
+          </div>
+          <div class="news-item-content">
+            <h4 class="news-item-title">Mushoku Tensei - Nouvelles Side-Story disponibles</h4>
+            <p class="news-item-date">📅 Oct 8, 2025</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Création des particules
+    function createParticles() {
+      const particlesContainer = document.getElementById('particles');
+      const count = window.innerWidth < 768 ? 30 : 60;
+      
+      for (let i = 0; i < count; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.width = `${Math.random() * 3 + 1}px`;
+        particle.style.height = particle.style.width;
+        particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        
+        particlesContainer.appendChild(particle);
+      }
+    }
+
+    // Bouton retour en haut
+    window.onscroll = function() {
+      const btnTop = document.getElementById('btnTop');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnTop.style.display = "block";
+        btnTop.style.opacity = "1";
+      } else {
+        btnTop.style.opacity = "0";
+        setTimeout(() => {
+          btnTop.style.display = "none";
+        }, 300);
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Fonctionnalité de recherche
+    function initSearchFunctionality() {
+      const searchInput = document.getElementById('search-input');
+      const closeSearch = document.getElementById('close-search');
+
+      if (!searchInput) return;
+
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+
+        if (query.length > 0) {
+          closeSearch.classList.add('active');
+        } else {
+          closeSearch.classList.remove('active');
+        }
+      });
+
+      closeSearch.addEventListener('click', function() {
+        searchInput.value = '';
+        closeSearch.classList.remove('active');
+        searchInput.focus();
+      });
+    }
+
+    // Initialisation au chargement de la page
+    window.onload = function() {
+      createParticles();
+      initSearchFunctionality();
+    };
+
+    // Fonction pour déterminer le nom du navigateur
       function obtenirNavigateur() {
         const ua = navigator.userAgent;
 
@@ -83,560 +778,9 @@
         createParticles();
         initSearchFunctionality();
       };
-
-      // Fonction pour créer les particules d'animation
-      function createParticles() {
-        const particlesContainer = document.createElement('div');
-        particlesContainer.id = 'particles';
-        document.body.insertBefore(particlesContainer, document.body.firstChild);
-        
-        const count = window.innerWidth < 768 ? 30 : 60;
-        
-        for (let i = 0; i < count; i++) {
-          const particle = document.createElement('div');
-          particle.className = 'particle';
-          
-          particle.style.left = `${Math.random() * 100}%`;
-          particle.style.top = `${Math.random() * 100}%`;
-          particle.style.width = `${Math.random() * 3 + 1}px`;
-          particle.style.height = particle.style.width;
-          particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
-          particle.style.animationDelay = `${Math.random() * 5}s`;
-          
-          particlesContainer.appendChild(particle);
-        }
-      }
-
-      // Scroll to top button functionality
-      window.onscroll = function() {
-        const btnTop = document.getElementById('btnTop');
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          btnTop.style.display = "block";
-          btnTop.style.opacity = "1";
-        } else {
-          btnTop.style.opacity = "0";
-          setTimeout(() => {
-            btnTop.style.display = "none";
-          }, 300);
-        }
-      };
-
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }
-
-      // Fonctionnalité de recherche
-      function initSearchFunctionality() {
-        const searchInput = document.getElementById('search-input');
-        const searchResults = document.getElementById('search-results');
-        const closeSearch = document.getElementById('close-search');
-        
-        // Collecter tous les titres de novels
-        const allNovels = [];
-        const novelCards = document.querySelectorAll('.novel-card');
-        
-        novelCards.forEach(card => {
-          const title = card.querySelector('h3').textContent;
-          const image = card.querySelector('img').src;
-          const link = card.getAttribute('href');
-          const category = determineCategory(card);
-          
-          allNovels.push({
-            title,
-            image,
-            link,
-            category,
-            element: card
-          });
-        });
-        
-        // Déterminer la catégorie basée sur la section parente
-        function determineCategory(card) {
-          const section = card.closest('.chapitres');
-          if (!section) return 'unknown';
-          
-          const sectionTitle = section.querySelector('h2').textContent.toLowerCase();
-          
-          if (sectionTitle.includes('light novel')) return 'light-novel';
-          if (sectionTitle.includes('web-novel') || sectionTitle.includes('webnovel')) return 'webnovel'; // Ajouté
-          if (sectionTitle.includes('manga')) return 'manga';
-          if (sectionTitle.includes('animé')) return 'anime';
-          return 'nouveaute';
-        }
-        
-        // Gérer la recherche
-        searchInput.addEventListener('input', function() {
-          const query = this.value.toLowerCase().trim();
-          
-          if (query.length < 1) {
-            searchResults.classList.remove('active');
-            return;
-          }
-          
-          // Filtrer les résultats
-          const filteredResults = allNovels.filter(novel => 
-            novel.title.toLowerCase().includes(query)
-          );
-          
-          // Afficher les résultats
-          renderSearchResults(filteredResults, query);
-        });
-        
-        // Gérer le clic sur le bouton de fermeture
-        closeSearch.addEventListener('click', function() {
-          searchInput.value = '';
-          searchResults.classList.remove('active');
-        });
-        
-        // Fermer les résultats quand on clique en dehors
-        document.addEventListener('click', function(event) {
-          const isClickInsideSearch = searchInput.contains(event.target) || 
-                                      searchResults.contains(event.target);
-          
-          if (!isClickInsideSearch && searchResults.classList.contains('active')) {
-            searchResults.classList.remove('active');
-          }
-        });
-        
-        // Empêcher la propagation du clic dans la zone de recherche
-        searchResults.addEventListener('click', function(event) {
-          event.stopPropagation();
-        });
-        
-        // Rendre les résultats de recherche
-        function renderSearchResults(results, query) {
-          searchResults.innerHTML = '';
-          
-          if (results.length === 0) {
-            searchResults.innerHTML = '<div class="no-results">Aucun résultat trouvé</div>';
-            searchResults.classList.add('active');
-            return;
-          }
-          
-          // Regrouper par catégorie
-          const categories = {
-            'light-novel': [],
-            'webnovel': [],
-            'manga': [],
-            'anime': [],
-            'nouveaute': []
-          };
-          
-          results.forEach(novel => {
-            if (categories[novel.category]) {
-              categories[novel.category].push(novel);
-            } else {
-              categories.nouveaute.push(novel);
-            }
-          });
-          
-          // Créer les sections de résultats par catégorie
-          for (const [category, novels] of Object.entries(categories)) {
-            if (novels.length === 0) continue;
-            
-            const categoryTitle = getCategoryTitle(category);
-            const categorySection = document.createElement('div');
-            categorySection.className = 'search-category';
-            categorySection.innerHTML = `<h3>${categoryTitle}</h3>`;
-            
-            novels.forEach(novel => {
-              const resultItem = document.createElement('a');
-              resultItem.className = 'search-result-item';
-              resultItem.href = novel.link;
-              
-              // Mettre en surbrillance la partie correspondante
-              const titleLower = novel.title.toLowerCase();
-              const queryLower = query.toLowerCase();
-              const index = titleLower.indexOf(queryLower);
-              
-              let highlightedTitle = novel.title;
-              if (index !== -1) {
-                const before = novel.title.substring(0, index);
-                const match = novel.title.substring(index, index + query.length);
-                const after = novel.title.substring(index + query.length);
-                highlightedTitle = `${before}<span class="highlight">${match}</span>${after}`;
-              }
-              
-              resultItem.innerHTML = `
-                <img src="${novel.image}" alt="${novel.title}">
-                <div class="search-result-info">
-                  <span class="search-result-title">${highlightedTitle}</span>
-                  <span class="search-result-category">${getCategoryTitle(novel.category)}</span>
-                </div>
-              `;
-              
-              categorySection.appendChild(resultItem);
-            });
-            
-            searchResults.appendChild(categorySection);
-          }
-          
-          searchResults.classList.add('active');
-        }
-        
-        function getCategoryTitle(category) {
-          switch(category) {
-            case 'light-novel': return 'Light Novel';
-            case 'webnovel': return 'WebNovel'; // Ajouté
-            case 'manga': return 'Manga';
-            case 'anime': return 'Animé';
-            case 'nouveaute': return 'Nouveauté';
-            default: return 'Autre';
-          }
-        }
-      }
-    </script>
-  </head>
-  <body>
-    <div id="particles"></div>
-    <button id="btnTop" onclick="scrollToTop()" title="Retour en haut">↑</button>
-
-    
-    
-    <section class="header">
-      <div class="header-container">
-        <h1>NovelNeko</h1>
-        <div class="search-container">
-          <div class="search-input-wrapper">
-            <input type="text" id="search-input" placeholder="Rechercher un titre...">
-            <button id="close-search" class="search-close-btn">&times;</button>
-          </div>
-          <div id="search-results" class="search-results-container"></div>
-        </div>
-      </div>
-      <p class="credits">
-        Lecture gratuite en ligne • Traductions FR • Mise à jour régulière<br>
-        ✉️ <a href="about_contact.html" class="link">Besoin d'aide ? Contact & Support</a> 
-      </p>
-    </section>
-
-    <section class="chapitres">
-      <h2>DERNIERS AJOUTS</h2>
-      <div class="grid-novels">
-        <a href="7thprince/indexprince.html" class="novel-card nouveaute-card">
-          <img src="images/7thprince.jpg" alt="7thprince">
-            <h3>I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability (WebNovel)</h3>
-            <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>
-        <a href="redudantweb/index.html" class="novel-card nouveaute-card">
-          <img src="images/redundantweb.jpg" alt="redundantweb">
-          <h3>Mushoku Tensei - Redundant Reincarnation (WebNovel)</h3>
-          <span class="badge-apparaitre">NOUVEAUTÉ</span>
-        </a>
-      </div>
-    </section>
-
-    
-  
-    <section class="chapitres">
-      <h2>Light novel</h2>
-      <div class="grid-novels">
-        <a href="mushoku/indexmushoku.html" class="novel-card">
-          <img src="images/mushoku.jpg" alt="Mushoku Tensei">
-          <h3>Mushoku Tensei</h3>
-        </a>
-        <a href="redundant/indexredundant.html" class="novel-card">
-          <img src="images/rudundant.jpg" alt="Mushoku Tensei">
-          <h3>Mushoku Tensei - Redundant Reincarnation</h3>
-        </a>
-        <a href="rezero/indexrezero.html" class="novel-card">
-          <img src="images/rezero.jpg" alt="Re:Zero">
-          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro</h3>
-        </a>
-        <a href="tbate/indextbate.html" class="novel-card">
-          <img src="images/tbate.jpg" alt="The beginning after the end">
-          <h3>The Beginning After The End</h3>
-        </a>
-        <a href="cote/indexcote.html" class="novel-card">
-          <img src="images/cote.jpg" alt="Classroom of The Elite Y1">
-          <h3>Classroom of the Elite Year 1</h3>
-        </a>
-        <a href="cote2/indexcote.html" class="novel-card">
-          <img src="images/cote2.jpg" alt="Classroom of The Elite Y2">
-          <h3>Classroom of the Elite Year 2</h3>
-        </a>
-        <a href="cote3/indexcote.html" class="novel-card">
-          <img src="images/cote3.jpg" alt="Classroom of The Elite Y3">
-          <h3>Classroom of the Elite Year 3</h3>
-        </a>  
-        <a href="rascal/indexrascal.html" class="novel-card">
-          <img src="images/rascal.jpg" alt="Bunny girl Senpai">
-          <h3>Rascal Does Not Dream of Bunny Girl Senpai</h3>
-        </a> 
-        <a href="finest/indexfinest.html" class="novel-card">
-          <img src="images/finest.jpg" alt="Finest Assasin">
-          <h3>The World's Finest Assassin Gets Reincarnated in Another World</h3>
-        </a>
-        <a href="eminence/indexeminence.html" class="novel-card">
-          <img src="images/eminence.jpg" alt="Éminence des Ombres">
-          <h3>The Eminence in Shadow</h3> 
-        </a>
-        <a href="gensouki/indexgensouki.html" class="novel-card">
-        <img src="images/gensouki.jpg" alt="Gensouki">
-        <h3>Seirei Gensouki: Spirit Chronicles</h3>
-        </a>
-        <a href="sao/indexsao.html" class="novel-card">
-          <img src="images/sao.jpg" alt="Sao">
-          <h3>Sword Art Online</h3>
-        </a>
-        <a href="irregular/indexirregular.html" class="novel-card">
-          <img src="images/irregular.jpg" alt="irregular">
-          <h3>The Irregular at Magic High School</h3>
-        </a>
-        <a href="danmachi/indexdanmachi.html" class="novel-card">
-          <img src="images/danmachi.jpg" alt="danmachi">
-          <h3>DanMachi: La Légende des Familias</h3>
-        </a>
-        <a href="loveelf/indexelf.html" class="novel-card">
-          <img src="images/loveelf.jpg" alt="loveelf">
-          <h3>An Archdemon's Dilemma: How to Love Your Elf Bride</h3>
-        </a>
-        <a href="elfjapon/indexjapon.html" class="novel-card">
-          <img src="images/elfjapon.jpg" alt="elfjapon">
-          <h3>Welcome to Japan, Ms. Elf!</h3>
-        </a>
-        <a href="ange/indexange.html" class="novel-card">
-          <img src="images/ange.jpg" alt="ange">
-          <h3>The Angel Next Door Spoils Me Rotten</h3>
-        </a>
-        <a href="days/indexdays.html" class="novel-card">
-          <img src="images/days.jpg" alt="days">
-          <h3>Days with My Stepsister</h3>
-        </a> 
-        <a href="carnets/indexcarnets.html" class="novel-card">
-          <img src="images/carnets.jpg" alt="carnets">
-          <h3>Les Carnets de l'Apothicaire</h3>
-        </a> 
-        <a href="goblin/indexgoblin.html" class="novel-card">
-          <img src="images/goblin.jpg" alt="goblin">
-          <h3>Goblin Slayer</h3>
-        </a> 
-        <a href="alya/indexalya.html" class="novel-card">
-          <img src="images/alya.jpg" alt="goblin">
-          <h3>Alya Sometimes Hides Her Feelings in Russian</h3>
-        </a>
-        <a href="reader/indexreader.html" class="novel-card">
-          <img src="images/reader.jpg" alt="reader">
-          <h3>Omniscient Reader's Viewpoint</h3>
-        </a> 
-        <a href="reign/indexreign.html" class="novel-card">
-          <img src="images/reign.jpg" alt="reign">
-          <h3>Reign of the Seven Spellblades</h3>
-        </a>
-        <a href="perfect/indexperfect.html" class="novel-card">
-          <img src="images/perfect.jpg" alt="perfect">
-          <h3>The Too-Perfect Saint: Tossed Aside by My Fiancé and Sold to Another Kingdom</h3>
-        </a>
-         <a href="violet/indexviolet.html" class="novel-card">
-          <img src="images/violet.jpg" alt="violet">
-          <h3>Violet Evergarden</h3>
-        </a>
-        <a href="biblia/indexbiblia.html" class="novel-card">
-          <img src="images/biblia.jpg" alt="biblia">
-          <h3>Biblia Koshodô no Jiken Techô</h3>
-        </a> 
-        <a href="hyouka/indexhyouka.html" class="novel-card">
-          <img src="images/hyouka.jpg" alt="hyouka">
-          <h3>Hyouka</h3>
-        </a>
-        <a href="konosuba/indexkonosuba.html" class="novel-card">
-          <img src="images/konosuba.jpg" alt="konosuba">
-          <h3>KonoSuba</h3>
-        </a>
-        <a href="gekkou/indexgekkou.html" class="novel-card">
-          <img src="images/gekkou.jpg" alt="gekkou">
-          <h3>Gekkou</h3>
-        </a>
-        <a href="secrets/indexsecrets.html" class="novel-card">
-          <img src="images/secrets.jpg" alt="secrets">
-          <h3>Secrets Of The Silent Witch </h3>
-        </a>
-        <a href="ramune/indexramune.html" class="novel-card">
-          <img src="images/ramune.jpg" alt="ramune">
-          <h3>Chitose Is in the Ramune Bottle</h3>
-        </a>
-        <a href="sukasuka/indexsuka.html" class="novel-card">
-          <img src="images/sukasuka.jpg" alt="suka">
-          <h3>Sukasuka</h3>
-        </a>
-        <a href="grimgar/indexgrimgar.html" class="novel-card">
-          <img src="images/grimgar.jpg" alt="grimgar">
-          <h3>Grimgar of Fantasy and Ash</h3>
-        </a>
-        <a href="sword/indexdword.html" class="novel-card">
-          <img src="images/sword.jpg" alt="sword">
-          <h3>Sword of the Demon Hunter: Kijin Gentosho</h3> 
-        </a> 
-          <a href="simple/indexsimple.html" class="novel-card">
-          <img src="images/simple.jpg" alt="simple">
-          <h3>Un Simple Sondage</h3>
-        </a> 
-          <a href="reina/indexreina.html" class="novel-card">
-          <img src="images/reina.jpg" alt="simple">
-          <h3>Reina Kamisu</h3>
-        </a>
-          <a href="sister/indexsister.html" class="novel-card">
-          <img src="images/chuunibyuu.jpg" alt="simple">
-          <h3>My Big Sister Lives in a Fantasy World</h3>
-        </a>  
-        <a href="prince/indexprince.html" class="novel-card">
-          <img src="images/prince.jpg" alt="prince">
-          <h3>The Insipid Prince</h3>
-        </a>
-        <a href="tunnel/indextunnel.html" class="novel-card">
-          <img src="images/tunnel.jpg" alt="tunnel">
-          <h3>Tunnel to Summer</h3>
-        </a>
-        <a href="fate/indexfate.html" class="novel-card">
-          <img src="images/fate.jpg" alt="fate">
-          <h3>Fate/Strange Fake</h3>
-        </a>
-        <a href="chuunibyou/indexchu.html" class="novel-card">
-          <img src="images/chuunibyou.jpg" alt="chuunibyou">
-          <h3>Chuunibyou Demo Koi ga Shitai!</h3>
-        </a> 
-        <a href="hereos/indexheros.html" class="novel-card">
-          <img src="images/hereos.jpg" alt="hereos">
-          <h3>Classroom for Heroes</h3>
-        </a> 
-        <a href="misfit/indexmisfit.html" class="novel-card">
-          <img src="images/misfit.jpg" alt="misfit">
-          <h3>The Misfit of Demon King Academy</h3>
-        </a> 
-        <a href="kukakuma/indexkuma.html" class="novel-card">
-          <img src="images/kukakuma.jpg" alt="kuma">
-          <h3>Kuma Kuma Kuma Bear</h3>  
-        </a>
-        <a href="blood/indexblood.html" class="novel-card">
-          <img src="images/blood.jpg" alt="blood">
-          <h3>The Bloodline</h3>  
-        </a>
-        <a href="assasin/index.html" class="novel-card">
-          <img src="images/assasin.jpg" alt="yakusoku">
-          <h3>La Fierté d'Assassin</h3>
-        </a>
-      </div>
-    </section>
-
-    <section class="chapitres">
-      <h2>Web-novels</h2>
-      <div class="grid-novels">
-        <a href="mushokuweb/indexmushoku.html" class="novel-card">
-          <img src="images/mushokuweb.jpg" alt="Mushoku Tensei webnovel">
-          <h3>Mushoku Tensei (WebNovel)</h3>
-        </a>
-          <a href="redudantweb/index.html" class="novel-card">
-          <img src="images/redundantweb.jpg" alt="redundantweb">
-          <h3>Mushoku Tensei - Redundant Reincarnation (WebNovel)</h3>
-        </a>
-          <a href="rezerowebnovel/indexweb.html" class="novel-card">
-          <img src="images/webnovel.jpg" alt="Re:Zero">
-          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro (WebNovel)</h3>
-        </a>
-          <a href="eminenceweb/indexeminence.html" class="novel-card">
-          <img src="images/eminenceweb.jpg" alt="Éminence des Ombres">
-          <h3>The Eminence in Shadow (WebNovel)</h3> 
-        </a>
-          <a href="gensoukiweb/indexgensouki.html" class="novel-card">
-          <img src="images/gensoukiweb.jpg" alt="Gensoukiweb">
-          <h3>Seirei Gensouki: Spirit Chronicles (WebNovel)</h3>
-        </a>
-          <a href="saoweb/indexsao.html" class="novel-card">
-          <img src="images/saoweb.jpg" alt="Saoweb">
-          <h3>Sword Art Online (WebNovel)</h3>
-        </a>
-          <a href="angeweb/indexange.html" class="novel-card">
-          <img src="images/ange.jpg" alt="angeweb">
-          <h3>The Angel Next Door Spoils Me Rotten (WebNovel)</h3>
-        </a>
-          <a href="misfitweb/indexmisfit.html" class="novel-card">
-          <img src="images/misfitweb.jpg" alt="misfitweb">
-          <h3>The Misfit of Demon King Academy (WebNovel)</h3>
-        </a> 
-          <a href="slweb/indexsl.html" class="novel-card">
-          <img src="images/slweb.jpg" alt="slweb">
-          <h3>Solo Leveling (WebNovel)</h3>
-        </a>
-          <a href="slragnaweb/indexsl.html" class="novel-card">
-          <img src="images/slragnaweb.jpg" alt="slragnaweb">
-          <h3>Solo Leveling Ragnarok (WebNovel)</h3>
-        </a>
-          <a href="slimeweb/indexslime.html" class="novel-card">
-          <img src="images/slime.jpg" alt="slime">
-          <h3>Tensei shitara Slime datta ken (WebNovel)</h3>
-        </a> 
-          <a href="7thprince/indexprince.html" class="novel-card">
-          <img src="images/7thprince.jpg" alt="7thprince">
-          <h3>I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability (WebNovel)</h3>
-        </a>
-          <a href="wiseman/indexman.html" class="novel-card">
-          <img src="images/wiseman.jpg" alt="wiseman">
-          <h3>Wise Man's Grandchild (WebNovel)</h3>
-        </a>
-          <a href="dailylife/indexdaily.html" class="novel-card">
-          <img src="images/dailylife.jpg" alt="daily">
-          <h3>The Daily Life Of The Immortal King (WebNovel)</h3>
-        </a>
-          <a href="lotm/indexlotm.html" class="novel-card">
-          <img src="images/lotm.jpg" alt="lotm">
-          <h3>Lord Of The Mysteries (WebNovel)</h3>
-        </a>
-          <a href="lotm2/indexlotm.html" class="novel-card">
-          <img src="images/lotm2.jpg" alt="lotm">
-          <h3>Lord of Mysteries 2: Circle of Inevitability (WebNovel)</h3>
-        </a>
-          <a href="heimin/index.html" class="novel-card">
-          <img src="images/heimin.jpg" alt="heimin">
-          <h3>Heimin Shusshin no Teikoku Shōkan, Munō na Kizoku Jōkan wo Jūrin shite Nariagaru (WebNovel)</h3>
-        </a>
-
-
-      </div>
-    </section>
-
-    
-
-    <section class="chapitres">
-      <h2>Mangas</h2>
-      <div class="grid-novels">
-        <a href="saomanga/indexsao.html" class="novel-card">
-          <img src="images/saomanga.jpg" alt="saomanga">
-          <h3>Sword Art Online</h3>
-        </a>
-        <a href="mushokumanga/indexmushoku.html" class="novel-card">
-          <img src="images/mushokumanga.jpg" alt="mushokumanga">
-          <h3>Mushoku Tensei</h3>
-        </a>
-      </div>
-    </section>
-
-    <section class="chapitres">
-      <h2>Animé</h2>
-      <div class="grid-novels">
-        <a href="ds/indexds.html" class="novel-card">
-          <img src="images/ds.jpg" alt="ds">
-          <h3>Demon Slayer -Kimetsu no Yaiba- The Movie: Infinity Castle</h3>
-        </a>  
-        <a href="mushokuanime/indexmushoku.html" class="novel-card">
-          <img src="images/mushokuanime.jpg" alt="Mushoku Tensei">
-          <h3>Mushoku Tensei</h3>
-        </a>
-        <a href="rezeroanime/indexrezero.html" class="novel-card">
-          <img src="images/rezeroanime.jpg" alt="Re:Zero">
-          <h3>Re:Zero</h3>
-        </a>
-        <a href="coteanime/indexcote.html" class="novel-card">
-          <img src="images/coteanime.jpg" alt="Classroom of The Elite Y1">
-          <h3>Classroom of the Elite</h3>
-        </a> 
-        <a href="saoanime/saoindex.html" class="novel-card">
-          <img src="images/saoanime.jpg" alt="saoanime">
-          <h3>Sword Art Online</h3>
-        </a> 
-      </div>
-    </section>
-  </body>
+  </script>
+<footer>
+  <p style="text-align:center;">&copy; 2025 NovelNeko. Tous droits réservés.</p>
+</footer>
+</body>
 </html>

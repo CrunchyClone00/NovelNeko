@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovelNeko</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #e2e8f0;
+      background: #1a1d2e;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .header {
+      background: #2c3040;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .nav-link:hover {
+      color: #fff;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Recherche améliorée */
+    .search-box {
+      position: relative;
+    }
+
+    .search-input {
+      background: #1a1d2e;
+      border: 1px solid #3a4050;
+      border-radius: 6px;
+      padding: 0.5rem 2.5rem 0.5rem 1rem;
+      color: #e2e8f0;
+      width: 250px;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: #3a7bd5;
+      width: 300px;
+    }
+
+    .close-search {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      font-size: 1.2rem;
+      padding: 0.25rem;
+      display: none;
+      transition: color 0.2s;
+    }
+
+    .close-search:hover {
+      color: #fff;
+    }
+
+    .close-search.active {
+      display: block;
+    }
+
+    /* Résultats de recherche */
+    .search-results {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      right: 0;
+      background: #2c3040;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      max-height: 500px;
+      overflow-y: auto;
+      display: none;
+      z-index: 1000;
+    }
+
+    .search-results.active {
+      display: block;
+    }
+
+    .search-result-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: background 0.2s;
+      border-bottom: 1px solid #3a4050;
+    }
+
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+
+    .search-result-item:hover {
+      background: #3a4050;
+    }
+
+    .search-result-item img {
+      width: 40px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .search-result-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .search-result-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .search-result-title .highlight {
+      background: #3a7bd5;
+      color: white;
+      padding: 0 2px;
+      border-radius: 2px;
+    }
+
+    .no-results {
+      padding: 2rem;
+      text-align: center;
+      color: #94a3b8;
+      font-style: italic;
+    }
+
+    .btn-signin {
+      background: #e63946;
+      color: white;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-signin:hover {
+      background: #d62839;
+    }
+
+    .btn-signup {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #3a4050;
+      padding: 0.5rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-signup:hover {
+      border-color: #3a7bd5;
+      color: #3a7bd5;
+    }
+
+    /* Section Web Novels */
+    .chapitres {
+      padding: 3rem 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      margin-bottom: 2rem;
+    }
+
+    .chapitres h2 {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .grid-novels {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .novel-card {
+      display: flex;
+      flex-direction: column;
+      background: #252837;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: #e2e8f0;
+      position: relative;
+    }
+
+    .novel-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .novel-card-image {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 2/3;
+      overflow: hidden;
+    }
+
+    .novel-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .novel-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .rating-badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #ffd700;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .novel-card-content {
+      padding: 1rem 0.75rem;
+      background: #252837;
+    }
+
+    .novel-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 0.95rem;
+      color: #fff;
+      font-weight: 600;
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .novel-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    #btnTop {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 100;
+      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(58, 123, 213, 0.3);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    #btnTop:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(58, 123, 213, 0.5);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .header {
+        padding: 1rem;
+      }
+
+      .nav-menu {
+        gap: 1rem;
+      }
+
+      .search-input {
+        width: 200px;
+      }
+
+      .search-input:focus {
+        width: 250px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-left {
+        gap: 1rem;
+      }
+
+      .nav-menu {
+        display: none;
+      }
+
+      .search-input {
+        width: 150px;
+      }
+
+      .search-input:focus {
+        width: 200px;
+      }
+
+      .grid-novels {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 1rem;
+      }
+
+      .chapitres {
+        padding: 2rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .header-right {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .search-box {
+        flex: 1;
+      }
+
+      .search-input {
+        width: 100%;
+      }
+
+      .search-input:focus {
+        width: 100%;
+      }
+
+      .grid-novels {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+
+      .novel-card h3 {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">N</div>
+        <span class="logo-text">NovelNeko</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="lightnovel.html" class="nav-link">📘 LIGHT NOVELS</a></li>
+          <li><a href="webnovels.html" class="nav-link">📙 WEB-NOVELS</a></li>
+          <li><a href="mangas.html" class="nav-link">📰 MANGAS</a></li>
+          <li><a href="#" class="nav-link">💬 DISCORD</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <div class="search-box">
+        <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+        <button id="close-search" class="close-search">×</button>
+        <div id="search-results" class="search-results"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section Web Novels -->
+  <section class="chapitres">
+    <div class="section-header">
+    </div>
+    <div class="grid-novels">
+      <a href="mushokuweb/indexmushoku.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/mushokuweb.jpg" alt="Mushoku Tensei webnovel">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Mushoku Tensei</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 1</div>
+            <div class="meta-item">📖 285 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="redudantweb/index.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/redundantweb.jpg" alt="redundantweb">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Mushoku Tensei - Redundant Reincarnation</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 2</div>
+            <div class="meta-item">📖 32 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="rezerowebnovel/indexweb.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/webnovel.jpg" alt="Re:Zero">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 3</div>
+            <div class="meta-item">📖 13 VOLUMES</div>
+          </div>
+        </div>
+      </a>
+      <a href="eminenceweb/indexeminence.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/eminenceweb.jpg" alt="Éminence des Ombres">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>The Eminence in Shadow</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 4</div>
+            <div class="meta-item">📖 206 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="gensoukiweb/indexgensouki.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/gensoukiweb.jpg" alt="Gensoukiweb">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Seirei Gensouki: Spirit Chronicles</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 5</div>
+            <div class="meta-item">📖 229 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="saoweb/indexsao.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/saoweb.jpg" alt="Saoweb">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Sword Art Online</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 6</div>
+            <div class="meta-item">📖 10 VOLUMES</div>
+          </div>
+        </div>
+      </a>
+      <a href="angeweb/indexange.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/ange.jpg" alt="angeweb">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>The Angel Next Door Spoils Me Rotten</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 7</div>
+            <div class="meta-item">📖 275 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="misfitweb/indexmisfit.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/misfitweb.jpg" alt="misfitweb">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>The Misfit of Demon King Academy</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 8</div>
+            <div class="meta-item">📖 494 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="slweb/indexsl.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/slweb.jpg" alt="slweb">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Solo Leveling</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 9</div>
+            <div class="meta-item">📖 270 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="slragnaweb/indexsl.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/slragnaweb.jpg" alt="slragnaweb">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Solo Leveling Ragnarok</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 10</div>
+            <div class="meta-item">📖 155 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="slimeweb/indexslime.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/slime.jpg" alt="slime">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Tensei shitara Slime datta ken</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 11</div>
+            <div class="meta-item">📖 417 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="7thprince/indexprince.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/7thprince.jpg" alt="7thprince">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>I Was Reincarnated as the 7th Prince So I Can Take My Time Perfecting My Magical Ability</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 12</div>
+            <div class="meta-item">📖 232 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="wiseman/indexman.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/wiseman.jpg" alt="wiseman">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Wise Man's Grandchild</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 13</div>
+            <div class="meta-item">📖 331 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="dailylife/indexdaily.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/dailylife.jpg" alt="daily">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>The Daily Life Of The Immortal King</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 14</div>
+            <div class="meta-item">📖 2202 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="lotm/indexlotm.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/lotm.jpg" alt="lotm">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Lord Of The Mysteries</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 15</div>
+            <div class="meta-item">📖 1432 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="lotm2/indexlotm.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/lotm2.jpg" alt="lotm">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Lord of Mysteries 2: Circle of Inevitability</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 16</div>
+            <div class="meta-item">📖 1180 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+      <a href="heimin/index.html" class="novel-card">
+        <div class="novel-card-image">
+          <img src="images/heimin.jpg" alt="heimin">
+          <div class="rating-badge">★★★★★5</div>
+        </div>
+        <div class="novel-card-content">
+          <h3>Heimin Shusshin no Teikoku Shōkan, Munō na Kizoku Jōkan wo Jūrin shite Nariagaru</h3>
+          <div class="novel-meta">
+            <div class="meta-item">👁️ RANG: 17</div>
+            <div class="meta-item">📖 669 CHAPITRES</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    // Fonction scroll to top
+    window.onscroll = function() {
+      const btn = document.getElementById('btnTop');
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = 'block';
+        btn.style.opacity = '1';
+      } else {
+        btn.style.opacity = '0';
+        setTimeout(() => {
+          if (btn.style.opacity === '0') {
+            btn.style.display = 'none';
+          }
+        }, 300);
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Fonctionnalité de recherche pour web-novels
+    function initSearchFunctionality() {
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+      const closeSearch = document.getElementById('close-search');
+
+      if (!searchInput || !searchResults) return;
+
+      // Collecter tous les web-novels
+      const allNovels = [];
+      const novelCards = document.querySelectorAll('.chapitres .novel-card');
+
+      novelCards.forEach(card => {
+        const h3 = card.querySelector('h3');
+        const imgEl = card.querySelector('img');
+        const title = h3 ? h3.textContent.trim() : 'Sans titre';
+        const image = imgEl ? imgEl.src : '';
+        const link = card.getAttribute('href') || '#';
+
+        allNovels.push({
+          title,
+          image,
+          link
+        });
+      });
+
+      // Gérer la recherche
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+
+        if (query.length > 0) {
+          closeSearch.classList.add('active');
+        } else {
+          closeSearch.classList.remove('active');
+        }
+
+        if (query.length < 1) {
+          searchResults.classList.remove('active');
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        // Filtrer les résultats
+        const filteredResults = allNovels.filter(novel =>
+          novel.title.toLowerCase().includes(query)
+        );
+
+        renderSearchResults(filteredResults, query);
+      });
+
+      // Gérer le clic sur le bouton de fermeture
+      closeSearch.addEventListener('click', function() {
+        searchInput.value = '';
+        closeSearch.classList.remove('active');
+        searchResults.classList.remove('active');
+        searchResults.innerHTML = '';
+        searchInput.focus();
+      });
+
+      // Fermer les résultats quand on clique en dehors
+      document.addEventListener('click', function(event) {
+        const isClickInsideSearch = searchInput.contains(event.target) ||
+                                    searchResults.contains(event.target) ||
+                                    closeSearch.contains(event.target);
+
+        if (!isClickInsideSearch && searchResults.classList.contains('active')) {
+          searchResults.classList.remove('active');
+        }
+      });
+
+      searchResults.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+
+      // Rendre les résultats de recherche
+      function renderSearchResults(results, query) {
+        searchResults.innerHTML = '';
+
+        if (results.length === 0) {
+          searchResults.innerHTML = '<div class="no-results">Aucun résultat trouvé</div>';
+          searchResults.classList.add('active');
+          return;
+        }
+
+        results.forEach(novel => {
+          const resultItem = document.createElement('a');
+          resultItem.className = 'search-result-item';
+          resultItem.href = novel.link;
+
+          // Mettre en surbrillance
+          const titleLower = novel.title.toLowerCase();
+          const queryLower = query.toLowerCase();
+          const index = titleLower.indexOf(queryLower);
+
+          let highlightedTitle = escapeHtml(novel.title);
+          if (index !== -1) {
+            const before = escapeHtml(novel.title.substring(0, index));
+            const match = escapeHtml(novel.title.substring(index, index + query.length));
+            const after = escapeHtml(novel.title.substring(index + query.length));
+            highlightedTitle = `${before}<span class="highlight">${match}</span>${after}`;
+          }
+
+          resultItem.innerHTML = `
+            <img src="${novel.image}" alt="${escapeHtml(novel.title)}">
+            <div class="search-result-info">
+              <span class="search-result-title">${highlightedTitle}</span>
+              <span class="search-result-category">Web Novel</span>
+            </div>
+          `;
+
+          searchResults.appendChild(resultItem);
+        });
+
+        searchResults.classList.add('active');
+      }
+
+      function escapeHtml(text) {
+        return text
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+    }
+
+    // Initialiser la recherche
+    document.addEventListener('DOMContentLoaded', function() {
+      initSearchFunctionality();
+    });
+  </script>
+  <footer>
+  <p style="text-align:center;">&copy; 2025 NovelNeko. Tous droits réservés.</p>
+</footer>
+</body>
+</html>

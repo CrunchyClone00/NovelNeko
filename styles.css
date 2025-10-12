@@ -57,6 +57,38 @@ body {
   animation: float linear infinite;
 }
 
+nav {
+  position: relative; /* ne plus fixer en haut pour éviter de recouvrir .header */
+  width: 100%;
+  background-color: #0f172a;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  z-index: 5; /* plus bas que .header (z-index:10) */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #00aaff;
+}
+
+/* Pour que le contenu ne passe pas sous la barre */
+.content {
+  padding-top: 80px;
+  text-align: center;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0) translateX(0) rotate(0deg);
@@ -350,6 +382,8 @@ body {
   text-shadow: 0 0 10px rgba(74, 222, 255, 0.2);
 }
 
+
+
 /* Novel Grid */
 .grid-novels {
   display: grid;
@@ -372,6 +406,7 @@ body {
   color: var(--text-primary);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
 
 .novel-card:hover {
   transform: translateY(-10px);
