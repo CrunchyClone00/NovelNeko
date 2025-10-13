@@ -129,6 +129,36 @@
       color: #fff;
     }
 
+    /* Menu Hamburger */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      padding: 5px;
+      z-index: 101;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+
     .header-right {
       display: flex;
       align-items: center;
@@ -422,6 +452,18 @@
       box-shadow: 0 8px 25px rgba(58, 123, 213, 0.5);
     }
 
+    footer {
+      background: #2c3040;
+      padding: 2rem;
+      margin-top: 4rem;
+      border-top: 1px solid #3a4050;
+    }
+
+    footer p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
     /* Responsive */
     @media (max-width: 1024px) {
       .header {
@@ -450,12 +492,51 @@
     }
 
     @media (max-width: 768px) {
+      .header {
+        flex-wrap: wrap;
+      }
+
       .header-left {
         gap: 1rem;
+        flex: 1;
+      }
+
+      .menu-toggle {
+        display: flex;
       }
 
       .nav-menu {
-        display: none;
+        position: fixed;
+        top: 73px;
+        left: -100%;
+        width: 280px;
+        height: calc(100vh - 73px);
+        background: #2c3040;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+        align-items: flex-start;
+        box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+        transition: left 0.3s ease;
+        z-index: 99;
+      }
+
+      .nav-menu.active {
+        left: 0;
+      }
+
+      .nav-link {
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #3a4050;
+      }
+
+      .header-right {
+        order: 3;
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-between;
       }
 
       .search-input {
@@ -507,11 +588,6 @@
         gap: 1rem;
       }
 
-      .header-right {
-        width: 100%;
-        justify-content: space-between;
-      }
-
       .search-box {
         flex: 1;
       }
@@ -540,6 +616,8 @@
 </head>
 <body>
   <div id="particles"></div>
+  
+  <button id="btnTop" onclick="scrollToTop()" title="Retour en haut">↑</button>
 
   <!-- Header -->
   <header class="header">
@@ -549,22 +627,23 @@
         <span class="logo-text">NovelNeko</span>
       </a>
       <nav>
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="navMenu">
           <li><a href="lightnovel.html" class="nav-link">📘 LIGHT NOVELS</a></li>
           <li><a href="webnovels.html" class="nav-link">📙 WEB-NOVELS</a></li>
           <li><a href="mangas.html" class="nav-link">📰 MANGAS</a></li>
           <li><a href="#" class="nav-link">💬 DISCORD</a></li>
         </ul>
       </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div class="header-right">
       <a href="https://discord.gg/9n7gX8Jj9B" class="logo">
         <span class="logo-text">Yurei Scan</span>
       </a>
-      <div class="search-box">
-        <input type="text" id="search-input" class="search-input" placeholder="Rechercher..." autocomplete="off">
-        <button id="close-search" class="close-search">×</button>
-      </div>
     </div>
   </header>
 
@@ -587,22 +666,22 @@
       <!-- Article principal -->
       <a href="tonikaku/index.html" class="news-main">
         <div class="news-main-image">
-        <img src="images/tonikaku.jpg" alt="Tonikaku Kawaii — visuel principal">
-</div>
-<div class="news-main-content">
-  <h3 class="news-main-title">Ajout du manga Tonikaku Kawaii</h3>
-  <p class="news-main-excerpt">
-    Le manga <em>Tonikaku Kawaii</em> rejoint le site !  
-    Suivez la romance entre Nasa et Tsukasa, un couple marié dès le premier rendez-vous, dans une comédie douce et pleine de mystère.  
-    Les chapitres sont disponibles, traduits par la Yurei Scan.
-  </p>
-  <div class="news-meta">
-    <span>📅 Oct 12, 2025</span>
-    <span>👤 By Ziom</span>
-    <span>🏷️ Ajout de contenu</span>
-  </div>
-</div>
-</a>
+          <img src="images/tonikaku.jpg" alt="Tonikaku Kawaii — visuel principal">
+        </div>
+        <div class="news-main-content">
+          <h3 class="news-main-title">Ajout du manga Tonikaku Kawaii</h3>
+          <p class="news-main-excerpt">
+            Le manga <em>Tonikaku Kawaii</em> rejoint le site !  
+            Suivez la romance entre Nasa et Tsukasa, un couple marié dès le premier rendez-vous, dans une comédie douce et pleine de mystère.  
+            Les chapitres sont disponibles, traduits par la Yurei Scan.
+          </p>
+          <div class="news-meta">
+            <span>📅 Oct 12, 2025</span>
+            <span>👤 By Ziom</span>
+            <span>🏷️ Ajout de contenu</span>
+          </div>
+        </div>
+      </a>
 
       <!-- Articles secondaires -->
       <div class="news-sidebar">
@@ -629,6 +708,10 @@
     </div>
   </section>
 
+  <footer>
+    <p style="text-align:center;">&copy; 2025 NovelNeko. Tous droits réservés.</p>
+  </footer>
+
   <script>
     // Création des particules
     function createParticles() {
@@ -653,13 +736,15 @@
     // Bouton retour en haut
     window.onscroll = function() {
       const btnTop = document.getElementById('btnTop');
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         btnTop.style.display = "block";
         btnTop.style.opacity = "1";
       } else {
         btnTop.style.opacity = "0";
         setTimeout(() => {
-          btnTop.style.display = "none";
+          if (btnTop.style.opacity === "0") {
+            btnTop.style.display = "none";
+          }
         }, 300);
       }
     };
@@ -695,52 +780,78 @@
       });
     }
 
-    // Initialisation au chargement de la page
-    window.onload = function() {
-      createParticles();
-      initSearchFunctionality();
-    };
+    // Fonction pour le menu mobile
+    function initMobileMenu() {
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      if (!menuToggle || !navMenu) return;
+
+      menuToggle.addEventListener('click', function() {
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+
+      // Fermer le menu quand on clique sur un lien
+      const navLinks = navMenu.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          menuToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+        });
+      });
+
+      // Fermer le menu quand on clique en dehors
+      document.addEventListener('click', function(event) {
+        const isClickInsideMenu = navMenu.contains(event.target) || menuToggle.contains(event.target);
+        
+        if (!isClickInsideMenu && navMenu.classList.contains('active')) {
+          menuToggle.classList.remove('active');
+          navMenu.classList.remove('active');
+        }
+      });
+    }
 
     // Fonction pour déterminer le nom du navigateur
-      function obtenirNavigateur() {
-        const ua = navigator.userAgent;
+    function obtenirNavigateur() {
+      const ua = navigator.userAgent;
 
-        if (ua.includes("Firefox/")) return "Firefox";
-        if (ua.includes("Edg/")) return "Edge";
-        if (ua.includes("Chrome/")) return "Chrome";
-        if (ua.includes("Safari/") && !ua.includes("Chrome")) return "Safari";
-        if (ua.includes("OPR/") || ua.includes("Opera")) return "Opera";
-        return "Navigateur inconnu";
-      }
+      if (ua.includes("Firefox/")) return "Firefox";
+      if (ua.includes("Edg/")) return "Edge";
+      if (ua.includes("Chrome/")) return "Chrome";
+      if (ua.includes("Safari/") && !ua.includes("Chrome")) return "Safari";
+      if (ua.includes("OPR/") || ua.includes("Opera")) return "Opera";
+      return "Navigateur inconnu";
+    }
 
-      // Fonction pour déterminer le système d'exploitation
-      function obtenirOS() {
-        const ua = navigator.userAgent || navigator.vendor || window.opera;
+    // Fonction pour déterminer le système d'exploitation
+    function obtenirOS() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
 
-        if (/windows phone/i.test(ua)) return "Windows Phone";
-        if (/android/i.test(ua)) return "Android";
-        if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS";
-        if (/Macintosh/i.test(ua) && 'ontouchend' in document) return "iPadOS";
-        if (/Mac/i.test(ua)) return "macOS";
-        if (/Win/i.test(ua)) return "Windows";
-        if (/Linux/i.test(ua)) return "Linux";
+      if (/windows phone/i.test(ua)) return "Windows Phone";
+      if (/android/i.test(ua)) return "Android";
+      if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS";
+      if (/Macintosh/i.test(ua) && 'ontouchend' in document) return "iPadOS";
+      if (/Mac/i.test(ua)) return "macOS";
+      if (/Win/i.test(ua)) return "Windows";
+      if (/Linux/i.test(ua)) return "Linux";
 
-        return "Système inconnu";
-      }
+      return "Système inconnu";
+    }
 
-      // Fonction principale pour envoyer les informations au webhook Discord
-      function enregistrerConnexion() {
-        const os = obtenirOS();
-        const navigateur = obtenirNavigateur();
-        const langue = navigator.language || 'Inconnue';
+    // Fonction principale pour envoyer les informations au webhook Discord
+    function enregistrerConnexion() {
+      const os = obtenirOS();
+      const navigateur = obtenirNavigateur();
+      const langue = navigator.language || 'Inconnue';
 
-        // Obtenir la date et l'heure actuelles
-        const maintenant = new Date();
-        const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-        const heureStr = maintenant.toLocaleTimeString('fr-FR');
+      // Obtenir la date et l'heure actuelles
+      const maintenant = new Date();
+      const dateStr = maintenant.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      const heureStr = maintenant.toLocaleTimeString('fr-FR');
 
-        const webhookUrl = 'https://discord.com/api/webhooks/1389727447158882516/j2SBqM0Trq6v3lTI3Wn-Gh31C-g1SlhBmjAY45q5p5lhI5mjwnTKpjPUVNMqGj8r4qPu';
-        const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
+      const webhookUrl = 'https://discord.com/api/webhooks/1389727447158882516/j2SBqM0Trq6v3lTI3Wn-Gh31C-g1SlhBmjAY45q5p5lhI5mjwnTKpjPUVNMqGj8r4qPu';
+      const message = `🔔 Un utilisateur s'est connecté sur le site **Novel Neko**.
 
 📅 **Date** : ${dateStr}
 ⏰ **Heure** : ${heureStr}
@@ -749,38 +860,36 @@
 🌍 **Langue du navigateur** : ${langue}
 `;
 
-        const data = {
-          content: message
-        };
-
-        fetch(webhookUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        })
-        .then(response => {
-          if (response.ok) {
-            console.log('Connexion enregistrée sur Discord');
-          } else {
-            console.error("Erreur lors de l'envoi du message");
-          }
-        })
-        .catch(error => {
-          console.error("Erreur réseau :", error);
-        });
-      }
-
-      // Appel automatique de la fonction à chaque chargement de page
-      window.onload = function() {
-        enregistrerConnexion();
-        createParticles();
-        initSearchFunctionality();
+      const data = {
+        content: message
       };
+
+      fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (response.ok) {
+          console.log('Connexion enregistrée sur Discord');
+        } else {
+          console.error("Erreur lors de l'envoi du message");
+        }
+      })
+      .catch(error => {
+        console.error("Erreur réseau :", error);
+      });
+    }
+
+    // Initialisation au chargement de la page
+    window.addEventListener('load', function() {
+      createParticles();
+      initSearchFunctionality();
+      initMobileMenu();
+      enregistrerConnexion();
+    });
   </script>
-<footer>
-  <p style="text-align:center;">&copy; 2025 NovelNeko. Tous droits réservés.</p>
-</footer>
 </body>
 </html>
