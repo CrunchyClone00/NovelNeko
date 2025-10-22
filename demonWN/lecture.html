@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sword of the Demon Hunter (WebNovel)</title>
+  <style>
+    :root {
+      --primary: #3a7bd5;
+      --primary-glow: #4e9aff;
+      --secondary: #00d2ff;
+      --accent: #ff6b6b;
+      --background-start: #0f172a;
+      --background-end: #020617;
+      --card-bg: rgba(15, 23, 42, 0.8);
+      --card-hover: rgba(30, 41, 59, 0.9);
+      --card-border: rgba(99, 102, 241, 0.2);
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-accent: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--background-start), var(--background-end));
+      color: var(--text-primary);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 15px rgba(74, 222, 255, 0.4);
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+      margin: 2rem 0 1.5rem 0;
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 1.2rem 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--card-border);
+    }
+
+    .nav-btn {
+      background: linear-gradient(45deg, var(--primary), var(--secondary));
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.8rem 1.8rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(74, 222, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover:not(:disabled) {
+      background: linear-gradient(45deg, var(--secondary), var(--primary));
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(74, 222, 255, 0.5);
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .controls select {
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      border: 2px solid var(--primary);
+      background: rgba(226, 232, 240, 0.95);
+      color: #1e293b;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .controls select:focus {
+      outline: none;
+      border: 2px solid var(--secondary);
+      box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.2);
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(45deg, var(--accent), #ff8a8a);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    }
+
+    .back-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+    }
+
+    .chapter-content {
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+      padding: 3rem;
+      margin: 2rem 0;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 0.6s ease-out;
+      min-height: 60vh;
+    }
+
+    .chapter-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-primary);
+      text-align: justify;
+      white-space: pre-wrap;
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+
+    .chapter-text p {
+      margin-bottom: 1.5rem;
+      text-indent: 2rem;
+    }
+
+    .chapter-text h2 {
+      color: var(--text-accent);
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem 0;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 40vh;
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid var(--card-border);
+      border-top: 4px solid var(--primary);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-right: 1rem;
+    }
+
+    .error {
+      background: rgba(255, 107, 107, 0.1);
+      border: 1px solid rgba(255, 107, 107, 0.3);
+      color: #ffb3b3;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+      }
+      to { 
+        opacity: 1; 
+        transform: translateY(0); 
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .chapter-content {
+        padding: 2rem 1.5rem;
+      }
+
+      .controls {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      .controls > div {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .controls select {
+        flex: 1;
+        max-width: 200px;
+      }
+    }
+
+    /* Style pour les dialogues */
+    .chapter-text .dialogue {
+      margin-left: 1rem;
+      font-style: italic;
+      color: #cbd5e1;
+    }
+
+    .chapter-text .narrative {
+      color: var(--text-primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="titreChapitre">Sword of the Demon Hunter - Chapitre 1</h1>
+
+    <div class="controls" id="controlsTop">
+      <button class="nav-btn" id="prevBtnTop">⬅ Précédent</button>
+      <select id="chapitreSelectTop"></select>
+      <button class="nav-btn" id="nextBtnTop">Suivant ➡</button>
+      <a href="index.html" class="back-btn">⬅ Retour</a>
+    </div>
+
+    <div class="chapter-content" id="chapterContent">
+      <div class="loading" id="loadingIndicator">
+        <div class="spinner"></div>
+        Chargement du chapitre...
+      </div>
+    </div>
+
+    <div class="controls" id="controlsBottom">
+      <button class="nav-btn" id="prevBtnBottom">⬅ Précédent</button>
+      <select id="chapitreSelectBottom"></select>
+      <button class="nav-btn" id="nextBtnBottom">Suivant ➡</button>
+      <a href="index.html" class="back-btn">⬅ Retour</a>
+    </div>
+  </div>
+
+  <script>
+    const maxChapitres = 216;
+    const chapterContent = document.getElementById("chapterContent");
+    const titreChapitre = document.getElementById("titreChapitre");
+    const loadingIndicator = document.getElementById("loadingIndicator");
+
+    const chapitreSelectTop = document.getElementById("chapitreSelectTop");
+    const chapitreSelectBottom = document.getElementById("chapitreSelectBottom");
+    const prevBtnTop = document.getElementById("prevBtnTop");
+    const nextBtnTop = document.getElementById("nextBtnTop");
+    const prevBtnBottom = document.getElementById("prevBtnBottom");
+    const nextBtnBottom = document.getElementById("nextBtnBottom");
+
+    let currentChapitre = parseInt(new URLSearchParams(window.location.search).get("chapitre")) || 1;
+
+    // Remplir les selects
+    for (let i = 1; i <= maxChapitres; i++) {
+      const optionTop = document.createElement("option");
+      optionTop.value = i;
+      optionTop.textContent = `Chapitre ${i.toString().padStart(3, '0')}`;
+      chapitreSelectTop.appendChild(optionTop);
+
+      const optionBottom = optionTop.cloneNode(true);
+      chapitreSelectBottom.appendChild(optionBottom);
+    }
+
+    chapitreSelectTop.value = currentChapitre;
+    chapitreSelectBottom.value = currentChapitre;
+
+    async function loadChapitre(chapitre) {
+      const chapitreStr = chapitre.toString().padStart(3, '0');
+      titreChapitre.textContent = `Sword of the Demon Hunter - Chapitre ${chapitreStr}`;
+      
+      // Afficher le loading
+      chapterContent.innerHTML = `
+        <div class="loading" id="loadingIndicator">
+          <div class="spinner"></div>
+          Chargement du chapitre ${chapitreStr}...
+        </div>
+      `;
+
+      try {
+        // Essayer plusieurs formats de fichiers possibles
+        const possibleFiles = [
+  // Fichiers à plat (ce que tu as)
+  `chapters/chapitre_${chapitreStr}_fr.txt`,
+  // Variantes tolérées (au cas où)
+  `chapters/Chapitre_${chapitreStr}_fr.txt`,
+  `chapters/chapitre-${chapitreStr}_fr.txt`,
+  `chapters/${chapitreStr}_fr.txt`,
+  // Anciens chemins avec sous-dossier (on garde en fallback)
+  `chapters/chapitre_${chapitreStr}/chapter.txt`,
+  `chapters/chapitre_${chapitreStr}/text.txt`,
+  `chapters/chapitre_${chapitreStr}/content.txt`,
+  `chapters/chapitre_${chapitreStr}/${chapitreStr}.txt`,
+  `chapters/chapitre_${chapitre}/chapter.txt`
+];
+
+
+        let textContent = null;
+        let loadedFrom = null;
+
+        for (const filePath of possibleFiles) {
+          try {
+            const response = await fetch(filePath);
+            if (response.ok) {
+              textContent = await response.text();
+              loadedFrom = filePath;
+              break;
+            }
+          } catch (error) {
+            // Continue avec le fichier suivant
+            continue;
+          }
+        }
+
+        if (!textContent) {
+          throw new Error(`Impossible de charger le chapitre ${chapitreStr}`);
+        }
+
+        // Formater le texte
+        const formattedText = formatChapterText(textContent);
+        
+        chapterContent.innerHTML = `
+          <div class="chapter-text">${formattedText}</div>
+        `;
+
+        // Scroll vers le haut du contenu
+        chapterContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      } catch (error) {
+        console.error('Erreur de chargement:', error);
+        chapterContent.innerHTML = `
+          <div class="error">
+            <h3>❌ Erreur de chargement</h3>
+            <p>Impossible de charger le chapitre ${chapitreStr}</p>
+            <p><small>Vérifiez que le fichier chapters/chapitre_${chapitreStr}.txt existe</small></p>
+          </div>
+        `;
+      }
+
+      // Mettre à jour les selects et l'URL
+      chapitreSelectTop.value = chapitre;
+      chapitreSelectBottom.value = chapitre;
+      history.replaceState(null, "", `?chapitre=${chapitre}`);
+
+      // Désactiver les boutons si besoin
+      updateNavigationButtons(chapitre);
+    }
+
+   function formatChapterText(text) {
+  // Nettoyer les retours à la ligne
+  let formatted = text
+    .trim()
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n');
+
+  // On garde tel quel en le mettant dans un <pre>
+  return `<pre class="chapter-text">${formatted}</pre>`;
+}
+
+
+    function updateNavigationButtons(chapitre) {
+      const isFirst = chapitre <= 1;
+      const isLast = chapitre >= maxChapitres;
+      
+      prevBtnTop.disabled = prevBtnBottom.disabled = isFirst;
+      nextBtnTop.disabled = nextBtnBottom.disabled = isLast;
+      
+      if (isFirst) {
+        prevBtnTop.textContent = prevBtnBottom.textContent = "⬅ Premier";
+      } else {
+        prevBtnTop.textContent = prevBtnBottom.textContent = "⬅ Précédent";
+      }
+      
+      if (isLast) {
+        nextBtnTop.textContent = nextBtnBottom.textContent = "Dernier ➡";
+      } else {
+        nextBtnTop.textContent = nextBtnBottom.textContent = "Suivant ➡";
+      }
+    }
+
+    function goToPrevious() {
+      if (currentChapitre > 1) {
+        currentChapitre--;
+        loadChapitre(currentChapitre);
+      }
+    }
+
+    function goToNext() {
+      if (currentChapitre < maxChapitres) {
+        currentChapitre++;
+        loadChapitre(currentChapitre);
+      }
+    }
+
+    // Event listeners
+    prevBtnTop.onclick = goToPrevious;
+    nextBtnTop.onclick = goToNext;
+    prevBtnBottom.onclick = goToPrevious;
+    nextBtnBottom.onclick = goToNext;
+
+    chapitreSelectTop.onchange = () => {
+      currentChapitre = parseInt(chapitreSelectTop.value);
+      chapitreSelectBottom.value = currentChapitre;
+      loadChapitre(currentChapitre);
+    };
+
+    chapitreSelectBottom.onchange = () => {
+      currentChapitre = parseInt(chapitreSelectBottom.value);
+      chapitreSelectTop.value = currentChapitre;
+      loadChapitre(currentChapitre);
+    };
+
+    // Navigation avec les touches du clavier
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && currentChapitre > 1) {
+        goToPrevious();
+      } else if (e.key === 'ArrowRight' && currentChapitre < maxChapitres) {
+        goToNext();
+      }
+    });
+
+    // Chargement initial
+    loadChapitre(currentChapitre);
+  </script>
+</body>
+</html>
