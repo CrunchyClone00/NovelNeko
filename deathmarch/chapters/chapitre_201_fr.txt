@@ -1,0 +1,156 @@
+Partie: Sans titre
+Chapitre 201: 9-29. Préparation à l'extermination (FR)
+
+C'est Satou. J'ai entendu le dicton : « Si vous diluez le poison, il devient un médicament », mais ce n'est pas toujours vrai. Le contraire, « si une drogue est trop concentrée, elle devient toxique » semble être vrai dans la plupart des cas. En toutes choses, « trop vaut moins ».
+
+◇
+
+"Bonjour, Satou-san."
+
+"Ah, Lua-san, c'était juste."
+
+Je tends à Rua-san environ cinq grandes bouteilles contenant des « somnifères » fraîchement préparés pour les méduses. Elle a un "sac magique" similaire au mien, elle peut donc facilement laisser même des bagages lourds avec moi.
+
+Au cours des 10 derniers jours, j'ai donné à Gia trois à cinq types de somnifères chaque jour et je l'ai fait expérimenter avec eux. Jusqu’à présent, celui qui a été le plus efficace est celui qui utilise la sève de l’Arbre du Monde.
+
+"En effet, je l'ai reçu. Je crois qu'Aze-sama m'a informé des résultats expérimentaux via une 'communication à distance', mais il s'agit d'un rapport textuel de Gia."
+
+Je l'ai remerciée et j'ai pris la pile de papiers de Rua-san.
+
+Si l'effet était faible, il semblerait qu'il se réveillerait dans environ 10 minutes, mais si l'effet était trop fort, non seulement il entrerait en animation suspendue, mais arrêterait presque ses processus vitaux, ce qui était assez difficile.
+
+S'il était utilisé sur des humains, cela les tuerait probablement, alors ils louent un atelier sans personnel en dehors de la ville pour s'assurer que personne ne vienne mélanger les produits chimiques. Il semble que cet endroit ait été utilisé auparavant par M. Lilek de Spriggan.
+
+Il semble y avoir une petite source souterraine dans ce manoir, et les outils magiques du manoir peuvent être utilisés sans avoir besoin de reconstituer le pouvoir magique, ce qui le rend utile à bien des égards.
+
+C'est tellement pratique que je veux me retirer, mais si j'arrive trop tard, Arisa m'appellera « longue distance » toutes les heures, donc je ne peux pas faire ça. Dernièrement, les gens sont devenus assez élaborés, comme mettre Pochi et Tama au téléphone pour les culpabiliser. Lorsque je lui ai posé des questions à ce sujet, puisqu'il ne devrait pas être capable de le faire avec une communication longue distance normale, il a répondu avec un air suffisant sur le visage en disant : « J'ai travaillé dur pour l'améliorer. »
+
+Eh bien, j'ai fini de distribuer le quota de somnifères d'aujourd'hui, alors faisons autre chose.
+
+Il y a quatre choses sur lesquelles je travaille actuellement, dont les somnifères.
+
+La première étape a été de fabriquer les somnifères pour méduses mentionnés plus haut.
+
+En effet, peu de lanceurs de sorts peuvent piéger une méduse dans une cage magique spatiale. Nous étudions donc actuellement si nous pouvons ou non compenser le manque de lanceurs de sorts en utilisant une combinaison de cages de glace et de somnifères. Un somnifère particulièrement efficace a été testé il y a trois jours, et il semblerait qu'il existe encore des méduses endormies. Si cela prend effet pendant environ 10 jours, je pense que nous pourrons donner le feu vert d’un seul coup à la stratégie des cages à méduses.
+
+La deuxième étape consiste à envisager des mesures visant à prévenir la récurrence des dommages causés par les méduses.
+
+Nous envisageons pour cela un satellite intercepteur autonome. L'image est celle d'un satellite artificiel pour la défense de la base. Il semble que je puisse maintenir le cube même dans le vide tant que je peux fournir continuellement du mana, donc je pense l'utiliser pour maintenir l'altitude. Le plus gros problème est de maintenir le pouvoir magique. Je prévois également d'ajouter un canon laser et un cerveau pour le faire fonctionner, ce qui en fera un golem à canon flottant.
+
+Le problème reste donc le réacteur de puissance. J'aimerais construire un système qui nécessite le moins d'intervention humaine possible, j'aimerais donc utiliser la pierre philosophale de la même manière que le réacteur de puissance pour la poupée en mouvement. En fait, j'ai déjà emprunté trois réacteurs de puissance en poupée mobile à M. Sotorineya. Le plus dur, c'est que je ne peux pas faire d'expériences déraisonnables car je me rappelle de ne pas le détruire.
+
+Si nous avions de la magie, il serait possible de créer une fusion nucléaire, mais comme nous n’avons aucun matériel, nous ne savons pas par où commencer. Laissons cela comme un problème futur.
+
+Le troisième est le contrôle du moteur aérodynamique.
+
+J'ai essayé d'utiliser les connaissances que j'ai acquises en tant que programmeur et comment fabriquer un dispositif de contrôle que j'ai appris en créant une « poupée mobile » chez M. Sotorineya.
+
+Pendant ce temps, j'ai expérimenté divers mécanismes, comme celui dont j'ai entendu parler dans le duché, qui consiste à effectuer une rotation pour égaliser les variations de production. Il y a une grue et une grande plate-forme fixe au sous-sol de ce bâtiment, ce genre de travail peut donc être effectué très facilement.
+
+Le moteur de contrôle était parfait, mais la vitesse de réponse des informations était insuffisante et le contrôle du moteur aérodynamique ne pouvait pas suivre. Il semble que cela prendra un certain temps.
+
+Ce moteur aérodynamique n'avait aucune force de poussée dans un endroit sans atmosphère, comme je l'avais déjà imaginé lorsque le mot « aérodynamique » avait été ajouté. La mission de construire une réplique du navire léger a été contrecarrée avant même d’avoir commencé. Je voulais connaître la structure du vaisseau léger, mais comme il semble être un vaisseau divin, il ne semble y avoir aucune information. Il semblerait que si vous le stockez au quai d'Etrian Odyssey, il se chargera tout seul de l'entretien.
+
+Il semble que le moteur aérodynamique du héros ait été une réflexion après coup. Puisque l'Arbre du Monde ne peut pas l'entretenir, il ne peut être aidé qu'en s'appuyant sur les ingénieurs et les magiciens de l'Empire Saga pour réparer les pièces cassées ou endommagées.
+
+La quatrième chose est d'élargir notre équipement.
+
+Après avoir quitté la forêt des elfes, la prochaine destination est la ville labyrinthe. A part moi, je veux m'assurer que l'équipement de mes filles soit parfait. Je ne veux pas que cela attire trop l'attention, c'est pourquoi je fabrique deux types d'équipements : un pour se montrer et un pour un usage quotidien.
+
+Jusqu’à présent, j’ai réalisé trois cannes et un prototype d’épée magique spécialisée dans un but non meurtrier.
+
+Pour la canne d'Arisa, nous avons abondamment utilisé des branches d'arbres centenaires vieux de plusieurs milliers d'années dans la forêt de Boruenan. Puisque le but est d'avoir des batailles consécutives dans le labyrinthe, je l'ai créé avec pour thème la réduction de la consommation d'énergie magique et l'augmentation de la précision de la magie. Comme l'a dit un grand homme : « Si ça ne marche pas, ça n'a aucun sens. »
+
+Quand je fabriquais la canne d'Arisa, j'ai fini par en fabriquer une pour Mia dans un motif différent, mais je lui en offrirai une en commémoration de notre voyage ensemble lorsque nous quitterons Boruenan. Pour une raison quelconque, j'ai décidé de l'accompagner. Après tout, je pense que les jeunes enfants devraient vivre avec leurs parents.
+
+L'autre bâton est fabriqué à partir d'une branche de l'Arbre du Monde. La branche de l’Arbre du Monde que j’ai utilisée comme matériau était celle qui, d’une manière ou d’une autre, s’est retrouvée entreposée avec les tentacules de méduse lorsque je les ai récupérées. En termes de performances, il est parfait, mais son apparence ressemble davantage à une émeraude, il ne peut donc s'empêcher de se démarquer. La couleur était magnifique, j'ai donc décidé de décorer la pointe d'une fleur de rose et le corps principal d'un relief de lierre entrelacé.
+
+Plutôt que d’être un objet précieux, il est devenu un objet mort.
+
+Trop n’est pas bon.
+
+introspection.
+
+Désormais, le prototype de l'épée magique est une version modifiée de la « coquille » de Pochi. Alors que la « coquille » de Pochi est une arme dure et contondante, ce prototype d'épée est doux car il est spécialisé dans un but non meurtrier. Lorsqu'elle est activée, cette épée à « coque souple » génère un champ magique cylindrique aussi dur que l'uréthane. Il y a une « coquille » qui se forme juste à côté de l’épée, donc même si vous la frappez trop fort, elle n’atteindra pas la lame.
+
+J'espère que cette épée à coque souple aura des effets supplémentaires comme le blackjack, comme l'étourdissement et le recul.
+
+Je réfléchis actuellement à appliquer ce mécanisme de « soft shell » pour créer un fusil de chasse non mortel pour Lulu.
+
+Je veux aussi commencer à renforcer mon armure, mais je n'arrive pas à y parvenir. Si je faisais fabriquer l'armure dans la capitale du duché, je devrais pouvoir suivre les monstres jusqu'au niveau 20, mais j'aimerais augmenter un peu plus la marge de sécurité. Ce pourrait être une bonne idée de fabriquer une nouvelle armure en réutilisant la peau de baleine utilisée pour le toit anti-explosion du dirigeable. La prochaine fois, demandons à Rua-san de nous présenter un maître en fabrication d'armures.
+
+◇
+
+"Jeune Maître, la dame de Lulu m'a livré le déjeuner."
+
+"Ah, merci, Giril."
+
+Giril, l'elfe de maison en charge de la gestion de ce manoir, traite les visiteurs comme un majordome. Il semble que dans le passé, ils vivaient dans une ville labyrinthe et ils écoutent des histoires sur la ville labyrinthe pendant leurs pauses.
+
+Apparemment, son arrière-petit-fils travaille à Labyrinth City, alors j'aimerais aller le voir quand je vais à Labyrinth City. Tout semble être un jeune brownie d'environ 60 ans. Donc, je suis jeune.
+
+D'un pas glissant, il m'apporte la boîte à lunch que Lulu m'a confiée. Lorsque ces personnes, qui ne font que la moitié de la taille des humains, le portent, cela ressemble à une boîte à bento extra-large. Le contenu est constitué de sandwichs et de hamburgers qui peuvent être mangés d'une seule main. Il est fait avec du pain blanc que Mme Coore a partagé avec moi. Honnêtement, j'étais heureux parce que le pain ordinaire me manquait.
+
+De dangereux « somnifères » sont vendus ici, donc même Lulu est interdite.
+
+Ouvrez le couvercle et vérifiez le contenu.
+
+C'est un sandwich plein de légumes. Il faut beaucoup de savoir-faire pour en faire de petits morceaux.
+
+En mettant la nourriture dans ma bouche, j'ai vérifié s'il y avait des problèmes avec les calculs que j'avais faits plus tôt.
+
+"Hmm, si vous n'avez pas plus de pierres philosophales, il sera impossible de couvrir la puissance magique nécessaire pour attaquer, même si ce n'est que pour rechercher des ennemis."
+
+Je n'ai pas pu m'empêcher de me dire quelque chose sur la situation actuelle.
+
+Après tout, je suppose que le système d’interception automatique n’était pas raisonnable.
+
+En supposant que la puissance magique générée par la pierre philosophale est de 100 A, la puissance magique requise pour maintenir l'altitude est de 30 A, et pour la recherche d'ennemis, passifs et actifs combinés, elle est d'environ 45 A.
+
+Il est donc difficile de décider si le maintien de l’altitude doit être considéré comme un faible coût ou la recherche d’ennemis comme un coût élevé.
+
+Et lorsqu’on vise une cible d’une portée de plusieurs centaines de kilomètres, la seule option disponible est un système laser difficile à atténuer dans l’espace. Le laser nécessite moins de puissance magique que les autres attaques magiques, mais il nécessite toujours 1 000 A. C'est ridiculement cher, mais il faut autant de puissance pour tuer une méduse d'un seul coup. Si un laser devait être utilisé pour viser, 50 A supplémentaires de puissance magique seraient nécessaires.
+
+Grâce à la technologie fournie par les elfes, j'ai pu obtenir quelque chose comme une batterie, mais il faudrait qu'elle ait à peu près la taille d'une bouteille en plastique de 2 litres pour la remplir de 1A. Même si c'est juste suffisant pour tirer un seul laser, il semble que ce sera plusieurs fois plus gros que prévu. Le matériau de cette batterie est apparemment la sève de l'Arbre du Monde, vous pouvez donc en fabriquer autant que vous le souhaitez.
+
+Il semble que la glande d’absorption magique extraite d’un tentacule de méduse pourrait être utilisée pour le câble de transmission avec la batterie. C’est merveilleux qu’il ne soit pas nécessaire d’incorporer des circuits inutiles, car il existe un mécanisme pour empêcher le reflux du pouvoir magique depuis le début.
+
+Le premier prototype du golem d'interception automatique « Scarecrow » était terminé au coucher du soleil ce jour-là.
+
+Seule la fonction de maintien d'altitude a été implémentée dans le premier prototype. Je crois que tout est une série d'expériences constantes.
+
+◇
+
+Je fais signe à Giril qui m'accompagne à l'entrée du manoir et retourne à la cabane dans les arbres.
+
+Devant la porte principale de ce manoir, il y a un « anneau des fées » qui relie la ville au sommet des arbres et le centre commercial souterrain. Il est donc très facile de se déplacer.
+
+"Okari ~" "Nano desu!"
+
+Pochi et ses amis venaient juste de terminer leur entraînement, et deux personnes qui étaient affalées devant la maison se sont levées d'un bond et se sont jetées sur moi.
+
+"Bienvenue, maître."
+
+"Maître, je suis heureux de vous voir revenir sain et sauf."
+
+Nana et Liza, qui nettoyaient les épées en bois et les lances d'imitation utilisées pour l'entraînement, ont également semblé me ​​remarquer et ont arrêté de nettoyer pour me saluer. Liza ne l'est pas tellement, mais la sueur de Nana est incroyable.
+
+Ces quatre personnes reçoivent des leçons d'artistes martiaux elfes.
+
+Il semble que la vitesse à laquelle tout le monde a nettoyé l'installation était si rapide qu'ils ne pouvaient pas suivre l'entretien et la préparation du shagnig du lutin, c'est pourquoi un jour de repos de 4 à 5 jours a été fixé pour chaque dégagement. Pour cette raison, un artiste martial elfe qui avait également beaucoup de temps libre, a décidé de former les filles-bêtes qui avaient trop de temps libre, pensant que ce serait un bon moyen de tuer le temps.
+
+Pochi est enseigné par Mme Portmere, une épéiste. Comme Pochi, elle utilise un type d'épée qui met tout en un seul coup. Lors d'une fête, j'ai dit que c'était amusant d'utiliser mon bouclier pour vaincre les attaques de mon adversaire et porter un coup au bon moment. Cette personne apporte différents types d'alcool du village des elfes et me parle de sa connaissance de ces types d'alcool, donc c'est amusant de boire avec lui. Cependant, son seul défaut est qu'elle a l'habitude de se déshabiller lorsqu'elle est ivre.
+
+M. Shishitouya, spécialisé dans l'escrime à double maniement, enseigne Tama. Il utilise des épées japonaises de différentes tailles. Il a dit que c'était quelque chose qu'il avait reçu du roi du royaume de Shiga il y a des centaines d'années. Les deux n’étaient pas signés, mais c’étaient des joyaux à égalité avec le Kotetsu que je possède.
+
+Riza est enseigné par M. Gurgapoya, qui utilise une lance en spirale, et M. Yusek, qui utilise une lance courte. M. Yusek n'est pas un elfe, mais un spriggan. Tous deux maîtrisent parfaitement l’utilisation des lames magiques.
+
+M. Yusek en particulier, bien que je ne sois pas un de ses étudiants directs, est également mon mentor spirituel. Un jour, comme objectif final de son entraînement, elle montra à Liza une lame magique issue de la pointe d'une courte lance. Cela semble être une compétence appelée Magic Blade Cannon. Je n'ai pas vu le flux de pouvoir magique jusqu'à ce qu'il lance le canon à lame magique, donc je n'ai pas encore réussi cette technique.
+
+Une fois, je lui ai demandé de m'apprendre quelque chose, mais il avait l'air extrêmement heureux et m'a dit de le voler. Afin de répondre à ses attentes, j'aimerais l'apprendre avant de quitter le village des elfes.
+
+Enfin, il y a deux professeurs de Nana. L'épéiste magique, Mme Gimasalua, et l'utilisateur du bouclier nain, M. Keriul. Il semble que M. Keriur soit l'oncle de M. Zajiul, que j'ai rencontré dans le village des nains, et qu'il séjourne en tant qu'invité dans le village des elfes depuis environ trois ans.
+
+Il semble que les professeurs ne se lassaient pas d'aller dîner sur la place où se tenait la fête du curry l'autre jour. Même si 10 jours se sont écoulés depuis ce festival, le festival du curry continue. De nos jours, le curry uni sans colorant semble avoir la cote.
+
+J'espère que Nea ne deviendra pas jaune.

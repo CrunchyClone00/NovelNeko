@@ -232,7 +232,7 @@
 
   <script>
     const list = document.getElementById("chapitreList");
-for (let i = 1; i <= 19; i++) {
+for (let i = 1; i <= 23; i++) {
   const li = document.createElement("li");
   const a = document.createElement("a");
   if (i <= 9) {
@@ -240,7 +240,7 @@ for (let i = 1; i <= 19; i++) {
     a.textContent = `Chapitre ${i}`;
   } else {
     a.href = `lecture.html?chapitre=${i}`;
-    a.textContent = `Chapitre ${96 + i}`; // 106 à 113
+    a.textContent = `Chapitre ${96 + i}`; // 106 à 117
   }
   li.appendChild(a);
   list.appendChild(li);

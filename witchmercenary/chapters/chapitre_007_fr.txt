@@ -1,0 +1,283 @@
+Chapitre 7: Chapitre 7 (FR)
+
+Au moment où j’avais commandé du matériel chez le forgeron et fini d’acheter les biens divers nécessaires, le soleil commençait à se coucher.
+
+Mon estomac gargouillait parce que j'avais fini par manger des brochettes pour le déjeuner.
+
+"Allons-nous dîner ?"
+
+"J'ai juste une dernière course à faire au restaurant. Une fois que cela sera fait, dînons."
+
+Une courte promenade vous mènera à un grand restaurant.
+
+L'intérieur et l'atmosphère calmes donnaient une impression de luxe au magasin.
+
+"Je suis surpris que tu connaisses un restaurant aussi cher."
+
+Saoirse regarde autour de lui
+
+"Je l'utilise pour les négociations commerciales. Il y a aussi une salle privée à l'étage, donc je vais parler de choses que je ne veux pas entendre là-bas."
+
+Donnez votre nom au greffier et faites-lui savoir que vous vous rencontrez.
+
+J'ai été emmené au deuxième étage et conduit dans une pièce à l'arrière.
+
+Quand je suis entré, un petit homme m'attendait.
+
+Même s'il était bien habillé, il régnait chez lui une atmosphère quelque peu suspecte dont je ne pouvais pas me débarrasser.
+
+"Hé, Jig. Es-tu toujours en vie ?"
+
+"C'est comme toujours."
+
+Les deux hommes échangèrent des mots amicaux, mais dès qu'ils prirent place, ils se détestèrent et commencèrent à se gifler.
+
+"Ce type est un Cosaque. C'est un informateur."
+
+Présentation de l'homme à Saoirse, qui était assis à côté de Jig.
+
+Saoirse sourit et baisse la tête.
+
+"merci"
+
+"Oh, ravi de vous rencontrer. Hé, hé, Jig, qu'est-ce qui se passe avec Beppin-san ? C'est ta femme ?"
+
+"Ça n'a aucun sens, c'est le client."
+
+"Je suppose. Tu ne joues vraiment pas avec les femmes."
+
+"C'est une perte d'argent"
+
+"Ça y est."
+
+Le Cosaque regarde Saoirse sous le choc.
+
+Jig commença à parler de travail, la laissant avec un vague sourire car elle avait du mal à répondre.
+
+"C'est ce que je te demandais de faire, mais peux-tu le faire ?"
+
+"Eh bien, je suppose que je peux y aller... ça va prendre un bon moment, n'est-ce pas ?"
+
+"Je m'en fiche."
+
+Un Cosaque qui devient soudain inarticulé
+
+"...Tu veux vraiment y aller ? Je suis désolé pour elle, mais je suis sûr qu'il existe de nombreux groupes qui t'embaucheraient avec un bon traitement. Je vais te les présenter tout de suite."
+
+"Je ne suis pas doué pour les activités de groupe."
+
+refuser sans hésiter
+
+Les Cosaques ne semblaient pas non plus trop déçus, comme ils s'y attendaient.
+
+Il a sorti deux bracelets et me les a tendus.
+
+A un design unique
+
+"Eh bien, c'est très bien, décida Teme. Le navire partira dans cinq jours. Je dirai juste que c'est un jeune chercheur et son escorte. Ceci est votre billet d'embarquement. Portez-le sur votre main gauche ce jour-là."
+
+"C'est utile."
+
+Lorsque les deux hommes rangent leurs bracelets, le cosaque appelle le commis.
+
+"Nous avons fini de parler de travail. Cela fait longtemps que nous ne nous sommes pas rencontrés, alors prenons un verre. La demoiselle est-elle de bonne humeur ?"
+
+"Aussi bon qu'un être humain."
+
+La nourriture qui nous a été apportée est disposée sur la table.
+
+"...Euh, tu peux manger tout ça ?"
+
+"Ouais ? Ce n'est probablement pas si grave."
+
+Saoirse fait une grimace convulsée alors que les quantités de nourriture sortent les unes après les autres.
+
+"Mademoiselle, vous avez vu le pouvoir stupide de ce type, n'est-ce pas ? Je vous donnerai autant que vous le méritez."
+
+"Ah, je vois... Est-ce la raison pour laquelle tu ne prends pas de poids même après avoir autant mangé ?"
+
+Saoirse est satisfait et va manger la nourriture ailleurs.
+
+Le cosaque rit du contraste avec elle mangeant élégamment petit à petit à côté de lui.
+
+Après cela, nous avons apprécié de nous retrouver et de discuter pendant un moment.
+
+Le Cosaque, qui savourait sa nourriture et buvait de l'alcool, soupira.
+
+"Cela ne semble pas bien, qu'est-ce qu'un soupir ?"
+
+"Il y a eu des rumeurs à propos de Mee il y a quelque temps."
+
+"Hein, quel genre?"
+
+Jig, qui a arrosé la nourriture avec de l'alcool, prend une pause et regarde le Cosaque.
+
+"La rumeur veut que Temee soit peut-être mort."
+
+"C'est la première fois que je l'entends."
+
+j'ai le sentiment
+
+Cependant, Jig lui demande de continuer avec un air innocent sur le visage.
+
+"Il y a peu de temps, il y a eu une agitation dans le pays voisin à propos du fils d'un seigneur féodal partant à la chasse aux sorcières. Comme l'armée privée ne suffisait pas, ils ont également commencé à recruter des mercenaires. J'ai entendu dire que ma femme était là."
+
+"Il a fait des recherches approfondies et c'est définitivement un informateur."
+
+"Même un amateur pouvait enquêter avec une arme aussi visible sur le dos. Le résultat a été un succès, mais il y a eu pas mal de victimes. Il n'y avait pas un seul cadavre normal, et apparemment la situation était terrible. Le fils du seigneur et ses soldats ont été anéantis, et il n'y a eu aucun survivant autre que les mercenaires qui se sont échappés. Deux groupes de mercenaires raisonnablement connus ont été anéantis. ... Eh bien, je suppose que c'était encore suffisant pour vaincre cette Sorcière du Silence. "
+
+« La sorcière silencieuse ?
+
+Je regarde Saoirse de côté, mais elle ne me connaît pas vraiment.
+
+« …Avez-vous participé sans le savoir ?
+
+Cossack explique, même si je suis abasourdi.
+
+"Les sorcières sont généralement belliqueuses, mais pas toutes. Si vous entrez sur leur territoire, elles vous attaqueront, et si vous essayez quelque chose, elles riposteront avec la force de vous éradiquer. Cependant, cette sorcière est différente. Même si vous entrez sur leur territoire, elles vous menaceront, mais elles ne vous attaqueront pas. Elles ont été attaquées par des équipes d'assujettissement à plusieurs reprises dans le passé, mais elles ne se sont jamais présentées pour riposter. C'est ainsi qu'elles ont obtenu leur surnom. "
+
+"La sorcière silencieuse"
+
+"On dit qu'elle était autrefois plus à l'est. Elle semble avoir l'une des meilleures capacités de combat parmi les sorcières, mais elle n'intervient pas à moins qu'elle ne prenne activement les hostilités, donc le danger n'est pas si élevé. Apparemment, après qu'elle soit devenue le roi actuel, il lui a été interdit de la toucher. Cependant."
+
+j'ai légèrement baissé le ton de la voix
+
+"Le fils d'un idiot a gâché les efforts de ses parents pour gagner des points. Ils ont finalement réussi, mais le corps de la sorcière n'a jamais été retrouvé, et les gens au sommet sont très en colère et il semble qu'une sorte de punition sera bientôt prononcée."
+
+Quand mon fils meurt, il est puni en lui marchant dessus et en lui donnant des coups de pied.
+
+Même si c'est de sa faute s'il n'a pas pu tenir les rênes de son fils, je me sens un peu désolé pour le pauvre seigneur.
+
+« Revenons au sujet. Même si une telle situation s'était produite, pourquoi avez-vous continué à vivre votre vie sereinement ?
+
+"Vous l'avez dit vous-même. Il n'y a pas de survivants autres que les mercenaires qui se sont échappés."
+
+Le Cosaque renifle et finit son verre.
+
+Même s'il devait boire beaucoup, ses yeux avaient toujours la netteté d'un informateur.
+
+"Laisse tomber. Même si l'autre personne est une sorcière, tu t'enfuiras. Qu'est-ce que tu caches ?"
+
+"Eh bien, je ne sais pas."
+
+L'expression de Jig ne bouge pas du tout.
+
+Il est difficile d'y lire quoi que ce soit
+
+Le Cosaque tourna son attention vers Saoirse.
+
+Elle buvait du thé après le dîner lorsqu'elle remarqua mon regard et pencha la tête avec un sourire.
+
+Je n'ai pas l'impression de cacher quelque chose.
+
+Même si je recevais un regard aigu de la personne dans les coulisses,
+
+Sentant quelque chose d'étrange à ce sujet, il regarde Saoirse plus attentivement.
+
+Une personne moyenne réagirait probablement d’une manière ou d’une autre, même si elle n’avait vraiment rien à cacher.
+
+Ce n'est pas un truc qu'une simple fille dans une boîte peut faire.
+
+Saoirse regarde le Cosaque avec un sourire
+
+J'essaie de voir au fond de ces yeux bleus qui semblent m'aspirer.
+
+C'est étrange
+
+Même si je ne fais que regarder tes yeux, j'éprouve une sensation de picotement.
+
+Je suppose qu'on pourrait appeler cela un sentiment de crise.
+
+Lui-même a traversé à plusieurs reprises des ponts dangereux.
+
+J'ai ressenti quelque chose de similaire, mais encore plus grand.
+
+À en juger par son attitude, il ne semble pas avoir les nerfs d'un athlétique, mais c'est un amateur.
+
+Même s'il ne semble pas avoir la moindre connaissance
+
+Est-ce que je panique ? À une petite fille comme ça ?
+
+Soudainement
+
+Je me suis souvenu de mes mots
+
+Le corps de la sorcière n'a jamais été retrouvé.
+
+"Certainement pas-"
+
+Il y avait un bruit sec
+
+Quand j'ai regardé ma main, il y avait un trou dans le bol en bois.
+
+Lorsque l'alcool s'est déversé du trou, il y avait une pièce d'argent au fond.
+
+C'est un coup de doigt
+
+Selon l'endroit, cela peut provoquer des blessures mortelles.
+
+"Laissez-le là."
+
+Tournez lentement votre visage vers le gabarit
+
+» Dit-il, désarmé et adossé au dossier de sa chaise, essayant de ne rien faire.
+
+"En fonction de la situation, je devrai peut-être vous abattre."
+
+Avec ces mots, le Cosaque a tout compris.
+
+Même s'il n'avait encore montré aucune intention meurtrière, un frisson parcourut le dos du Cosaque.
+
+Pourtant, je me force à faire taire ma voix
+
+"Hé, tu es sain d'esprit ?"
+
+Même si sa voix était rauque, Jig rit de la question qu'il parvint à formuler.
+
+"Je me demande combien de fois tu as remis en question ma santé mentale."
+
+"...Je suis sûr que tu te soucies des gens qui le disent à chaque fois que Temee fait quelque chose de déraisonnable. Mais cette fois, c'est différent."
+
+"Ma réponse reste la même. Je ferai n'importe quoi tant que je serai payé."
+
+"…Je vois."
+
+Le Cosaque lui dit de le recracher et s'assit.
+
+Lorsque vous essayez d’y verser du saké et que vous réalisez qu’il y a un trou, vous claquez la langue et buvez directement à la bouteille.
+
+Au moment où j’ai fini de le boire, mon visage raide était redevenu normal.
+
+"Les frais de demande sont de deux millions, tout compris."
+
+"...Êtes-vous d'accord?"
+
+"C'est ta vie, fais-en ce que tu veux."
+
+-Quand quelqu'un a remis en question ta santé mentale une fois, les mêmes mots t'ont finalement été prononcés.
+
+Jig plissa les yeux et baissa la tête.
+
+"Je suis désolé, je suis ingrat. Je sais que je ne devrais pas dire ça, mais pourrais-tu s'il te plaît répandre la rumeur que je suis mort ?"
+
+"Hé, hé, je vais inclure ça dans tout."
+
+"C'est mauvais."
+
+"Je vais t'en prêter un."
+
+"ah"
+
+Si vous placez dessus un sac en cuir rempli de pièces d’or, il se tiendra debout.
+
+"Merci pour votre aide, à bientôt."
+
+Saoirse s'incline et suit Zig.
+
+"Laisse-moi te demander quelque chose. As-tu... gagné ?"
+
+Jig attrape la poignée de porte et s'arrête.
+
+"-Je suis là."
+
+J'ai répondu le dos tourné et j'ai quitté la pièce sans me retourner.

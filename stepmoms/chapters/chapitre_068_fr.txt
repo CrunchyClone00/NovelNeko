@@ -1,0 +1,940 @@
+Partie: Sans titre
+Chapitre 68: Six choses que je ne pouvais pas dire à l'époque : "Bonjour". (FR)
+
+Il y avait le vide des vacances d'été.
+
+J'étais seul dans un sanctuaire désert, regardant les feux d'artifice de la campagne.
+
+Le monde continue sans aucun problème.
+
+Même sans moi, même sans toi.
+
+Comme si l’année écoulée avait été un mensonge.
+
+Je regarde le smartphone dans ma main.
+
+Je suis sûr que les ondes radio vous connecteront facilement.
+
+Comme l’année dernière, cela aurait probablement été facile à faire.
+
+Mais je ne pouvais pas le faire.
+
+J'avais l'impression que tu étais déjà si loin que les ondes radio ne pouvaient pas t'atteindre.
+
+--J'espère que c'est un mensonge.
+
+L'année dernière. Du temps avec toi.
+
+Je ne voulais pas savoir que la fin approchait.
+
+◆ Yume Irito ◆
+
+Les représentations de chaque classe ont été décidées et les préparatifs pour la fête scolaire ont sérieusement commencé.
+
+Après que la classe ait travaillé sur la création de l'intérieur du Taisho Roman Café et s'est entraînée à préparer le menu, Mizuto et moi sommes entrés et sortis du comité exécutif.
+
+En plus de servir d'intermédiaire entre chaque classe et le comité directeur, le travail de Bunmi consiste à effectuer diverses tâches liées au festival dans son ensemble, comme préparer les invitations et les affiches publicitaires, et entrer en contact avec les résidents locaux. Par conséquent, même s’il s’agissait d’un projet que nous avions monté nous-mêmes, nous n’avons pas pu nous impliquer beaucoup dans la préparation du cours.
+
+"(--Comment allez-vous?)"
+
+"Ouah!?"
+
+Alors que je travaillais en silence sur mon ordinateur portable, j'ai soudainement entendu une voix froide dans mon oreille, me faisant sursauter.
+
+En me voyant ainsi, la personne qui chuchotait, Kurisuri-senpai, le vice-président du conseil étudiant et président de Bunmi, a ri d'un air taquin.
+
+« S-Senpai… qu'est-ce que tu fais tout d'un coup… ?
+
+"Excusez-moi. Essayez juste de ne pas gêner les autres."
+
+C'est définitivement un mensonge. Je te taquine et je joue avec toi.
+
+Kurenai-senpai est connue comme le plus grand génie de l'histoire de l'école, et son charisme incite même les étudiants de troisième année à utiliser son menton, mais elle est en fait étonnamment amicale. J'ai l'impression que peut-être parce que je me suis démarqué lors de la présentation, ils me parlent beaucoup... Peut-être que c'est juste que je suis trop gêné parce que je traite tout le monde avec un sentiment de bris.
+
+Kurenai-senpai se penche au niveau de la taille et regarde l'écran du PC sur lequel je travaille.
+
+" Qu'en pensez-vous ? Quant au test. Comment ça se passe ? "
+
+"Ah, oui... jusqu'à présent. Aucun bug notable n'est apparu."
+
+Ce que je fais actuellement, c'est expérimenter le système de prévention des problèmes que j'ai proposé dans ma présentation.
+
+Plusieurs élèves aux traits distinctifs sont relâchés dans l'enceinte de l'école, et les membres du comité exécutif les retrouvent, les prennent en photo et les enregistrent immédiatement dans une base de données. Ensuite, sur la base de cette base de données, il prédit le comportement des élèves. C'était un peu comme un jeu de chat, mais c'était parfait pour voir s'il y avait des problèmes avec le programme de base de données et si cela avait réellement un effet.
+
+Je ne suis pas habitué aux ordinateurs, mais on m'a demandé de le faire et j'ai été choisi pour déboguer le comportement de la base de données. Mizuto faisait silencieusement le même travail à un bureau voisin.
+
+Kurenai-senpai regarda l'écran et hocha la tête :
+
+"Ouais, ça a l'air bien. Eh bien, c'est le système que Joe a mis en place, donc je n'étais pas inquiet."
+
+"Joe...?"
+
+"C'est notre comptable. Il n'est pas très connu, mais il est tout à fait compétent. Il est doué en informatique."
+
+Lorsque Kurenai-senpai s'est retournée, elle a vu un garçon avec des lunettes simples, qui ressemblait à un tempura, tapant silencieusement sur un clavier au bout d'un long bureau devant un tableau blanc.
+
+Je me suis enfin rappelé quand je l'ai vu. Comptable Joji Haba senior.
+
+Je l'appelle « Joe ». Si vous me demandez, c'est comme si nous étions toujours ensemble, alors peut-être que nous sommes de bons amis ?
+
+"Je pense que nous nous entendons bien, non?"
+
+"Hein ?"
+
+Mon esprit était lu !
+
+Kurenai-senpai rit encore,
+
+"Vous avez un visage facile à comprendre et intéressant. D'ailleurs, malheureusement, nous ne sommes pas encore en couple."
+
+"C'est juste que Senpai est trop pointu-"
+
+Ouais?
+
+Maintenant... je dis : « Malheureusement ». « Pas encore. »
+
+image? mensonge? Est-ce que c'est ce que l'on ressent ?
+
+"D'accord?"
+
+Kurenai-senpai ferma un œil avec un sourire quelque peu suspicieux, puis dit : « Alors je vais continuer à demander » et partit vers les autres membres du comité.
+
+Non... lequel ? Au final, lequel ? ?
+
+Je ne peux m'empêcher de regarder le dos délicat de ma aînée, inversement proportionnel à sa présence. Si c'est vrai, c'est un couple très inattendu, mais j'ai aussi l'impression qu'ils me taquinent... Je ne sais pas !
+
+Alors que je devenais anxieux, quelqu'un m'a appelé et m'a dit : « Hé ».
+
+Quand je me suis retourné, Mizuto se tenait à côté de moi.
+
+"Quoi... quoi ?"
+
+"C'est le deuxième onglet, mais n'y a-t-il pas plus de fautes de frappe que les autres ?"
+
+"Hein...? Hmm, si vous me demandez, je suppose que c'est le cas... Je me demande si c'est une personne imprudente."
+
+"L'interface utilisateur peut être difficile à comprendre pour certaines personnes. Il serait peut-être préférable de la rendre encore plus compréhensible."
+
+"Ouais, je comprends. Je vais collecter les données et les signaler."
+
+Mizuto accepta et retourna à sa place.
+
+... Bien qu'il ait toujours des spécifications élevées, comme d'habitude, Mizuto ne semble pas interagir avec les autres Bunmi pour l'instant. Les seules personnes à qui nous parlons, c'est moi et, si je devais deviner, je me demande si Kurenai-senpai me parle beaucoup.
+
+Il arrive toujours que Mizuto ne s'intègre pas aux gens qui l'entourent... mais c'est un peu dommage qu'il ait été autant reconnu lors de sa présentation.
+
+◆ Kogure Kawanami ◆
+
+"Oui, Ko-kun. Ahh♪"
+
+"Agu"
+
+D'une voix douce, un morceau d'orange est poussé dans ma bouche et je l'examine attentivement.
+
+Akatsuki pencha légèrement la tête tout en tenant la cuillère,
+
+"cuivre?"
+
+"Uuuu... c'est pas un peu trop sucré ?"
+
+"Je n'aime pas ça!"
+
+« Comment êtes-vous censé juger autre chose que la préférence ?
+
+Ils dégustaient le menu qu’ils prévoyaient de servir au restaurant fictif.
+
+On pensait que la nourriture occidentale de l'ère Taisho comprenait du curry, des croquettes et des côtelettes de porc, mais dans les magasins fictifs, il y avait des restrictions sur l'utilisation du feu, sans parler de l'huile. Pour cette raison, j'avais prévu de centrer le menu sur des collations simples, telles que du punch aux fruits préparé en trempant simplement des fruits directement d'une canette dans de l'eau gazeuse, et des sandwichs à base de jambon, de laitue et d'œufs brouillés préparés à l'avance.
+
+J'ai regardé le punch aux fruits qu'Akatsuki avait préparé,
+
+"Ça ne sert à rien de manger tout ça ? Dans un café, l'essentiel c'est le thé ou le café."
+
+"C'est vrai. Kine-chan commence à être trop pointilleuse à ce sujet maintenant. Elle a broyé des haricots dans la salle d'économie domestique toute sa vie."
+
+"Est-ce à cause des grains... Je suppose que tu es du club de cérémonie du thé. Est-ce que le café va dans le thé ?"
+
+Il y a des gens têtus partout.
+
+J'ai regardé autour de la classe. Si Taisho Romance était le concept, il ne serait pas bon d'avoir des murs nus dans la salle de classe, c'est pourquoi nous prévoyons de poser du papier peint de style café. Cependant, il existe de nombreuses variantes du concept de style café, et il y a encore un débat entre les styles en bois et en brique.
+
+Si vous regardez devant vous, vous verrez un tableau noir utilisé pour discuter de la disposition des sièges. Selon les recherches d'Irito, les premiers cafés ouverts à l'époque Taisho étaient des salons où se réunissaient les intellectuels. Ils étaient encore en train de décider s'ils allaient déménager là-bas ou dans un café ordinaire.
+
+C'est comme jouer à Minecraft dans une salle de classe, donc l'ambiance n'est pas trop mauvaise. Eh bien, dans mon cas, c'est comme l'amour, c'est plus intéressant de regarder de côté que d'en faire partie.
+
+Alors que je me relâchais légitimement sur le prototype de punch aux fruits, Akatsuki a laissé échapper un « ah ! son.
+
+« M. Higashigami ?
+
+"Ouais?"
+
+Quand je me suis retourné, j'ai vu une femme qui regardait depuis l'entrée de la classe.
+
+Qui que ce soit, c'est Isana Higashigashira. Il tourna la tête, semblant chercher quelqu'un. Eh bien, il est évident qui vous recherchez.
+
+Nous nous approchons d'Higashigashira,
+
+"Si c'est Irito, tu ne seras pas là."
+
+« Comment le saviez-vous ! »
+
+"C'est la seule raison pour laquelle Togami-san vient dans mon cours."
+
+Higashigami se redresse un peu et regarde par-dessus la tête d'Akatsuki vers la salle de classe.
+
+"Mizuto-kun, où vas-tu... à ce rythme-là, je vais être écrasé par l'atmosphère de la fête scolaire et mourir !"
+
+« De quoi parles-tu avec autant d'assurance ? Tu devrais m'aider à préparer le cours.
+
+"C'est vrai. Que t'est-il arrivé en classe ?"
+
+"Hehe... tu penses qu'on me confiera du travail ?"
+
+Bref, il était venu demander à Irito de s'occuper de lui car il n'avait pas de place dans la classe.
+
+J'étais abasourdi,
+
+"Irito est Fumi. Il est plus occupé que nous. Ne le dérange pas."
+
+"...Je vois...Je suis désolé, mais je ne peux pas causer de problèmes..."
+
+Higashigami baissa les épaules et parut visiblement choqué. Je commence à me sentir un peu désolé pour lui, mais c'est de sa faute s'il ne s'est pas fait d'amis en classe. La fête scolaire est une occasion parfaite pour se rapprocher de ses camarades de classe, il ne faut donc pas fuir.
+
+"Ah, c'est vrai. Higashigami-san, tu veux du punch aux fruits ? J'ai fait un prototype pour le servir dans un magasin fictif."
+
+"Eh. Est-ce que ça va...?"
+
+"D'accord, d'accord ! L'opinion de ce type ne m'est d'aucune utilité."
+
+"Je suppose."
+
+"Pourquoi es-tu si optimiste uniquement envers moi?"
+
+C'est à ce moment-là qu'Akatsuki était sur le point d'inviter Togami dans la classe.
+
+"...Hmm ? Isana ?"
+
+"Ah ! Mizuto-kun !"
+
+Mizuto Irito apparut de l'autre côté du couloir et Azuma se retourna comme un chien qui avait trouvé son propriétaire.
+
+Higashigami courut rapidement vers Irito,
+
+"N'était-ce pas vrai?"
+
+"J'ai fini mon travail aujourd'hui. J'allais vérifier la classe et ensuite venir te chercher."
+
+"Wow. C'est une étrange coïncidence. Je commençais tout juste à avoir l'impression que je n'avais pas ma place dans la classe et que je n'en pouvais plus !"
+
+"C'est dommage. J'étais en retard pour venir te chercher."
+
+On le voit remuer la queue. Tu me manques vraiment. Depuis cet incident de confession en classe, j'ai cessé de prêter attention à ce que les autres pensent de moi.
+
+J'ai légèrement levé la main vers Irito,
+
+"Hé. Qu'est-il arrivé à Irito-san ?"
+
+"Allez. Je suppose qu'il reste encore du travail à faire."
+
+À la réponse sans intérêt, j'ai dit : « Hmm ? ' Je pensais.
+
+Pendant ce temps, Irito posa sa main sur l'épaule de Higashigami,
+
+"Si tu n'as pas de travail à faire, rentrons ensemble à la maison. La bibliothèque... elle ferme maintenant, alors allons chez moi."
+
+"C'est super ! Je vais chercher tes affaires !"
+
+"Je te suivrai."
+
+Il tourna le dos avec Higashigami, puis, comme s'il s'en souvenait, il se tourna vers nous.
+
+"A bientôt, Kawanami. Minami-san."
+
+"Oh... tu es fatigué."
+
+"Merci pour votre travail acharné, Irito-kun."
+
+En accord, Irido disparut dans la foule bruyante des couloirs avec Higashigami.
+
+Après avoir vu cela, j’ai croisé par inadvertance les yeux de l’Akatsuki.
+
+"J'ai l'impression que..."
+
+"Ouais……"
+
+Le plan était de les rapprocher en les incluant tous les deux dans le texte.
+
+Mais... pourquoi ?
+
+En fait, on a l’impression que la distance entre eux deux s’agrandit maintenant.
+
+◆ Isana Higashigami ◆
+
+Quand je suis entré dans la chambre de Mizuto, j'ai baissé mes fesses sur le lit et j'ai enlevé mes chaussettes.
+
+Mizuto-kun n'est plus influencé par mon attitude de je-sais-tout. J'accroche mon sac à un cintre et desserre légèrement ma cravate.
+
+"Euh... je peux enfin détendre mes épaules."
+
+« Êtes-vous vraiment si occupé, le comité exécutif du festival scolaire ?
+
+"Mon travail n'est pas si grave, mais le vice-président s'est impliqué d'une manière étrange... Il est un emmerdeur."
+
+"Hein ? Vice-président ? Êtes-vous du conseil étudiant ?"
+
+"Ah. Je suppose que ce n'est pas une mauvaise personne, mais il n'est tout simplement pas bon dans ce domaine."
+
+C'est rare que Mizuto dise quelque chose comme ça. En gros, c'est comme si je ne pouvais rien voir d'autre que Yume-san.
+
+"C'était dur. Je n'avais pas de travail à faire et j'avais du temps libre, donc je suis plein d'énergie, tu sais ?"
+
+"Ne sois pas autoritaire. Si tu ne le fais pas un peu, ce sera en fait stressant."
+
+"C'est vrai... Je me sens coupable même si tout le monde travaille..."
+
+"Je ne veux pas me sentir gêné de porter un T-shirt de classe même si je ne fais rien."
+
+"Wow ! Ils sont vraiment là ? Il y a une culture des T-shirts de classe ! Je pensais que ça allait parce que c'est une école préparatoire !!"
+
+"Même s'il s'agit d'une école préparatoire, cela n'en reste pas moins un lycée. Il a été créé avec le budget de chaque classe, donc c'est un soulagement qu'ils ne facturent pas de frais de scolarité."
+
+"As-tu l'impression que tu n'aimes pas Mizuto-kun aussi ? T-shirt de classe"
+
+"Je suppose que oui. C'est comme l'incarnation de la pression des pairs."
+
+"Je comprends ! Même si les gens ne réalisent même pas qu'ils appartiennent à la classe de Kochitora !"
+
+"Même si vous donnez l'impression que nous ne sommes que des amis..."
+
+"Ah," Mizuto laissa échapper un petit soupir. Hmmm... ça montre vraiment ta fatigue.
+
+« Mizuto-kun, Mizuto-kun. Si tu es fatigué, que dirais-tu de partager un peu de ton énergie avec toi ?
+
+"Hein ? Comment ?"
+
+"Suivez-moi, s'il vous plaît"
+
+J'ai appelé Mizuto au chevet et je l'ai fait asseoir devant moi, me tournant le dos.
+
+Ensuite, j'ai posé ma main sur l'épaule de Mizuto et j'ai exercé une pression sur mes doigts.
+
+"Maman maman~"
+
+"... Si vous y réfléchissez, ce n'est qu'un massage."
+
+"Qu'en penses-tu?"
+
+"Hmm... c'est vrai..."
+
+"N'as-tu pas peur que les seins derrière ta tête soient touchés ?"
+
+"C'est ça. Il est trop tard maintenant."
+
+"Hoho. Il en a marre de mes seins."
+
+"Tu as raison dans le sens où tu en as marre du matériel."
+
+Oh mon Dieu. C'est une personne luxueuse. Tu ne veux pas y toucher au moins une fois ? Quand je lui ai avoué mes sentiments, elle m'a dit que ce n'était pas qu'elle n'était pas attirée par elle.
+
+Mizuto lui frotte doucement l'épaule et j'évoque un sujet qui me vient à l'esprit.
+
+"Mizuto-kun, est-ce que tu organises un café cosplay au festival de l'école ?"
+
+Je l'ai entendu de Minami-san. Apparemment, il a gagné un concours de présentation.
+
+Mizuto est dans une posture détendue,
+
+"Je ne vais pas le faire. La classe à laquelle j'appartiens va le faire."
+
+"J'ai vu la photo. Tu es superbe, Sho-sho."
+
+"C'est juste fatigant..."
+
+Cela semble vraiment fatigué. J'ai vu qu'il était plutôt chouchouté.
+
+"C'est bien, cela semble être une performance intéressante. Ma classe dans son ensemble manque de motivation et est ennuyeuse."
+
+"Celui qui est le moins motivé devrait le dire."
+
+"Eh bien, c'est vrai. Mais je serais intéressé par un cosplay aussi mignon..."
+
+"Vous ? En public ? En cosplay ? Vous devriez réfléchir à ce que vous pouvez et ne pouvez pas faire."
+
+"Certes, c'est un jeu complètement impossible à jouer devant un grand nombre de personnes et à servir les clients... Hmm."
+
+Je vais y réfléchir un instant. Ce que je peux faire et ce que je ne peux pas faire.
+
+"...Mizuto-kun"
+
+Je me suis penché un peu en avant et j'ai regardé le visage de Mizuto d'en haut.
+
+Mizuto-kun lève les yeux et établit un contact visuel avec moi.
+
+"Puis-je l'essayer ici ? Cosplay."
+
+"Ici ? ... Que veux-tu dire ? Il n'y a pas de costumes dans cette pièce."
+
+"Non, non. Il suffira d'emprunter le contenu du tiroir."
+
+"Hein ? Qu'est-ce qu'il y a dans le tiroir ? Je suis sûr que tu n'aimes pas ça, pervers."
+
+"S'il vous plaît, ne touchez à rien d'étrange ! Tout ce que vous avez à faire est de me prêter ça ! Ça !"
+
+Dis-je en tirant sur la chemise de Mizuto.
+
+Mizuto avait l'air encore plus méfiant.
+
+"Ça ?... Eh bien, j'en ai une de rechange dans le tiroir, mais..."
+
+« Cela faisait un moment que je voulais l'essayer. Les vêtements de Mizuto-kun !
+
+"C'est effrayant de ressentir un simple désir sexuel..."
+
+"Ce n'est pas vrai ! C'est sa chemise ! C'est sa chemise ! N'est-ce pas quelque chose que tu admires ?"
+
+Si c'était pour le désir sexuel, je porterais la chemise que Mizuto porte en ce moment ! Il y a beaucoup d'odeur ! ... Wow, c'est dégoûtant même pour moi.
+
+"Je suppose qu'il porte des chemises quand il n'a pas de vêtements de rechange..."
+
+« Je veux dire, disons que je suis trempé par une pluie soudaine. Dans ce cas, en quoi me changerais-tu, Mizuto-kun ?
+
+"Je suppose... je suppose que je vais emprunter les vêtements de Yume et les enfiler."
+
+"N'est-ce pas !? Si nous ne faisons pas ça, nous n'aurons aucune chance !"
+
+En fait, je l'attendais avec impatience puisque je vais en fait dans la chambre des garçons ! Je n'ai pas osé apporter un parapluie un jour où le temps était étrange ! Mais si vous y réfléchissez, ça ne marchera pas ! C'est plein à craquer !
+
+"C'est pourquoi, à cette occasion, j'ai décidé de cosplayer de manière équitable et ouverte."
+
+"L'émotion ne manque pas... eh bien, ça ne me dérange pas si c'est juste un petit peu. Je vais sortir maintenant, pour pouvoir changer ce que je veux..."
+
+"Non, ce n'est pas vraiment un problème. Reste juste là-bas."
+
+"dents?"
+
+Je ne me sens pas à l'aise d'expulser le propriétaire de la pièce. De plus, si je le dis moi-même, j'ai un fort désir sexuel, donc je ne sais pas ce que je ferai si je reste seul.
+
+"Maintenant, excuse-moi..."
+
+Une fois que j'ai fini de frotter les épaules de Mizuto, je suis descendu du lit et j'ai ouvert l'étagère supérieure de la commode. C'est un jackpot. Il y avait une chemise coupée soigneusement pliée.
+
+Je le prends et me recouche... et pose mes mains sur les boutons de ma chemise.
+
+"D'accord, je vais changer de vêtements... S'il te plaît, ne me regarde pas, d'accord ? S'il te plaît, ne me regarde pas du tout, d'accord ?"
+
+"Je suis désolé d'essayer d'être si poli, mais je ne veux vraiment pas te regarder."
+
+» dit Mizuto sous le choc alors qu'il se levait et sortait de son sac un livre qu'il était en train de lire, retournait au chevet et l'ouvrait. Il ne semble pas intéressé par son comportement, ce qui me met un peu en colère. Es-tu encore lycéen ? Profitez du changement brut de vêtements ASMR de JK !
+
+Après avoir ôté sa cravate, il déboutonne lentement sa chemise.
+
+……ah. Ouah. Eh bien, je suis étonnamment excitée... Enlever tes vêtements avec un garçon juste à côté de toi... Pendant les vacances d'été, je me suis endormi et j'ai presque exposé mes seins nus, mais maintenant j'expose juste mon soutien-gorge dans l'angle mort de Mizuto... c'est vulgaire, mais... hehe...
+
+Je retire mes bras de mes manches et jette la chemise sur le côté. ... Ah ! Dans le lit de Mizuto ! La chemise d'une femme a été enlevée ! C'est méchant ! C'est méchant !
+
+Si possible, j'aimerais assembler un soutien-gorge, mais je préfère ne pas faire ça... Dangereux, dangereux. Je l'ai fait quand Mizuto était à l'extérieur de la pièce. Mizuto-kun m'a presque surpris en train de prendre une photo d'un lit vide avec mes seins bombés et tremblants.
+
+Maintenant, vient la jupe. Je pose le doigt sur la fermeture éclair cachée dans les plis...
+
+A ce moment-là, un coup de génie m'a frappé.
+
+Je jette un rapide coup d'œil à Mizuto-kun. Mizuto n'y prêta vraiment aucune attention et feuilletait les pages du livre. En fait, je n’ai jamais eu l’impression de ne pas progresser en lecture même si j’écoutais attentivement. Même si elle n'est pas une amante, je pense que ce n'est pas grave si elle satisfait un peu la fierté d'une femme.
+
+Et ainsi...
+
+J'ai déplacé mes fesses et j'ai rapproché la fermeture éclair de ma jupe de l'oreille de Mizuto――
+
+Jiii――――…….
+
+"...Hé. Pourquoi as-tu pris la peine de m'approcher ?"
+
+"Hein ?... De quoi tu parles ?"
+
+"......Eh bien, ça va."
+
+J'ai réussi à vous induire en erreur d'une manière ou d'une autre. Il semble que c'était un peu trop artificiel.
+
+J'ai enlevé ma jupe et j'étais complètement en sous-vêtements. Wow... Je voulais faire quelques poses érotiques derrière Mizuto, mais ma maîtrise de soi a à peine pris le dessus. Si vous comptez le faire, il est préférable de porter des sous-vêtements au design coquin.
+
+J'ai passé mon bras dans la manche de la chemise cutter de Mizuto que j'avais apportée avec moi.
+
+...Comme je m'y attendais, il y avait une petite manche supplémentaire. Héhé. Bukkabuka~♪ ...Ah, je dois le dire à voix haute.
+
+"Eh, ehehe. Bukkabuka...♪"
+
+« …………………… »
+
+ignorer!
+
+Mizuto-kun, qui peut gérer le sel, va bien, mais parfois ce n'est pas grave s'il devient plus sucré, n'est-ce pas ?
+
+Je ferme le bouton et il se perd au niveau de la poitrine. Combien de temps dois-je le conserver ? Hors de question de le fermer jusqu'au premier bouton, mais c'est aussi un peu bizarre d'avoir son soutien-gorge visible. Eh bien, c'est difficile à dire sans miroir.
+
+J'ai fouillé dans mon sac à côté du lit, à la recherche de mon smartphone pour l'utiliser comme miroir à main. Juste à côté de l'endroit où Mizuto est assis――
+
+"Hein ? Hé !"
+
+Mizuto-kun émit soudain un son impatient et me regarda.
+
+Oui, j'ai vu ça.
+
+Hein?
+
+... Ne suis-je pas moi-même entré dans le champ de vision de Mizuto-kun ?
+
+Je me suis figé dans la position où j'attrapais mon sac et j'ai regardé ma poitrine.
+
+Juste au moment où j'étais sur le point de vérifier avec l'appareil photo de mon smartphone si mes sous-vêtements étaient à peine couverts, j'ai vu le bout d'un simple soutien-gorge rose furtivement à travers l'espace entre le troisième bouton ouvert...
+
+"Aaah"
+
+J'ai attrapé précipitamment ma chemise.
+
+...Puis, l'ourlet a fini par remonter,
+
+"Nyaa !?"
+
+Ferme parfaitement vos cuisses pour protéger votre pantalon.
+
+Wow, c'est incroyable... Quelle est la durabilité de cet équipement ? Vous ne pouvez le faire que devant quelqu’un qui est prêt à être détenu !
+
+"C'est toi qui fais beaucoup de bruit... C'est toi qui t'es habillé comme ça toute seule, non ?"
+
+"Je-je veux dire... mes sous-vêtements ne sont pas si mignons aujourd'hui..."
+
+"C'est plus gênant de porter des choses mignonnes."
+
+Je voulais t'embarrasser !
+
+C'est vrai que j'ai été largué et je soutiens Yume-san, mais à part ça, j'aimerais avoir autant de chances que possible d'ennuyer Mizuto-kun !
+
+J'attache l'autre bouton, trouve une position sûre et demande à nouveau à Mizuto.
+
+"Qu'en penses-tu?"
+
+Levez légèrement les bras avec des manches supplémentaires pour donner un look délicat.
+
+Comme j'ai pu sécuriser la longueur de l'ourlet, j'ai essayé de desserrer un peu la protection des cuisses.
+
+Mizuto m'a regardé comme s'il regardait un programme d'information après son réveil,
+
+"Eh bien, c'est mignon."
+
+"Oh !? J'ai été félicité !"
+
+"J'essaie juste de ne pas le dire parce que tu te laisses emporter si tu le dis, mais en fait, je pense que tu es un gars mignon."
+
+» dit Mizuto en reportant son attention sur le livre.
+
+...Hein? Les mots et les actions ne correspondent pas ?
+
+Je me suis approché de Mizuto à quatre pattes,
+
+"Euh... n'est-ce pas "mignon" la même chose que le "mignon" des chiens et des chats ?"
+
+"Oui, mais"
+
+"C'est inattendu ! Ce n'est pas comme ça, je veux que tu sois plus excitée comme ça !"
+
+"Puis-je faire ça?"
+
+Mizuto s'est retourné et m'a regardé dans les yeux.
+
+Juste... Sans bouger une seconde. Des yeux qui semblaient me regarder me regardèrent.
+
+"Ouais... euh... euh... ju, je n'ai même pas préparé..."
+
+Quand j'ai instinctivement détourné le regard et reculé, Mizuto a ri comme s'il se moquait de moi.
+
+"Tu es si mauvais."
+
+image? ...Êtes-vous fatigué?
+
+"C'est la chose la plus inattendue !! Je ne veux pas que quelqu'un qui refuse les aveux de quelqu'un pour une raison incompréhensible et continue de l'ignorer !! "
+
+"Ne me donne pas de raisons qui n'ont aucun sens. Tu as raison."
+
+déjà! À ce rythme-là, ma relation avec Yume-san ne progressera jamais !
+
+◆ Yume Irito ◆
+
+Les préparatifs pour la fête scolaire progressaient régulièrement.
+
+À mesure que l’événement approche, l’atmosphère à l’intérieur de l’école devient de plus en plus inhabituelle. La vue de l'endroit, qui n'est généralement qu'un endroit calme pour assister aux cours, devenant de plus en plus magnifique et aux couleurs vives m'a donné l'impression qu'il décorait mon humeur.
+
+Le travail d'aujourd'hui consistait à construire l'arche d'entrée, ce qui, dans un sens, pourrait être considéré comme le plus gros travail de Bunmi. Dans la salle de conférence où ils travaillent habituellement, les bureaux ont été retirés et le comité au complet s'est réuni et a tamponné de la peinture sur le carton étalé au sol.
+
+Lorsque je m'assois pour travailler par terre, mon bas du dos commence à me faire mal. J'ai bien étiré mes hanches et j'ai décidé de faire une pause et d'aller aux toilettes.
+
+Je quitte la salle de conférence après avoir dit quelques mots aux autres filles de la classe, avec qui j'ai pu parler un peu grâce au travail de Bunmi.
+
+Le bâtiment de l'école est si animé qu'il est difficile de croire que c'est après l'école. Les panneaux qui seront utilisés ce jour-là sont installés dans le couloir et les voix de nombreuses personnes résonnent harmonieusement à l’intérieur de la classe. Certaines classes organisaient même des compétitions de karaoké pour une raison quelconque. Quelque chose d'étrange se produit lorsqu'il est exposé à l'air...
+
+Regardant par la fenêtre les gens qui pratiquaient la danse dans la cour, je suis entré dans les toilettes pour femmes voisines. Alors,
+
+"Salut"
+
+"Ah... Merci pour votre travail acharné, Senpai."
+
+Kurisuri-senpai était dans les toilettes.
+
+Une pochette de maquillage est placée sur le comptoir et un cordon de fer à cheveux est connecté à la prise. Peut-être retoucher votre maquillage ?
+
+Kurenai-senpai a l'air d'être très éloignée du monde réel, mais elle fait aussi des choses comme une fille normale... Je suis entré dans la salle privée et me suis soulagé, me sentant surpris par quelque chose d'aussi évident.
+
+Puis, lorsque je suis retourné aux toilettes, mon aîné était toujours au même endroit. Cela ne ressemble pas à un maquillage qui demande beaucoup de temps, cependant... Je me suis lavé les mains dans le lavabo à côté de moi, en m'interrogeant un peu. Quand je me suis regardé dans le miroir, j'ai remarqué que les cheveux que j'avais attachés pour le travail semblaient un peu lâches, alors j'ai décidé d'enlever l'élastique et de l'attacher à nouveau.
+
+"Voulez-vous l'utiliser?"
+
+L'aîné à côté de moi m'a soudainement tendu un peigne.
+
+J'ai été un peu surpris, mais je me suis rapidement repris.
+
+"merci"
+
+et reçu le peigne.
+
+Quand j'ai commencé à me peigner les cheveux, mon aîné a lentement ouvert la bouche.
+
+"Il semble que vous connaissiez le comité."
+
+"Ah, oui... je suis timide, mais merci à tous de m'avoir parlé si amicalement."
+
+"C'est bien... J'espère que l'autre s'y habituera davantage."
+
+"L'autre..."
+
+Cela dit.
+
+"...Tu veux dire Mizuto ?"
+
+"C'est vrai. Est-ce que ton... euh, frère ?"
+
+"Mon frère."
+
+Même si je n’ai plus la même réaction négative qu’avant, je ne supporte toujours pas de devenir la sœur de cet homme. ...Je ne pourrai plus jamais t'appeler « grand frère »... ! limite! Mon cœur va se briser !
+
+"J'ai beaucoup essayé de parler à mon jeune frère pour tenter d'approfondir notre relation avec lui. C'est tellement difficile."
+
+"Hein ?... Ah, euh, on approfondit notre amitié... ?"
+
+Kurenai-senpai laissa échapper un sourire narquois alors que j'arrêtais de me peigner les cheveux sans réfléchir.
+
+"Bien sûr, en tant que prochain président du conseil étudiant. D'excellents étudiants comme lui sont vraiment difficiles à trouver."
+
+"Je... je vois."
+
+J'ai été surpris... Cette personne est tellement suggestive !
+
+"C'est comme s'il dressait un mur autour de lui, ou plutôt, il ne s'intéressait pas aux autres. Je sympathise totalement avec ce sentiment..."
+
+"image?"
+
+"La communication avec ceux qui vous entourent rend le travail plus fluide. Yume-kun, s'il vous plaît, soyez Kasugai et amenez-le dans votre cercle."
+
+En disant cela, le senior lui tend la main. Je venais juste de finir de me coiffer.
+
+"Tu as de beaux cheveux. Je suis tellement jaloux."
+
+La personne âgée m'a pris le peigne et a quitté les toilettes des femmes avec sa trousse de maquillage.
+
+En regardant en arrière, je repense à ce que j'ai dit plus tôt.
+
+Il ne s'intéresse pas aux autres – même si Mizuto a certainement ce genre d'atmosphère. Kurenai-senpai, qui parle de manière proactive à des juniors comme moi qui sont des étrangers, peut comprendre cela... ?
+
+... Je suppose que c'est encore suggestif. C'était un senior insaisissable.
+
+Avec Mizuto dans le cercle...
+
+Je suis sûr que ce type est déprimé, mais à en juger par la façon dont il traîne avec Higashigami-san, cela ne veut pas dire qu'il déteste toutes les interactions sociales.
+
+En plus, je m'en souviens.
+
+Je l'ai vu seul dans un sanctuaire isolé et désert, regardant le ciel nocturne.
+
+Est-ce que ça s'appelle la solitude ? Est-ce solitaire ? Cette façon d'être qui était désespérément gravée dans son âme n'était pas ce que Mizuto avait espéré.
+
+Dans ce cas, je pense que ce serait une bonne chose si nous pouvions nous en libérer, ne serait-ce qu'un peu, grâce à cette fête scolaire.
+
+"...D'accord."
+
+C'est probablement aussi le rôle de ma sœur. Je suis sûr que tu prendras bien soin de moi.
+
+« Yume-chan ! As-tu le temps maintenant ?
+
+Alors que j'avais fini de colorier l'arche, un de mes aînés m'a interpellé.
+
+C'est Yasuda-senpai. C'est une grande étudiante de deuxième année, brillante et joyeuse, qui me rappelle en quelque sorte Akatsuki-san. C'est une personne très attentive et il me parle amicalement comme si j'étais un senior. D'ailleurs, je suis le genre de personne qui me reconnaît comme un ami après 10 minutes de conversation et qui n'hésite pas à appeler mes amis par leur prénom.
+
+"Oui, je suis libre, mais... as-tu besoin de quelque chose ?"
+
+"Je vais mettre une affiche sur le tableau d'affichage, pouvez-vous m'aider ? J'ai déjà mal aux jambes."
+
+"Héhé. Tout va bien--"
+
+Je riais de la voix artificielle de vieille dame de Yasuda-senpai quand j'ai réalisé cela.
+
+C'est une chance.
+
+Quand je me retournai, Mizuto venait juste d'être soulagé de son travail de coloriage et s'apprêtait à se diriger vers la fenêtre où il avait laissé ses bagages. Ouah! Cet homme rentre chez lui !
+
+"Ah... alors, Senpai, tu n'as pas aussi besoin de la main d'un homme ?"
+
+"C'est vrai, mais mon peuple est déjà parti."
+
+Je me suis rapidement approché de Mizuto et lui ai tapoté légèrement l'épaule.
+
+"...Quoi?"
+
+Le sommet du Bouddha regarde en arrière. Je ne suis pas du genre à être effrayé par quelque chose comme ça.
+
+"As-tu fini?"
+
+"Je pensais rentrer chez moi maintenant que c'est fini."
+
+« J'ai besoin de ton aide pour quelque chose. Tu peux rester un peu plus longtemps, n'est-ce pas ?
+
+Mizuto regarda l'horloge et fit semblant de s'inquiéter de l'heure, mais je savais que ce n'était qu'une pose. Je n'ai rien de spécial à faire, je veux juste rentrer chez moi le plus tôt possible.
+
+Lorsque Mizuto a vu que je ne montrais aucun signe de recul, il a immédiatement abandonné.
+
+"...Je comprends. Les travaux que j'avais prévus ont été terminés plus tôt que prévu."
+
+"Merci. Viens."
+
+J'ai attrapé le bras de Mizuto et suis retourné vers Yasuda-senpai.
+
+"J'ai trouvé un homme. Désolé d'être si maigre."
+
+"Oh, c'est le petit frère dont tu as entendu parler. C'est un plaisir de te rencontrer, n'est-ce pas ? C'est Yasuda, ravi de te rencontrer !"
+
+Yasuda-senpai sourit et tendit la main.
+
+Je me suis dit. C'est mauvais. Il n’est pas question que cette personne qui déteste les gens serre la main d’une personne âgée qu’elle rencontre pour la première fois. Soyez prêt à suivre ceci...
+
+"Je m'appelle Irito, de la classe 7 de 1ère année. Enchanté de te rencontrer, Yasuda-senpai."
+
+J'ai été tranquillement surpris par ce spectacle inattendu.
+
+Je ne souriais pas comme Yasuda-senpai. Cependant, il a rendu son nom sur un ton assez doux, a appelé son nom et lui a même serré la main… Ce Mizuto !
+
+Même son parent Madoka-san la traite avec soin, l'ignorant presque...
+
+L’inattendu a continué.
+
+Yasuda-senpai rapprocha soudain son visage de celui de Mizuto tout en lui serrant fermement la main.
+
+Ah, violation de l'espace aérien !
+
+L'espace personnel de Mizuto a un rayon d'environ 1,5 mètre. Impossible que cet homme, qui a l'air un peu dégoûté même lorsqu'il fait la queue à la caisse d'un supermarché, ne soit pas gêné par une approche aussi décontractée !
+
+"J'en ai entendu parler, mais si tu regardes attentivement, tu as vraiment un joli visage. Je pense que tu es populaire, n'est-ce pas ?"
+
+Ouah! Ces taquineries sont mauvaises, Senpai ! Mizuto est celui que je déteste le plus !
+
+Même si je voulais amener Mizuto dans le cercle de Fumi, je pensais que ce serait une bonne idée de commencer avec quelqu'un qui n'abandonne pas cette audace, mais je ne m'attendais pas à ce qu'il réduise la distance aussi rapidement. Cela peut être contre-productif. Mizuto devient de plus en plus têtu――
+
+"Ce n'est pas vrai."
+
+» dit doucement Mizuto, souriant légèrement.
+
+J'ai souri faiblement.
+
+...As-tu souri légèrement ?
+
+"Je n'ai pas beaucoup d'amis parce que je ne suis pas doué pour parler. Avoir une petite amie serait un rêve devenu réalité."
+
+"Hein ? Mais j'ai entendu les rumeurs, n'est-ce pas ? Il est toujours avec sa petite amie, et ils sont très proches."
+
+"C'est exactement ce que disent les gens autour de moi. C'est l'un de mes rares amis. Ma sœur là-bas témoignera."
+
+Ils discutent.
+
+Ce Mizuto discutait paisiblement.
+
+J'ai été tellement choqué par les mots de Yasuda-senpai : « La fille dont on parle n'est-elle pas vraiment votre petite amie ? Yume-chan, dis-moi juste la vérité !'' Je n'ai pu répondre que par un superficiel : ''Eh bien, peut-être...''.
+
+Oh mon Dieu!
+
+Je me demande s'il est plus facile pour Mizuto de parler à quelqu'un qui arrive à l'improviste. Si vous y réfléchissez bien, Higashigami-san est également très agressif envers Mizuto... De plus, lors de notre première rencontre, j'avais l'impression de lui parler activement...
+
+J'ai un casier judiciaire pour avoir confondu Madoka-san avec mon premier amour, donc je ne peux pas du tout faire confiance à mon analyse, mais je peux dire que la première impression de Yasuda-senpai a été très bonne. Senpai est le créateur d'humeur de Fumimi, donc dès que cette personne l'aime, c'est comme si on lui avait promis de se déshabiller.
+
+Nous quittons la salle de conférence avec une pile d’affiches, dépassés par cette réussite facile. Affichez ces affiches sur les tableaux d'affichage dans toute l'école.
+
+Pendant ce temps, Yasuda-senpai parlait constamment à Mizuto.
+
+« Irito-kun, tes notes sont bonnes, n'est-ce pas ? Comment étudies-tu ?
+
+"C'est une aventure d'un soir. D'habitude, je prends juste des notes."
+
+"Je suis en deuxième année après une aventure d'un soir. Mon cerveau est différent."
+
+Au début, nous parlions superficiellement sur la base d’informations ouvertes, mais peu à peu nous avons commencé à approfondir le sujet.
+
+"Hé, hé ! Toi et Yume-chan n'êtes pas liés par le sang, n'est-ce pas ? Qu'en avez-vous pensé au début ? Vous allez devenir une famille avec une fille si mignonne !"
+
+«J'ai été surpris. C'est arrivé si soudainement. Après cela, nous avons tous les deux fait de notre mieux pour nous habituer à notre nouvelle vie, et il n'y avait rien de particulièrement sexy là-dedans.''
+
+"Vraiment ? Eh bien, la réalité est comme ça."
+
+Il est meilleur que moi en bavardage.
+
+J'y suis habitué maintenant, mais au début, j'avais du mal à répondre à chaque fois que quelqu'un évoquait le sujet de la cohabitation. Cet homme répond avec aisance.
+
+Ce n’est pas que vous n’avez pas de compétences en communication. Je n'ai tout simplement pas envie d'interagir.
+
+Lorsque nous sortions ensemble, ses solides compétences en communication m'ont aidé à plusieurs reprises. Donc, si vous y réfléchissez, cela n’est peut-être pas aussi surprenant que d’avoir une conversation amicale avec une personne âgée que vous rencontrez pour la première fois.
+
+En fait, je parle bien avec ma mère depuis la première fois que je l'ai rencontrée...
+
+Puisqu’il en a la capacité, cela aurait été facile s’il en avait eu l’opportunité. Si tel était le cas, j'aurais dû trouver le timing plus tôt.
+
+…………Ouais? Mais Kurenai-senpai n'a-t-il pas dit : « C'est vraiment difficile »... ?
+
+"Un peu plus à droite."
+
+"Êtes-vous ici?"
+
+"Oh ouais. D'accord !"
+
+Même si je me tournais la tête à cause de l'inconfort qui me restait coincé dans le coin de la tête comme une petite épine, le processus d'installation des affiches s'est déroulé sans problème.
+
+Après avoir terminé les deux places, Yasuda-senpai m'a secrètement appelé.
+
+"(Yume-chan, Yume-chan)"
+
+"(Oui?)"
+
+"(Mon petit frère, je pensais que tu étais difficile parce qu'il rentrait toujours si tard, mais quand je lui parle, il a l'air d'un enfant vraiment sympa. Je ne le savais pas. Pourquoi rentres-tu toujours si tôt à la maison ?)"
+
+"(La raison pour laquelle je suis rentré si tôt... est probablement parce que mon amie de cet exemple est très timide et ne semble pas avoir beaucoup de place dans la classe en mode festival de l'école...)"
+
+"(Alors tu restes avec elle pour qu'elle ne se sente pas seule !? Wow ! Tu es si gentil ! Ta sympathie monte en flèche !)"
+
+... J'ai dit que c'était une amie, pas une petite amie.
+
+Hmm... c'est vrai, tout le monde le penserait...
+
+"(Dans ce cas, nous devons vous libérer rapidement ! Finissons-en vite !)"
+
+"(Oui……)"
+
+Mizuto regardait l'écran de son smartphone alors que j'étais submergé par un sentiment d'impuissance.
+
+"Bon travail ! A demain !"
+
+Après avoir fini d'installer les affiches, j'ai récupéré mes affaires dans la salle de conférence et j'ai dit au revoir à Yasuda-senpai ainsi qu'aux autres membres de Bunmi.
+
+Je regarde le visage de Mizuto alors que je me mélange aux membres de Fumi qui se dispersent par trois ou cinq.
+
+"Merci pour votre travail acharné. Vous avez plutôt bien réussi à parler à Yasuda-senpai, n'est-ce pas ? Je n'ai jamais eu peur que vous disiez quelque chose de grossier."
+
+Mizuto a regardé mon visage,
+
+"Contrairement à quelqu'un d'autre, je ne suis pas sarcastique, donc c'était beaucoup plus facile."
+
+"...Peut-être que je suis le seul à parler comme ça ?"
+
+"Kawanami aussi."
+
+À bien y penser, je vois. ...Quoi? J'en espérais beaucoup.
+
+"Je voulais l'enregistrer, votre conversation amicale. Si je le montrais à M. Azuma, ils riraient probablement aux éclats."
+
+"Arrête ça. Soit tu te moqueras de moi pour le reste de ta vie, soit je serai déclenché par ton complexe et je t'entraînerai dehors. Tu es un emmerdeur."
+
+"Pas aussi bon que toi."
+
+"On dirait qu'ils ne le savent pas. Je me demande ce qui se passera si quelqu'un sans compétences en communication perd ses réservations."
+
+Ah, oui, oui. Tu parles aussi de moi.
+
+J'ai eu du mal à me retenir de sourire. J'insiste sur le fait que ce n'est pas seulement moi, mais... Je me sens à l'aise d'avoir des conversations comme celle-ci qui n'auraient pas eu lieu si nous n'avions pas rompu.
+
+"J'aurais dû l'enregistrer après tout. Quand tu pliais ton nombril, tu étais incomparable à Togami-san."
+
+"--Désolé. Puis-je avoir un moment ?"
+
+Mizuto secoua légèrement son smartphone et me le montra.
+
+On dirait qu'il a quelque chose d'urgent à faire. Qui Mizuto contacte-t-il ?
+
+« M. Higashigami ?
+
+"Ah. J'étais un peu plus tard que je l'avais dit..."
+
+Tout en parlant, Mizuto utilise son smartphone et le tient près de son oreille.
+
+Le côté de son visage est caché derrière sa main et je ne peux pas le voir.
+
+Alors, bien sûr, je ne pouvais pas continuer mes plaisanteries précédentes.
+
+Si vous êtes en retard... eh bien, on n'y peut rien. C'est la priorité.
+
+Au bout d'un moment, Mizuto ouvrit la bouche, comme si Togami-san avait répondu.
+
+"Bonjour--"
+
+Je suis resté silencieux et j'ai écouté Mizuto parler à Togami-san.
+
+Cela n'a duré qu'une dizaine de secondes.
+
+"Ah. Ouais. J'y vais tout de suite."
+
+Mizuto retire le smartphone de son oreille et met fin à l'appel.
+
+Puis il s'est tourné vers moi et m'a dit :
+
+"Eh bien, je vais faire un petit détour et ensuite rentrer chez moi."
+
+"Ah... ouais. Ne sois pas en retard. Les jours raccourcissent..."
+
+"Oh. Je sais."
+
+Après avoir dit cela brièvement, Mizuto commença à marcher à un rythme soutenu. J'irai probablement à la bibliothèque. Cet endroit n'a rien à voir avec le festival de l'école, et il est facile pour Higashigami-san d'y passer du temps.
+
+Si je rentre d'abord chez moi et que j'attends un moment, je pourrai bientôt revoir Mizuto.
+
+S'il y a quelque chose dont vous ne voulez pas parler, parlez-en maintenant.
+
+C'est censé être comme ça, mais...
+
+"Hé!"
+
+J'ai arrêté d'appeler.
+
+Mizuto s'arrêta et tourna la tête.
+
+"quoi de neuf?"
+
+"Euh... ça..."
+
+Pourquoi as-tu arrêté de m'appeler ?
+
+Je cherche quelque chose à dire sans même me connaître,
+
+"Ku... T-shirt de classe ! Il devrait arriver demain...!"
+
+Le soleil couchant brillant horizontalement n'a teint que la moitié du visage de Mizuto en rouge et a recouvert l'autre moitié d'une ombre noire.
+
+"Je vois. J'attends ça avec impatience."
+
+Après avoir répondu, Mizuto partit.
+
+J'ai regardé les escaliers où Mizuto avait disparu pendant un moment.
+
+C'est comme ça depuis longtemps.
+
+Nous ne nous entendions pas très bien, et c'est devenu comme une guerre froide, et nous avons continué à interagir de cette manière, échangeant des commentaires sarcastiques comme si nous nous pelotions.
+
+C'est ce que nous sommes maintenant.
+
+Je commence à l'aimer maintenant.
+
+Mais... je me demande pourquoi.
+
+Même si c'est comme d'habitude.
+
+Mon préféré, ça aurait dû être nous.
+
+Pourquoi avait-elle l'impression qu'il y avait un mur entre elle et Mizuto maintenant ?

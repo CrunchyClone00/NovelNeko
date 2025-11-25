@@ -1,0 +1,176 @@
+Partie: Sans titre
+Chapitre 4: 1-4. Village abandonné, compétences et enfant perdu (FR)
+
+"Bonjour, je m'appelle Suzuki. Si je me sens trop seul, je pourrais mourir."
+
+Les gens commencent vraiment à me manquer.
+
+Il semble que le parcours qu'il avait choisi après avoir pris l'autoroute était mauvais et il n'est toujours pas arrivé au village, même après sept jours.
+
+À bien y penser, avant même de m'en rendre compte, mes compétences pour « courir », « manœuvrer en trois dimensions », « sauter », « chanter », « camper » et « laver » avaient augmenté.
+
+Cependant, comme je n'ai attribué de points de compétence à aucun d'entre eux, le niveau de compétence reste gris à 0.
+
+Je pense que j'ai appris les trois compétences « sprint », « manœuvre tridimensionnelle » et « saut » après la deuxième pluie de météores, mais je suppose que j'ai été distrait et que j'ai oublié le journal.
+
+Je ne l'ai pas remarqué lorsque je jouais avec des armes à feu, car j'avais modifié la carte étendue et les icônes de connexion, car elles obstruaient ma vue. D'après le journal, j'ai dormi sur un lit à baldaquin...
+
+Ce n'est pas du camping, non ? Je veux m'y lancer.
+
+◇
+
+Le 8ème jour, j'ai finalement trouvé un endroit qui ressemblait à un village sur la carte étendue.
+
+Courez le long de l’autoroute en direction du village. Cependant, la présence de personnes n’est pas affichée sur la carte étendue. Ont-ils été évacués ou ont-ils été détruits à cause du dépeuplement ? Non, même si j'évacue, je suis sûr que je serai de retour dans une semaine.
+
+Finalement, vous arriverez à un croisement avec une route secondaire menant de la route principale au village.
+
+Un panneau indicateur rudimentaire est placé sur la route secondaire. Il s'agit d'une structure ordinaire avec une planche clouée sur un poteau d'environ 1,5 mètre de long. La destination est écrite sur le panneau avec quelque chose qui ressemble à de l'encre.
+
+"Je ne sais pas lire..."
+
+Je ne peux même pas lire dans quelle langue il est écrit. Au moins, c'est différent de tous les personnages que je connais dans la vraie vie. Cela ressemble plutôt à une cunéigraphie imaginaire, comme quelque chose que l’on verrait dans un jeu.
+
+La carte étendue montre les routes secondaires au grossissement maximum.
+
+J'ai tapoté du doigt la route secondaire sur la carte, me sentant un peu irrité de ne pas pouvoir faire bon usage des précieux indices. C’était une démarche particulièrement inutile, mais cette fois-ci, elle semblait fonctionner.
+
+« Je peux lire « Bienvenue au village d'Enikei », « 32 km de la ville de Seryuu » et « 105 km du royaume de Kazo ! »... Ou plutôt, c'est du japonais !
+
+Un affichage contextuel chevauche la carte et chaque caractère est traduit en japonais et affiché. Est-ce l'effet de l'exploration de toutes les cartes ? Opportunisme banzaï.
+
+Pour l’instant, ça fait juste mal que la ville la plus proche, Seryuu City, pointe dans la direction d’où je viens.
+
+J'ai décidé de m'arrêter au village. Je sais qu'il n'y a personne là-bas, mais ce n'est pas comme si j'aurais l'impression d'avoir perdu si je fais demi-tour !
+
+Il pourrait même s’agir d’une sorte de quête cachée ! ! Si c'est un rêve que je fais, il doit être vrai ! ! !
+
+Après seulement 5 minutes, vous apercevez le village au-delà des champs. Les champs qui s'étendent des deux côtés de la route étroite semblent avoir été abandonnés depuis au moins un an. Le champ est une terre de mauvaises herbes.
+
+Comme je pouvais le voir de loin, toutes les maisons du village ont été incendiées. Le point commun de toutes les maisons est que leurs toits ont tous été incendiés.
+
+Compte tenu de sa situation, il s'agit probablement d'un village qui a été attaqué et abandonné par des dragons.
+
+Comme prévu, il n'y a pas de squelettes qui traînent, mais des paniers de récolte, des houes en bois, des charrues et autres outils agricoles éparpillés ici et là, comme si les gens avaient été évacués en toute hâte.
+
+Alors que je regardais avec désinvolture les outils agricoles qui traînaient, une idée m'est venue, même si parler de révélation serait une exagération.
+
+« Si vous pouvez acquérir des compétences en lessive en lavant des vêtements, n'acquerriez-vous pas certaines compétences en cultivant des terres agricoles ? »
+
+Il sort une houe et l'enfonce lentement dans les terres agricoles.
+
+> « Compétence de cultivation obtenue »
+
+> « Compétence de cultivation obtenue »
+
+C'est ce que dit le journal comme prévu. L’évolution était inattendue.
+
+Au fur et à mesure que je m'améliore un peu, je vais essayer d'autres choses.
+
+J'entre lentement dans le champ et je récolte ce qui ressemble à des légumes à feuilles que l'on aperçoit entre les mauvaises herbes.
+
+> "Compétence de récolte obtenue"
+
+Ça commence à être un peu amusant.
+
+Même ainsi, le mode facile est également terrible.
+
+Au fait, de quel type de légume à feuilles s’agit-il ? Épinards ou komatsuna ?
+
+Quand j'ai regardé attentivement, j'ai vu « l'herbe Hisaya, des légumes à feuilles. » Elle est rarement consommée comme légume cru, mais est transformée en condiments et en cornichons, » une fenêtre contextuelle semblable à un écran AR apparaît au-dessus des légumes à feuilles.
+
+Ouais, pratique. J'ai l'impression que c'est une fonction différente de l'exploration de cartes.
+
+Je vais aussi essayer d'arracher les mauvaises herbes.
+
+> « Compétence de tonte d'herbe obtenue »
+
+Je ne l'ai pas coupé, je ne l'ai pas coupé, je l'ai juste retiré.
+
+Je suis entré dans une forêt qui ressemblait à un brise-vent, j'ai sorti une hache et j'ai abattu un arbre au hasard.
+
+> "Compétence d'abattage obtenue"
+
+J'ai l'impression que mes idées sont testées, je me demande ce que je dois faire ensuite.
+
+Allez dans un endroit où le sol est exposé et écrivez une formule mathématique sur le sol avec une houe.
+
+"1+1=2".
+
+>"J'ai acquis des compétences en arithmétique"
+
+Hmm, si tout va bien, "E=mc²".
+
+＞"Connaissances perdues, compétences obtenues"
+
+La fameuse formule relationnelle de la relativité restreinte est-elle une connaissance perdue ?
+
+Ce serait bien si je pouvais acquérir une compétence de saut en hauteur ou quelque chose du genre...
+
+Cette fois, dessinez Henohenomoheji en douceur.
+
+>"J'ai acquis des compétences en peinture"
+
+Je pense que l'illustrateur sera en colère.
+
+Ensuite, essayez de jouer à un jeu d'enfance consistant à dessiner des puits et à écrire alternativement ○ et ×.
+
+＞"Obtention d'une compétence de jeu"
+
+Est-ce que tout va bien ?
+
+Ressaisissons-nous et avançons.
+
+Il y avait un maki brûlé derrière la maison, alors je l'ai gratté un peu avec un couteau et je l'ai utilisé comme matraque.
+
+＞"J'ai acquis des compétences en menuiserie"
+
+> "Compétence de création d'armes acquise"
+
+De plus, je sors une lanière de cuir du rangement et l'enroule autour de la poignée du club.
+
+＞"Compétence acquise en maroquinerie"
+
+Balayez les copeaux avec un objet en forme de balai composé de brindilles liées ensemble et déplacez-les vers le bord.
+
+＞"Compétences de nettoyage acquises"
+
+Je suis presque à court d'idées. En explorant le village à la recherche de matériel, j'ai découvert un sanctuaire dédié à un dieu indigène qui servait également de cimetière commun.
+
+J'ai grandi à la campagne, alors je finis par joindre mes mains et faire des offrandes comme le faisait ma grand-mère.
+
+Il serait inapproprié de proposer de la viande séchée, alors j'ai versé du saké dans une tasse.
+
+> « Compétence de prière obtenue »
+
+>"Titre : Obtenu une personne d'une grande foi."
+
+Hmm, je n'avais pas l'intention d'acquérir des compétences, mais...
+
+Je suis à court d'idées et j'en ai marre d'acquérir des compétences, alors j'ai décidé de quitter le village.
+
+Le soleil se couche au moment où nous atteignons l'autoroute.
+
+Marchez vers la ville de Seryuu, qui se trouvait sur le panneau indicateur. Lorsque le soleil se couche et que mes yeux s'habituent au clair de lune, je cours sur l'autoroute.
+
+Lorsque le ciel commença à devenir blanc, la ville entière de Seryuu était couverte par la carte à grande échelle. Bien sûr, contrairement au village d’Enikei, il y a beaucoup de monde.
+
+"Enfin, enfin, c'est un village humain."
+
+J'ai crié, tremblant d'impatience de pouvoir enfin parler à quelqu'un.
+
+...C'est long pour un rêve. Vous ne le pensez pas ?
+
+-------------------------------------------------------------
+
+[Épilogue]
+
+Le prochain post sera à partir de 6h00 le lendemain matin !
+
+N'hésitez pas à soutenir et à suivre. L'auteur sera heureux si vous ajoutez une étoile.
+
+[Publicité]
+
+・Je prévois de publier un nouvel ouvrage intitulé « La vie de Sei dans un autre monde ~ Transporter les connaissances et les biens modernes de Sage ~ » à partir du 3 mars 2023, alors attendez-le avec impatience !
+
+・Le volume 15 de la version manga Desuma et le manga dérivé « Desuma Ko Harakyoku » devraient sortir le 9 mars 2023.

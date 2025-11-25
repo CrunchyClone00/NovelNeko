@@ -1,0 +1,428 @@
+Partie: Sans titre
+Chapitre 542: 16-29.Alliance Garleon (5) (FR)
+
+C'est Satou. En ce qui concerne les jeux de simulation de batailles navales, j'aime jouer à des batailles navales où l'objectif principal est la recherche d'ennemis, comme les jeux sous-marins. C'est amusant de s'inquiéter de trouver l'ennemi en premier sans être repéré par l'ennemi.
+
+◇
+
+{Satou, j'ai fini de revoir la magie que j'ai reçue plus tôt.}
+
+"Hmm, j'ai fait de mon mieux."
+
+"Merci. Avez-vous eu des problèmes ?"
+
+"perfection"
+
+"Le code auxiliaire de contrôle magique a été complètement supprimé, donc même un magicien expérimenté pourrait avoir du mal à le contrôler, mais je ne pense pas qu'il existe un code qui pourrait causer des problèmes avec son fonctionnement."
+
+c'était bien.
+
+J'avais déjà effectué la vérification du fonctionnement au milieu de la nuit, mais une vérification croisée est essentielle en tant que police d'assurance avant qu'un problème ne survienne.
+
+« Au fait, quand as-tu développé un tel sort ? »
+
+«J'ai eu beaucoup de temps libre pendant le voyage.»
+
+J'ai essayé de créer le sort « Iron Magic Sailing Creation » pour m'amuser. J'ai utilisé le code de base existant, donc c'était relativement simple.
+
+Il s'agit d'une magie qui crée un voilier golem en acier et crée également une statue vivante pour un marin factice.
+
+La partie la plus difficile a été de rendre cette statue vivante semblable à un être humain.
+
+De plus, le voilier golem ne transporte que 10 canons magiques, il est donc faible pour un golem de niveau 50.
+
+Bien sûr, il ne peut pas voler dans le ciel comme un voilier volant.
+
+Vous pouvez fabriquer jusqu'à 12 navires à la fois, donc si vous utilisez la magie plusieurs fois, elle sera utile cette fois pour exterminer les pirates.
+
+Équipé d’un canon magique de haute puissance, la puissance de combat augmenterait considérablement, mais comme il manquerait rapidement de puissance magique, je ne l’ai pas équipé de cette magie.
+
+J'essaierai de le modifier quand j'aurai du temps libre.
+
+◇
+
+"--Amiral ! Le convoi d'escorte est retardé."
+
+J'ai entendu la voix d'un marin faisant rapport à l'amiral.
+
+"Tch, ces amoureux de l'argent sont tellement avares de la consommation de leurs noyaux magiques."
+
+L'amiral claque la langue au rapport de son subordonné.
+
+Il semble que le fait qu'il abuse du magicien du vent sans le laisser utiliser son noyau magique ait été mis de côté.
+
+La flotte était cette fois composée de 9 navires de guerre et 12 navires d'escorte de Garleoke City, et de 4 navires de renfort d'autres villes de l'Alliance Garleon qui faisaient escale à Garleoke City, soit un total de 25 navires.
+
+De plus, des équipages de pirates étaient à bord de sept des navires d'escorte, et des pirates s'étaient infiltrés dans la moitié des navires des renforts de l'Alliance.
+
+S'ils devaient se rebeller, ce serait probablement lors d'une mêlée, donc je ne les surveille que dans une certaine mesure.
+
+"Satou"
+
+La voix de Mia m'est parvenue à travers le "Tactical Ring Talk" de la magie spatiale.
+
+"Pirate, vers le coucher du soleil"
+
+"Merci, Mia."
+
+Il semble que les pirates aient été aperçus depuis le dirigeable patrouillant dans le ciel.
+
+Presque au même moment, une lampe de poche à communication optique installée au bas du dirigeable envoyait le même message.
+
+C'est un secret : le signal optique contient plus de données que les mots de Mia.
+
+"Intercepter?"
+
+"Non, je veux connaître les capacités de l'équipe d'assujettissement, alors regardez-la."
+
+D'après ce que je peux voir sur la carte, aucun navire n'est attaqué par des pirates, donc ça devrait aller.
+
+"Amiral ! Il y a un navire dans la direction de 14 heures ! Le drapeau national n'a pas été hissé."
+
+Environ une demi-heure plus tard, un tel rapport fut rapporté par un soldat homme-oiseau qui était en patrouille.
+
+"Bien ! Il y a peut-être une embuscade, Sorcier du Vent."
+
+Le sorcier du vent qui utilisait la magie pour accélérer le navire annule la magie et commence à chanter la magie d'exploration.
+
+"Département d'ingénierie ! Augmentez la puissance du réacteur magique."
+
+"Oui, Icer"
+
+Les vibrations et les vagues magiques venant du dessous du pont deviennent plus fortes.
+
+« Amiral, voudriez-vous que je prépare le canon magique ?
+
+"Hmm... Scout ! Combien y a-t-il de navires !"
+
+« Nous sommes un ! »
+
+"Dans ce cas, coulez-le en toute hâte et remontez le moral de la flotte. Préparez le canon magique."
+
+"Oui, Icer"
+
+Le port d'arme sur le côté s'ouvre et le tissu imperméable suspendu au canon magique est retiré en bas.
+
+"Amiral ! Direction 2 heures, distance 2200, un navire visible."
+
+Une fois les préparatifs du canon magique terminés, le sorcier du vent annonça finalement les informations sur lesquelles il avait enquêté.
+
+Il semble que les unités de l'Alliance Garleon soient similaires aux chantiers.
+
+La distance est d'environ 2 kilomètres.
+
+"D'accord, pas d'embuscade, alors."
+
+L'Amiral releva les coins de sa bouche avec un sourire.
+
+" Veux-tu m'appeler ? »
+
+『――Non, les esprits vont bien.』
+
+Mia m'a demandé si j'aimerais préparer un pseudo-esprit pour le support, mais j'ai refusé car un pseudo-esprit serait également bon pour l'exagération.
+
+{Mmm}
+
+"Ne t'inquiète pas, ton tour viendra plus tard, alors attends."
+
+« Moi aussi, j'aimerais participer. »
+
+"Oui, bien sûr. Sixtine-sama, s'il vous plaît, attendez jusqu'à la représentation proprement dite. D'ici là, puis-je demander l'aide d'une patrouille de l'unité des gargouilles ?"
+
+"Oui, j'ai accepté."
+
+Le tour complet de Mia et des autres viendra une fois que la force principale des pirates sera rassemblée.
+
+Cependant, Lady Karina et la princesse Sixtine pourraient avoir leur tour en premier.
+
+Ceci est indiqué par les points rouges des plus gros affichés sur la carte.
+
+Je vérifie les multiples points lumineux rouges naviguant directement sous le bateau pirate.
+
+Il existe deux types de points lumineux rouges : les calmars torpilles et les démons marins de type calmar.
+
+Le premier est d'environ le niveau 20 et il y en a 12, et le second est d'environ le niveau 45 mais un seul.
+
+Non, environ 30 Orcs des Mers d’un niveau à un chiffre suivaient également.
+
+Tous les monstres sont dans un état rare de « contrôle de subordination ».
+
+C'est probablement une sorte d'état d'entraînement.
+
+Puisque ces monstres se déplacent sous l’eau, il semble qu’ils ne puissent pas être trouvés en recherchant avec la magie du vent.
+
+À première vue, un capitaine qui évite l'exploration en utilisant la magie de l'eau semble incompétent, mais il n'est pas étonnant qu'il déteste le faire même si cela consomme une grande quantité de pouvoir magique.
+
+Il existe des pirates qui accompagnent les demi-humains marins, mais leur force militaire n'est pas à la hauteur d'un seul bateau pirate.
+
+De plus, la force principale venant de derrière ce bateau pirate était de plus en plus nombreuse et se trouvait à 10 à 20 kilomètres derrière, il semble donc qu'elle n'ait pas pu être détectée par la magie du vent d'avant.
+
+De nombreux démons marins de type calmar nous accompagnent également ici, donc je pense que Mia et la princesse Sixtine auront de nombreuses occasions d'apparaître.
+
+◇
+
+"Regardez l'image du navire!"
+
+Finalement, un bateau pirate apparut à l’horizon.
+
+« Bateau pirate noir ? »
+
+"Hé ! Regarde ce drapeau pirate !"
+
+"Le serpent de mer enlacé avec un crâne - le bateau pirate de l'Archiduc Squelette !"
+
+D'après la carte, il n'y a pas de Grand-Duc Squelette sur ce navire.
+
+Peut-être que ses subordonnés portent également des drapeaux afin de les confondre ou de les intimider.
+
+"Est-ce que ce drapeau est bizarre ?"
+
+"Est-ce ainsi?"
+
+Tama et Pochi sortirent de l'ombre à mes pieds, se penchèrent par-dessus la balustrade et marmonnèrent.
+
+C'est déjà la pause déjeuner ?
+
+Heureusement, les gens autour d'eux semblaient occupés à se préparer au combat et ne semblaient pas les remarquer.
+
+"Vous deux, les femmes ne sont pas autorisées sur ce navire, alors s'il vous plaît, surveillez depuis le navire où se trouvent Karina-sama et les autres."
+
+Les visages des deux hommes qui me regardaient semblaient abattus.
+
+« Nyu~ ? »
+
+"C'est dommage."
+
+Pourtant, les deux se déplaçaient docilement à travers l’ombre jusqu’au dirigeable au-dessus.
+
+"Demandez un signal factice"
+
+"Hoi hoi"
+
+Demandez à Brownie, le pilote du dirigeable, un signal lumineux factice.
+
+Le navigateur a remarqué le signal lumineux et m'a regardé d'un air interrogateur.
+
+"Amiral, il semble probable que le navire ennemi soit accompagné de monstres."
+
+"Vous accompagnez ? S'il s'agit d'un orc marin entraîné, nous l'avons déjà capturé."
+
+"Non, ce n'est pas-"
+
+"Sir Pendragon ! Je suis occupé à me battre. Si vous êtes un observateur, veuillez observer notre bataille comme un observateur !"
+
+Je voulais avertir le Torpedo Squid et le Sea Demon de type Squid, mais il semble qu'il n'écoutera pas.
+
+Si cela continue ainsi, la flotte sera probablement endommagée, alors larguons une bombe Karina en même temps que le Démon des Mers de type Calmar semble la vaincre.
+
+Comme prévu, s'il y avait 25 navires de guerre, ils seraient capables de gérer moins de la moitié des bandits torpilleurs.
+
+"Karina-sama, c'est presque ton tour--"
+
+J'appellerai Miss Karina qui réconforte le muet dans le ciel.
+
+◇
+
+"Il charge directement sur moi. Êtes-vous désespéré ?"
+
+"Hmm, des pirates incompétents et autres. Attirez-les suffisamment et tirez une volée de canons magiques."
+
+La flotte, qui avait pris position encerclant à moitié les pirates, tourna son flanc vers le bateau pirate.
+
+"Il n'y a pas d'attaque de pirates, n'est-ce pas ?"
+
+J'ai demandé au navigateur.
+
+"L'autre côté est sous le vent, donc il est probablement encore hors de portée de la flèche."
+
+Est-ce ainsi?
+
+La distance entre nous n’est que d’environ 100 mètres.
+
+« Canon magique, préparez-vous à la salve – feu ! »
+
+En même temps que l'ordre de l'amiral, le canon magique du vaisseau amiral s'enflamma et les navires consorts, voyant le drapeau du signaleur, tirèrent leurs canons magiques l'un après l'autre.
+
+"Hé?"
+
+Un mur d'eau se forme devant la coque noire du bateau pirate, parant les unes après les autres la pluie de boules de feu de canons magiques.
+
+Cela doit être la magie du démon marin de type calmar qui vit sous la mer.
+
+"Espèce d'idiot ! Tire la prochaine balle !"
+
+L'amiral prit connaissance de la situation et donna des instructions.
+
+"Le canon magique n'a pas encore fini de charger."
+
+Si cela continue, il semble que nous allons être attaqués par des pirates.
+
+À la proue du bateau pirate qui approche, se trouve un bélier fabriqué à partir d’un os de narval surdimensionné.
+
+Il semble que l’autre partie prévoyait depuis le début une attaque à l’éperon.
+
+J'ai sorti un arc magique et des flèches en acier de mon sac de rangement.
+
+"Amiral ! Navire ennemi, trajectoire de collision."
+
+"Oui, c'est un gouvernail pour hommes !"
+
+Le vaisseau amiral s'est dirigé brusquement pour éviter une trajectoire de collision, mais la manœuvre forcée l'a ralenti.
+
+Un calmar torpille se dirige vers eux.
+
+"Amiral ! Il y a un monstre sous la surface !"
+
+"Laissez le Sea Oak tranquille!"
+
+"Non, c'est un calmar torpille !"
+
+"Qu-quoi-"
+
+Il semble que les gens à bord du vaisseau amiral aient enfin remarqué le calmar torpille.
+
+Ce type est environ au niveau 20, mais il fait environ la moitié de la longueur du vaisseau amiral.
+
+"Je vais t'aider un peu."
+
+Je refuse et tire une flèche sur le calmar torpille qui se déplace dans l'eau comme une torpille.
+
+"Les flèches peuvent atteindre les ennemis sous-marins..."
+
+Il tire trois flèches en réfléchissant au timing et tue les sept calmars torpilles.
+
+Je ne pensais pas que ce serait une bonne idée de tous les tuer et de s'attribuer tout le mérite, alors j'ai laissé les trois animaux restants à moitié morts.
+
+"--Alors non seulement vous l'avez deviné, mais vous l'avez vaincu ?"
+
+L'Amiral, qui était sur le point de se moquer, ouvrit les yeux et fut surpris.
+
+Non, plutôt que de réagir ainsi, prenons le commandement de la flotte.
+
+Alors qu'il était surpris, ses subordonnés étaient déjà en action, les sorciers de l'eau tirant des harpons à eau sur le calmar torpille, et les sorciers du vent scandant des sorts pour éviter les flèches.
+
+Les marins travaillaient également dur pour contrôler les voiles en manipulant les cordages afin de réaccélérer le navire.
+
+"Je serai bientôt là."
+
+Je montre la surface de la mer qui s'élève devant moi et je leur dis.
+
+La première chose qui est apparue après avoir divisé la mer était 10 tentacules.
+
+À son extrémité se développe une griffe acérée semblable à un harpon, et chaque ventouse est plus grande qu'une personne.
+
+"Merde, c'est un kraken !"
+
+"N-Run ! Vous allez couler le navire !"
+
+Les marins paniquent à cette vue.
+
+Naturellement, il ne s’agissait pas seulement du vaisseau amiral, mais de tous les navires consorts.
+
+Même si le corps du démon marin de type calmar n'est pas encore apparu, il est devenu un état de panique.
+
+Même les amiraux et les capitaines qui étaient censés le contenir semblaient à peine capables de réprimer leur propre panique.
+
+"Karina-sama, s'il te plaît, fais-le."
+
+«J'attendais!»
+
+La voix joyeuse de Lady Karina m'est parvenue à travers la magie spatiale.
+
+"Il y a un vent fort qui souffle vers l'ouest..."
+
+“Kunfuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu more! ”
+
+Avant que je puisse dire de faire attention à ne pas se laisser emporter par le vent, Miss Karina est descendue en criant le nom de sa technique.
+
+Non, je ne devrais pas dire le nom de cette technique ici.
+
+Je pense que personne n'a le luxe de l'écouter.
+
+Lady Karina, qui tombait à la vitesse d'un météore, a lancé l'air dans les airs et a corrigé sa trajectoire avant de heurter la tête du démon marin de type calmar.
+
+« C'est un perçage vorpal ! »
+
+« Vaincre la tornade ~ ? »
+
+Pochi et Tama, attirés par Lady Karina, découvrent une nouvelle technique.
+
+La jauge de santé du démon marin de type calamar est déjà à zéro, mais gardons le silence à ce sujet.
+
+"Tous les membres ! Capturez le bateau pirate !"
+
+J'ai mis toutes mes forces dans mon estomac et j'ai crié aux gens dont la tête était vide à cause du météore soudain.
+
+Le canon magique, qui avait déjà été chargé de pouvoir magique, a brisé le mât du bateau pirate, qui avait perdu sa protection contre le démon marin de type calmar, et a laissé un grand trou dans la coque du bateau pirate.
+
+Les pirates montent à bord du deuxième navire, qui échappe de peu à l'éperonnage.
+
+Nous sautons de l'autre côté et montons à bord du bateau pirate.
+
+"Il y en a des forts."
+
+"L'un des confidents de l'archiduc squelette, le chevalier squelette Xamdo."
+
+Bien que son nom soit Skeleton Knight Zamdo, il n'est ni un démon ni un démon, mais un ancien chevalier du royaume divin de Parion qui porte un masque en forme de squelette.
+
+Il semble être une personne de niveau 38 spécialisée dans le combat rapproché.
+
+Si vous le laissez tranquille, beaucoup de marines mourront, alors aidons un peu.
+
+"Hoi hoi, tto."
+
+Il utilise son arc magique pour dévier l'épée de Zamdo et la tirer à travers son bras dominant.
+
+Aussi, le capitaine d'un bateau pirate.
+
+"Punchi, c'est ça !"
+
+--Le poing de Miss Karina est percé d'algues sur la tête.
+
+Le capitaine pirate vole comme une crevette et rebondit sur le pont.
+
+« Pochi est là ! »
+
+"Tama est aussi là~?"
+
+Pochi et Tama montent sur le navire et prennent une pose rapide.
+
+"Pochi, Tama, grâce à vous deux, nous avons pu nous débarrasser du méchant !"
+
+On dirait qu'ils ont tous les deux jeté Miss Karina de la mer sur le pont.
+
+"Que se passe-t-il?"
+
+« Il est encore trop tôt pour baisser la garde ! »
+
+Pochi donne un coup de pied aux pirates qui attaquent Lady Karina par derrière dans la mer.
+
+Tama et Lady Karina ont repoussé les pirates qui attaquaient tous en même temps.
+
+Leur apparence mignonne les a peut-être trompés, mais ces trois-là sont plus féroces que le kraken géant de plus tôt.
+
+"Je l'ai attrapé."
+
+Il semblerait que les esprits de l'eau de Mia aient capturé les pirates qui tentaient de s'échapper.
+
+"Satou, la gargouille que je patrouillais a signalé que plus de 20 bateaux pirates se sont rassemblés."
+
+"Merci, Sixtine-sama."
+
+Eh bien, il reste encore du temps avant que la force principale de l'ennemi ne se rassemble, alors faisons ce que nous devons faire avant cela.
+
+« Seigneur Pendragon, j'apprécie votre aide, mais s'il vous plaît, évitez d'outrepasser votre autorité !
+
+L'amiral s'approche de moi en crachant.
+
+Cet adversaire est bien plus déprimant que de vaincre l'ennemi.
+
+Il reste 62 navires ennemis.
+
+Ils attendent notre flotte en trois groupes d'une vingtaine de navires chacun dans un endroit difficile composé de récifs et d'archipels dominés par des courants de marée compliqués.
+
+Si vous vous faites attraper par l'appelant à l'endroit le plus visible, vous serez certainement encerclé.
+
+Si je laisse le soin à cet amiral, j'ai l'impression que cela va certainement arriver.
+
+Je préfère être encerclé et anéanti plutôt que d'être encerclé et anéanti.

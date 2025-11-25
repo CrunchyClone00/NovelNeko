@@ -1,0 +1,248 @@
+Partie: Sans titre
+Chapitre 1: 1-1. Une catastrophe naturelle qui commence par une marche de la mort (FR)
+
+[Avant-propos]
+
+Veuillez noter que le contenu de la version Web est sensiblement différent de la version livre/roman (version manga/version anime).
+
+Veuillez également noter que la version Web de cet ouvrage n'a pas été révisée depuis la première écriture du roman, il y a donc des descriptions insuffisantes et une grande quantité de texte explicatif inutile.
+
+Vous devriez pouvoir lire les volumes 1 et 2 de la version livre via un service d'abonnement à lecture illimitée tel que BOOKWALKER, alors n'hésitez pas à y jeter un œil si vous le souhaitez.
+
+-------------------------------------------------------------
+
+Les étoiles coulent.
+
+Beaucoup, beaucoup.
+
+Avez-vous déjà vu une étoile filante ?
+
+Je pense que c'est différent pour chaque personne, pour ceux qui sont fascinés par son éphémère et pour ceux qui font un vœu.
+
+Mais avez-vous déjà vu de vos propres yeux une météorite s’écraser dans le ciel ?
+
+La façon dont il traverse le ciel avec un rugissement et frappe la terre avec sa masse et sa vitesse écrasante.
+
+Certains d’entre vous l’ont peut-être vu à la télévision ou sur des sites de vidéos. …Même ainsi, je suis sûr que personne ne veut voir la pluie tomber sur eux.
+
+En ce moment, près de 100 météorites tombent les unes après les autres sur le sol devant moi.
+
+Non.
+
+Je ne devrais pas le dire comme si c'était le problème de quelqu'un d'autre. La personne qui a causé cette catastrophe naturelle, c’est sans aucun doute moi.
+
+Le choix irréfléchi que j’ai fait il y a environ 10 minutes est maintenant devenu un météore, creusant la terre.
+
+Le météore perce à plus de dix kilomètres, dépasse « l'ennemi » qui pourrait s'y trouver, le point radar dans le coin de sa vision disparaît et les vies disparaissent au point d'impact.
+
+Puis, alors que la plupart des météores avaient disparu dans la terre, le bruit retardé de la chute est finalement arrivé, et un peu plus tard, le grondement de la terre a été transmis sous forme de tremblement.
+
+Juste avant qu'une vague de poussière ne rampe sur le sol...
+
+Soudain, une vive douleur m’a frappé comme une punition divine.
+
+Comme si je me cassais le cerveau.
+
+C'est comme déchirer ton corps.
+
+Immédiatement après avoir perdu connaissance à cause de la douleur, mon corps a été emporté par une vague de poussière.
+
+◇
+
+Le temps remonte un peu.
+
+Je travaillais pendant mon jour de congé afin de respecter les délais d'un projet qui prenait du retard. Je travaille comme programmeur pour une entreprise sous-traitante qui crée des applications de jeux pour smartphones et des jeux par navigateur pour PC à la demande de grandes entreprises.
+
+Même si l’entreprise est noire, une personne ne se voit généralement pas confier plus de deux projets. Cependant, en raison de l'évolution des spécifications et du nombre de bugs, un programmeur junior a disparu juste avant la livraison du produit ! déplorable!
+
+Parce que le lieu de travail avait un taux de roulement élevé, il n'y avait que deux programmeurs dans l'entreprise : M. Junior et moi. Je ne pouvais pas m'attendre à un réapprovisionnement soudain, et j'ai fini par devoir nettoyer non seulement mon propre projet, mais aussi celui de mon junior qui était sous le feu des critiques.
+
+"D'accord, maintenant que toutes les entrées/sorties de classe et les commentaires ont été saisis, il ne reste plus qu'à créer de la documentation et des diagrammes de corrélation à partir du code source à l'aide d'Auto Documenter, puis nous commencerons sérieusement à identifier les bogues."
+
+Étirez-vous un peu et faites un bruit de craquement dans votre cou.
+
+Quand j’ai regardé autour de moi, c’était un lieu de travail normal avec tout le monde au travail, difficile de croire que c’était des vacances. La personne en charge de l'externalisation du débogage était assise à côté de moi, marmonnant tout en travaillant, mais personne n'a rien remarqué d'étrange. Ils n’ont probablement pas ce luxe. Les designers et les planificateurs autour de moi accomplissent leur travail en silence, les yeux vides et morts.
+
+Quand je suis revenu après avoir préparé le café, j'ai vu que le PC avait déjà terminé son travail et produisait les données nécessaires au débogage.
+
+Malgré tout, il est impossible de travailler sans documentation et de ne pas se retrouver pris dans les flammes.
+
+Est-il utile de se plaindre des juniors qui ont été lancés sur le terrain sans même avoir eu le temps de faire l'OJT ? Je ne pense pas qu'il soit acceptable que l'entreprise ait quatre programmeurs lorsque M. Junior a rejoint l'entreprise il y a six mois, mais maintenant je suis le seul.
+
+"Eh bien, Suzuki-san, j'ai reçu une plainte d'un client me demandant de corriger le niveau de difficulté de WW, qui est trop difficile pour les débutants, alors que dois-je faire ?"
+
+Konoyaro était sur le point de dire Sato. Ne faites pas d'erreur même si vous êtes une équipe depuis six mois !
+
+Lorsque je me suis retourné, M. Metabo, le directeur et planificateur, m'a demandé avec un air perplexe, comme d'habitude.
+
+De plus, même si des problèmes surviennent, il semble être heureux d’une manière ou d’une autre. Pourquoi y a-t-il tant de développeurs M ?
+
+WW est l'abréviation de « WAR WORLD », un jeu par navigateur PC actuellement en développement actif. Il s'agit d'un jeu de stratégie orthodoxe avec quelques fonctionnalités d'interaction sociale supplémentaires.
+
+"N'as-tu pas dit que tu ne voulais pas baisser davantage la difficulté parce que ta cible principale ne voudra pas jouer ?"
+
+Le niveau de difficulté actuel a été déterminé grâce à de nombreuses réunions avec le client. Ce temps perdu était-il vraiment une perte ? Je ne peux pas le faire.
+
+"Ne serait-ce pas bien si nous vous donnions un bonus de recherche de tous les ennemis sur la carte et 3 fois plus de bombes d'annihilation de la carte uniquement lorsque vous créez un personnage qui a été rejeté pour la première fois ? Si vous terminez le jeu sans les utiliser, vous pouvez leur donner un titre rare en cadeau ou autre, et laisser les gens qui sont bons dans ce domaine le prendre dans une direction qu'ils n'utilisent pas. "
+
+"Nous n'avons pas beaucoup de temps, alors je suppose que je vais simplement y aller. Eh bien, M. Suzuki, s'il vous plaît, mettez-le en œuvre."
+
+M. Metabo est toujours aussi décontracté.
+
+"Attendez une minute. Je suis en train de déboguer le MMO-RPG sur mon smartphone, alors obtenez d'abord l'accord du client. Si je l'installe mal et qu'il est rejeté, je n'aurai pas le temps de le réparer."
+
+"D'accord. Je t'appelle tout de suite pour confirmer."
+
+M. Metabo, secouant son grand corps, disparaît dans la zone fumeurs avec son téléphone portable à la main.
+
+À partir de là, j’ai continué mon travail en silence, en marmonnant pour moi-même.
+
+En chemin, M. Metabo donne le signal de départ, et la nuit continue alors qu'ils déguisent leur faim avec de la malbouffe.
+
+Je corrige les innombrables erreurs d'inattention laissées par M. Junior jusque tard dans la nuit, et laisse le reste à l'équipe de débogage.
+
+Au fait, quel est ton nom ? Je l'ai toujours appelé MMO ou jeu de corde, donc je ne me souviens plus du nom officiel. C'est vrai, "LIBERTÉ FANTASY WORLD". Je suppose que personne n'a arrêté de l'appeler parce que l'ancien nom de WW était « FANTASY WAR WORLD » et c'était déroutant. Si je me souviens bien, les spécifications incluaient une abréviation comme FFW. Plus tard, j'ai reçu le mot "FANTASY" de WW, donc ce n'est plus si déroutant maintenant, mais il est trop tard.
+
+Tout en travaillant sur la correction de WW, nous répondrons un par un aux rapports de bugs découverts par l'équipe de débogage de FFW... Restez-vous éveillé toute la nuit aujourd'hui ?
+
+Les contrôles se sont poursuivis jusqu'au lendemain matin et le programme client MMO-RPG a été livré de manière miraculeuse.
+
+Bien sûr, il y aura toujours des bugs, mais il n'y a pas lieu de s'inquiéter car il existe une épée légendaire appelée « patch de mise à jour » disponible pour la distribution en ligne. J'entends presque les insultes des utilisateurs, mais j'ai sommeil. J'ai transmis le package d'exécution WW que j'avais modifié pendant que je travaillais dans l'équipe de débogage à M. Metabo via un e-mail interne, puis je me suis rendu dans un endroit sûr sous mon bureau et je me suis endormi pour la première fois en 30 heures.
+
+Ah, le bonheur. Si vous riez avec un esclave de la compagnie, riez. Le sommeil est justice maintenant !
+
+◇
+
+Connaissez-vous le terme rêve lucide ?
+
+C'est un rêve dont vous êtes conscient que c'est un rêve.
+
+Je suis dans le désert maintenant.
+
+J'ai envie de répéter la fameuse phrase de Pol, mais je vais m'arrêter.
+
+Oui, c'est un désert. Je pense que ce serait mieux si vous imaginiez le Grand Canyon en Amérique.
+
+Comment sais-tu que c'est un rêve ?
+
+Une chose dont je me souviens, c'est de m'être endormi sous mon bureau plus tôt. L'autre est l'endroit où vous pouvez voir les quatre « icônes » en bas à droite de votre champ de vision et le gadget intitulé « Menu » en haut à droite.
+
+C'est le même que celui de WW sur lequel je travaillais plus tôt.
+
+Mais mais ! Ce n'est pas la première fois que je débogue quelque chose dans mes rêves pendant que je dormais pendant une marche de la mort. Comme prévu, c'est un mystère qu'il ne s'agisse pas d'une salle de travail ou d'une pièce mais d'un terrain vague...
+
+Peut-être que la pièce était sèche ou quelque chose comme ça.
+
+J'ai essayé d'ouvrir l'écran du menu en appuyant d'une manière ou d'une autre sur le menu avec mon doigt. Une fenêtre translucide, courante dans les objets d’un futur proche, apparaît dans votre champ de vision. ...Mon imagination est pauvre, et même si je fais une erreur, je ne pourrai pas devenir planificateur ou designer.
+
+Le menu était divisé en onglets, et en plus des éléments habituels tels que « INFO », « MAP », « Unit Management », « Storage », « Communication », « Log » et « Settings », des champs tels que « Status », « Equipment », « Magic » et « Skills » qui n'existaient pas dans WW augmentaient.
+
+Je suppose que ça s'est mélangé parce que je débogais FFW en parallèle hier soir.
+
+Eh bien, c'est une erreur de s'attendre à de la cohérence dans les rêves.
+
+En regardant le statut, il s'agit du niveau 1, avec un total de 10 points pour les valeurs HP, MP et capacités. Il s'agit de la valeur du statut de base lorsque les points bonus ne sont pas attribués. À bien y penser, je pense que c'était la valeur du dernier test de création de personnage que j'ai vérifié.
+
+Ouais? Pourquoi y a-t-il des éléments tels que le type d’emploi, les récompenses et les punitions qui n’existent pas dans les paramètres FFW ? Il y a quelque chose de confus.
+
+A 15 ans... avez-vous inconsciemment envie de vivre à nouveau en tant qu'étudiant ?
+
+« Type de poste : Manager » n'a désormais plus aucun subordonné !
+
+En tout cas, le fait qu'il soit écrit « Affiliation : Aucune » est l'indice d'une volonté de changer de métier...
+
+C'est vraiment significatif. ...Oh, je veux des vacances.
+
+La raison pour laquelle les capacités spéciales incluent la « création d'unités » et le « placement d'unités » est probablement parce que WW est mélangé, mais est-il vraiment nécessaire d'écrire « menu » dans la colonne des capacités spéciales ?
+
+De plus, que signifie « immortalité » à la fin de la colonne ? Les rêves sont étranges.
+
+Équipement : polo, chino et baskets. C'est la même tenue qu'avant. Le stockage comprend un portefeuille, un téléphone portable et une boîte d'aliments nutritionnels équilibrés avec une impressionnante boîte jaune. À bien y penser, j'essayais de le manger avant de me coucher, mais à la fin, la somnolence a cédé, alors je l'ai laissé sur le bureau.
+
+"Magie" et "Compétence" sont vides.
+
+En parlant de compétences, il y avait 10 points de compétence sur l’écran de statut, mais c’était triste qu’il n’y ait aucune compétence à attribuer.
+
+Ouvrez "Paramètres" et ajoutez des cartes et un radar à l'affichage de base. Maps affiche une carte étendue et votre emplacement. Le radar est presque identique à la carte, mais il affiche toutes les unités dans les zones recherchées, qu'elles soient ennemies, amies ou neutres, sous forme de points de couleur.
+
+Sur le radar, il n'y a qu'un petit point blanc qui me représente. Environ 100 m autour de moi sont affichés en couleurs primaires, et le reste est rempli en gris pour indiquer les zones inexplorées.
+
+"Hmm, il n'y a aucun ennemi en vue. Je m'ennuie. Au moins dans les prairies, je peux juste m'allonger et faire une sieste."
+
+Je n'ai pas de passe-temps sur un terrain accidenté.
+
+Je regarde avec désinvolture les quatre icônes en bas à droite. Un pour "All Map Exploration" et trois pour "Meteor Shower". Un remède pour débutant que j'ai inventé au hasard lors d'une réunion avec M. Metabo.
+
+Comme son nom l'indique, « Exploration complète de la carte » signifie que toutes les zones de la carte ont été explorées. Vous pourrez également afficher des informations détaillées, y compris les faiblesses de toutes les unités.
+
+Cependant, je pense que c'est trop d'informations pour pouvoir les utiliser sans un certain niveau de connaissances, mais elles ont été mises en œuvre grâce à la forte volonté de M. Metabo.
+
+Essayez de l'exécuter en appuyant dessus avec votre doigt comme vous le feriez sur un smartphone.
+
+Tous les radars seront recherchés et d'innombrables ennemis seront affichés sous forme de points rouges. Réduisez le grossissement du radar pour voir une zone plus large.
+
+Il y a tellement d’ennemis que la moitié supérieure de la carte n’apparaît qu’en rouge. ...N'y a-t-il pas trop d'ennemis ?
+
+Vous devez choisir « l’unité » pour votre armée qui soit facile à gérer en grand nombre !
+
+Vaincre une grande armée avec un petit nombre de soldats est passionnant !
+
+◇
+
+... Il fut un temps où je pensais à de telles choses.
+
+"Création d'unité"...Aucune unité ne peut être créée.
+
+"Placement d'unité"...Aucune unité créée.
+
+"Je veux que tu attaques avec un personnage de niveau 1 mdr"
+
+Comme prévu, c'était un rêve. Il y a une limite à être déraisonnable.
+
+Jetez un coup d'œil rapide à l'icône "Meteor Shower" en bas à droite.
+
+N'est-ce pas l'intention de Dieu de l'anéantir avec une « pluie de météores » ?
+
+``Meteor Shower'' a des paramètres définis pour rester éveillé toute la nuit sous haute tension, il a donc le pouvoir déraisonnable de vaincre d'un seul coup tout autre que le boss final ou le boss caché dans le scénario de campagne.
+
+Je veux envoyer un message aux débutants : « Utilisez ceci pour parcourir les cartes que vous ne pouvez pas effacer. »
+
+Dois-je le pousser ?
+
+>Oui
+
+OUI
+
+Jarutzebrackin
+
+Le dernier est quelque chose de différent.
+
+Comme si j'avais encore un high toute la nuit, j'ai tapé sur l'une des icônes.
+
+...Le silence fait mal.
+
+Je m'attendais à quelque chose de génial, mais rien ne s'est produit.
+
+Je me sentais un peu triste et j'y ai dormi infidèlement. J'ai mal au dos à cause du sol accidenté.
+
+Et quand j'ai tourné mon regard vers le ciel, c'est ce que j'ai vu...
+
+Attends une minute.
+
+Enfin, nous revenons à la scène d'ouverture.
+
+Vrai nom : Ichiro Suzuki. La vie du personnage nommé Satou dans un autre monde a commencé ainsi.
+
+-------------------------------------------------------------
+
+[Épilogue]
+
+Nous le livrons tel qu'il a été publié en 2013.
+
+N'hésitez pas à soutenir et à suivre. L'auteur sera heureux si vous ajoutez une étoile.
+
+[Publicité]
+
+・Je prévois de publier un nouvel ouvrage intitulé « La vie de Sei dans un autre monde ~ Transporter les connaissances et les biens modernes de Sage ~ » à partir du 3 mars 2023, alors attendez-le avec impatience !
+
+・Le volume 15 de la version manga Desuma et le manga dérivé « Desuma Ko Harakyoku » devraient sortir le 9 mars 2023.

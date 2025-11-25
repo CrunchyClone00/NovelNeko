@@ -1,0 +1,248 @@
+Partie: Sans titre
+Chapitre 3: 1-3. J'ai commencé une vie errante ! (FR)
+
+"Bonjour, je m'appelle Suzuki. Le nom de mon personnage est Satou, mais je suis Suzuki."
+
+J'ai tellement envie de parler à quelqu'un que je marmonne ces mots tout seul !
+
+Comme je ne pouvais pas me réveiller de mon rêve, j'ai décidé de trouver un foyer humain.
+
+Heureusement, je pouvais voir une ligne en forme de route au bord de la carte étendue, alors je me suis dirigé vers cette destination.
+
+Cela fait 3 jours depuis. J'ai marché jour et nuit, mais je n'en suis encore qu'à la moitié du voyage.
+
+L'endurance diminue progressivement, mais elle est toujours de 2800/3100. On a l'impression que cela diminue de 100 par jour.
+
+En termes de jeu, tout ira bien pour les 28 prochains jours, mais je suis sûr que je mourrai même dans un rêve.
+
+Je ne sais pas si c'est à cause de mon statut considérablement amélioré ou de mon rêve, mais je ne me fatigue pas. Cela me rend somnolent, mais je peux y arriver.
+
+Je marche maintenant, mais même si je cours, mon endurance diminue presque au même rythme. Si vous sautez en bougeant, votre endurance diminuera plus rapidement que si vous courez, mais pour être honnête, c'est dans la marge d'erreur.
+
+Alors pourquoi tu marches ? C'est parce que j'ai du temps libre.
+
+Vous ne comprenez pas ?
+
+Je suis d'accord.
+
+Au début, je courais seule en chantant comme si je faisais du karaoké.
+
+A l'origine, le répertoire était restreint. Je suis vite à court de chansons et j'arrête de chanter.
+
+Le paysage environnant est magnifique, mais malheureusement cela ne change pas grand chose.
+
+J'ai donc décidé de lire le long journal.
+
+Je ne suis pas un mordu de la typographie, mais je n'ai pas pu m'empêcher de ressentir la douleur de marcher sans but en silence, alors j'ai commencé à lire le journal dans l'ordre depuis le début.
+
+Naturellement, j’ai constaté qu’il était difficile de lire en courant, alors je suis passé à la marche à partir de ce moment-là. Mon objectif était de sortir sur l'autoroute, mais lorsque j'ai commencé à lire le journal de bord, j'ai oublié cet objectif.
+
+Le journal commençait par « Magic Magic : All Map Exploration was used » et se poursuivait par « Defeated... » via les notifications de défaite de Lizardman et Dragonman, jusqu'à la notification de tuer le dernier dieu dragon.
+
+Après cela, il disait : « J'ai vaincu tous les ennemis sur la carte » et enfin : « J'ai pris le contrôle de la source : Dragon Valley ». source? Nani semelle ? Le mot mystère viendra plus tard.
+
+Après cela, il continue avec le journal d'acquisition de butin et le journal de mise à niveau.
+
+Les journaux de butin représentent 80 % du total. Trésors et équipements communs en or et en argent. De plus, des matériaux tels que des cornes de dragon, des crocs et des écailles. Jusqu'à présent, il est du domaine de la compréhension d'ignorer la qualité et la quantité, mais le reste est étrange.
+
+Les cadavres de dragons, d’hommes-lézards et de dragonewts sont alignés dans les entrepôts. Êtes-vous en train de me dire de devenir nécromancien ?
+
+Le reste était constitué des nécessités quotidiennes, de la nourriture et du carburant que les Balance utilisaient probablement. Je n'ai pas un tel objet prêt... De plus, il y a beaucoup d'objets endommagés qui commencent par "Cassé", mais ne sont-ils pas des déchets ?
+
+Comme prévu, lorsque le nombre total dépasse 10 000, lire les détails devient une corvée.
+
+Selon les spécifications WW, la fenêtre de stockage peut être recherchée par classification de type de base ou par balises configurées par l'utilisateur.
+
+La raison pour laquelle ils ont tous deux une interface commune est que je les ai conçus de manière à pouvoir être utilisés afin de réduire la quantité de travail requise. J'en suis un peu fier, mais c'est aussi pratique qu'un fichier pour le dernier système d'exploitation. Bien sûr, vous pouvez ajouter des dossiers à votre guise, mais si vous placez un élément dans un élément de stockage tel qu'un sac, appuyer sur le sac développera les éléments à l'intérieur jusqu'à l'arborescence sous-jacente, vous permettant de retirer et de vérifier le contenu directement sans les sortir du sac. Bien sûr, vous pouvez également faire glisser les objets à l'intérieur du sac hors du sac. De plus, en plus de l'affichage normal, vous pouvez ajouter des onglets pour créer une liste de tous les éléments ou les afficher par mot de recherche. J'ai ajouté ceci parce que c'est pénible de saisir des mots de recherche à chaque fois sur un smartphone.
+
+Eh bien, le sujet s'est un peu éloigné du sujet. L’histoire des programmes et des innovations ne devrait pas être trop longue.
+
+Je vais ouvrir deux fenêtres de stockage et organiser mes objets. Tout d’abord, créez des dossiers à organiser par type et catégorisez-les grossièrement. Après cela, créez des sous-dossiers sous ce calque pour les organiser.
+
+C'est vrai, activez l'option « Empiler automatiquement les éléments du même type » sur l'écran des paramètres.
+
+Si vous ne l'activez pas, le nombre total d'éléments sera trop important.
+
+À propos, dans FFW et WW, le fait de les superposer et de les manipuler comme un seul s'appelle l'empilement. Puisqu’il s’agit d’un terme qui existe dans la plupart des RPG, l’explication est omise dans le jeu. Le mot peut provenir de l’empilement de pièces dans l’ancienne version du plateau de simulation de guerre.
+
+De toute façon.
+
+La majorité des trésors d’or et d’argent étaient des pièces de monnaie.
+
+La plus courante est la « pièce d’or Furu Teikoku ». Un énorme 10,12 millions d’exemplaires. Quand j’ai essayé d’en retirer un, il était assez gros et lourd. Comparé au yen japonais qui se trouvait dans mon portefeuille, il pèse à peu près le même poids qu’une combinaison de pièces de 500 yens et de 5 pièces de 100 yens. Si je me souviens bien, c'est environ 30g. Dans la vraie vie, une pièce d’or normale pèse environ 4 à 7 grammes, on peut donc dire qu’il s’agit d’une pièce exceptionnellement grande. Un total de 303 tonnes... c'est un montant ridicule. En réalité, il semblerait que 2 500 tonnes soient extraites chaque année. On peut dire qu'il ressemble à un dragon qui aime les paillettes d'or.
+
+La deuxième pièce la plus courante est la « Saga Empire Gold Coin » avec 40 000 pièces. Il est intéressant de voir s'il y a eu de nombreux empires ou si de nouveaux pays ont été créés après avoir été détruits par les dragons. J'en ai également sorti une, et bien qu'elle soit plus petite qu'une pièce de 500 yens, elle pèse à peu près le même poids, donc je suppose qu'elle fait environ 7 g.
+
+Et troisièmement, 30 000 pièces de monnaie rouges. L'argent fantastique est arrivé ! Lorsque je l’ai sortie, c’était une pièce qui pesait environ la moitié du poids d’une pièce d’or complète et avait une texture semblable à celle d’un rubis. Parfois, des lignes de lumière traversent les pièces translucides, leur donnant une impression cybernétique. Un peu étrange.
+
+Les pièces restantes comptent toutes moins de 10 000 pièces et sont des pièces d'argent et de cuivre de l'empire Furu. Pièces d'argent, petites pièces d'argent, grandes pièces de cuivre, pièces de cuivre et pièces sacrificielles de « l'Empire Saga » et du « Royaume Shiga ». Il existe de grandes pièces d'argent, des pièces d'argent, des pièces de cuivre et d'autres pièces qui commencent par « Royaume » de « Drag God », et il y a environ 7 000 pièces au total. Je viens de le trier par pays et de le classer en faisant glisser la plage.
+
+Même ainsi, ni WW ni FFW n'ont de devise définie... Dans WW, c'était seulement une valeur numérique, et dans FFW, elle s'appelait « Wal », et dans FFW, c'était « Carne », mais la valeur réelle n'était pas préparée.
+
+Mon rêve a peut-être été influencé par un quiz auquel j'ai joué dans une émission que je regardais pendant une pause.
+
+En plus des pièces de monnaie, on y trouve également des bijoux, des ornements et des œuvres d'art. Il existe environ 300 000 objets de valeur, allant des simples bagues en argent aux couronnes de la taille d'un poing ornées d'émeraudes, en passant par des statues dorées grandeur nature et des poignards de cérémonie.
+
+La plupart d'entre eux sont des objets ordinaires avec des prix élevés, mais environ 5 % du total sont des objets magiques mélangés.
+
+Les objets magiques ont de longues explications et nécessitent des connaissances préalables, je les ai donc ignorés et je les ai simplement classés. Il est plus facile de comprendre si vous lisez un tableau d'affichage rempli d'argot Internet sans connaître la terminologie Internet. Étrangement, aucun bijou n’a été implémenté dans WW ou FFW.
+
+Il y a certains éléments dont je peux comprendre les descriptions et que j’aime. L'« Aquarium des Abysses » peut produire environ 100 litres d'eau par jour.
+
+Quand j'ai trouvé « l'Aquarium des Abysses », je l'ai sorti avec joie et j'ai bu l'eau. Je voulais me laver le visage et les cheveux, mais il y avait beaucoup de poussière provenant de la pluie de météores, alors j'ai abandonné.
+
+J'ai également ajouté trois autres types à mes favoris : le « Magic Wallet » qui peut contenir jusqu'à 1000 pièces, et le « Magic Bag 30 » qui peut stocker jusqu'à 30 piles de 30 objets différents.
+
+Cela ne sert à rien d'avoir un sac magique puisqu'il a un espace de stockage infini, mais c'est visuellement amusant de mettre et de retirer des objets comme des épées qui sont plus longues que le sac, alors je l'ai ajouté à mes favoris.
+
+La deuxième journée s'est terminée ainsi, avec la collecte de trésors d'or et d'argent.
+
+◇
+
+Et juste comme ça, c'est le troisième jour. L'horloge dépassait zéro heure, c'était donc le troisième jour. Mon horloge est décalée d'environ 4 heures chaque jour, donc je ne sais pas si c'est vraiment le troisième jour.
+
+Même si je campais dans la nature, j'avais l'impression que dormir dans un tel terrain vague affaiblirait mon endurance, alors j'ai marché au lieu de dormir. Il n'y a aucun problème de visibilité grâce au clair de lune de la pleine lune.
+
+J'ai tendance à manger ce que j'aime plus tard, donc je vérifierai les armes et l'équipement plus tard.
+
+Les matériaux et les cadavres sont simplement classés par type. Par rapport au journal, il y a moins de cadavres d'hommes-lézards et de dragonewts. C'est probablement parce qu'il a été directement touché par une météorite et a été écrasé, ne laissant aucun cadavre derrière lui. Cependant, il existe de nombreux cadavres de dragons. Il y a facilement trois fois plus de journaux que j’en ai vaincus. Il s’agissait peut-être d’une version dragon du cimetière des éléphants.
+
+La plupart des matériaux sont des parties de corps, mais il semble également y avoir une variété de matériaux tels que des lingots de fer, des herbes médicinales, du bois et de la pierre. Il semble que ce soit une petite quantité de butin pour une ville, mais la majeure partie a probablement été écrasée par la météorite. En termes de parties du corps, il existe de nombreuses écailles. J'ai collecté 7,96 millions de pièces quel que soit leur type. Les dragons perdent aussi leur peau. Il existe une chose appelée coquille de mue de dragon.
+
+"C'est énorme. S'il ne s'agissait que d'une seule échelle, je me demande quelle serait la taille du corps principal."
+
+Ma curiosité a pris le dessus et j'ai sorti une écaille d'un dragon adulte, mais elle mesurait environ 50 centimètres de long. J'ai également vérifié les écailles d'un dragon inférieur, et elles étaient de la taille d'une paume.
+
+Les objets mis au rebut qui commencent par le mot « cassé » sont placés dans le dossier des rebuts sans aucune classification particulière. Je pourrais les jeter, mais il y en avait tellement que si je les jetais, ils finiraient dans une poubelle, alors j’ai décidé de ne pas le faire.
+
+Enfin, le matériel.
+
+Il y a environ 30 000 articles. Il existe un nombre particulièrement important de lances en écailles, avec 20 000 objets commençant par « Ukezoku no... ». Aucun d’entre eux n’est un objet magique, mais des armes et des boucliers ordinaires en bronze et en fer. Il existe étonnamment peu de types d’armures.
+
+J'ai sorti la lance de la tribu des écailles qui était la plus courante. Il s'agit d'une lance en bois d'environ deux mètres et demi de long, avec une pointe en os sculpté et un ardillon qui ressemble à un harpon. Ce n'est peut-être pas une lance de guerre car elle ne sort pas lorsque vous la poignardez avec une lance.
+
+Parmi les objets magiques, il y a environ 100 pièces d'équipement telles que « l'armure en peau de dragon » et « l'armure en écailles de dragon » fabriquées à partir de matériaux qui leur ont été donnés par la race dirigeante. Cette zone était probablement un équipement de la Tribu des Écailles.
+
+Sur les 10 000 objets restants, environ la moitié étaient de grandes épées, des lances, ainsi que des arcs et des flèches ayant des effets spéciaux contre les dragons. C'est probablement l'héritage de ceux qui ont défié le dragon et ont été vaincus.
+
+Comme pour les bijoux, je ne comprenais pas trop les effets des effets spéciaux, donc je les ai remis à plus tard.
+
+Il y a certaines choses que j'aime, mais j'ai été particulièrement fasciné par « l'Épée sacrée » et « l'Épée divine ».
+
+La dualité qui aurait dû être perdue est stimulée.
+
+Pourquoi le nom de « l'épée sacrée » est-il « Excalibur » ou « Durandal » ?
+
+Lorsque j'ai recherché par nom, j'ai trouvé des noms de katana tels que « Kotetsu » et « Muramasa ».
+
+"Je suis excité~"
+
+Amusez-vous à manier Excalibur. Il devrait être assez lourd, mais vous pouvez le balancer facilement. Lorsque vous le secouez, cela crée une magnifique traînée de lumière. Cependant, si vous l'utilisez comme une arme, cela ne serait-il pas un inconvénient car la force de l'épée serait exposée ? Cependant, il est tape-à-l'œil, il est donc susceptible de devenir populaire dans les jeux.
+
+C'est vrai, l'épée divine n'a pas de nom propre.
+
+J'espérais que balancer l'épée augmenterait ma compétence à l'épée, mais cela ne semble pas être le cas. Il peut apparaître lorsque vous battez un ennemi avec une épée.
+
+Il existe également d'autres objets rares. Il y a des canons, des tourelles avec d'innombrables arbalètes, des tourelles qui tirent des lances et d'autres objets pour contrer les adversaires volants. J'ai seulement parcouru la description, mais il semble que les canons ne soient pas seulement du type à poudre, mais aussi des canons qui tirent en utilisant un pouvoir magique.
+
+Après tout, c'est l'arme !
+
+Il y avait environ 100 fusils à chargement par la bouche et 50 fusils de type fusil. Le meilleur, c'est qu'il y a 12 armes qui émettent un pouvoir magique. Juste pour être sûr, il n’y a pas d’armes dans FFW ou WW. Le canon est en WW.
+
+Je sors un pistolet magique court qui semble être le plus petit.
+
+C'est une arme très décorée, de la taille d'un derringer. Il est doté d'un pontet.
+
+Dans une vraie arme à feu, il y a un interrupteur avec une échelle de 0, 1, 3 et 10 à proximité du dispositif de sécurité. Changez l'échelle de 0 à 1.
+
+Tenez-le d'une main, visez un rocher à proximité et appuyez sur la gâchette.
+
+Il y eut un léger déclic, mais je ne pouvais pas voir la ligne de vue.
+
+Lorsque j'ai vérifié la roche cible, il y avait un trou de la taille d'une pièce de 10 yens qui la traversait. Même s’il s’agit d’une roche dure de plus de 2 mètres d’épaisseur, c’est une grosse affaire. La consommation de MP est de 1. Il n’y avait presque pas de recul et cela ressemblait à un pistolet laser. Après tout, ce n'est pas de la fantasy mais de la SF.
+
+Quand j'ai tiré sur la balance à 10, la roche s'est brisée. Il est suffisamment puissant pour tuer même un monstre aussi gros qu'un ogre en un seul coup. La consommation MP est de 10.
+
+"Ce serait trop efficace."
+
+C'est une performance qui serait dangereuse si elle était implémentée en tant qu'élément payant dans un jeu. Il semble que plus personne ne puisse utiliser la magie normale.
+
+Après cela, nous avons joué avec des armes pendant environ une heure en voyage.
+
+◇
+
+Après avoir vérifié tous les éléments, j’ai réfléchi à ce qui m’intéressait plus tôt.
+
+"Je me demande quelle est la source."
+
+Je marmonne pour moi-même.
+
+Il s'agit de la « Source : J'ai dirigé la Vallée du Dragon » du journal.
+
+...Comme prévu, le précompte mobilier n'a rien à voir avec cela.
+
+À part ce journal, il n'y a aucune mention de « Source : Dragon Valley » nulle part.
+
+Normalement, je dirais simplement : « C'est un rêve », mais quelque chose me dérange.
+
+J'ai essayé de réfléchir en courant pour me rafraîchir, mais au lieu de trouver quoi que ce soit, j'étais tellement absorbé par la course que je ne me souciais pas vraiment de rien.
+
+Je suis complètement incohérent.
+
+Après tout, il ne sert à rien de passer des journées sans conversation. Cela ne me convient pas.
+
+Avant de m'en rendre compte, j'avais atteint le point où je pouvais atteindre l'autoroute en une journée de marche environ.
+
+Actuellement, aucun établissement humain n’est affiché sur la carte. Seule la route menant du nord-nord-ouest à l'ouest est visible.
+
+D’ailleurs, depuis mon départ, personne d’autre que moi n’a jamais été affiché sur la carte.
+
+Ont-ils fui parce qu’ils avaient peur du bruit tonitruant de la pluie de météorites et du tremblement de terre ?
+
+J'ai arrêté de courir si fort et j'ai recommencé à marcher.
+
+"Je veux prendre un bain."
+
+Comme prévu, ma tête me démange si je ne l'ai pas eu pendant trois jours.
+
+Il est impossible de faire bouillir de l'eau, mais l'eau est disponible. Heureusement, la poussière est retombée, donc je pense qu'il vaudrait mieux prendre un bain sans se salir.
+
+Lavez un rocher au hasard avec de l’eau, rangez vos vêtements et vos chaussures, puis grimpez dessus et couvrez-vous la tête avec de l’eau.
+
+"Il fait un peu froid, mais je vais reprendre vie."
+
+J'ai pris une profonde inspiration, j'ai sorti un chiffon propre de mon butin et j'ai essuyé l'eau.
+
+Me sentant rafraîchi, j'ai décidé de faire une sieste, j'ai donc sorti le lit à baldaquin qui se trouvait parmi le butin et je l'ai placé dans la nature.
+
+Ce jour-là, j'ai dormi pour la première fois depuis trois jours.
+
+Le lendemain matin, j'ai regardé le baldaquin et j'ai réalisé que je pouvais l'utiliser pour sécher mon linge, alors j'ai sorti la baignoire, j'ai lavé mes vêtements et je les ai mis à sécher.
+
+Je suis resté allongé au lit pendant environ une demi-journée, à grignoter de la viande séchée.
+
+J'espérais voir si quelqu'un passait sur l'autoroute, mais même dans l'après-midi, il n'y avait aucun changement dans le radar.
+
+"S'il s'agissait d'un light roman ou d'un manga, vous verriez probablement une princesse se faire attaquer par des voleurs."
+
+J'aime les modèles.
+
+"Le service dans mon rêve est dommage."
+
+Je mets de côté les trésors et les niveaux faciles et je les maudis.
+
+Si c’était un rêve ou une histoire, un drapeau serait hissé, mais rien de particulier ne se produirait.
+
+J'ai enfilé des vêtements secs et j'ai commencé à marcher vers l'autoroute.
+
+-------------------------------------------------------------
+
+[Épilogue]
+
+N'hésitez pas à soutenir et à suivre. L'auteur sera heureux si vous ajoutez une étoile.
+
+[Publicité]
+
+・Je prévois de publier un nouvel ouvrage intitulé « La vie de Sei dans un autre monde ~ Transporter les connaissances et les biens modernes de Sage ~ » à partir du 3 mars 2023, alors attendez-le avec impatience !
+
+・Le volume 15 de la version manga Desuma et le manga dérivé « Desuma Ko Harakyoku » devraient sortir le 9 mars 2023.

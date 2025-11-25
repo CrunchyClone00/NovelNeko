@@ -239,6 +239,8 @@
     <button class="nav-btn" id="prevBtnTop">⬅ Précédent</button>
     <select id="chapitreSelectTop"></select>
     <button class="nav-btn" id="nextBtnTop">Suivant ➡</button>
+    
+    <a href="indexmushoku.html" class="back-btn">⬅ Retour</a>
   </div>
 
   <div id="scansPlacement"></div>
@@ -283,7 +285,7 @@
       titreChapitre.textContent = `Mushoku Tensei Chapitre - ${chapitre}`;
       scansPlacement.innerHTML = "";
 
-      const baseUrl = `https://anime-sama.fr/s2/scans/Mushoku%20Tensei/${chapitre}/`;
+      const baseUrl = `https://anime-sama.org/s2/scans/Mushoku%20Tensei/${chapitre}/`;
       const maxPages = 80;
 
       for (let i = 1; i <= maxPages; i++) {

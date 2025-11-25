@@ -253,7 +253,7 @@
   </div>
 
   <script>
-    const maxChapitres = 19;
+    const maxChapitres = 23;
     const scansPlacement = document.getElementById("scansPlacement");
     const titreChapitre = document.getElementById("titreChapitre");
 
@@ -272,7 +272,7 @@
       if (i <= 9) {
         displayNum = i;
       } else {
-        displayNum = 96 + i; // 106 à 112
+        displayNum = 96 + i; // 106 à 117
       }
       const optionTop = document.createElement("option");
       optionTop.value = i;
@@ -292,13 +292,13 @@
         displayNum = chapitre;
         urlNum = chapitre;
       } else {
-        displayNum = 96 + chapitre; // 106 à 112
+        displayNum = 96 + chapitre; // 106 à 117
         urlNum = chapitre; // URL = 10 à 16
       }
       titreChapitre.textContent = `Tonikaku Kawaii - Chapitre ${displayNum}`;
       scansPlacement.innerHTML = "";
 
-      const baseUrl = `https://anime-sama.fr/s2/scans/Tonikaku%20kawaii/${urlNum}/`;
+      const baseUrl = `https://anime-sama.org/s2/scans/Tonikaku%20kawaii/${urlNum}/`;
       const maxPages = 80;
 
       for (let i = 1; i <= maxPages; i++) {

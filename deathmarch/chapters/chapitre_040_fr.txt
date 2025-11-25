@@ -1,0 +1,194 @@
+Partie: Sans titre
+Chapitre 40: 4-9. Choses que vous pouvez faire seul (FR)
+
+C'est Satou. Les expériences de chimie lorsque vous étiez au collège étaient un moment merveilleux, n'est-ce pas ?
+
+Je me souviens que j'ai pu acquérir beaucoup de connaissances pratiques, différentes de celles que j'ai apprises en classe.
+
+◇
+
+C'est aussi ennuyeux de se laisser berner par une mauvaise imagination sans aucune preuve. Si c’était vrai, les héros le vaincraraient probablement comme d’habitude. Si nous perdons, alors je peux en prendre la responsabilité et les vaincre à la place des dragons.
+
+Prendre quelques respirations profondes calmera votre esprit.
+
+Avoir un MND élevé peut être étonnamment utile.
+
+◇
+
+Je suis revenu dans ma chambre. Revenons au sujet principal.
+
+Ce que je voulais faire, c'était continuer la vérification et l'alchimie. La seule façon de chanter est de le faire régulièrement, alors faisons-le sur le chemin de la ville labyrinthe.
+
+Tout d’abord, vérifions le stockage.
+
+Retirez la poudre.
+
+Il reste chaud.
+
+Prenez une bouchée. Il n'y a aucun changement de goût.
+
+Remettez le reste au stockage.
+
+Il est tard, mais le nom de l'objet est "Seryu Yaki". J'aimerais un peu plus de twist.
+
+Ajoutez une nouvelle note avec le titre Vérification du stockage. Écrivez la date et le statut dans vos notes.
+
+Pour le moment, la rétention de chaleur est suffisante, et elle pourrait même avoir la capacité de réparer l'état. Je vais ajouter cela à mes notes. Ce serait trop rêveur de penser que le temps puisse ralentir ou s’arrêter.
+
+Cette fois, je sors le Seryuyaki que j'ai stocké dans la salle au trésor. Il fait déjà froid ici. Le goût est meilleur quand il fait froid. Les choses n'ont pas soudainement mal tourné. Cela ne dure qu'une demi-journée environ, donc c'est naturel.
+
+Veuillez noter qu'il n'y a pas de rétention de chaleur.
+
+Ensuite, nous testerons s’il est possible de déplacer des objets entre le stockage et le coffre-fort au trésor.
+
+Marquez une pièce de cuivre en y laissant tomber de l'encre.
+
+J'essaie de mettre la pièce de cuivre dans le coffre au trésor, mais elle n'y entre pas.
+
+Il semble que le niveau de compétence 1 n’en autorise qu’un. Il est entré lorsque le niveau de compétence était réglé sur 2. Je l'ai essayé avec de petits objets et j'ai pu stocker jusqu'à 4 objets de chaque type. Est-ce le carré du niveau ? Je l'ai également ajouté à mes notes.
+
+Lorsque vous ouvrez la fenêtre de stockage dans le menu, il y a plus d'onglets de boîte d'éléments.
+
+Faites glisser les éléments vers le stockage.
+
+Lorsque vous ouvrez la salle du trésor et regardez à l’intérieur, vous verrez que le mouvement est terminé.
+
+J'ai essayé de le déplacer en sens inverse en utilisant la même procédure et j'ai pu le déplacer sans aucun problème.
+
+Il n’y avait aucune consommation de MP lors de l’accès au coffre-fort au trésor via le stockage.
+
+J'ajouterai également ceci à la vérification du stockage.
+
+Réfléchissez maintenant à l’utilisation que vous pouvez en faire.
+
+Ensuite, essayez de voir si vous pouvez rechercher le contenu des livres stockés. Il serait utile de pouvoir enquêter en secret lorsque vous êtes en difficulté, comme le Ryuhakuishi d'aujourd'hui.
+
+J'ai pu rechercher des descriptions tout en jouant au jeu. J'aimerais voir si je peux en savoir plus sur le contenu. ...Au moment du jeu, il n'y avait aucun contenu de livre en premier lieu.
+
+Appuyez sur le livre « Royal Capital Tourist Guide » dans le stockage et sélectionnez Rechercher dans le menu contextuel.
+
+Lorsque j'ai cherché « château », j'ai trouvé une description du château royal. Il semble que vous puissiez effectuer une recherche sans aucun problème.
+
+Les résultats de la recherche seront affichés.
+
+Ah, j'aimerais que cette fonction soit réelle. Je n'ai pas eu besoin de préparer de livres ni d'utiliser l'OCR ! La fantaisie fait peur !
+
+J'y ai soudainement pensé et je l'ai essayé.
+
+Si vous pouvez voir les résultats de la recherche, vous pouvez également voir le contenu du livre, n'est-ce pas ?
+
+Il n'y avait aucun élément tel que vue dans le menu contextuel, j'ai donc essayé de rechercher avec un champ vide et cela a fonctionné.
+
+L'intégralité du texte peut être lue en défilant comme un texte sur un PC. C'est comme un fichier PDF. Vous pouvez également rechercher des mots dans cet état, ce qui est plus pratique que de lire un livre normalement.
+
+Ensuite, essayez de déplacer le livre vers la salle du trésor.
+
+Malheureusement, cette recherche n'a pas été possible.
+
+Quelle est la différence ?
+
+◇
+
+Sortez le set d'alchimie et placez-le sur la table dans le coin de la pièce. Le livre reste en réserve. Dans cet état, vous pouvez lire le livre quelle que soit l’obscurité, tout comme les autres affichages de menu.
+
+Lisez "Introduction à l'alchimie". C’est le livre que le grand-père gnome m’a d’abord conseillé de lire. Dois-je l’appeler une brochure plutôt qu’un livre ? C'est un livre mince, seulement une vingtaine de pages.
+
+Le livre commence par une explication des outils. De plus, il comprend des illustrations, afin que même les nouveaux utilisateurs puissent éviter d'utiliser les mauvais outils. Je dois juste rappeler au vieil homme de le lire en premier.
+
+Tout d’abord, sortez le mortier et le pilon. C'est un mortier rose pâle au lieu du mortier familier en porcelaine blanche. Après inspection, il s’est avéré qu’il était en agate. L'agate n'est-elle pas une pierre précieuse ?
+
+Comme le dit le livre, je broie les herbes séchées étiquetées Réactif 1 dans un mortier, puis je verse de l'eau dans un petit bol et j'y dissout les herbes moulues avec une fine tige métallique.
+
+La préparation sera terminée environ 5 minutes après le début. C’est écrit au début du livre d’introduction, donc c’est très simple.
+
+> "J'ai une capacité de synthèse"
+
+Attribuez immédiatement le maximum de points à la compétence de synthèse et activez-la.
+
+La solution aqueuse complétée est un « agent de refroidissement ». Après examen, le nom était « Fever Cooling Medicine-3 » et le contenu était « Un médicament liquide qui a un effet antipyrétique. L'effet est extrêmement faible et n'est qu'un effet apaisant. » C'est la première fois que je le mélange, donc on ne peut rien faire pour que la qualité soit faible.
+
+◇
+
+Sur la page suivante du livre d'introduction, il est dit : « Ceux qui possèdent des pouvoirs magiques devraient passer au chapitre 2, ceux qui n'ont pas de pouvoirs magiques devraient passer au chapitre 4. »
+
+Le style d’écriture donne l’impression d’un vieux livre de jeu plutôt que d’un livre d’introduction aux logiciels métiers.
+
+Le chapitre 2 était le début de la formation. C'est comme préparer une potion. Selon l’explication, les médicaments créés par synthèse et les médicaments magiques créés par entraînement sont traités comme des choses différentes même si leurs effets sont similaires. Les potions magiques ont l'avantage d'être efficaces immédiatement, au lieu de nécessiter des catalyseurs magiques et des PM pour les créer.
+
+Procéder à la préparation des potions magiques selon le manuel d'introduction. Versez le médicament liquide que vous avez créé plus tôt dans le bécher en métal. Ajouter le réactif 2 petit à petit en remuant.
+
+Apparemment, le pouvoir magique est versé dans le réactif 2 avant qu'il ne précipite. Tenez le bécher entre vos mains et imaginez la magie s'écoulant de votre main droite vers votre main gauche.
+
+C'était la même chose avec les pièces, mais existe-t-il une sorte de loi qui fait que la magie circule de la main droite vers la main gauche ? Ou est-ce juste une habitude ?
+
+Lorsque du pouvoir magique y est versé, le réactif 2 commence à briller faiblement. C'est peut-être parce que la pièce est faiblement éclairée que l'on voit clairement les paillettes. Lorsque les paillettes disparaissent, on dirait que c'est fini.
+
+> "J'ai acquis une compétence de formation"
+
+Ce n'est pas une compétence d'alchimie. Tirons le maximum des compétences de formation.
+
+La potion magique terminée était la potion antipyrétique -4. Ce serait un gaspillage de le jeter, alors je l'ai transféré dans un pot non émaillé et je l'ai stocké.
+
+◇
+
+Ouvrez le menu pour enregistrer la recette dans le champ mémo. Ensuite, il y avait plus d'onglets de production dans le menu. Lorsque j'ai ouvert l'onglet, j'ai vu non seulement « Synthèse : Potion de refroidissement » et « Création : Potion magique antipyrétique », mais aussi « Travail du bois : Massue (improvisée) », « Combiné : Lance à pattes d'insecte (improvisée) » et « Combiné : Lance à pattes d'insecte (améliorée) ».
+
+Je suis sûr que cela n'existait pas auparavant, mais existe-t-il une condition telle que le nombre de recettes soit de 5 ou plus ? Ou peut-être que la condition était pour une recette autre qu'instantanée, puisque c'est une compétence unique, il n'y a aucun moyen de la vérifier, donc je vais arrêter d'y penser ici.
+
+Appuyez sur « Mix : Cooling Medicine » pour l'essayer. Il existe quatre sous-menus : Synthèse, Afficher la recette, Supprimer la recette et Détails. La formule est grisée et semble invalide. Je pensais qu'il serait possible d'exécuter la synthèse en stockage, mais malheureusement cela ne semble pas être le cas. J'ai essayé de ranger les réactifs et les instruments, mais cela n'a pas fonctionné. Il peut y avoir certaines conditions.
+
+J'ai pratiqué le livre d'introduction en 6 chapitres jusqu'à la fin. Il y avait une recette pour chaque chapitre, j'ai donc mémorisé quatre recettes : « Création : Anti-douleur », « Création : Médicament pour les plaies (pommade) », « Création : Potion de récupération mineure » et « Création : Potion magique de soulagement de la douleur ».
+
+Peut-être parce que j'avais augmenté mes compétences au maximum, tous les médicaments à partir du chapitre 3 étaient marqués d'un "+5". «C'est extrêmement efficace et de la plus haute qualité.» J'essaierai de vérifier la différence réelle d'efficacité la prochaine fois.
+
+◇
+
+Je suis curieux à ce sujet depuis que je pratiquais le chapitre 5 du livre d'introduction...
+
+J’ai l’impression que quelqu’un retient son souffle de l’autre côté de la porte. Les points lumineux des deux personnes sur le radar n'ont pas bougé depuis un moment.
+
+Je m'approche de la porte avec mes pas cachés et l'ouvre d'un seul coup vers l'intérieur.
+
+Arisa et Martha furent entraînées dans la pièce près de la porte.
+
+"Que fais-tu?"
+
+Ai-je demandé en regardant les deux. Ma voix est devenue un peu plate.
+
+Arisa s'excuse dans le dialecte du Kansai pour une raison quelconque.
+
+"J'ai fait attention parce qu'Alisa était coincée devant la porte", a déclaré Martha.
+
+Même si vous avez dit cela, vous êtes resté coincé là pendant plus de 5 minutes, n'est-ce pas ?
+
+Je me suis rapproché des deux personnes bouleversées. Tous deux se retournèrent sur le sol, se tournèrent vers le couloir et tentèrent de s'enfuir en courant.
+
+Il les attrapa rapidement par la peau et les retint.
+
+"Qu'est-ce que tu faisais ?" J'ai demandé à nouveau.
+
+"Je suis désolé, j'étais tenté de voir l'aspect embarrassant de Satou-san, alors j'ai regardé."
+
+Martha s'excuse sincèrement.
+
+"Euh, je veux dire, un garçon de son âge qui vit avec une fille ! Il retourne seul dans sa chambre ?! Tu ne penses pas que c'est ta responsabilité en tant que parent de garder un œil sur le genre d'agression qui se passe ?"
+
+Qui est le tuteur ?
+
+Et c'est obscène... Je ne suis pas un lycéen qui essaie de se souvenir de choses.
+
+Martha-chan, qui était innocente, sera libérée. Arisa n'a pas assez de remords, ou plutôt elle est trop honnête avec ses envies, alors je la punis avec trois épingles déco d'affilée.
+
+Il se roulait sur le sol en se tenant le front, probablement parce que ça faisait mal même si je n'y faisais pas attention, mais c'est probablement un bon médicament de temps en temps.
+
+-------------------------------------------------------------
+
+[Épilogue]
+
+N'hésitez pas à soutenir et à suivre. L'auteur sera heureux si vous ajoutez une étoile.
+
+[Publicité]
+
+・Veuillez profiter du nouveau travail ``La vie de Sei dans un autre monde ~ Transporter les connaissances et les biens modernes de Sage ~'' !
+
+・Le volume 15 de la version manga Desuma et le manga dérivé « Desuma Koharakyoku » sont sortis. Vous pouvez également essayer de le lire sur le site de livres électroniques, alors n'hésitez pas à y jeter un œil.

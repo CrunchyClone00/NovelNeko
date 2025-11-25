@@ -1,0 +1,257 @@
+Chapitre 92: Chapitre 92 (FR)
+
+Dans une forêt près de la route de l'Empire, Zolmnem était perdu dans ses pensées.
+
+Les restes du groupe de mercenaires qui vient d'être détruit sont désormais utilisés comme monstres par Ro Ni et comme nourriture pour Mudelev.
+
+"Hmm, les gens sont sympas après tout. C'est seulement quand je mange cette viande que je pense que ce voyage n'est pas si mal. Gahahaha !"
+
+Jetant son fémur, le lourd guerrier démoniaque Mdelev rit de bon cœur.
+
+Même s’il était l’un des guerriers les plus éminents de la Race Démon, serait-il capable de résister à ce voyage ? D'une manière ou d'une autre, je pense à quelque chose comme ça.
+
+Zolmnem regarde Mdelev.
+
+[Nom] Mdelev [Lv] 81
+
+[Race] Démon [Occupation] Guerrier lourd
+
+[HP] 18423/18423
+
+[MP]4906/4906
+
+[Force] 1510 [Durabilité] 1301 [Agilité] 588 [Magie] 451
+
+【compétence】
+
+Club Jutsu Lv7 Taijutsu Lv6 Tous les attributs Résistance Lv5 Statut Anomalie Résistance Lv3 Amélioration HP Lv5 Force musculaire Lv7 Amélioration de l'endurance Lv6
+
+"Hé, Capitaine. Puis-je emmener cet enfant avec moi ?"
+
+L'entraîneur de Rabbito, Ro Ni, sortit la tête de derrière le Minotaure qu'il venait d'apprivoiser et demanda.
+
+Zolmnem secoue la tête et répond.
+
+"Ce n'est pas bon, c'est trop visible. Même en termes de puissance de combat, ce n'est pas à la hauteur de vos monstres. C'est une charge inutile."
+
+"...D'accord. Eh bien, alors ----Meede ! Tu peux manger."
+
+En entendant l'appel de Ro Ni, j'ai fait une pause pour reprendre mon souffle.
+
+Soudain, un gigantesque sous-dragon, Worm, est apparu du sous-sol, a retourné son long corps et a avalé le Minotaure d'en haut.
+
+Ro Ni plisse les yeux en regardant le ver avaler le minotaure.
+
+"délicieux?"
+
+Ce ver nommé Mede est également l'un des monstres que Ro Ni utilise. Le garçon lapin avait donné des noms à tous ses monstres.
+
+Zolmnem regarde Ro Ni.
+
+[Nom] Ro Ni [Lv] 38
+
+[Race] Homme-bête [Occupation] Entraîneur
+
+[HP]2970/2970
+
+[MP]2158/2158
+
+[Force] 253 [Durabilité] 198 [Agilité] 922 [Magie] 360
+
+【compétence】
+
+獣使いLv MAX
+
+「ムニャ……おなかいっぱい……」
+
+その近くでは、三眼族の邪眼使い、ピリスラリアがまどろみの中浮遊していた。
+
+彼女がはっきりと目を覚ますのは、食事時など限られた時だけだ。
+
+先ほども、傭兵団の残した食糧を少し食べた後、またすぐに眠ってしまった。
+
+当たり前だが、三眼の民すべてが彼女のような生活を送るわけではない。
+
+ピリスラリアのこの特性は、種族にあっても強すぎる邪眼の力に因るものではないかと、ゾルムネムは考えていた。
+
+Zolmnem regarde Pirisularia.
+
+[Nom] Pirisularia [Nv] 46
+
+【種族】三眼 【職種】呪術師
+
+[HP]5236/5236
+
+[MP]25486/27644
+
+【筋力】１５０ 【耐久】１８１ 【敏捷】２４７ 【魔力】１７２３
+
+【compétence】
+
+闇属性魔法Lv４ 邪眼Lv MAX 邪眼強化Lv７
+
+"que"
+
+Quand j'ai levé les yeux vers la voix, j'ai vu Gar Ganis, un jeune homme de la tribu Black Demon, debout avec de la nourriture dans les mains.
+
+「ゾルさんも、なんか食ってください。さっきからずっとそうしてるじゃないっスか」
+
+「すまない。だが、私はまだ大丈夫だ。先の戦闘でも、皆のおかげで負担が少なかった」
+
+"...Je vois. Mais s'il te plaît, ne te pousse pas trop fort."
+
+気遣うようにそう言って、ガル・ガニスは干し肉を食いちぎる。
+
+気持ちの良い若者だ。ゾルムネムはそう思う。
+
+ガル・ガニスは悪魔族の“黒”の一族の中で、今や次の族長にと期待されるほどの人物だ。お前の兄は勇者に討たれたのだ……などと言って復讐をそそのかし、旅の仲間に引き込んだことは間違いだったかもしれないと、時折考えてしまう。
+
+Zolmnem regarde Gar Ganis.
+
+[Nom] Gal Ganis [Lv] 66
+
+[Race] Démon [Catégorie] Magicien
+
+[HP] 10011/10011
+
+[MP]21060/22948
+
+[Force] 700 [Durabilité] 589 [Agilité] 692 [Magie] 1213
+
+【compétence】
+
+Magie d'attribut feu Lv9 Magie d'attribut terre Lv2 Magie d'attribut sombre Lv9 Amélioration du pouvoir magique Lv3
+
+Tout le monde est devenu plus fort.
+
+Solmnem le pense.
+
+それは、【Lv】や能力値に限った話ではない。この【スキル】でも見通すことのない要素は確かに存在し、それこそが何よりも大切なのだと……ゾルムネムは、旅を通して感じていた。
+
+Zolmnem finit par se regarder.
+
+[Nom] Zormnem [Niv] 88
+
+[Race] Démon divin [Catégorie] Épéiste magique
+
+[HP] 14307/14307
+
+[MP] 33211/33473
+
+[Force] 1550 [Durabilité] 1035 [Agilité] 1411 [Magie] 1593
+
+【compétence】
+
+Maîtrise de l'épée Lv9 Taijutsu Lv7 Magie d'attribut Feu Lv5 Magie d'attribut Eau Lv8 Magie d'attribut Vent Lv6 Magie d'attribut Terre Lv2 Magie d'attribut Lumière Lv9 Magie d'attribut Ténèbres Lv6 Résistance de tous les attributs Lv4 Évaluation du statut Lv4
+
+Zolmnem réfléchit.
+
+Cette [compétence] d'évaluation du statut, que personne d'autre ne possède, est... non, en premier lieu, qu'est-ce que le « statut » exactement ?
+
+Pourquoi mes yeux peuvent-ils voir des choses que moi-même ne peux pas connaître ?
+
+Qui a compilé ces informations ?
+
+Solmnem ferma doucement les yeux et chassa ses doutes.
+
+Je m'inquiétais beaucoup de ce pouvoir quand j'étais jeune, et je n'en ai même pas encore parlé à mes amis, mais cela n'a plus d'importance pour moi maintenant.
+
+"Tout le monde, c'est la dernière fois que nous recevrons des fournitures."
+
+Les membres du parti ont arrêté leurs actions et se sont tournés vers le chef.
+
+"La destination est proche. Et la fin de ce voyage aussi."
+
+Solmnem continue vers les membres du parti qui écoutent tranquillement.
+
+"Cela a été un voyage difficile. Nous pouvons dire que nous avons eu de la chance d'être arrivés jusqu'ici sans être pourchassés par l'Empire et sans manquer personne. Nous devons maintenant atteindre notre destination et remplir le but de notre voyage. Bien sûr, nous avons une chance de gagner, mais elle n'est pas garantie. Nous devons tous être préparés au fait que nous serons confrontés à encore plus de difficultés qu'avant."
+
+メンバーの間に、重い沈黙が降りる。
+
+Ce n'était pas un voyage facile.
+
+Solmnem le savait.
+
+Mderevu s'était toujours inquiété pour sa femme et son enfant, qu'il avait laissés dans sa ville natale. Lorsqu'il a repris les humains, il a tranquillement détourné ses yeux du parent et de l'enfant Mukuro.
+
+Ro-ni, qui peut paraître cruelle, se soucie en réalité profondément de ses propres monstres. Lorsqu'un des Loups de l'Ombre mourut, il creusa seul une tombe, l'enterra et y resta longtemps.
+
+Peut-être à cause du fardeau du mauvais œil, le temps d'éveil de Pirisularia devenait de plus en plus court. Elle faisait comme si de rien n’était pour que personne ne s’en inquiète.
+
+Ce Gal Ganis ne voulait pas vraiment se venger de son frère. A la place de son défunt frère, il a voulu être à la hauteur des attentes de ses compatriotes « noirs ». Malgré cela, pour le bien de l’avenir des démons, il a fait semblant d’être d’accord avec l’histoire de Solmnem.
+
+Ce qui nous attend est encore plus difficile.
+
+Cependant, dit Solmnem.
+
+"Mais... mais... j'ose rendre ce voyage encore plus difficile. Je veux me fixer un nouvel objectif au-delà de mon objectif. Parce que je crois que nous pouvons certainement y parvenir si nous travaillons tous ensemble."
+
+C'était quelque chose que j'avais décidé de dire un jour.
+
+"Pour le bien de l'avenir des démons, je vaincrai le héros. Et..."
+
+Un homme courageux est né.
+
+Cependant, le Roi Démon n’est pas encore né.
+
+Cette asymétrie mènera inévitablement à la guerre.
+
+Bien sûr, cela désavantagerait le côté démon.
+
+Nous devons donc vaincre le héros.
+
+Si j'avais la [compétence] d'évaluation du statut, je serais probablement capable de le dire en regardant un héros. Je pensais que je n'avais pas d'autre choix que de rassembler des compagnons talentueux de chaque race et de partir sans me laisser tromper par Kagemusha.
+
+Vaincre le héros est le souhait le plus sincère du démon.
+
+Mais――――Cela seul est trop solitaire.
+
+Alors, continue Solmnem.
+
+"Et retournons tous dans nos villes natales."
+
+Solmnem comprenait combien cela serait difficile.
+
+Si l'on apprend que le héros a été vaincu, Solmnem et les autres seront bien entendu pourchassés.
+
+Même ce petit parti d’élite ne peut rivaliser avec la vitesse d’Hayama. Il était clair que si l'armée les attendait dans les villages où ils s'arrêtaient pour se ravitailler, ou si leurs lieux de repos étaient assiégés, ils pourraient facilement tomber dans des ennuis.
+
+Bien sûr, tout le monde le comprend.
+
+Dès le début, ce voyage se dirigeait vers la mort.
+
+「ガハハハッ！ 何を言い出すかと思えば！ 帰らずにどうするのだ、この地で暮らすというのか？」
+
+Le rire chaleureux de Mderevu a été suivi par tous les membres.
+
+"Hmm... je veux dormir paisiblement sur mon futon... Suu."
+
+「僕、作物の種を持って帰るんだ。村のみんなにもこれ食べさせてあげたいから」
+
+"Je veux parler de mon courage. J'ai entendu dire que j'avais vengé mon frère."
+
+朗らかに言い合う仲間たちに、ゾルムネムは思う。
+
+厳しい旅だった。だが決して――――悪いものでは、なかった。
+
+Guerrier lourd Mdelev.
+
+呪術師のピリスラリア。
+
+調教師のロ・ニ。
+
+Le magicien Gal Ganis.
+
+そして、魔法剣士のゾルムネム。
+
+この素晴らしいパーティーで過ごした日々は、充実したものだった。
+
+そう、これは。
+
+勇者という強大な敵に仲間と立ち向かう、冒険の旅でもあったのだ。
+
+「必ず、皆で正義を果たそう」
+
+ゾルムネムは、仲間へと呼びかける。
+
+「魔族と、我々自身の未来のために」

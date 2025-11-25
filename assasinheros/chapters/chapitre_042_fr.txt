@@ -1,0 +1,7 @@
+Chapitre 42: Chapitre 42 (FR)
+
+Merci d'avoir attendu !
+
+Il n'y a pas d'affichage lorsque l'on regarde le personnage principal.
+
+Sur la base de vos commentaires, j'ai réduit le nombre de sauts de ligne et augmenté le nombre de caractères en conséquence.

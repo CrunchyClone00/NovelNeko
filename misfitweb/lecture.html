@@ -282,7 +282,7 @@
   </div>
 
   <script>
-    const maxChapitres = 494;
+    const maxChapitres = 726;
     const chapterContent = document.getElementById("chapterContent");
     const titreChapitre = document.getElementById("titreChapitre");
     const loadingIndicator = document.getElementById("loadingIndicator");
@@ -331,6 +331,8 @@
   `chapters/Chapitre_${chapitreStr}.txt`,
   `chapters/chapitre-${chapitreStr}.txt`,
   `chapters/${chapitreStr}.txt`,
+  `chapters/${chapitreStr}_fr.txt`,
+  `chapters/chapitre_${chapitreStr}_fr.txt`,
   // Anciens chemins avec sous-dossier (on garde en fallback)
   `chapters/chapitre_${chapitreStr}/chapter.txt`,
   `chapters/chapitre_${chapitreStr}/text.txt`,

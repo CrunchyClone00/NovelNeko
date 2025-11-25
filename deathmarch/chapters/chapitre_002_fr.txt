@@ -1,0 +1,196 @@
+Partie: Sans titre
+Chapitre 2: 1-2. Il est écrit comme un rêve que les gens font et lisent comme éphémère. (FR)
+
+Bonjour, c'est Suzuki.
+
+Pour une raison quelconque, je suis Suzuki, un homme de l'ombre qu'on appelait souvent Sato pendant mes années d'école.
+
+On dit que vous ne ressentez pas de douleur dans vos rêves, mais il y a des rêves de cavités et des rêves dans lesquels vous ressentez le symbole de la « douleur ».
+
+je n'ai pas ?
+
+Eh bien, c'est bien.
+
+◇
+
+Apparemment, il est resté inconscient pendant environ deux heures en raison d'une douleur intense juste avant d'être emporté par une vague de poussière que l'on pensait être le résultat d'une pluie de météores creusant le sol.
+
+L'heure était affichée sur un menu qui continuait à s'afficher. C'est plutôt pratique.
+
+J'ai soulevé mon corps, qui était à moitié enfoui dans le sol.
+
+Hein? Je n'arrive pas à me lever....
+
+C'est comme la sensation de ne pas pouvoir se lever du lit un matin d'hiver.
+
+Je peux bouger mes mains, mais elles sont si lentes que c'est pénible de naviguer dans les menus.
+
+Si j'avais des pouvoirs surnaturels, je pourrais utiliser les menus et consulter les journaux.
+
+Lorsque j'ai visualisé le fonctionnement avec mes doigts dans une mauvaise situation, j'ai pu le faire fonctionner correctement. Vraiment un rêve. Vous pouvez faire ce que vous voulez dans des endroits étranges.
+
+Quand j'ai regardé le journal en utilisant une manipulation mentale comme celle-là, j'ai vu "Le niveau de Satou a augmenté" aligné comme s'il s'agissait d'une insulte. J'ai fait défiler le journal tout en jouant le fameux son de niveau supérieur "Charararatchala~" dans ma tête.
+
+Au bout d'un moment, j'ai finalement trouvé un autre journal de messages.
+
+>Compétence « Summoning Magic : Other World » acquise.
+
+> Obtention de la magie d'invocation « Pluie de Météores ».
+
+Est-ce que « Meteor Shower » est un sort qui invoque des météorites ?
+
+C'est de la magie qui n'existe pas dans FFW. Cette magie d’invocation ne devrait pouvoir invoquer que des golems et des esprits. Je suis curieux de connaître le mot ressemblant à chuuni à l'arrière. Il n’existe pas d’« autre monde » dans FFW ou WW. Il n'y a pas lieu de s'inquiéter dans un rêve, donc ça va.
+
+Ce message est suivi de "Votre niveau a augmenté".
+
+Puisque le message comporte un affichage de l’heure, l’ordre est correct. L'ordre est « Acquérir une compétence », « Acquérir la magie appartenant à la compétence » et « Monter un niveau ».
+
+En d’autres termes, c’est un type de RPG dans lequel vous n’apprenez pas de compétences ou de magie au fur et à mesure que vous montez de niveau !
+
+"Non, non, qu'est-ce que tu analyse dans tes rêves..."
+
+D'une manière ou d'une autre, mes habitudes analytiques de mes années de joueur sont ressorties.
+
+Cependant, cela ne sert à rien d'être gêné dans un rêve, poursuivons donc l'analyse comme nous le souhaitons.
+
+En faisant cela, votre vrai corps devrait prendre une pause relaxante !
+
+J'ai décidé de laisser le journal tranquille et de vérifier les onglets magie et compétences.
+
+"Mais avant ça."
+
+Ouvrez "Paramètres" et ajoutez l'écran "Journal" à l'affichage de base.
+
+C'est compliqué de changer à chaque fois.
+
+Il existe deux types de magie : « Pluie de météores » et « Exploration de toutes les cartes ».
+
+Il existe deux compétences : « Summoning Magic : Another World » et « Magic Magic : Another World ».
+
+« Toute exploration de cartes » semble être dans la catégorie de la théorie magique.
+
+La magie et les compétences utilisées seront-elles enregistrées ?
+
+Cependant, vous ne pouvez pas l'utiliser si vous ne vous en souvenez pas, c'est donc un motif irrégulier qui n'est utilisé que lorsque vous l'utilisez comme bonus pour la première fois comme cette fois. Si j'étais responsable du programme, je l'aurais immédiatement rejeté.
+
+Le statut a considérablement changé. Après tout, mon niveau est passé de 1 à 310 d’un seul coup. Le FFW que j'ai réalisé avant d'aller me coucher devait être plafonné à 50 côté serveur. Cependant, il a été augmenté à l'infini sur le serveur de test de développement, donc mon souvenir a peut-être eu une influence.
+
+La colonne de valeur d'expérience avec neuf est également une valeur astronomique, donc je n'ai pas envie de lire combien il y a de chiffres. J'aimerais voir une virgule entre tous les trois chiffres. Souhaitez-vous le suggérer pour la prochaine mise à jour ?
+
+Ses valeurs de capacités telles que la force musculaire et l'intelligence sont également à 99. Dans FFW, la valeur maximale affichée est de 99 selon les instructions du client, mais la valeur réelle ne s'arrête pas à la limite supérieure. Il semble que la limite supérieure d'affichage sera corrigée lorsque les restrictions de niveau seront progressivement levées. ...Est-ce que cela signifie que la valeur dans ce domaine est plus élevée ?
+
+Ma force physique, mes PM et mon endurance sont tous à 3 100. Cette valeur augmente à un rythme fixe de 10 par niveau. Nous utilisons une méthode de différenciation en ajoutant la réduction de la consommation à diverses compétences.
+
+Selon le planificateur, cela est dû au fait qu'il serait difficile de les ajuster s'ils étaient tous élevés séparément.
+
+De plus, les points de compétence sont également de 3 100.
+
+Je viens de voir que vous avez acquis la compétence, puis-je vous l'attribuer ?
+
+Si vous regardez bien la colonne des compétences, les deux compétences mentionnées précédemment sont affichées en gris. Il est écrit "Magic Magic: Otherworld Lv0", alors essayez de cliquer dessus. Lorsque j'ai appuyé sur Lv, il était écrit "Veuillez spécifier les points de compétence à allouer [1-10]", j'ai donc essayé d'en ajouter jusqu'à 10 d'un coup.
+
+Il n'y a pas eu d'effets sonores particuliers, et la notation a été changée en « Magic Magic : Other World Lv10 » en lettres blanches. Il reste 3090 points de compétence. Dois-je utiliser 1 point au 1er niveau ? Facile à comprendre. Même si je tape à nouveau dessus, seul « Niveau maximum » s'affiche.
+
+Quand j'ai regardé la colonne magique, « All Map Exploration » était écrit en blanc et « Meteor Shower » restait en gris.
+
+Il semble qu'à moins d'attribuer des points de compétence et d'augmenter votre niveau de compétence, vous ne pourrez pas remplir les conditions pour utiliser la magie. Allouez également 10 points à "Summon Magic: Otherworld Lv0".
+
+Diverses colonnes de titre ont également été ajoutées.
+
+Premièrement, "tueur de monstres". Oui, je comprends cela. Viennent ensuite « Scale Tribe Killer », « Scale Tribe's Disaster » et « Scale Tribe's Natural Enemy ». Je ne sais pas ce qu'est la Scale Tribe, mais ce sont probablement des demi-humains ou des monstres reptiliens. De plus, « Pterodactyl Slayer », « Dragon Slayer [niveau inférieur] », « Dragon Slayer [jeune dragon] », « Dragon Slayer [adulte dragon] », « Dragon Slayer [vieux dragon] », et la liste de « Dragon Slayer » avec les caractères entre parenthèses ([)] continue encore et encore.
+
+Eh bien, je comprends que si vous battez autant de dragons, vous pouvez atteindre le niveau 300, ce qui est impossible. Avant l’attaque, la carte était teinte en rouge vif.
+
+Et à la fin du titre vient « Natural Enemy of the Dragon Clan », tout comme le Scale Clan, et enfin « God Slayer ».
+
+Anata Hakamiwo Shinjimasuka ?
+
+"Attends, quand m'as-tu tué comme ça?"
+
+Appuyez sur le bord du journal pour afficher la barre de recherche et recherchez « Dieu ».
+
+> Vous avez vaincu Ryujin Akonkagura !
+
+Voilà la raison pour laquelle on avait tué Dieu. Alors, une pluie de météores tue-t-elle aussi les dieux ?
+
+Vas-tu me tuer alors ?
+
+Encore deux mouvements pour tuer un dieu ! !
+
+Non, que dois-je faire si je le tue ?
+
+Cependant, il n’y a aucune indication de dommage dans le journal, on ne sait donc pas quelle est sa puissance. Dans les spécifications FFW et WW, le montant des dégâts doit être affiché même si vous mourez d'un seul coup... Cela ne sert-il pas de poursuivre les spécifications d'un rêve ?
+
+Ça commence à aller un peu mieux, alors je m'assois.
+
+Je ne veux pas cliquer accidentellement dans un village humain et devenir un ennemi de l'humanité, alors changez l'affichage de base dans l'onglet "Paramètres" et désactivez l'affichage de l'icône "Pluie de météores".
+
+À bien y penser, il a également été ajouté à la colonne magique.
+
+Basculez l'onglet sur Magie et affichez « Meteor Shower » et « Whole Map Exploration ». Eh bien, comment puis-je l'utiliser ? Est-il acceptable de taper normalement ?
+
+J'appuie légèrement sur "Explorer toutes les cartes", mais il n'y a pas de changement particulier.
+
+Lorsque j'ai vérifié le journal, il était écrit "Magic : toute l'exploration de la carte a été utilisée". Quand je regarde mon statut, mon MP est tombé à 3090. Il semble s'activer à 10 MP. Cela devient fastidieux de basculer entre les onglets un par un, je vais donc ajouter la barre HP/MP à l'affichage de base.
+
+Personne d’autre que moi n’apparaît sur le radar.
+
+C'est bien qu'il n'y ait pas d'ennemis, mais l'idée de les avoir tous massacrés me fait rire, même dans un rêve. Non, c'est la chose habituelle dans les jeux.
+
+Est-ce que ça va s'il n'y a pas de victimes ? Appuyez lentement sur "Meteor Shower". J’avais l’impression que le sang s’écoulait de mon corps avec une grande force. La jauge MP au bord de ma vision diminuait rapidement. Il s'est arrêté lorsqu'il a perdu exactement 1000 points.
+
+Je n'ai pas eu ce sentiment la première fois, alors c'est peut-être parce que je n'utilise pas mon propre pouvoir magique.
+
+Regardez le ciel. Aucune météorite n'est encore tombée. Compte tenu de ce qui s’est passé la dernière fois, il serait temps.
+
+Puis, les nuages ​​se séparent et une pluie de météorites pleut.
+
+Énorme. Qu'est-ce que c'est?
+
+La météorite qui tombe est près de 100 fois plus grande que la précédente.
+
+Je cours instinctivement avant d'en rechercher la raison.
+
+Bien sûr, du côté opposé à celui où tomberait la météorite !
+
+J'ai bougé mes jambes de toutes mes forces tout en entendant le bruit continu d'un morceau trop gros pour être appelé météorite frappant le sol derrière moi.
+
+La résistance de l’air est forte, comme lorsqu’on coule dans l’eau. Suis-je le seul à me sentir toujours lourd quand je rêve de courir ?
+
+Finalement, la petite table roula de l’autre côté de la paroi rocheuse qui ressemblait à de la terre. Bien qu’il soit petit, il a un rayon de plus de 100 mètres, il servira donc probablement de bouclier.
+
+Comme si on attendait la fin de l'évacuation, un nuage de poussière semblable à un tsunami a commencé à couler. De temps en temps, je voyais un rocher de la taille d’une personne rouler dans la poussière, et cela me donnait des frissons dans le dos.
+
+Cela fait combien de temps ? Une fois le flux de poussière calmé, j'ai décidé de grimper sur la paroi rocheuse et de voir où elle tombait.
+
+La pente est assez raide, mais il semble y avoir beaucoup de points d'appui, alors je saute légèrement et j'essaie de sauter sur la marche de 50 cm.
+
+Populaire. J'ai sauté environ 5 mètres comme si je pouvais presque entendre les onomatopées.
+
+J'ai atterri sur un rebord rocheux en ressentant une légère panique.
+
+"Augmenter votre statut n'est pas une blague."
+
+J'ai laissé échapper un monologue pour dissimuler mon sentiment de soulagement et le tremblement de mon corps.
+
+"Je me demande si la météorite devenue gigantesque plus tôt était due à une correction de l'intelligence ou à une correction de niveau."
+
+Courez jusqu'au sommet du rocher en frappant les saillies du mur les unes après les autres, comme un ninja dans un jeu ou un manga. Pratique, pratique. Même si c'est un rêve, je suis très adaptable.
+
+Un champignon atomique dont la forme semble s'être effondrée est visible au loin. Probablement de la terre projetée par une météorite. Si cela était réel, l’accumulation de poussière et la diminution de l’ensoleillement entraîneraient de mauvaises récoltes et des problèmes de santé.
+
+"Ce n'est qu'un rêve, donc ça ne sert à rien d'y penser."
+
+Je pense que c'est dommage que ce soit trop réel.
+
+-------------------------------------------------------------
+
+[Épilogue]
+
+N'hésitez pas à soutenir et à suivre. L'auteur sera heureux si vous ajoutez une étoile.
+
+[Publicité]
+
+・Je prévois de publier un nouvel ouvrage intitulé « La vie de Sei dans un autre monde ~ Transporter les connaissances et les biens modernes de Sage ~ » à partir du 3 mars 2023, alors attendez-le avec impatience !
+
+・Le volume 15 de la version manga Desuma et le manga dérivé « Desuma Ko Harakyoku » devraient sortir le 9 mars 2023.
