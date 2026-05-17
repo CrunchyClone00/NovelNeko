@@ -1,1408 +1,241 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NovelNeko</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #e2e8f0;
-      background: #1a1d2e;
-      min-height: 100vh;
-    }
-
-    /* Header */
-    .header {
-      background: #2c3040;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      text-decoration: none;
-    }
-
-    .logo-icon {
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      color: white;
-      font-size: 1.5rem;
-    }
-
-    .logo-text {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #fff;
-    }
-
-    .nav-menu {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-      align-items: center;
-    }
-
-    .nav-link {
-      color: #94a3b8;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: color 0.2s;
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    .nav-link:hover {
-      color: #fff;
-    }
-
-    /* Menu Hamburger */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-      padding: 5px;
-    }
-
-    .menu-toggle span {
-      width: 25px;
-      height: 3px;
-      background: #fff;
-      border-radius: 3px;
-      transition: all 0.3s ease;
-    }
-
-    .menu-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(8px, 8px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -7px);
-    }
-
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    /* Recherche améliorée */
-    .search-box {
-      position: relative;
-    }
-
-    .search-input {
-      background: #1a1d2e;
-      border: 1px solid #3a4050;
-      border-radius: 6px;
-      padding: 0.5rem 2.5rem 0.5rem 1rem;
-      color: #e2e8f0;
-      width: 250px;
-      font-size: 0.9rem;
-      transition: all 0.3s;
-    }
-
-    .search-input:focus {
-      outline: none;
-      border-color: #3a7bd5;
-      width: 300px;
-    }
-
-    .close-search {
-      position: absolute;
-      right: 8px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
-      color: #94a3b8;
-      cursor: pointer;
-      font-size: 1.2rem;
-      padding: 0.25rem;
-      display: none;
-      transition: color 0.2s;
-    }
-
-    .close-search:hover {
-      color: #fff;
-    }
-
-    .close-search.active {
-      display: block;
-    }
-
-    /* Résultats de recherche */
-    .search-results {
-      position: absolute;
-      top: calc(100% + 10px);
-      left: 0;
-      right: 0;
-      background: #2c3040;
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-      max-height: 500px;
-      overflow-y: auto;
-      display: none;
-      z-index: 1000;
-    }
-
-    .search-results.active {
-      display: block;
-    }
-
-    .search-result-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 0.75rem 1rem;
-      text-decoration: none;
-      color: #e2e8f0;
-      transition: background 0.2s;
-      border-bottom: 1px solid #3a4050;
-    }
-
-    .search-result-item:last-child {
-      border-bottom: none;
-    }
-
-    .search-result-item:hover {
-      background: #3a4050;
-    }
-
-    .search-result-item img {
-      width: 40px;
-      height: 60px;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-
-    .search-result-info {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    .search-result-title {
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-
-    .search-result-title .highlight {
-      background: #3a7bd5;
-      color: white;
-      padding: 0 2px;
-      border-radius: 2px;
-    }
-
-    .no-results {
-      padding: 2rem;
-      text-align: center;
-      color: #94a3b8;
-      font-style: italic;
-    }
-
-    .btn-signin {
-      background: #e63946;
-      color: white;
-      border: none;
-      padding: 0.5rem 1.5rem;
-      border-radius: 6px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .btn-signin:hover {
-      background: #d62839;
-    }
-
-    .btn-signup {
-      background: transparent;
-      color: #fff;
-      border: 1px solid #3a4050;
-      padding: 0.5rem 1.5rem;
-      border-radius: 6px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .btn-signup:hover {
-      border-color: #3a7bd5;
-      color: #3a7bd5;
-    }
-
-    /* Section Mangas */
-    .chapitres {
-      padding: 3rem 2rem;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    .section-header {
-      margin-bottom: 2rem;
-    }
-
-    .chapitres h2 {
-      color: #fff;
-      font-size: 2rem;
-      font-weight: 700;
-      margin: 0;
-    }
-
-    .grid-novels {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .novel-card {
-      display: flex;
-      flex-direction: column;
-      background: #252837;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      color: #e2e8f0;
-      position: relative;
-    }
-
-    .novel-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    }
-
-    .novel-card-image {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 2/3;
-      overflow: hidden;
-    }
-
-    .novel-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .novel-card:hover img {
-      transform: scale(1.05);
-    }
-
-    .rating-badge {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: #ffd700;
-      display: flex;
-      align-items: center;
-      gap: 0.2rem;
-    }
-
-    .novel-card-content {
-      padding: 1rem 0.75rem;
-      background: #252837;
-    }
-
-    .novel-card h3 {
-      margin: 0 0 0.5rem 0;
-      font-size: 0.95rem;
-      color: #fff;
-      font-weight: 600;
-      line-height: 1.3;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .novel-meta {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-      font-size: 0.8rem;
-      color: #94a3b8;
-    }
-
-    .meta-item {
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    #btnTop {
-      display: none;
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 100;
-      background: linear-gradient(135deg, #3a7bd5, #00d2ff);
-      color: white;
-      border: none;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      font-size: 1.5rem;
-      cursor: pointer;
-      box-shadow: 0 4px 15px rgba(58, 123, 213, 0.3);
-      opacity: 0;
-      transition: all 0.3s ease;
-    }
-
-    #btnTop:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(58, 123, 213, 0.5);
-    }
-
-    footer {
-      background: #2c3040;
-      padding: 2rem;
-      margin-top: 4rem;
-      border-top: 1px solid #3a4050;
-    }
-
-    footer p {
-      color: #94a3b8;
-      font-size: 0.9rem;
-    }
-
-    /* Responsive */
-    @media (max-width: 1024px) {
-      .header {
-        padding: 1rem;
-      }
-
-      .nav-menu {
-        gap: 1rem;
-      }
-
-      .search-input {
-        width: 200px;
-      }
-
-      .search-input:focus {
-        width: 250px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .header {
-        flex-wrap: wrap;
-      }
-
-      .header-left {
-        gap: 1rem;
-        flex: 1;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-
-      .nav-menu {
-        position: fixed;
-        top: 73px;
-        left: -100%;
-        width: 280px;
-        height: calc(100vh - 73px);
-        background: #2c3040;
-        flex-direction: column;
-        padding: 2rem 1.5rem;
-        gap: 1.5rem;
-        align-items: flex-start;
-        box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
-        transition: left 0.3s ease;
-        z-index: 99;
-      }
-
-      .nav-menu.active {
-        left: 0;
-      }
-
-      .nav-link {
-        font-size: 1.1rem;
-        width: 100%;
-        padding: 0.75rem 0;
-        border-bottom: 1px solid #3a4050;
-      }
-
-      .search-input {
-        width: 150px;
-      }
-
-      .search-input:focus {
-        width: 200px;
-      }
-
-      .grid-novels {
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-        gap: 1rem;
-      }
-
-      .chapitres {
-        padding: 2rem 1rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .header {
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-
-      .header-right {
-        width: 100%;
-        justify-content: space-between;
-      }
-
-      .search-box {
-        flex: 1;
-      }
-
-      .search-input {
-        width: 100%;
-      }
-
-      .search-input:focus {
-        width: 100%;
-      }
-
-      .grid-novels {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
-      }
-
-      .novel-card h3 {
-        font-size: 0.85rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NovelNeko - Redirection</title>
+    <meta http-equiv="refresh" content="1; url=https://novelneko.fr">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html, body {
+            height:100%;
+            scrollbar-width:none;
+            -ms-overflow-style:none;
+        }
+        body::-webkit-scrollbar { display:none; }
+        body {
+            font-family:'Inter',sans-serif;
+            color:white;
+            background:#000;
+            min-height:100vh;
+            position:relative;
+            overflow-x:hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .background {
+            position:fixed;
+            inset:0;
+            background:url('https://wallpapers.com/images/hd/blue-4k-space-nebula-hd-x8cxcv8kv8nifawc.jpg') center/cover no-repeat;
+            z-index:-3;
+        }
+        .glow-overlay {
+            position:fixed;
+            inset:0;
+            background:radial-gradient(circle at 50% 40%, rgba(0,255,150,0.12), transparent 60%),
+                       radial-gradient(circle at 20% 80%, rgba(100,200,255,0.08), transparent 70%);
+            z-index:-2;
+        }
+        .blur-layer {
+            position:fixed;
+            inset:0;
+            backdrop-filter:blur(80px);
+            z-index:-1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            padding: 60px 40px;
+            background: rgba(15, 15, 35, 0.65);
+            border-radius: 24px;
+            border: 1px solid rgba(176, 255, 216, 0.08);
+            backdrop-filter: blur(6px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: -0.6px;
+            background: linear-gradient(90deg, #1C66B0, #1324D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 24px;
+            animation: slideUp 0.6s ease-out 0.1s both;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #b0ffd8, #00ffaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: slideUp 0.6s ease-out 0.2s both;
+        }
+
+        .description {
+            color: rgba(225,225,240,0.92);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            animation: slideUp 0.6s ease-out 0.3s both;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: #b0ffd8;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite;
+            box-shadow: 0 0 10px rgba(176, 255, 216, 0.6);
+        }
+
+        .dot:nth-child(2) { animation-delay: 0.2s; }
+        .dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: translateY(0); opacity: 0.7; }
+            40% { transform: translateY(-14px); opacity: 1; }
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: rgba(29, 111, 219, 0.774);
+            border: 1px solid rgba(88, 101, 242, 0.4);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(88, 101, 242, 0.3);
+            animation: slideUp 0.6s ease-out 0.4s both;
+        }
+
+        .button:hover {
+            background: rgba(83, 85, 211, 0.548);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 32px rgba(88, 101, 242, 0.5);
+        }
+
+        .button:active {
+            transform: translateY(-1px);
+        }
+
+        .timer {
+            font-size: 13px;
+            color: rgba(240,240,255,0.65);
+            margin-top: 32px;
+            animation: slideUp 0.6s ease-out 0.5s both;
+        }
+
+        .timer strong {
+            color: #b0ffd8;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .container {
+                padding: 40px 24px;
+                margin: 20px;
+            }
+
+            .logo {
+                font-size: 36px;
+            }
+
+            .description {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .logo {
+                font-size: 28px;
+            }
+
+            .container {
+                padding: 30px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <button id="btnTop" onclick="scrollToTop()" title="Retour en haut">↑</button>
+    <div class="background"></div>
+    <div class="glow-overlay"></div>
+    <div class="blur-layer"></div>
 
-  <header class="header">
-    <div class="header-left">
-      <a href="index.html" class="logo">
-        <span class="logo-text">NovelNeko</span>
-      </a>
-      <nav>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="lightnovel.html" class="nav-link">LIGHT NOVELS</a></li>
-          <li><a href="webnovels.html" class="nav-link">WEB-NOVELS</a></li>
-          <li><a href="mangas.html" class="nav-link">MANGAS</a></li>
-          <li><a href="https://discord.gg/9n7gX8Jj9B" class="nav-link">💬 DISCORD</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div class="header-right">
-      <div class="search-box">
-        <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
-        <button id="close-search" class="close-search">×</button>
-        <div id="search-results" class="search-results"></div>
-      </div>
-    </div>
-  </header>
-
-  
-  <div style="max-width: 1400px; margin: 2rem auto; padding: 0 2rem;">
-    <div style="background: #252837; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
-      <h2 style="color: #fff; font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; border-bottom: 3px solid #3a7bd5; padding-bottom: 0.5rem; display: inline-block;">
-        Qu'est-ce qu'un light novel ?
-      </h2>
-      <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.8; margin: 0;">
-        Un light novel (LN) est un roman japonais généralement publié par une maison d'édition et vendu en librairie. Ces romans ont la particularité de contenir quelques illustrations, souvent en noir et blanc, qui accompagnent le lecteur tout au long du récit.  Beaucoup de light novels sont adaptés ou retravaillés à partir de web novels publiés en ligne. Le texte y est alors corrigé et réorganisé afin de proposer une version plus aboutie, destinée à un large public. De plus, de nombreux light novels ne contiennent pas d'images et sont destinés à un public plus âgé.
-      </p>
-    </div>
-  </div>
-
-
-  <section class="chapitres">
-    <div class="section-header">
-    </div>
-    <div class="grid-novels">
-      <a href="mushoku/indexmushoku.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/mushoku.jpg" alt="Mushoku Tensei">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Mushoku Tensei</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 1</div>
-            <div class="meta-item">📖 26 VOLUMES</div>
-            <div class="meta-item">📖 SPIN-OFF</div>
-          </div>
-        </div>
-      </a>
-      <a href="redundant/indexredundant.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/rudundant.jpg" alt="Mushoku Tensei">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Mushoku Tensei - Redundant Reincarnation</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 2</div>
-            <div class="meta-item">📖 3 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="rezero/indexrezero.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/rezero.jpg" alt="Re:Zero">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Re:Zero − Re:vivre dans un autre monde à partir de zéro</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 3</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-            <div class="meta-item">📖 SPIN-OFF</div>
-          </div>
-        </div>
-      </a>
-      <a href="tbate/indextbate.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/tbate.jpg" alt="The beginning after the end">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Beginning After The End</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 4</div>
-            <div class="meta-item">📖 12 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="cote/indexcote.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/cote.jpg" alt="Classroom of The Elite Y1">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Classroom of the Elite Year 1</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 5</div>
-            <div class="meta-item">📖 14 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="cote2/indexcote.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/cote2.jpg" alt="Classroom of The Elite Y2">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Classroom of the Elite Year 2</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 6</div>
-            <div class="meta-item">📖 18 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="cote3/indexcote.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/cote3.jpg" alt="Classroom of The Elite Y3">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Classroom of the Elite Year 3</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 7</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="rascal/indexrascal.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/rascal.jpg" alt="Bunny girl Senpai">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Rascal Does Not Dream of Bunny Girl Senpai</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 8</div>
-            <div class="meta-item">📖 7 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="finest/indexfinest.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/finest.jpg" alt="Finest Assasin">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The World's Finest Assassin Gets Reincarnated in Another World</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 9</div>
-            <div class="meta-item">📖 7 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="eminence/indexeminence.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/eminence.jpg" alt="Éminence des Ombres">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Eminence in Shadow</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 10</div>
-            <div class="meta-item">📖 6 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="gensouki/indexgensouki.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/gensouki.jpg" alt="Gensouki">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Seirei Gensouki: Spirit Chronicles</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 11</div>
-            <div class="meta-item">📖 26 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="sao/indexsao.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/sao.jpg" alt="Sao">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Sword Art Online</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 12</div>
-            <div class="meta-item">📖 19 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="irregular/indexirregular.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/irregular.jpg" alt="irregular">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Irregular at Magic High School</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 13</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="danmachi/indexdanmachi.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/danmachi.jpg" alt="danmachi">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>DanMachi: La Légende des Familias</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 14</div>
-            <div class="meta-item">📖 5 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="loveelf/indexelf.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/loveelf.jpg" alt="loveelf">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>An Archdemon's Dilemma: How to Love Your Elf Bride</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 15</div>
-            <div class="meta-item">📖 18 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="elfjapon/indexjapon.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/elfjapon.jpg" alt="elfjapon">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Welcome to Japan, Ms. Elf!</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 16</div>
-            <div class="meta-item">📖 9 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="ange/indexange.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/ange.jpg" alt="ange">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Angel Next Door Spoils Me Rotten</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 17</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="days/indexdays.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/days.jpg" alt="days">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Days with My Stepsister</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 18</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="carnets/indexcarnets.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/carnets.jpg" alt="carnets">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Les Carnets de l'Apothicaire</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 19</div>
-            <div class="meta-item">📖 6 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="goblin/indexgoblin.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/goblin.jpg" alt="goblin">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Goblin Slayer</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 20</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="alya/indexalya.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/alya.jpg" alt="alya">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Alya Sometimes Hides Her Feelings in Russian</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 21</div>
-            <div class="meta-item">📖 5 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="reader/indexreader.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/reader.jpg" alt="reader">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Omniscient Reader's Viewpoint</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 22</div>
-            <div class="meta-item">📖 3 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="reign/indexreign.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/reign.jpg" alt="reign">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Reign of the Seven Spellblades</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 23</div>
-            <div class="meta-item">📖 11 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="perfect/indexperfect.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/perfect.jpg" alt="perfect">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Too-Perfect Saint: Tossed Aside by My Fiancé and Sold to Another Kingdom</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 24</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="violet/indexviolet.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/violet.jpg" alt="violet">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Violet Evergarden</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 25</div>
-            <div class="meta-item">📖 5 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="biblia/indexbiblia.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/biblia.jpg" alt="biblia">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Biblia Koshodô no Jiken Techô</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 26</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="hyouka/indexhyouka.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/hyouka.jpg" alt="hyouka">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Hyouka</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 27</div>
-            <div class="meta-item">📖 3 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="konosuba/indexkonosuba.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/konosuba.jpg" alt="konosuba">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>KonoSuba</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 28</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="gekkou/indexgekkou.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/gekkou.jpg" alt="gekkou">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Gekkou</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 29</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="secrets/indexsecrets.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/secrets.jpg" alt="secrets">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Secrets Of The Silent Witch</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 30</div>
-            <div class="meta-item">📖 4 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="ramune/indexramune.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/ramune.jpg" alt="ramune">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Chitose Is in the Ramune Bottle</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 31</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="sukasuka/indexsuka.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/sukasuka.jpg" alt="suka">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Sukasuka</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 32</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="grimgar/indexgrimgar.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/grimgar.jpg" alt="grimgar">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Grimgar of Fantasy and Ash</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 33</div>
-            <div class="meta-item">📖 12 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="sword/indexdword.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/demonhunterln.jpg" alt="sword">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Sword of the Demon Hunter: Kijin Gentosho</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 34</div>
-            <div class="meta-item">📖 4 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="simple/indexsimple.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/simple.jpg" alt="simple">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Un Simple Sondage</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 35</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="reina/indexreina.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/reina.jpg" alt="reina">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Reina Kamisu</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 36</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="sister/indexsister.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/chuunibyuu.jpg" alt="sister">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>My Big Sister Lives in a Fantasy World</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 37</div>
-            <div class="meta-item">📖 7 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="prince/indexprince.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/prince.jpg" alt="prince">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Insipid Prince</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 38</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="tunnel/indextunnel.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/tunnel.jpg" alt="tunnel">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Tunnel to Summer</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 39</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="fate/indexfate.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/fate.jpg" alt="fate">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Fate/Strange Fake</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 40</div>
-            <div class="meta-item">📖 9 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="chuunibyou/indexchu.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/chuunibyou.jpg" alt="chuunibyou">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Chuunibyou Demo Koi ga Shitai!</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 41</div>
-            <div class="meta-item">📖 3 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="hereos/indexheros.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/hereos.jpg" alt="hereos">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Classroom for Heroes</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 42</div>
-            <div class="meta-item">📖 4 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="misfit/indexmisfit.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/misfit.jpg" alt="misfit">
-          <div class="rating-badge">★★★★★5</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Misfit of Demon King Academy</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 43</div>
-            <div class="meta-item">📖 2 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="kukakuma/indexkuma.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/kukakuma.jpg" alt="kuma">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Kuma Kuma Kuma Bear</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 44</div>
-            <div class="meta-item">📖 5 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="blood/indexblood.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/blood.jpg" alt="blood">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Bloodline</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 45</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="assasin/index.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/assasin.jpg" alt="yakusoku">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>La Fierté d'Assassin</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 46</div>
-            <div class="meta-item">📖 1 VOLUME</div>
-          </div>
-        </div>
-      </a>
-      <a href="cavalry/index.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/cavalry.jpg" alt="yakusoku">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Chivalry of a Failed Knight</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 47</div>
-            <div class="meta-item">📖 17 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="watermagicanln/index.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/watermagician.jpg" alt="yakusoku">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>The Water Magician</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 48</div>
-            <div class="meta-item">📖 4 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-      <a href="wisemanln/index.html" class="novel-card">
-        <div class="novel-card-image">
-          <img src="images/wisemanln.jpg" alt="misemanln">
-          <div class="rating-badge">★★★★☆4</div>
-        </div>
-        <div class="novel-card-content">
-          <h3>Wise Man's Grandchild</h3>
-          <div class="novel-meta">
-            <div class="meta-item">👁️ RANG: 49</div>
-            <div class="meta-item">📖 9 VOLUMES</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <script>
-    // Fonctionnalité de recherche
-    // Intégrée pour ne cibler QUE les light novels (les .novel-card dans .chapitres)
-    function initSearchFunctionality() {
-      const searchInput = document.getElementById('search-input');
-      const searchResults = document.getElementById('search-results');
-      const closeSearch = document.getElementById('close-search');
-
-      if (!searchInput || !searchResults) return;
-
-      // Collecter tous les titres de novels situés dans .chapitres
-      const allNovels = [];
-      const novelCards = document.querySelectorAll('.chapitres .novel-card');
-
-      novelCards.forEach(card => {
-        const h3 = card.querySelector('h3');
-        const imgEl = card.querySelector('img');
-        const title = h3 ? h3.textContent.trim() : 'Sans titre';
-        const image = imgEl ? imgEl.src : '';
-        const link = card.getAttribute('href') || '#';
-        // On marque tout dans 'light-novel' (tu as demandé "que pour les lights novels")
-        const category = 'light-novel';
-
-        allNovels.push({
-          title,
-          image,
-          link,
-          category,
-          element: card
-        });
-      });
-
-      // Gérer la recherche
-      searchInput.addEventListener('input', function() {
-        const query = this.value.toLowerCase().trim();
-
-        // afficher ou cacher le bouton fermer
-        if (query.length > 0) {
-          closeSearch.classList.add('active');
-        } else {
-          closeSearch.classList.remove('active');
-        }
-
-        if (query.length < 1) {
-          searchResults.classList.remove('active');
-          searchResults.innerHTML = '';
-          return;
-        }
-
-        // Filtrer les résultats (recherche sur le titre)
-        const filteredResults = allNovels.filter(novel =>
-          novel.title.toLowerCase().includes(query)
-        );
-
-        // Afficher les résultats
-        renderSearchResults(filteredResults, query);
-      });
-
-      // Gérer le clic sur le bouton de fermeture
-      closeSearch.addEventListener('click', function() {
-        searchInput.value = '';
-        closeSearch.classList.remove('active');
-        searchResults.classList.remove('active');
-        searchResults.innerHTML = '';
-        searchInput.focus();
-      });
-
-      // Fermer les résultats quand on clique en dehors
-      document.addEventListener('click', function(event) {
-        const isClickInsideSearch = searchInput.contains(event.target) ||
-                                    searchResults.contains(event.target) ||
-                                    closeSearch.contains(event.target);
-
-        if (!isClickInsideSearch && searchResults.classList.contains('active')) {
-          searchResults.classList.remove('active');
-        }
-      });
-
-      // Empêcher la propagation du clic dans la zone de recherche (pour garder focus)
-      searchResults.addEventListener('click', function(event) {
-        event.stopPropagation();
-      });
-
-      // Rendre les résultats de recherche
-      function renderSearchResults(results, query) {
-        searchResults.innerHTML = '';
-
-        if (results.length === 0) {
-          searchResults.innerHTML = '<div class="no-results">Aucun résultat trouvé</div>';
-          searchResults.classList.add('active');
-          return;
-        }
-
-        // On ne regroupe pas par catégories (tout est light-novel) mais on affiche une section simple
-        const categorySection = document.createElement('div');
-        categorySection.className = 'search-category';
-        // titre facultatif : categorySection.innerHTML = `<h3>Light Novels</h3>`;
-
-        results.forEach(novel => {
-          const resultItem = document.createElement('a');
-          resultItem.className = 'search-result-item';
-          resultItem.href = novel.link;
-
-          // Mettre en surbrillance la partie correspondante (sécurisé)
-          const titleLower = novel.title.toLowerCase();
-          const queryLower = query.toLowerCase();
-          const index = titleLower.indexOf(queryLower);
-
-          let highlightedTitle = escapeHtml(novel.title);
-          if (index !== -1) {
-            const before = escapeHtml(novel.title.substring(0, index));
-            const match = escapeHtml(novel.title.substring(index, index + query.length));
-            const after = escapeHtml(novel.title.substring(index + query.length));
-            highlightedTitle = `${before}<span class="highlight">${match}</span>${after}`;
-          }
-
-          resultItem.innerHTML = `
-            <img src="${novel.image}" alt="${escapeHtml(novel.title)}">
-            <div class="search-result-info">
-              <span class="search-result-title">${highlightedTitle}</span>
-              <span class="search-result-category">Light Novel</span>
-            </div>
-          `;
-
-          categorySection.appendChild(resultItem);
-        });
-
-        searchResults.appendChild(categorySection);
-        searchResults.classList.add('active');
-      }
-
-      // Petite fonction d'échappement pour éviter d'injecter du HTML non désiré
-      function escapeHtml(text) {
-        return text
-          .replace(/&/g, "&amp;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;")
-          .replace(/"/g, "&quot;")
-          .replace(/'/g, "&#039;");
-      }
-    }
-
-    // Initialiser une fois le DOM prêt
-    document.addEventListener('DOMContentLoaded', function () {
-      initSearchFunctionality();
-    });
-
-    // Fonction pour le menu mobile
-    function initMobileMenu() {
-      const menuToggle = document.getElementById('menuToggle');
-      const navMenu = document.getElementById('navMenu');
-
-      if (!menuToggle || !navMenu) return;
-
-      menuToggle.addEventListener('click', function() {
-        menuToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
-      });
-
-      // Fermer le menu quand on clique sur un lien
-      const navLinks = navMenu.querySelectorAll('.nav-link');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          menuToggle.classList.remove('active');
-          navMenu.classList.remove('active');
-        });
-      });
-
-      // Fermer le menu quand on clique en dehors
-      document.addEventListener('click', function(event) {
-        const isClickInsideMenu = navMenu.contains(event.target) || menuToggle.contains(event.target);
+    <div class="container">
+        <div class="logo">NovelNeko</div>
+        <h1>Redirection en cours</h1>
         
-        if (!isClickInsideMenu && navMenu.classList.contains('active')) {
-          menuToggle.classList.remove('active');
-          navMenu.classList.remove('active');
-        }
-      });
-    }
+        <div class="loading">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
 
-    // Initialiser la recherche et le menu mobile
-    document.addEventListener('DOMContentLoaded', function() {
-      initSearchFunctionality();
-      initMobileMenu();
-    });
-  </script>
-  <footer>
-  <p style="text-align:center;">&copy; 2025 NovelNeko. Tous droits réservés.</p>
-</footer>
+        <p class="description">
+            Vous allez être redirigé vers <strong>novelneko.fr</strong>
+        </p>
+
+        <a href="https://novelneko.fr" class="button">
+            → Accéder au site
+        </a>
+
+        <div class="timer">
+            Redirection automatique dans <strong id="countdown">3</strong> secondes
+        </div>
+    </div>
+
+    <script>
+        let seconds = 1;
+        const countdown = document.getElementById('countdown');
+        
+        setInterval(() => {
+            seconds--;
+            countdown.textContent = seconds;
+        }, 1000);
+    </script>
 </body>
 </html>
